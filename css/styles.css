@@ -1,8 +1,8 @@
 body{
   padding:2rem;
-}
-h2{
   font-family: "Arial", sans-serif;
+}
+.red{
   color: #FF0000;
 }
 p{color: #666666;
