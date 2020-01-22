@@ -331,6 +331,45 @@
               </div>
             </li>
             <li>
+              <div>
+                <h2 class="secondary-color">
+                  Line Breaks
+                </h2>
+                <div class="headings">
+                <p class="sm-text">Sometimes you just need a break...</p>
+                 <br>
+                  <p>Your Name <b>&lt;br&gt;</b><br>
+                  Your Address <b>&lt;br&gt;</b><br>
+                  Phone Number <b>&lt;br&gt;</b><br>
+                  Email <b>&lt;br&gt;</b><br></p>
+            </li>
+            <li>
+              <h2 class="secondary-color">
+                Code Comments
+              </h2>
+              <div class="headings">
+                <p class="sm-text">Comments are not displayed in the browser but you can see them on the source code</p><br>
+                <p>It starts with <b>&lt;! ––</b> and the comment closes with <b>--></b></p>
+              </div>
+            </li>
+            <li>
+              <h2 class="secondary-color">
+                Horizontal Ruler
+              </h2>
+              <div class="headings">
+                <p class="sm-text">Sometimes you need a line to separate content</p>
+                <hr>
+                <p>Use <b>&lt;hr&gt;</b> to add a break between sections</p>
+              </div>
+            </li>
+          </ul>
+      </section>
+
+      <section class="slide-top">
+        <div class="wrap">
+          <h2>Last One..</h2>
+          <ul class="flexblock features">
+            <li>
               <!-- <div> -->
                 <h2 class="secondary-color">
                   Tables
@@ -365,33 +404,9 @@
               <!-- </div> -->
             </li>
           </ul>
-          <ul class="flexblock features">
-            <li>
-              <div>
-                <h2 class="secondary-color">
-                  Line Breaks
-                </h2>
-                <div class="headings">
-                <p class="sm-text">Sometimes you just need a break...</p>
-                 <br>
-                  <p>Your Name <b>&lt;br&gt;</b><br>
-                  Your Address <b>&lt;br&gt;</b><br>
-                  Phone Number <b>&lt;br&gt;</b><br>
-                  Email <b>&lt;br&gt;</b><br></p>
-            </li>
-            <li>
-              <h2 class="secondary-color">
-                Code Comments
-              </h2>
-              <div class="headings">
-                <p class="sm-text">Comments are not displayed in the browser but you can see them on the source code</p><br>
-                <p>It starts with <b>&lt;! ––</b> and the comment closes with <b>--></b></p>
-              </div>
-            </li>
-          </ul>
-
-
+        </div>
       </section>
+
 
       <section class="bg-black slide-top">
         <!--.wrap = container (width: 90%) -->
@@ -423,80 +438,86 @@
 
       <section>
         <div class="wrap">
-          <div class="grid vertical-align">
+          <div class="grid center-align">
             <div class="column">
               <h4>
-                <svg class="fa-life-ring">
-                  <use xlink:href="#fa-life-ring"></use>
-                </svg>
                 <strong>Guidelines</strong>
               </h4>
-              <p>If you need help, here's just three tutorials. Just a basic knowledge of HTML is required:</p>
               <ul class="description">
-                <li><a href="demos/components.html" title="WebSlides Components">WebSlides Components</a>.</li>
-                <li><a href="demos/classes.html" title="WebSlides Classes">WebSlides Classes</a>.</li>
-                <li><a href="demos/media.html" title="WebSlides Media">WebSlides Media: images, videos...</a></li>
+                <li>Organization is key!!</li>
+                <li>Keep files organized in folders by file type</li>
+                <li>Save images according to their use to keep a small file size</li>
+                <li>Check the location of your links</li>
               </ul>
             </div>
             <div class="column">
-              <figure><img class="aligncenter" src="/" alt="WebSlides Files"></figure>
+              <figure><img class="aligncenter" src="../static/images/file-tree.png" alt="File structure Tree"></figure>
             </div>
             <div class="column">
               <h4>
-                <svg class="fa-cubes">
-                  <use xlink:href="#fa-cubes"></use>
-                </svg>
-                <strong>Built to expand</strong>
+                <strong>Why Index?</strong>
               </h4>
-              <p>The best way to <strong>inspire with your content</strong> is to connect on a personal level:</p>
-              <ul class="description">
-                <li>Background images: <a href="http://unsplash.com">Unsplash</a>.</li>
-                <li>CSS animations: <a href="https://daneden.github.io/animate.css/">Animate.css</a>.</li>
-                <li>Longforms: <a href="http://michalsnik.github.io/aos/"> Animate on scroll</a>.</li>
-              </ul>
+              <p>Most ervers are configured to display the index.html by default without having to type the name of the file.</p>
+              <p>That's why your homepage will always be index.html</p>
             </div>
           </div>
           <!--end .grid -->
         </div>
       </section>
-      <section class="aligncenter">
-        <!-- .wrap = container (width: 90%) -->
-        <div class="wrap">
-          <h2><strong>Ready to Start?</strong> </h2>
-          <p class="text-intro">Create your own presentation instantly. <br>120+ premium slides ready to use.</p>
-          <p>
-            <a href="https://webslides.tv/webslides-latest.zip" class="button" title="Download WebSlides">
-              <svg class="fa-cloud-download">
-                <use xlink:href="#fa-cloud-download"></use>
-              </svg>
-              Free Download
-            </a>
-            <span class="try">
-              <a href="https://www.paypal.me/jlantunez/8" title="Thanks :)">
-                <svg class="fa-paypal">
-                  <use xlink:href="#fa-paypal"></use>
-                </svg>
-                Pay what you want.
-              </a>
-            </span>
-          </p>
+
+      <section class="slide-top">
+        <div class="wrap size-80 aligncenter">
+          <h2><strong>About Links</strong></h2><br><br>
+          <div class="grid">
+            <div class="column bg-gray">
+              <h4>Relative links</h4>
+              <p class="big-text"><b>&lt;a href="myPage.html"&gt;</b></p>
+              <ul class="big-text">
+                <li>This is the location of the file relative to the page your're working on</li>
+                <li>The file belongs to your site</li>
+                <li>They share the same URL</li>
+              </ul>
+            </div>
+            <!-- <div class="column">
+              <p><strong>Content goes here</strong></p>
+            </div> -->
+            <div class="column bg-black">
+              <h4>Absolute links</h4>
+              <p class="big-text"><b>&lt;a href="http://notMySite.com/Page.html"&gt;</b></p>
+              <ul class="big-text">
+                <li>This is the location of the file on the internet</li>
+                <li>Does not belong to your site</li>
+                <li>You have to include the full web address, so it can be located</li>
+              </ul>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="column bg-red">
+              <h4><i class="fas fa-times-circle"> </i> <i class="fas fa-times-circle"> </i> <i class="fas fa-times-circle"> </i> Local Links <i class="fas fa-times-circle"> </i> <i class="fas fa-times-circle"> </i> <i class="fas fa-times-circle"> </i> </h4>
+              <p class="big-text"><b>&lt;a href="/Users/username/Documents/GitHub/username.github.io/myPage.html"&gt;</b></p>
+              <ul class="big-text">
+                <li>This is the location of the file in your computer</li>
+                <li>This will work fine while you are working in your local copy</li>
+                <li>When you upload the project to Github, the link will be broken because other people will not be able to access the file in your computer</li>
+              </ul>
+            </div>
+          </div>
         </div>
         <!-- .end .wrap -->
+
       </section>
-      <section class="slide-bottom">
+
+      <section class="slide-center">
         <div class="wrap">
           <div class="content-right text-serif">
             <h2>
-              <strong>Thanks.</strong>
-              <a target="_blank" title="Share on Twitter"
-                href="https://twitter.com/intent/tweet?text=Finally,%20everything%20you%20need%20to%20make%20HTML%20presentations%20in%20a%20fast/beautiful%20way.%20@WebSlides%20=%20Good%20karma%20&mdash;%20https://webslides.tv">
-                <svg class="fa-twitter">
-                  <use xlink:href="#fa-twitter"></use>
-                </svg>
-              </a>
+              <strong>Resources</strong>
             </h2>
-            <p>People share content that makes them feel inspired. WebSlides is a very effective way to engage young audiences, customers, and teams.</p>
-            <p>Best,<br> <a href="https://twitter.com/jlantunez">@jlantunez</a>, <a href="https://twitter.com/belelros">@belelros</a>, and <a href="https://twitter.com/luissacristan">@luissacristan</a>.</p>
+            <ul>
+              <li> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML Element List</a> </li>
+              <li> <a href="https://validator.w3.org/#validate_by_input">Validate your HTML before submitting</a> </li>
+              <li> <a href="https://unsplash.com/">If you need images, these are free to use</a> </li>
+            </ul>
           </div>
           <!-- .end .content-right -->
         </div>

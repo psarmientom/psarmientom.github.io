@@ -3863,3 +3863,6 @@ p.presentation{
 .grid.table .column{
   width:auto;
 }
+.headings hr{
+  border: 1px solid #cccccc;
+}
