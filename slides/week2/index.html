@@ -59,7 +59,7 @@
           - Vertical sliding = <article id="webslides" class="vertical">
           - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
         -->
-
+      <!-- SLIDE 1 INTRO -->
       <section class="aligncenter">
         <!--.wrap = container (width: 90%) -->
         <div class="wrap size-50">
@@ -68,6 +68,7 @@
           <p class="text-intro"></p>
         </div>
       </section>
+      <!-- SLIDE 2 WHAT IS HTML -->
       <section class="bg-black slide-top">
         <!--.wrap = container (width: 90%) -->
         <div class="wrap size-80 frame">
@@ -90,7 +91,7 @@
           </div>
         </div>
       </section>
-      <!--- Slide 3 ----->
+      <!--- SLIDE 3 MARKUP - PROGRAMMING----->
       <section>
         <div class="wrap">
           <div class="grid center-align">
@@ -136,6 +137,7 @@
         </div>
       </section>
       <!--.wrap = container (width: 90%) -->
+      <!-- SLIDE 4 HTML TAG STRUCTURE -->
       <section class="slide-top">
         <div class="wrap size-80 aligncenter">
           <h2><strong>HTML Tags</strong></h2>
@@ -169,6 +171,7 @@
         </div>
         <!-- .end .wrap -->
       </section>
+      <!-- SLIDE 5 THE HTML PAGE -->
       <section>
         <!--.wrap = container (width: 90%) -->
         <div class="wrap">
@@ -211,7 +214,7 @@
         </div>
         <!-- .end .wrap -->
       </section>
-
+    <!-- SLIDE 6 - HTML TAGS 1 -->
       <section class="slide-top">
         <div class="wrap">
           <h2>HTML Tags</h2>
@@ -274,7 +277,7 @@
           </ul>
         </div>
       </section>
-
+    <!-- SLIDE 7 - HMTL TAGS 2 -->
       <section class="slide-top">
         <div class="wrap">
           <h2>More HTML Tags</h2>
@@ -364,7 +367,7 @@
             </li>
           </ul>
       </section>
-
+      <!-- SLIDE 8 -TABLES -->
       <section class="slide-top">
         <div class="wrap">
           <h2>Last One..</h2>
@@ -406,68 +409,60 @@
           </ul>
         </div>
       </section>
-
-
-      <section class="bg-black slide-top">
-        <!--.wrap = container (width: 90%) -->
-        <div class="wrap size-80 frame">
-          <h2 class="text-serif aligncenter">Semantic Markup</h2>
-          <p class="text-symbols">* * *</p>
-          <div class="grid">
-            <div class="column">
-              <ul class="big-text">
-                <li>It is HTML code structured for meaning</li>
-                <li>Using HTML elements according to their intended purpose</li>
-                <li>HTML elements are not used for visual presentation</li>
-                <li>header, footer, nav, section, article, aside, blockquote</li>
-              </ul>
-              <h4 class="secondary-color">Why is it important?</h4>
-              <ul>
-                <li>Search Engines do not see the webpage styles, they go by content</li>
-                <li>Establishes a clear hierarchy</li>
-                <li>It is easier to understand for people who use screen readers (Accessibility)</li>
-              </ul>
-            </div>
-            <div class="column">
-              <h1>This is a h1 heading</h1>
-              <p style="font-size:5.6rem;line-height:6.5rem;margin-top:40px;">This is a paragraph styled to look like a h1 heading</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      <!--- SLIDE 9 LINK TYPES----->
       <section>
         <div class="wrap">
           <div class="grid center-align">
             <div class="column">
+              <i class="fas fa-link"></i>
               <h4>
-                <strong>Guidelines</strong>
+                <strong>Web links</strong>
               </h4>
-              <ul class="description">
-                <li>Organization is key!!</li>
-                <li>Keep files organized in folders by file type</li>
-                <li>Save images according to their use to keep a small file size</li>
-                <li>Check the location of your links</li>
+              <ul>
+                <li>Links to other pages on your website</li>
+                <li><b>&lt;a href="myPage.html"&gt;</b></li>
+                <li>Links to other websites</li>
+                <li><b>&lt;a href="http://otherPage.html"&gt;</b></li>
               </ul>
             </div>
             <div class="column">
-              <figure><img class="aligncenter" src="../static/images/file-tree.png" alt="File structure Tree"></figure>
+              <i class="fas fa-anchor"></i>
+              <h4>
+                <strong>Anchor Links</strong></h4>
+              <ul>
+                <li>Links to other sections of the same page</li>
+                <li>identify the link using the #</li>
+                <li><b>&lt;a href="#newSection"&gt;</b></li>
+                <li>And the target section</li>
+                <li><b>&lt;a name="newSection"&gt;</b></li>
+              </ul>
             </div>
             <div class="column">
+              <i class="far fa-envelope"></i>
               <h4>
-                <strong>Why Index?</strong>
+                <strong>Email Links</strong>
               </h4>
-              <p>Most servers are configured to display the index.html by default without having to type the name of the file.</p>
-              <p>That's why your homepage will always be index.html</p>
+              <ul>
+                <li>Opens your default email client</li>
+                <li> <a href="mailto:myEmail@mail.com">myEmail@email.com</a> </li>
+                <li><b>&lt;a href="mailto:myEmail@email.com"&gt;</b></li>
+                <li>Vulnerable to spam bots getting your email address.</li>
+              </ul>
             </div>
           </div>
           <!--end .grid -->
         </div>
       </section>
-
+      <!-- SLIDE 10 - LINKING -->
+      <section class="slide-top bg-black">
+        <div class="bg-white wrap frame links">
+      <span class="background" style="background-image:url('../static/images/linking.png')"></span>
+        </div>
+        <!-- .end .wrap -->
+      </section>
+      <!-- SLIDE 11 - ABOUT LINKS -->
       <section class="slide-top">
         <div class="wrap size-80 aligncenter">
-          <h2><strong>About Links</strong></h2><br><br>
           <div class="grid">
             <div class="column bg-gray">
               <h4>Relative links</h4>
@@ -506,7 +501,126 @@
         <!-- .end .wrap -->
 
       </section>
+      <!-- SLIDE 12 - SEMANTIC MARKUP -->
+      <section>
+        <div class="wrap">
+          <h2 class="text-serif aligncenter"><b>Web Images</b>  </h2>
+          <p class="med-text">As a general rule of thumb, we like our product photos to be a <b>maximum 80-150 KB</b>, and for large homepage hero images to be a <b>maximum of 250-350 KB</b>.</p>
+          <p class="med-text">Image file size is important for site speed's and performance.</p>
+          <div class="grid center-align">
+            <div class="column">
+              <i class="fas fa-file-image"></i>
+              <h4>
+                <strong>JPG</strong>
+              </h4>
+              <ul>
+                <li>A compressed image format standardized by the Joint Photographic Experts Group (JPEG).</li>
+                <li>It significantly reduces the file size of images</li>
+                <li>Good for photographs</li>
+                <li>Some information is lost in the process</li>
+              </ul>
+            </div>
+            <div class="column">
+              <i class="far fa-file-image"></i>
+              <h4>
+                <strong>PNG</strong></h4>
+              <ul>
+                <li>Image file stored in the Portable Network Graphic (PNG) format</li>
+                <li>Commonly used to store web graphics, digital photographs.</li>
+                <li>Support Transparency</li>
+                <li>Does not degrade the image quality</li>
+                <li>Bigger image size than jpg</li>
+              </ul>
+            </div>
+            <div class="column">
+              <i class="far fa-image"></i>
+              <h4>
+                <strong>SVG</strong>
+              </h4>
+              <ul>
+                <li>SVG stands for Scalable Vector Graphics</li>
+                <li>Used to define vector-based graphics for the Web</li>
+                <li>Images are scalable</li>
+                <li>Graphics do NOT lose any quality if they are zoomed or resized</li>
+              </ul>
+            </div>
+            <div class="column">
+              <i class="far fa-image"></i>
+              <h4>
+                <strong>GIF</strong>
+              </h4>
+              <ul>
+                <li>GIF Stands for Graphics Interchange Format</li>
+                <li>Does not degrade the image quality</li>
+                <li>Can include a maximum of 256 colors</li>
+                <li>Better suited for buttons and banners that do not require a lot of colors.</li>
+              </ul>
+            </div>
+          </div>
+          <!--end .grid -->
+        </div>
+      </section>
+      <!-- SLIDE 13 - SEMANTIC MARKUP -->
+      <section class="bg-black slide-top">
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap size-80 frame">
+          <h2 class="text-serif aligncenter">Semantic Markup</h2>
+          <p class="text-symbols">* * *</p>
+          <div class="grid">
+            <div class="column">
+              <ul class="big-text">
+                <li>It is HTML code structured for meaning</li>
+                <li>Using HTML elements according to their intended purpose</li>
+                <li>HTML elements are not used for visual presentation</li>
+                <li>header, footer, nav, section, article, aside, blockquote</li>
+              </ul>
+              <h4 class="secondary-color">Why is it important?</h4>
+              <ul>
+                <li>Search Engines do not see the webpage styles, they go by content</li>
+                <li>Establishes a clear hierarchy</li>
+                <li>It is easier to understand for people who use screen readers (Accessibility)</li>
+              </ul>
+            </div>
+            <div class="column">
+              <h1>This is a h1 heading</h1>
+              <p style="font-size:5.6rem;line-height:6.5rem;margin-top:40px;">This is a paragraph styled to look like a h1 heading</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <!-- SLIDE 14 - GUIDELINES -->
+      <section>
+        <div class="wrap">
+          <div class="grid center-align">
+            <div class="column">
+              <h4>
+                <strong>Guidelines</strong>
+              </h4>
+              <ul class="description">
+                <li>Keep files organized in folders by file type</li>
+                <li>Use lowercase for HTML tags</li>
+                <li>Save images according to their use to keep a small file size</li>
+                <li>Check the location of your links</li>
+              </ul>
+            </div>
+            <div class="column">
+              <figure><img class="aligncenter" src="../static/images/file-tree.png" alt="File structure Tree"></figure>
+            </div>
+            <div class="column">
+              <h4>
+                <strong>Why Index?</strong>
+              </h4>
+              <p>Most servers are configured to display the index.html by default without having to type the name of the file.</p>
+              <p>That's why your homepage will always be index.html</p>
+            </div>
+          </div>
+          <!--end .grid -->
+        </div>
+      </section>
+
+
+      <!-- SLIDE 15 - RESOURCES -->
       <section class="slide-center">
         <div class="wrap">
           <div class="content-right text-serif">
@@ -524,18 +638,11 @@
         <!-- .end .wrap -->
       </section>
 
+
     </article>
     <!-- end article -->
   </main>
   <!-- end main -->
-
-  <!-- A global footer
-
-     <footer role="contentinfo">
-      <div class="wrap">
-        <p>An <a href="https://github.com/webslides/webslides">open source solution</a>, by <a href="https://twitter.com/webslides">@webslides</a>.</p>
-      </div>
-    </footer>  -->
 
   <!-- Required -->
   <script src="../static/js/webslides.js"></script>
