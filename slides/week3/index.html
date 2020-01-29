@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CLEAN MARKUP = GOOD KARMA.
+      Hi source code lover,
+
+      you're a curious person and a fast learner ;)
+      Let's make something beautiful together. Contribute on Github:
+      https://github.com/webslides/webslides
+
+      Thanks,
+      @jlantunez.
+    -->
+
+  <!-- SEO -->
+  <title>HTML Basics</title>
+  <meta name="description" content="Introduction to HTML concepts">
+
+  <!-- URL CANONICAL -->
+  <!-- <link rel="canonical" href="http://your-url.com/"> -->
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/92123ffbf2.js" crossorigin="anonymous"></script>
+  <!-- CSS WebSlides -->
+  <link rel="stylesheet" type='text/css' media='all' href="../static/css/webslides.css">
+
+  <!-- Optional - CSS SVG Icons (Font Awesome) -->
+  <link rel="stylesheet" type='text/css' media='all' href="../static/css/svg-icons.css">
+
+  <!-- SOCIAL CARDS (ADD YOUR INFO) -->
+
+
+  <!-- FAVICONS -->
+  <link rel="shortcut icon" sizes="16x16" href="../static/images/favicons/favicon.png">
+  <link rel="shortcut icon" sizes="32x32" href="../static/images/favicons/favicon-32.png">
+  <link rel="apple-touch-icon icon" sizes="76x76" href="../static/images/favicons/favicon-76.png">
+  <link rel="apple-touch-icon icon" sizes="120x120" href="../static/images/favicons/favicon-120.png">
+  <link rel="apple-touch-icon icon" sizes="152x152" href="../static/images/favicons/favicon-152.png">
+  <link rel="apple-touch-icon icon" sizes="180x180" href="../static/images/favicons/favicon-180.png">
+  <link rel="apple-touch-icon icon" sizes="192x192" href="../static/images/favicons/favicon-192.png">
+
+  <!-- Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#333333">
+
+</head>
+
+<body>
+
+  <main role="main">
+    <article id="webslides" class="vertical">
+      <!-- Quick Guide
+          - Each parent <section> in the <article id="webslides"> element is an individual slide.
+          - Vertical sliding = <article id="webslides" class="vertical">
+          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
+        -->
+      <!-- SLIDE 1 INTRO -->
+      <section class="aligncenter">
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap size-50">
+          <h2 class="text-landing">Semantic Markup</h2>
+          <p class="text-intro">HTML Text Elements that are not intended to affect the structure of your webpage, but add extra information to the page</p>
+        </div>
+      </section>
+
+    <!-- SLIDE 6 - HTML TAGS 1 -->
+      <section class="slide-top">
+        <div class="wrap">
+          <h2>Inline HTML Tags</h2>
+          <ul class="flexblock features">
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  Bold or Strong?
+                </h2>
+                <p class="sm-text">Use &lt;b&gt; when you want to give <b>&lt;b&gt;visual&lt;/b&gt;</b> contrast</p> <br>
+                <p class="sm-text">Use &lt;strong&gt; when you want to give <b>&lt;strong&gt;importance&lt;/strong&gt;</b> to part of the paragraph</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  Italic or Emphasis?
+                </h2>
+                <p class="sm-text">Use &lt;i&gt; when you want to give <b>&lt;i&gt;visual&lt;/i&gt;</b> emphasis</p> <br>
+                <p class="sm-text">Use &lt;em&gt; when you want to give <b>&lt;em&gt;emphasis&lt;/em&gt;</b> to a word</p>
+              </div>
+            </li>
+            <li>
+                <h2 class="secondary-color">
+                  Span
+                </h2>
+                <div class="headings">
+                  <p>It is used to change the visual attributes of a group of words</p>
+                <p><b>&lt;p&gt;This is a text <span>&lt;span&gt;that will change color&lt;/span&gt;</span> in the same line&lt;/p&gt;</b></p>
+                <p>This is a text <span>that will change color</span>in the same line</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  Cite
+                </h2>
+                <p>When you need to reference a published work. It can be a book, movie, etc</p>
+                <p><b>&lt;cite&gt;The David, by Michelangelo&lt;/cite&gt;</b></p>
+                <p><cite>The David, by Michelangelo </cite>is in Florence, Italy</p>
+              </div>
+            </li>
+
+            <li>
+                <h2 class="secondary-color">
+                  Subscript and Superscript
+                </h2>
+                <div class="headings">
+                <p class="sm-text">Mostly used for formulas a math equations</p>
+                 <br>
+                  <p>&lt;sub&gt; Water is <b>H<sub>2</sub>O</b><br>
+                    &lt;sup&gt; E = mc<b><sup>2</sup></b><br>
+                  </p>
+                </div>
+            </li>
+            <li>
+              <h2 class="secondary-color">
+                Inline quote
+              </h2>
+              <div class="headings">
+                <p class="sm-text">Used to indicate quotations inside a paragraph.</p>
+                <p>&lt;p&gt;Small quote inside a paragraph. He said:<b>&lt;q&gt;It's cold in here&lt;/q&gt;</b>&lt;/p&gt; </p> <br>
+                <p>Small quote inside a paragraph. He said: <q>It's cold in here</q> </p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+    <!-- SLIDE 7 - HMTL TAGS 2 -->
+      <section class="slide-top">
+        <div class="wrap">
+          <ul class="flexblock features">
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  Quotations - blockquote
+                </h2>
+                <p class="sm-text">Used to indicate quotations.</p>
+                  <p><b>&lt;blockquote&gt; Quam diu etiam furor iste tuus nos eludet?&lt;/blockquote&gt;</b> </p> <br>
+                  <blockquote>
+                    Quam diu etiam furor iste tuus nos eludet?
+                  </blockquote>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  Figure and Figcaption
+                </h2>
+                <p>Use it to group images and captions</p>
+
+
+                  <p class="sm-text">&lt;figure&gt;</p>
+                  <p><b>&lt;img src="images/myImage.png" alt="add description here" width="50" height="50"/&gt;</b> </p>
+                  <p class="sm-text">&lt;figcaption&gt;This is the caption&lt;figcaption&gt;</p>
+                  <p class="sm-text">&lt;/figure&gt;</p>
+                  <figure class="demo">
+                    <img src="../static/images/beach-sm.jpg" alt="empty chair on a beach" width="500"/>
+                    <figcaption>This is the caption</figcaption>
+                  </figure>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  Address
+                </h2>
+                <p class="sm-text">Use &lt;adress&gt; when you want to give contact information <br>
+                  <b>&lt;address&gt;</b> <br>
+                  Your Name <br>
+                  Your Address <br>
+                  Phone Number <br>
+                  Email <br>
+                  <b>&lt;/address&gt;</b></p> <br>
+              </div>
+            </li>
+
+
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+            <div class="column">
+              <h3><strong>The DIV tag</strong></h3>
+              <ul>
+                <li><b>&lt;div&gt;&lt;/div&gt;</b></li>
+                <li>This is called the Division Tag</li>
+                <li>Is the most used tag in web development</li>
+                <li>It is a generic container tag used to separate and structure content</li>
+                <li>group of various tags of HTML so that sections can be created and style can be applied to them.</li>
+                <li>They are used with ids and classes for styling and positioning</li>
+              </ul>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <img src="../static/images/divs.jpg" alt="div structure">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide-top">
+        <div class="wrap">
+          <h3><strong>Semantic structural tags</strong></h3>
+          <ul class="flexblock features">
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  Article
+                </h2>
+                  <p><b>&lt;article&gt; &lt;/article&gt;</b> </p>
+                <ul>
+                  <li>• Represents a complete, or self-contained, composition in a page</li>
+                  <li>• Can be independently distributed or reused</li>
+                  <li>• Think of a magazine article</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  Section
+                </h2>
+                <p><b>&lt;section&gt; &lt;/section&gt;</b> </p>
+                <p>• Use it to group content</p>
+                <p>• Can group articles</p>
+                <p>• Can define parts of an article</p>
+                <p>• Think of chapters on a book</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  Header
+                </h2>
+                <p><b>&lt;header&gt; &lt;/header&gt;</b> </p>
+                <p>• Marks the introductory content</p>
+                <p>• Mostly used for the website top area</p>
+                <p>• It can also mark the header of an article or section</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  Nav
+                </h2>
+                <p><b>&lt;nav&gt; &lt;/nav&gt;</b> </p>
+                <p>• Contains the navigation (menu) sections of your website.</p>
+                <p>• Can be located anywhere in the page</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  Footer
+                </h2>
+                <p><b>&lt;footer&gt; &lt;/footer&gt;</b> </p>
+                <p>• Similar to headers, but at the end of a document</p>
+                <p>• Mostly used for the website bottom area</p>
+                <p>• It can also mark the footer of an article or section</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  Aside
+                </h2>
+                <p><b>&lt;aside&gt; &lt;/aside&gt;</b> </p>
+                <p>• Use it for extra information related to the content but not part of it</p>
+                <p>• Mostly use for Side bars</p>
+                <p>• Ads related to the content</p>
+              </div>
+            </li>
+
+
+          </ul>
+        </div>
+      </section>
+
+      <!-- SLIDE 11 - divs -->
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+
+            <div class="column">
+              <img src="../static/images/html-sectioning-elements-00c3fd.png" alt="semantic div structure"/>
+
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <img src="../static/images/semantic-html-ffab7c.png" alt="div structure">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SLIDE 12 RASTER VS VECTOR -->
+
+      <section class="slide-top">
+        <div class="wrap size-80 aligncenter">
+          <h2><strong>ID's and Clases</strong></h2>
+          <p class="big-text">These are CSS selectors that allow you to identify the HTML elements for styling and scripting</p>
+          <div class="grid">
+            <div class="column bg-primary">
+              <h4 class="presentation">ID</h4>
+              <ul class="big-text">
+                <li>Preceded by the # in the css</li>
+                <li>can only identify one element in the page</li>
+                <li>#blue can only be applied to one html tag</li>
+                <li>&lt;p id="blue"&gt;This is the text with an id &lt;/p&gt;</li>
+              </ul>
+            </div>
+
+            <div class="column bg-black">
+              <h4 class="presentation">Class</h4>
+              <ul class="big-text">
+                <li>Preceded by a . in the css</li>
+                <li>can identify multiple element in the page</li>
+                <li>.black can be applied to many html tags</li>
+                <li>&lt;p class="black"&gt;This is a text with an class &lt;/p&gt;</li>
+              </ul>
+            </div>
+
+          </div>
+
+          <!-- .end .bg-white shadow -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+
+    </article>
+    <!-- end article -->
+  </main>
+  <!-- end main -->
+
+  <!-- Required -->
+  <script src="../static/js/webslides.js"></script>
+  <script>
+    window.ws = new WebSlides();
+  </script>
+
+  <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+  <script defer src="../static/js/svg-icons.js"></script>
+
+</body>
+
+</html>

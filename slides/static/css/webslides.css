@@ -3822,7 +3822,7 @@ Slides Index
   text-align: left;
   margin-bottom: 20px;
 }
-p.presentation{
+p.presentation, h4.presentation{
   color#ffffff;
   font-size: 12rem;
   padding:50px 0;
@@ -3868,4 +3868,24 @@ p.presentation{
 }
 .wrap.links{
   height: 700px;
+}
+blockquote, q{
+  font-style: italic;
+}
+figure.demo{
+  background: #000;
+  padding:20px;
+  width:100px;
+}
+figure.demo figcaption{
+  color:#fff;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+}
+.flexblock.features li p span{
+  font-size: inherit;
+  line-height: inherit;
+  color:#ff0000;
+  float:none;
+  display: inline;
 }
