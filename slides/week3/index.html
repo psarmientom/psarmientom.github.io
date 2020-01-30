@@ -17,7 +17,7 @@
     -->
 
   <!-- SEO -->
-  <title>HTML Basics</title>
+  <title>HTML Semantics</title>
   <meta name="description" content="Introduction to HTML concepts">
 
   <!-- URL CANONICAL -->
@@ -72,6 +72,7 @@
       <section class="slide-top">
         <div class="wrap">
           <h2>Inline HTML Tags</h2>
+          <p>Tags that are used inside other tags to change the apperance or meaning</p>
           <ul class="flexblock features">
             <li>
               <div>
@@ -96,7 +97,7 @@
                   Span
                 </h2>
                 <div class="headings">
-                  <p>It is used to change the visual attributes of a group of words</p>
+                  <p>It is used to change the visual attributes of a group of words inside a paragraph</p>
                 <p><b>&lt;p&gt;This is a text <span>&lt;span&gt;that will change color&lt;/span&gt;</span> in the same line&lt;/p&gt;</b></p>
                 <p>This is a text <span>that will change color</span>in the same line</p>
               </div>
@@ -159,13 +160,13 @@
                 <h2 class="secondary-color">
                   Figure and Figcaption
                 </h2>
-                <p>Use it to group images and captions</p>
+                <p>Use it to group images and captions on one container.</p>
 
 
-                  <p class="sm-text">&lt;figure&gt;</p>
+                  <p class="sm-text"><b>&lt;figure&gt;</b></p>
                   <p><b>&lt;img src="images/myImage.png" alt="add description here" width="50" height="50"/&gt;</b> </p>
                   <p class="sm-text">&lt;figcaption&gt;This is the caption&lt;figcaption&gt;</p>
-                  <p class="sm-text">&lt;/figure&gt;</p>
+                  <p class="sm-text"><b>&lt;/figure&gt;</b></p> <br>
                   <figure class="demo">
                     <img src="../static/images/beach-sm.jpg" alt="empty chair on a beach" width="500"/>
                     <figcaption>This is the caption</figcaption>
@@ -200,10 +201,10 @@
               <h3><strong>The DIV tag</strong></h3>
               <ul>
                 <li><b>&lt;div&gt;&lt;/div&gt;</b></li>
-                <li>This is called the Division Tag</li>
-                <li>Is the most used tag in web development</li>
-                <li>It is a generic container tag used to separate and structure content</li>
-                <li>group of various tags of HTML so that sections can be created and style can be applied to them.</li>
+                <li>This is called the Division Tag.</li>
+                <li>Is the most used tag in web development.</li>
+                <li>It is a generic container tag used to separate and structure content.</li>
+                <li>Groups various HTML tags so they can be styled as a group.</li>
                 <li>They are used with ids and classes for styling and positioning</li>
               </ul>
             </div>
@@ -218,6 +219,7 @@
       <section class="slide-top">
         <div class="wrap">
           <h3><strong>Semantic structural tags</strong></h3>
+          <p class="big-text">These tags give semantic meaning to the content inside.</p>
           <ul class="flexblock features">
             <li>
               <div>
@@ -262,7 +264,7 @@
                 </h2>
                 <p><b>&lt;nav&gt; &lt;/nav&gt;</b> </p>
                 <p>• Contains the navigation (menu) sections of your website.</p>
-                <p>• Can be located anywhere in the page</p>
+                <p>• Can be located anywhere in the page, but usually inside the header. There can also be inside a side bar or the footer.</p>
               </div>
             </li>
             <li>
@@ -283,8 +285,8 @@
                 </h2>
                 <p><b>&lt;aside&gt; &lt;/aside&gt;</b> </p>
                 <p>• Use it for extra information related to the content but not part of it</p>
-                <p>• Mostly use for Side bars</p>
-                <p>• Ads related to the content</p>
+                <p>• Mostly used for Side bars</p>
+                <p>• Ads related to the content can be placed here</p>
               </div>
             </li>
 
@@ -357,6 +359,7 @@
 
                 <ul>
                   <li>•  &lt;meta name="description" content="Basic HTML tutorial"&gt; </li>
+                  <li>• This is the information displayed on the search results listings.</li>
                 </ul>
               </div>
             </li>
@@ -375,6 +378,7 @@
                 </h2>
 
                 <p>•  &lt;meta name="keywords" content="HTML,CSS,XML,JavaScript"&gt; </p>
+                <p>•  These are terms you want your site to be searched for. </p>
               </div>
             </li>
 

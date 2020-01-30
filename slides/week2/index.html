@@ -108,7 +108,7 @@
               </ul>
             </div>
             <div class="column">
-              <i class="fab fa-js"></i>
+              <i class="fab fa-js"/> </i>
               <h4>
                 <strong>Scripting Language</strong></h4>
               <ul>
@@ -180,9 +180,11 @@
               <h3><strong>Anatomy of an HTML page</strong></h3>
               <ul>
                 <li><strong>Doctype:</strong> Tells the browser the file type</li>
-                <li><strong>Html:</strong> Indicates anything between them is html code, language and reading direction</li>
-                <li><strong>Head:</strong> Contains page information (title, links to external files etc.)</li>
-                <li><strong>Body:</strong> Main content of the webpage. Contains all the other html tags</li>
+                <li><strong>Html:</strong> Indicates anything between them is <b>html 5</b> code, language and reading direction.
+                </li>
+                <li><strong>Head:</strong> Contains page information (title, links to external files etc.) to be used by the browser. This area is not displayed on the browser. <br>
+                The title on the head tag is not visible on the page but at the top bar on the browser. </li>
+                <li><strong>Body:</strong> Main content of the webpage. Contains all the other html tags and is what you see on your browser.</li>
               </ul>
             </div>
             <!-- .end .column -->
@@ -258,7 +260,7 @@
             <li>
               <div>
                 <h2 class="secondary-color">
-                  Anchor tag - Links
+                  Links
                 </h2>
                 <p class="sm-text">Are used to link to other pages inside or outside your website</p>
                   <p><b>&lt;a href="http://google.com"&gt; Go to Google&lt;/a&gt;</b> </p> <br>
@@ -272,6 +274,7 @@
                 </h2>
                   <img src="../static/images/beach-sm.jpg" alt="empty chair on a beach" width="500"/><br>
                   <p><b>&lt;img src="images/myImage.png" alt="add description here" width="50" height="50"/&gt;</b> </p>
+                  <p>The image size can be given here or in the css. If you give the width only, the height will be calculated proportionally.</p>
               </div>
             </li>
           </ul>
@@ -283,7 +286,6 @@
           <h2>More HTML Tags</h2>
           <ul class="flexblock features">
             <li>
-              <div>
                 <h2 class="secondary-color">
                   Bulleted lists
                 </h2>
@@ -293,6 +295,7 @@
                   <li>• The List Container</li>
                   <li>• The list items</li>
                 </ul>
+                <p>Lists can be nested by creating another ul tag inside a li</p>
                 <pre>
 <p class="sm-text"><strong>&lt;ul&gt;</strong>
   <strong>&lt;li&gt;</strong> Item 1 <strong>&lt;/li&gt;</strong>
@@ -311,6 +314,7 @@
                   <li>1. The List Container</li>
                   <li>2. The list items</li>
                 </ol>
+                <p>Lists can be nested by creating another ul tag inside a li</p>
                 <pre>
 <p class="sm-text"><strong>&lt;ol&gt;</strong>
   <strong>&lt;li&gt;</strong> Item 1 <strong>&lt;/li&gt;</strong>
@@ -334,11 +338,9 @@
               </div>
             </li>
             <li>
-              <div>
                 <h2 class="secondary-color">
                   Line Breaks
                 </h2>
-                <div class="headings">
                 <p class="sm-text">Sometimes you just need a break...</p>
                  <br>
                   <p>Your Name <b>&lt;br&gt;</b><br>
@@ -366,6 +368,7 @@
               </div>
             </li>
           </ul>
+      </div>
       </section>
       <!-- SLIDE 8 -TABLES -->
       <section class="slide-top">
@@ -381,24 +384,32 @@
                 <div class="grid table">
                   <div class="column">
                     <table>
-                      <th>This is a Table Heading</th>
                       <tr>
-                        <td>This is a table row with table data</td>
+                      <th colspan="2">This is a Table Heading</th>
+                    </tr>
+                      <tr>
+                        <td>Table Cell</td>
+                        <td>Another table cell</td>
                       </tr>
                       <tr>
-                        <td>This is another table row with data</td>
+                        <td>Table Cell</td>
+                        <td>Another table cell</td>
                       </tr>
                     </table>
                   </div>
                   <div class="column">
 <pre>
 <p class="sm-text"><strong>&lt;table&gt;</strong>
-  <strong>&lt;th&gt;</strong> table heading <strong>&lt;/th&gt;</strong>
   <strong>&lt;tr&gt;</strong>
-    <strong>&lt;td&gt;</strong> This is a table row with table data <strong>&lt;/td&gt;</strong>
+  <strong>&lt;th&gt;</strong> table heading <strong>&lt;/th&gt;</strong>
   <strong>&lt;/tr&gt;</strong>
   <strong>&lt;tr&gt;</strong>
-    <strong>&lt;td&gt;</strong> This is another table row with data <strong>&lt;/td&gt;</strong>
+    <strong>&lt;td&gt;</strong> Table Cell <strong>&lt;/td&gt;</strong>
+    <strong>&lt;td&gt;</strong> Another table cell <strong>&lt;/td&gt;</strong>
+  <strong>&lt;/tr&gt;</strong>
+  <strong>&lt;tr&gt;</strong>
+    <strong>&lt;td&gt;</strong> Table Cell <strong>&lt;/td&gt;</strong>
+    <strong>&lt;td&gt;</strong> Another table cell <strong>&lt;/td&gt;</strong>
   <strong>&lt;/tr&gt;</strong>
 <strong>&lt;/table&gt;</strong></p>
 </pre>
@@ -419,7 +430,7 @@
                 <strong>Web links</strong>
               </h4>
               <ul>
-                <li>Links to other pages on your website</li>
+                <li>Links to other pages or files on your website</li>
                 <li><b>&lt;a href="myPage.html"&gt;</b></li>
                 <li>Links to other websites</li>
                 <li><b>&lt;a href="http://otherPage.html"&gt;</b></li>
@@ -435,6 +446,8 @@
                 <li><b>&lt;a href="#newSection"&gt;</b></li>
                 <li>And the target section</li>
                 <li><b>&lt;a name="newSection"&gt;</b></li>
+                <li>or</li>
+                <li><b>&lt;p id="newSection"&gt;</b></li>
               </ul>
             </div>
             <div class="column">
@@ -446,7 +459,8 @@
                 <li>Opens your default email client</li>
                 <li> <a href="mailto:myEmail@mail.com">myEmail@email.com</a> </li>
                 <li><b>&lt;a href="mailto:myEmail@email.com"&gt;</b></li>
-                <li>Vulnerable to spam bots getting your email address.</li>
+                <li>Vulnerable to spam bots getting your email address unless
+                you use some scripting to encript the address.</li>
               </ul>
             </div>
           </div>
@@ -458,14 +472,14 @@
         <div class="wrap size-80 aligncenter">
           <h2><strong>Anatomy of a link</strong></h2>
           <div class="grid">
-            <div class="column ">
-              <p class="big-text bg-primary">&lt;a href="http://comm.miami.edu/about/index.html"&gt;</p>
+            <div class="column">
+              <p class="big-text bg-primary">&lt;a href="http://com.miami.edu/about/index.html"&gt;</p>
 
             <ul>
               <li>href: is an attribute of the a tag that specifies the link destination</li>
               <li>http:// is the protocol used</li>
-              <li>comm.miami.edu: website URL</li>
-              <li>abou: one section</li>
+              <li>com.miami.edu: website URL</li>
+              <li>about: one section of the website where the page is located</li>
               <li>index.html: files being displayed</li>
             </ul>
   </div>
@@ -629,11 +643,11 @@
                 <li>It is HTML code structured for meaning</li>
                 <li>Using HTML elements according to their intended purpose</li>
                 <li>HTML elements are not used for visual presentation</li>
-                <li>header, footer, nav, section, article, aside, blockquote</li>
+                <li>header, footer, nav, section, article, aside, blockquote are some of the most common semantic tags</li>
               </ul>
               <h4 class="secondary-color">Why is it important?</h4>
               <ul>
-                <li>Search Engines do not see the webpage styles, they go by content</li>
+                <li>Search Engines do not see the webpage styles, they go by the content</li>
                 <li>Establishes a clear hierarchy</li>
                 <li>It is easier to understand for people who use screen readers (Accessibility)</li>
               </ul>
@@ -656,7 +670,7 @@
               </h4>
               <ul class="description">
                 <li>Keep files organized in folders by file type</li>
-                <li>Use lowercase for HTML tags</li>
+                <li>Use lowercase for HTML tags, files and folders</li>
                 <li>Save images according to their use to keep a small file size</li>
                 <li>Check the location of your links</li>
               </ul>
@@ -668,7 +682,7 @@
               <h4>
                 <strong>Why Index?</strong>
               </h4>
-              <p>Most servers are configured to display the index.html by default without having to type the name of the file.</p>
+              <p>Most servers are configured to display the <b>index.html</b> by default without having to type the name of the file.</p>
               <p>That's why your homepage will always be index.html</p>
             </div>
           </div>
