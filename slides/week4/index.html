@@ -353,215 +353,38 @@
         </div>
       </section>
     <!-- SLIDE 7 - HMTL TAGS 2 -->
-      <section class="slide-top">
-        <div class="wrap">
-          <h2>More HTML Tags</h2>
-          <ul class="flexblock features">
-            <li>
-                <h2 class="secondary-color">
-                  Bulleted lists
-                </h2>
-                <div class="headings">
-                <p>They are calle <b>U</b>nordered <b>L</b>ists and have 2 elements:</p>
-                <ul>
-                  <li>• The List Container</li>
-                  <li>• The list items</li>
-                </ul>
-                <p>Lists can be nested by creating another ul tag inside a li</p>
-                <pre>
-<p class="sm-text"><strong>&lt;ul&gt;</strong>
-  <strong>&lt;li&gt;</strong> Item 1 <strong>&lt;/li&gt;</strong>
-  <strong>&lt;li&gt;</strong> Item 2 <strong>&lt;/li&gt;</strong>
-<strong>&lt;/ul&gt;</strong></p>
-                </pre>
-              </div>
-            </li>
-            <li>
-              <div>
-                <h2 class="secondary-color">
-                  Numbered List
-                </h2>
-                <p>They are calle <b>O</b>rdered <b>L</b>ists and have 2 elements:</p>
-                <ol>
-                  <li>1. The List Container</li>
-                  <li>2. The list items</li>
-                </ol>
-                <p>Lists can be nested by creating another ul tag inside a li</p>
-                <pre>
-<p class="sm-text"><strong>&lt;ol&gt;</strong>
-  <strong>&lt;li&gt;</strong> Item 1 <strong>&lt;/li&gt;</strong>
-  <strong>&lt;li&gt;</strong> Item 2 <strong>&lt;/li&gt;</strong>
-<strong>&lt;/ol&gt;</strong></p>
-                </pre>
-              </div>
-            </li>
-            <li>
-              <div>
-                <h2 class="secondary-color">
-                  Address
-                </h2>
-                <p class="sm-text">Use &lt;adress&gt; when you want to give contact information <br>
-                  <b>&lt;address&gt;</b> <br>
-                  Your Name <br>
-                  Your Address <br>
-                  Phone Number <br>
-                  Email <br>
-                  <b>&lt;/address&gt;</b></p> <br>
-              </div>
-            </li>
-            <li>
-                <h2 class="secondary-color">
-                  Line Breaks
-                </h2>
-                <p class="sm-text">Sometimes you just need a break...</p>
-                 <br>
-                  <p>Your Name <b>&lt;br&gt;</b><br>
-                  Your Address <b>&lt;br&gt;</b><br>
-                  Phone Number <b>&lt;br&gt;</b><br>
-                  Email <b>&lt;br&gt;</b><br></p>
-            </li>
-            <li>
-              <h2 class="secondary-color">
-                Code Comments
-              </h2>
-              <div class="headings">
-                <p class="sm-text">Comments are not displayed in the browser but you can see them on the source code</p><br>
-                <p>It starts with <b>&lt;! ––</b> and the comment closes with <b>--></b></p>
-              </div>
-            </li>
-            <li>
-              <h2 class="secondary-color">
-                Horizontal Ruler
-              </h2>
-              <div class="headings">
-                <p class="sm-text">Sometimes you need a line to separate content</p>
-                <hr>
-                <p>Use <b>&lt;hr&gt;</b> to add a break between sections</p>
-              </div>
-            </li>
+
+
+    <section>
+      <!--.wrap = container (width: 90%) -->
+      <div class="wrap">
+        <h3><strong>A note on closing tags</strong></h3>
+        <div class="grid vertical-align">
+
+          <div class="column">
+
+            <ul>
+              <li>HTML elements usually consist of a start and end tag, with the content in between.</li>
+              <li><b>&lt;p&gt;</b> content goes here <b>&lt;/p&gt;</b></li>
+              <li>Note the <b>/ before the tag name</b>, on the closing tag <b>&lt;/p&gt;</b></li>
+            </ul>
+          </div>
+          <!-- .end .column -->
+    <div class="column">
+          <ul>
+            <li>There are some tags that do not need closing, because they hold no content in between.</li>
+            <li>They are empty elements that either add external elements or break the flow of the page</li>
+            <li><b>&lt;img&gt;</b>, <b>&lt;br&gt;</b>, <b>&lt;hr&gt;</b>, <b>&lt;link&gt;</b>, <b>&lt;input&gt;</b></li>
+            <li>They do not need the <b>/</b> as the regular html tags, but it's a good practice to add it <b>after the tag name</b> <b>&lt;br/&gt;</b>. Not at the beginning like the regular closing tags.</li>
+            <li><b>&lt;br&gt;</b> and <b>&lt;br/&gt;</b> will be the same in non-closing tags.</li>
           </ul>
+    </div>
+          <!-- .end .column -->
+        </div>
+        <!-- .end .grid -->
       </div>
-      </section>
-      <!-- SLIDE 8 -TABLES -->
-      <section class="slide-top">
-        <div class="wrap">
-          <h2>Last One..</h2>
-          <ul class="flexblock features">
-            <li>
-              <!-- <div> -->
-                <h2 class="secondary-color">
-                  Tables
-                </h2>
-                <p class="sm-text">Are used to display tabular data. Do not use for display. They have three main elements: <b>Table Headings</b>, <b>Table Rows</b> and <b>Table Data</b>.</p>
-                <div class="grid table">
-                  <div class="column">
-                    <table>
-                      <tr>
-                      <th colspan="2">This is a Table Heading</th>
-                    </tr>
-                      <tr>
-                        <td>Table Cell</td>
-                        <td>Another table cell</td>
-                      </tr>
-                      <tr>
-                        <td>Table Cell</td>
-                        <td>Another table cell</td>
-                      </tr>
-                    </table>
-                  </div>
-                  <div class="column">
-<pre>
-<p class="sm-text"><strong>&lt;table&gt;</strong>
-  <strong>&lt;tr&gt;</strong>
-  <strong>&lt;th&gt;</strong> table heading <strong>&lt;/th&gt;</strong>
-  <strong>&lt;/tr&gt;</strong>
-  <strong>&lt;tr&gt;</strong>
-    <strong>&lt;td&gt;</strong> Table Cell <strong>&lt;/td&gt;</strong>
-    <strong>&lt;td&gt;</strong> Another table cell <strong>&lt;/td&gt;</strong>
-  <strong>&lt;/tr&gt;</strong>
-  <strong>&lt;tr&gt;</strong>
-    <strong>&lt;td&gt;</strong> Table Cell <strong>&lt;/td&gt;</strong>
-    <strong>&lt;td&gt;</strong> Another table cell <strong>&lt;/td&gt;</strong>
-  <strong>&lt;/tr&gt;</strong>
-<strong>&lt;/table&gt;</strong></p>
-</pre>
-                  </div>
-                </div>
-              <!-- </div> -->
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!--- SLIDE 9 LINK TYPES----->
-      <section>
-        <div class="wrap">
-          <div class="grid center-align">
-            <div class="column">
-              <i class="fas fa-link"></i>
-              <h4>
-                <strong>Web links</strong>
-              </h4>
-              <ul>
-                <li>Links to other pages or files on your website</li>
-                <li><b>&lt;a href="myPage.html"&gt;</b></li>
-                <li>Links to other websites</li>
-                <li><b>&lt;a href="http://otherPage.html"&gt;</b></li>
-              </ul>
-            </div>
-            <div class="column">
-              <i class="fas fa-anchor"></i>
-              <h4>
-                <strong>Anchor Links</strong></h4>
-              <ul>
-                <li>Links to other sections of the same page</li>
-                <li>identify the link using the #</li>
-                <li><b>&lt;a href="#newSection"&gt;</b></li>
-                <li>And the target section</li>
-                <li><b>&lt;a name="newSection"&gt;</b></li>
-                <li>or</li>
-                <li><b>&lt;p id="newSection"&gt;</b></li>
-              </ul>
-            </div>
-            <div class="column">
-              <i class="far fa-envelope"></i>
-              <h4>
-                <strong>Email Links</strong>
-              </h4>
-              <ul>
-                <li>Opens your default email client</li>
-                <li> <a href="mailto:myEmail@mail.com">myEmail@email.com</a> </li>
-                <li><b>&lt;a href="mailto:myEmail@email.com"&gt;</b></li>
-                <li>Vulnerable to spam bots getting your email address unless
-                you use some scripting to encript the address.</li>
-              </ul>
-            </div>
-          </div>
-          <!--end .grid -->
-        </div>
-      </section>
-
-      <section class="slide-top">
-        <div class="wrap size-80 aligncenter">
-          <h2><strong>Anatomy of a link</strong></h2>
-          <div class="grid">
-            <div class="column">
-              <p class="big-text bg-primary">&lt;a href="http://com.miami.edu/about/index.html"&gt;</p>
-
-            <ul>
-              <li>href: is an attribute of the a tag that specifies the link destination</li>
-              <li>http:// is the protocol used</li>
-              <li>com.miami.edu: website URL</li>
-              <li>about: one section of the website where the page is located</li>
-              <li>index.html: files being displayed</li>
-            </ul>
-  </div>
-          </div>
-
-          <!-- .end .bg-white shadow -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
-      <!-- SLIDE 10 - LINKING -->
+      <!-- .end .wrap -->
+    </section>
 
 
 
@@ -570,23 +393,9 @@
 
 
 
-      <!-- SLIDE 15 - RESOURCES -->
-      <section class="slide-center">
-        <div class="wrap">
-          <div class="content-right text-serif">
-            <h2>
-              <strong>Resources</strong>
-            </h2>
-            <ul>
-              <li> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML Element List</a> </li>
-              <li> <a href="https://validator.w3.org/#validate_by_input">Validate your HTML before submitting</a> </li>
-              <li> <a href="https://unsplash.com/">If you need images, these are free to use</a> </li>
-            </ul>
-          </div>
-          <!-- .end .content-right -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
+
+
+
 
 
     </article>
