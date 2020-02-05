@@ -240,13 +240,15 @@
       </section>
       <!-- SLIDE 4 HTML TAG STRUCTURE -->
 
-      <section>
+      <section class="slide-top">
         <!--.wrap = container (width: 90%) -->
         <div class="wrap">
           <div class="grid vertical-align">
             <div class="column">
-              <h3><strong>Basic Structure.</strong></h3>
-              <img src="../static/images/css-basic-structure.png" alt="css structure" width="450">
+              <h3><strong>Basic Structure of CSS Rules.</strong></h3>
+              <p>Rules are made of selectors (where the style is applied to) and declarations (the attribute to apply)</p>
+              <img src="../static/images/css-basic-structure.png" alt="css structure" width="400">
+              <img src="../static/images/multiple-selectors.png" alt="multiple selectors" width="400">
               <ul>
               <li>Always start and en with a curly bracket { }</li>
               <li>Use descriptive names for your id's and classes</li>
@@ -259,7 +261,8 @@
             <!-- .end .column -->
 <div class="column">
             <h3><strong>CSS Declaration</strong></h3>
-            <img src="../static/images/css-declaration.png" alt="css declaration" width="450">
+            <img src="../static/images/css-declaration.png" alt="css declaration" width="400">
+            <img src="../static/images/declaration-blocks.png" alt="declaration blocks" width="400">
             <ul>
               <li>Properties indicate the aspects of the element you want to change</li>
               <li>You can add as many properties as you need in a declaration.</li>
@@ -271,6 +274,178 @@
         </div>
         <!-- .end .wrap -->
       </section>
+
+      <!-- The box Model -->
+      <section class="slide-top">
+        <h1><strong>The Box Model</strong></h1>
+
+        <div class="grid top-align">
+
+          <div class="grid">
+
+            <div class="column">
+              <img src="../static/images/box-model.png" alt="The css box model">
+            </div>
+            <!-- .end .column -->
+      <div class="column">
+            <p>Each box has the following components</p>
+            <ul>
+              <li> <b>Content:</b> The text, image or content iside the box.</li>
+              <li> <b>Padding:</b> The space between the content and the border of the box.</li>
+              <li> <b>Border:</b> The edge of the box</li>
+              <li> <b>Margin:</b> The space between the box and surrounding elements.</li>
+              <li>By default the box will take the dimensions of the content</li>
+              <li>You can specify the dimensions using px, %, or ems.</li>
+            </ul>
+      </div>
+      <div class="column">
+            <h2>Block or Inline</h2>
+        <ul>
+          <li>All HTML boxes are by default block or inline</li>
+          <li> <b>Block:</b> The element will take the full width of the parent container and will start in a new line. (h1, p, div)</li>
+          <li> <b>Inline:</b> The element will only take the space of its content and will not break the flow of content (b, i, span)</li>
+        </ul>
+      </div>
+      <!-- .end .column -->
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section class="">
+        <h1><strong>Changing Box Behavior - Display Property</strong></h1>
+
+        <div class="grid top-align">
+
+          <div class="grid">
+
+            <!-- .end .column -->
+      <div class="column">
+            <p class="big-text">Eack box has a default behavior that can be changed with the display property.
+              It is the backbone of Website layouts.</p>
+              <p class="big-text">The main and most used are:</p>
+
+      </div>
+      <div class="column">
+        <ul>
+          <li> <b>Block:</b> Displays each element in its own line.</li>
+          <li> <b>Inline:</b> Displays the element beside the previous one. Custom height and width will be lost.</li>
+          <li> <b>inline-block:</b> Makes a box element inline, retaining it's block element properties.</li>
+          <li>  display: block; / display: inline; / display: inline-block;</li>
+        </ul>
+      </div>
+      <!-- .end .column -->
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section class="slide-top">
+        <h1><strong>CSS Color</strong></h1>
+        <p class="med-text">Specifies the color of the text on the document</p>
+        <p>  <a href="https://htmlcolorcodes.com/">HTML Color Codes</a></p>
+        <div class="grid top-align">
+
+          <div class="grid">
+
+            <div class="column">
+              <h2>Hex Values</h2>
+              <ul>
+                <li>Hexadecimal is a number system that uses 16 unique symbols to reopresent a value</li>
+                <li>0-9 and A-F make up those unique symbols.</li>
+                <li>Always preceded by the <b>#</b> sign </li>
+                <li>#000000 = black</li>
+                <li>#FFFFFF = White</li>
+                <li>This is the system most commonly used to assign solid colors.</li>
+              </ul>
+            </div>
+            <!-- .end .column -->
+      <div class="column">
+            <h2>RGB</h2>
+            <ul>
+              <li>It's the combination of Red, Green and Blue values</li>
+              <li>It is the standard color system for computer screens and displays</li>
+              <li>The property always states the color system and the values in (). <b>color: rgb(0,0,0);</b> </li>
+              <li>There are 255 possible values for each color</li>
+              <li>rgb (0,0,0) = Black</li>
+              <li>rgb (255,255,255) = White</li>
+              <li>You can also add transparency by adding an alpha value (0 to 1)</li>
+              <li><b>color: rgba(0,0,0,.5);</b></li>
+            </ul>
+      </div>
+      <div class="column">
+            <h2>HSL</h2>
+        <ul>
+          <li>It's the combination of Hue, Saturation and Lightness or Luminosity</li>
+          <li>It is used in the same way as the rgba values.</li>
+        </ul>
+        <h2>Named Colors</h2>
+        <ul>
+          <li>There are 140 pre-defined colors that browsers recognize by name</li>
+          <li>You can use the name or the hex or rgb value.</li>
+        </ul>
+      </div>
+      <!-- .end .column -->
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section class="slide-top">
+        <h1><strong>Backgrounds</strong></h1>
+        <p class="med-text">Since CSS treats HTML elements as if they were inside an imaginary box, we can add a backround to them.</p>
+        <div class="grid top-align">
+
+          <div class="grid">
+
+            <div class="column">
+
+              <p class="med-text">You can apply the following properties to the background of an HTML element:</p>
+              <ul>
+                <li>background-color</li>
+                <li>background-image</li>
+                <li>background-position</li>
+                <li>background-size</li>
+                <li>background-repeat</li>
+                <li>background-attachment</li>
+                <li>background-origin</li>
+                <li>background-clip</li>
+              </ul>
+            </div>
+            <!-- .end .column -->
+      <div class="column">
+              <h2>Background Color</h2>
+            <ul>
+              <li>You can apply a background color the same way you apply the font color</li>
+              <li>Use Hex colors, RGB, HSL and named colors.</li>
+              <li>background-color:#ff0000;</li>
+            </ul>
+      </div>
+      <div class="column">
+            <h2>Background Images</h2>
+        <ul>
+          <li>Images can be used as backgrounds</li>
+          <li>Only use them if they are not part of the content and are meant as a decorative background</li>
+          <li>Background images are ignored by web crawlers and screen readers</li>
+          <li>background-image: url(images/my-image.png)</li>
+        </ul>
+      </div>
+      <!-- .end .column -->
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+
+
 
 
       <!-- SLIDE 5 THE HTML PAGE -->
@@ -315,44 +490,44 @@
       <section class="slide-top">
         <div class="wrap">
           <h2>Inherited Tags</h2>
-          <ul class="flexblock">
+          <ul class="flexblock listing">
             <li>border-collapse</li>
             <li>border-spacing</li>
             <li>caption-side</li>
-            <li>color</li>
+            <li> <b>color</b> </li>
             <li>cursor</li>
             <li>direction</li>
             <li>empty-cells</li>
-            <li>font-family</li>
-            <li>font-size</li>
-            <li>font-style</li>
+            <li> <b>font-family</b> </li>
+            <li> <b>font-size</b> </li>
+            <li> <b>font-style</b> </li>
             <li>font-variant</li>
-            <li>font-weight</li>
+            <li> <b>font-style</b> </li>
             <li>font-size-adjust</li>
             <li>font-stretch</li>
-            <li>font</li>
-            <li>letter-spacing</li>
-            <li>line-height</li>
-            <li>list-style-image</li>
-            <li>list-style-position</li>
-            <li>list-style-type</li>
-            <li>list-style</li>
+            <li> <b>font</b> </li>
+            <li> <b>letter-spacing</b> </li>
+            <li> <b>letter-spacing</b> </li>
+            <li> <b>list-style-image</b> </li>
+            <li> <b>list-style-position</b> </li>
+            <li> <b>list-style-type</b> </li>
+            <li> <b>list-style</b> </li>
             <li>orphans</li>
             <li>quotes</li>
             <li>tab-size</li>
-            <li>text-align</li>
+            <li> <b>text-align</b> </li>
             <li>text-align-last</li>
             <li>text-decoration-color</li>
-            <li>text-indent</li>
-            <li>text-justify</li>
+            <li> <b>text-indent</b> </li>
+            <li> <b>text-justify</b> </li>
             <li>text-shadow</li>
-            <li>text-transform</li>
+            <li> <b>text-transform</b> </li>
             <li>visibility</li>
             <li>white-space</li>
             <li>widows</li>
-            <li>word-break</li>
-            <li>word-spacing</li>
-            <li>word-wrap</li>
+            <li> <b>word-break</b> </li>
+            <li> <b>word-spacing</b> </li>
+            <li> <b>word-wrap</b> </li>
           </ul>
         </div>
       </section>
@@ -362,26 +537,26 @@
     <section>
       <!--.wrap = container (width: 90%) -->
       <div class="wrap">
-        <h3><strong>A note on closing tags</strong></h3>
+        <h3><strong>A note on Browsers</strong></h3>
         <div class="grid vertical-align">
 
           <div class="column">
 
             <ul>
-              <li>HTML elements usually consist of a start and end tag, with the content in between.</li>
+              <li>Each browser has its own rendering engine.</li>
               <li><b>&lt;p&gt;</b> content goes here <b>&lt;/p&gt;</b></li>
               <li>Note the <b>/ before the tag name</b>, on the closing tag <b>&lt;/p&gt;</b></li>
             </ul>
           </div>
           <!-- .end .column -->
     <div class="column">
-          <ul>
-            <li>There are some tags that do not need closing, because they hold no content in between.</li>
-            <li>They are empty elements that either add external elements or break the flow of the page</li>
-            <li><b>&lt;img&gt;</b>, <b>&lt;br&gt;</b>, <b>&lt;hr&gt;</b>, <b>&lt;link&gt;</b>, <b>&lt;input&gt;</b></li>
-            <li>They do not need the <b>/</b> as the regular html tags, but it's a good practice to add it <b>after the tag name</b> <b>&lt;br/&gt;</b>. Not at the beginning like the regular closing tags.</li>
-            <li><b>&lt;br&gt;</b> and <b>&lt;br/&gt;</b> will be the same in non-closing tags.</li>
-          </ul>
+      <ul>
+      <li>Blink – Used in Google Chrome, and Opera browsers.</li>
+      <li>WebKit – Used in Safari browsers.</li>
+      <li>Gecko – Used in Mozilla Firefox browsers.</li>
+      <li>Trident – Used in Internet Explorer browsers.</li>
+      <li>EdgeHTML – Used in Edge browsers.</li>
+    </ul>
     </div>
           <!-- .end .column -->
         </div>
@@ -390,8 +565,13 @@
       <!-- .end .wrap -->
     </section>
 
-
-
+    <section class="slide-top bg-white">
+      <div class="bg-white wrap frame links">
+        <img src="../static/images/CSS3-taxonomy.png" alt="CSS3 Taxonomy">
+    <!-- <div class="background" style="background-image:url('../static/images/CSS3-taxonomy.png')"></div> -->
+      </div>
+      <!-- .end .wrap -->
+    </section>
 
 
 

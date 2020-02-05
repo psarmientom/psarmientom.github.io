@@ -314,34 +314,33 @@
       </section>
       <!-- SLIDE 12 RASTER VS VECTOR -->
 
-      <section class="slide-top">
-        <div class="wrap size-80 aligncenter">
-          <h2><strong>ID's and Clases</strong></h2>
-          <p class="big-text">These are CSS selectors that allow you to identify the HTML elements for styling and scripting</p>
-          <div class="grid">
-            <div class="column bg-primary">
-              <h4 class="presentation">ID</h4>
-              <ul class="big-text">
-                <li>Preceded by the # in the css</li>
-                <li>can only identify one element in the page</li>
-                <li>#blue can only be applied to one html tag</li>
-                <li>&lt;p id="blue"&gt;This is the text with an id &lt;/p&gt;</li>
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <h3><strong>A note on closing tags</strong></h3>
+          <div class="grid vertical-align">
+
+            <div class="column">
+
+              <ul>
+                <li>HTML elements usually consist of a start and end tag, with the content in between.</li>
+                <li><b>&lt;p&gt;</b> content goes here <b>&lt;/p&gt;</b></li>
+                <li>Note the <b>/ before the tag name</b>, on the closing tag <b>&lt;/p&gt;</b></li>
               </ul>
             </div>
-
-            <div class="column bg-black">
-              <h4 class="presentation">Class</h4>
-              <ul class="big-text">
-                <li>Preceded by a . in the css</li>
-                <li>can identify multiple element in the page</li>
-                <li>.black can be applied to many html tags</li>
-                <li>&lt;p class="black"&gt;This is a text with an class &lt;/p&gt;</li>
-              </ul>
-            </div>
-
+            <!-- .end .column -->
+      <div class="column">
+            <ul>
+              <li>There are some tags that do not need closing, because they hold no content in between.</li>
+              <li>They are empty elements that either add external elements or break the flow of the page</li>
+              <li><b>&lt;img&gt;</b>, <b>&lt;br&gt;</b>, <b>&lt;hr&gt;</b>, <b>&lt;link&gt;</b>, <b>&lt;input&gt;</b></li>
+              <li>They do not need the <b>/</b> as the regular html tags, but it's a good practice to add it <b>after the tag name</b> <b>&lt;br/&gt;</b>. Not at the beginning like the regular closing tags.</li>
+              <li><b>&lt;br&gt;</b> and <b>&lt;br/&gt;</b> will be the same in non-closing tags.</li>
+            </ul>
+      </div>
+            <!-- .end .column -->
           </div>
-
-          <!-- .end .bg-white shadow -->
+          <!-- .end .grid -->
         </div>
         <!-- .end .wrap -->
       </section>
