@@ -1,0 +1,22 @@
+body{
+  font-size: 60px;
+}
+.one{
+ font-family: "Bitter";
+}
+.two{
+  font-family: "Classiq";
+}
+.three{
+font-family: "Espresso Beans Pro";
+}
+.four{
+font-family: "GothamUltra";
+}
+.five{
+font-family: "Lobster Two";
+font-weight: bold;
+}
+.six{
+font-family: "Plane Crash";
+}
