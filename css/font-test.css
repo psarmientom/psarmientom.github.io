@@ -1,6 +1,9 @@
 body{
   font-size: 60px;
 }
+p{
+  font-family: 'Sriracha', cursive;
+}
 .one{
  font-family: "Bitter";
 }

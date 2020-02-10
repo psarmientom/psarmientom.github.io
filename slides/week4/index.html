@@ -25,6 +25,7 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/92123ffbf2.js" crossorigin="anonymous"></script>
   <!-- CSS WebSlides -->
   <link rel="stylesheet" type='text/css' media='all' href="../static/css/webslides.css">
@@ -184,6 +185,7 @@
               <ul>
                 <li>Imagine there is an invisible box around every HTML element</li>
                 <li>You assign an id or a class and apply the style on the css file</li>
+                <li>All web pages are made of invisible boxes</li>
               </ul>
             </div>
             <!-- .end .column -->
@@ -316,18 +318,21 @@
 
       <section class="">
         <h1><strong>Changing Box Behavior - Display Property</strong></h1>
-
+        <p class="big-text">Eack box has a default behavior that can be changed with the display property.
+          It is the backbone of Website layouts.</p>
+          <div class="demo-block">This is one block element</div>
+          <div class="demo-block">This is another block element</div>
+          <p class="demo-block-p">This is another block element <span>This is an inline element inside a block element</span> and <span class="span1">this is another inline element</span></p>
+          <div class="demo-inline">
+          <div>This is a block element acting line an inline-block  </div>
+          <div>This is another block element acting line an inline-block  </div>
+          </div>
         <div class="grid top-align">
 
           <div class="grid">
 
             <!-- .end .column -->
-      <div class="column">
-            <p class="big-text">Eack box has a default behavior that can be changed with the display property.
-              It is the backbone of Website layouts.</p>
-              <p class="big-text">The main and most used are:</p>
 
-      </div>
       <div class="column">
         <ul>
           <li> <b>Block:</b> Displays each element in its own line.</li>
@@ -444,44 +449,84 @@
         <!-- .end .wrap -->
       </section>
 
+
       <section class="slide-top">
         <h1><strong>Fonts</strong></h1>
-        <p class="med-text">Fonts used on the web are different that the fonts you have in your computer.</p>
+        <p class="med-text"><i>I have a lot of fonts on my computer. Can I use them on my website?</i> </p>
+        <p class="med-text">Desktop fonts are different than webfonts. You cannot use the fonts on your computer for websites unless you have a web version uploaded to the server or a web font link.</p>
+
         <div class="grid top-align">
 
           <div class="grid">
 
             <div class="column">
-
-              <p class="med-text">You can apply the following properties to the background of an HTML element:</p>
+              <p class="med-text">There are a few fonts that are safe to use for web and that will work in any computer:</p>
               <ul>
-                <li>background-color</li>
-                <li>background-image</li>
-                <li>background-position</li>
-                <li>background-size</li>
-                <li>background-repeat</li>
-                <li>background-attachment</li>
-                <li>background-origin</li>
-                <li>background-clip</li>
+                <li><b>Web safe serif fonts:</b> Times New Roman, Georgia, Palatino, Lucida Bright.</li>
+                <li><b>Web safe sans-serif fonts:</b> Arial, Tahoma, Trebuchet MS, Verdana</li>
+                <li><b>Web safe monospaced fonts:</b> Courier, Courier New, Lucida Sans Typewriter. </li>
+                <li><b>Web safe specialty fonts:</b> Copperplate, Papyrus, Arial Black, Arial Narrow </li>
               </ul>
             </div>
             <!-- .end .column -->
       <div class="column">
-              <h2>Background Color</h2>
+              <h2>Serif Fonts</h2>
+              <p class="med-text">A serif is a small decorative stroke at the end of a letter or symbol.</p>
             <ul>
-              <li>You can apply a background color the same way you apply the font color</li>
-              <li>Use Hex colors, RGB, HSL and named colors.</li>
-              <li>background-color:#ff0000;</li>
+              <li><span class="type-serif"> ABC</span></li>
+                <!-- <li>Serif Fonts Say Traditional, Established, and Trustworthy</li>
+                <li>Serif fonts are traditionally used for content in print and for headings and display text on web</li>
+                <li>In low resolution displays they are not as easy to read in small sizes</li> -->
+
             </ul>
       </div>
       <div class="column">
-            <h2>Background Images</h2>
+            <h2>San Serif Fonts</h2>
+            <p class="med-text">San Serif means that the letter does not have the lines attached.</p>
         <ul>
-          <li>Images can be used as backgrounds</li>
-          <li>Only use them if they are not part of the content and are meant as a decorative background</li>
-          <li>Background images are ignored by web crawlers and screen readers</li>
-          <li>background-image: url(images/my-image.png)</li>
+          <li><span class="type-sans"> ABC</span</li>
+            <!-- <li>Sans Serif Fonts Say Modern, Approachable, and Clean </li>
+            <li>In small screens and low resolution displays, San Serif offers better readability so it's used for content.</li> -->
         </ul>
+      </div>
+      <p class="med-text">Always choose a font that is easy to read, has good contrast and can be read in different devices. <a href="https://medium.com/rareview/typography-on-the-web-4cd494d6b165">More info about fonts</a></p>
+      <!-- .end .column -->
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+
+      <section class="slide-top">
+        <div class="grid top-align">
+
+          <div class="grid">
+
+            <div class="column flexbox Features">
+              <h2>Font Attributes</h2>
+              <p class="med-text">Below are the most common properties you can change in web fonts:</p>
+              <ul>
+                <li><b>color:</b> Changes the font color</li>
+                <li><b>font-family:</b> Specific families go in "", and you can specify fall back options in case the font is not available ("Roboto", Arial, sans-serif)</li>
+                <li><b>font-size:</b> Use px, %, em or rem, or keywords <a href="https://cssreference.io/property/font-size/">more on font sizes</a> </li>
+                <li><b>font-style:</b> normal, italic, oblique</li>
+                <li><b>font-weight:</b> normal, bold, light, bolder, lighter, numeric value</li>
+                <li><b>text-align:</b> left, right, center, justify (not recommended for web paragraphs)</li>
+                <li><b>text-decoration:</b> underline, overline, line-through</li>
+                <li><b>text-transform:</b> uppercase, lowercase, capitalize</li>
+              </ul>
+            </div>
+            <!-- .end .column -->
+      <div class="column">
+              <h2>Google Fonts</h2>
+              <p class="med-text">Google fonts allows you to use different fonts on your website by replacing the default font family with the one you choose.</p>
+              <p class="font-demo">I'm a Google Font</p>
+              <img src="../static/images/google-fonts.png" alt="google fonts embed instructions" width="450">
+            <ul>
+
+            </ul>
       </div>
       <!-- .end .column -->
             <!-- .end .column -->
@@ -490,6 +535,7 @@
         </div>
         <!-- .end .wrap -->
       </section>
+
 
 
 
