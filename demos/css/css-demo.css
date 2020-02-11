@@ -1,0 +1,105 @@
+body{
+  font-family: "Arial", sans-serif;
+  font-size:16px;
+}
+hr {
+  margin: 20px auto;
+}
+.box, .bg{
+  vertical-align: top;
+}
+/* You can apply the styles to more than one class */
+/* These styles apply to the css-demo.html file */
+.demo-block, .demo-inline-block, .demo-inline, .demo-inline-as-block{
+  background: #efefef;
+  height: 45px;
+}
+.demo-block span{
+  color: blue;
+  font-weight: bold;
+}
+.demo-inline-block{
+  display: inline-block;
+}
+.demo-inline{
+  display: inline;
+}
+.demo-inline-as-block span{
+  display: block;
+}
+/* These styles apply to the css-color.html page */
+.box{
+  display: inline-block;
+  height: 250px;
+  margin:20px;
+  text-align: center;
+  width: 250px;
+}
+.hex-color{
+  background:  #34cbd3;
+}
+.rgb-color{
+  background:  rgb( 52, 203, 211 );
+}
+.hsl-color{
+  background: hsl(183, 75%, 51%);
+}
+.rgba-color{
+  background: rgb( 52, 203, 211 );
+  background:  rgba( 52, 203, 211,.5 );
+}
+.hsla-color{
+  background: hsl(183, 75%, 51%,.5);
+}
+.name-color{
+  background: DarkTurquoise;
+}
+/* These styles apply to the css-background.html page */
+.bg{
+  display: inline-block;
+  height: 300px;
+  margin:0 20px;
+  padding: 20px;
+  text-align: center;
+  width:300px;
+}
+.bg.color{
+  background: #6de2ff;
+}
+.img-repeat{
+  background-color:  #fffdd6 ;
+  background-image: url("../images/dot.png");
+}
+.img-repeat.single{
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.img-repeat.x{
+  background-repeat: repeat-x;
+  background-position: bottom;
+}
+.img-repeat.y{
+  background-repeat: repeat-y;
+  background-position: right;
+}
+.bg.img{
+  background-image: url("../images/pizza-vert.png");
+}
+.img.contain{
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.img.cover{
+  background-size: cover;
+}
+.img p{
+  background-color: rgba(0,0,0,.5);
+  color:white;
+  margin-left:90px;
+  padding:10px;
+  text-align: right;
+}
+.img.attach{
+  background-attachment: fixed;
+  background-position: center;
+}

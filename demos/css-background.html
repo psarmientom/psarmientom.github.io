@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Backgrounds</title>
+    <link rel="stylesheet" href="css/css-demo.css">
+  </head>
+  <body>
+    <h1>CSS Backgrounds</h1>
+    <div class="bg color">
+      This is a background color. It can be applied to any element.
+    </div>
+    <hr>
+    <div class="bg img-repeat">
+      This is a background image. It is a single dot but images are repeated by default if they don't fill the whole space;
+    </div>
+    <div class="bg img-repeat single">
+      This is the same dot not repeated and positioned in the center of the container.
+      <p>background-repeat: no-repeat; <br>
+      background-position:center;</p>
+    </div>
+    <div class="bg img-repeat x">
+      This is the single dot repeated horizontally and positioned at the bottom <br>
+      <p>background-repeat: repeat-x; <br>
+      background-position:bottom;</p>
+    </div>
+    <div class="bg img-repeat y">
+      This is the single dot repeated horizontally and positioned at the bottom <br>
+      <p>background-repeat: repeat-y; <br>
+      background-position:right;</p>
+    </div>
+    <hr>
+    <div class="bg img contain">
+      <p>This is a background image set to show the full image even if its smaller than the container. <br>
+        background-size:contain;
+      </p>
+    </div>
+    <div class="bg img cover">
+      <p>The image will fill the container <br>
+        background-size:cover;
+      </p>
+    </div>
+    <div class="bg img">
+      <p>This is the image at its original size 650px x 650px. <br>
+        No specified background-image
+      </p>
+    </div>
+    <div class="bg img attach">
+      <p>This is the image as a background attachment <br>
+        background-attachment: fixed; <br>
+        background-position: center;
+      </p>
+    </div>
+    <div class="bg">
+
+    </div>
+    <hr>
+    <cite>Images: <a href="https://www.freepik.com/free-photos-vectors/food">Food photo created by freepik - www.freepik.com</a></cite>
+
+  </body>
+</html>

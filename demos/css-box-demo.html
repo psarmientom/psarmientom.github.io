@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Box Demo</title>
+    <link rel="stylesheet" href="css/css-demo.css">
+  </head>
+  <body>
+    <h1>CSS Box Demo</h1>
+    <h2>The box model</h2>
+    <!-- This is a block element -->
+    <p class="demo-block">This is a block element. It will take the whole width by default.</p>
+    <!-- This is an inline element with block elements inside -->
+    <p class="demo-block">This is a block element with <span>an inline element</span> inside.
+    <span>Inline elements do not break the flow of the content.</span> </p>
+    <!-- Here we change the default behavior of the elements with css -->
+    <h3>Block element behaving like an inline-block element</h3>
+    <p class="demo-inline-block">In order for this to work you need more than one element</p>
+    <p class="demo-inline-block">It behaves like an inline but keeps the block properties</p>
+    <h3>Block element behaving like an inline element</h3>
+    <p class="demo-inline">In order for this to work you need more than one element</p>
+    <p class="demo-inline">With inline the element loses width and height</p>
+    <h3>Inline element behaving like an block element</h3>
+    <p class="demo-inline-as-block">This is a block element with <span>an inline element</span> inside.
+    <span>Inline elements with display:block take the whole with of the content like a block element.</span> </p>
+
+
+  </body>
+</html>
