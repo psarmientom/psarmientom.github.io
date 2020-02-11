@@ -8,8 +8,10 @@ hr {
 .box, .bg{
   vertical-align: top;
 }
-/* You can apply the styles to more than one class */
-/* These styles apply to the css-demo.html file */
+/*
+* You can apply the styles to more than one class
+* These styles apply to the css-demo.html file
+*/
 .demo-block, .demo-inline-block, .demo-inline, .demo-inline-as-block{
   background: #efefef;
   height: 45px;
@@ -27,7 +29,10 @@ hr {
 .demo-inline-as-block span{
   display: block;
 }
-/* These styles apply to the css-color.html page */
+/*
+* These styles apply to the css-color.html page
+*/
+/* This .box class applies to all divs in this page */
 .box{
   display: inline-block;
   height: 250px;
@@ -54,7 +59,10 @@ hr {
 .name-color{
   background: DarkTurquoise;
 }
-/* These styles apply to the css-background.html page */
+/*
+* These styles apply to the css-background.html page
+*/
+/* This .bg class applies to all divs in this page */
 .bg{
   display: inline-block;
   height: 300px;
