@@ -1,7 +1,13 @@
 body{
-  font-size: 60px;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
 }
-p{
+h1, h2, h3{
+  font-family: 'Sriracha', cursive;
+  text-transform:uppercase;
+}
+/* p{
   font-family: 'Sriracha', cursive;
 }
 .one{
@@ -22,4 +28,4 @@ font-weight: bold;
 }
 .six{
 font-family: "Plane Crash";
-}
+} */

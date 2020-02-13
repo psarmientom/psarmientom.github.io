@@ -1,0 +1,100 @@
+/* CSS for styled resume */
+/* I'm applying a background color to the whole page and
+setting the font family and size for the whole page in the body tag */
+body{
+  background-color:  fffff9 ;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+}
+/* This is the wrapper for all the content. I made it 80% so it does not take all the
+width of the page. The margin 5% applies to top and bottom and the auto, to left and right */
+main{
+  margin:5% auto;
+  width: 80%;
+}
+/* The headings will be in a different font */
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Roboto Slab', serif;
+}
+/* Changed the color and added some padding to the h1
+so it aligns with the right column */
+h1{
+  color:darkGreen;
+  padding-left:30%;
+}
+h2,h3,h4,h5,h6{
+  color:#666666;
+}
+/* Changed the default sizes of the h2 and h3 */
+h2{
+  font-size: 25px;
+}
+h3{
+  font-size: 20px;
+}
+/* Changed the default blue color of the links and removed the underline*/
+a:link{
+  color:darkGreen;
+  text-decoration: none;
+}
+/* added hover styles to the links */
+a:hover{
+  color:Orange;
+  text-decoration: underline;
+}
+/* Change de default black color of the horizontal ruler
+and the 30% margin is to align it to the riglt column */
+hr{
+  border:solid 1px #dedede;
+  margin-left:30%;
+}
+.contact img{
+  margin: 0 0 15px 0;
+}
+/* I wwanted this containers to align side-by-side. That's why I applied the
+inline-block display property. */
+.contact, .main-content{
+  display: inline-block;
+  vertical-align: top;
+}
+/* This is the width of the left column */
+.contact{
+  width: 25%;
+}
+/* This would be the width of the right column.
+The left column is 25%. I have 75% left to use on the right.
+1% goes into some default padding so I have 74% left.
+I'm adding 5% padding to the main content (left and right) That's 10%
+I have to deduct these 10% from the 74% and that will be the maximun width
+I can apply to the column. width: 64% */
+.main-content{
+  padding:0 5%;
+  width: 64%;
+}
+/* Adding padding only to the h2 in the about section */
+.about h2{
+  margin-top:0;
+}
+table{
+  margin-bottom: 30px;
+}
+tr{
+  background-color:  #fcfcf6 ;
+  background-color:  #fafbf9;
+
+  border-bottom: solid 1px #000000;
+}
+  td{
+  border: solid 1px #cccccc;
+  padding:10px;
+}
+/* Changing the background, font family and weight on the table date column only */
+td.dates{
+  background-color: darkGreen;
+  color:#ffffff;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 800;
+}
+footer{
+  margin-left:30%;
+}

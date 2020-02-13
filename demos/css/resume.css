@@ -1,0 +1,20 @@
+span{
+  color:darkGreen;
+}
+.content span{
+  color:orange;
+}
+a{
+  text-decoration: none;
+  text-transform: uppercase;
+}
+a:hover{
+  color:orange;
+}
+table{
+  background: #cccccc;
+  padding:3px;
+}
+table td{
+  border: solid 1px #000000;
+}

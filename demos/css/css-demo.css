@@ -2,6 +2,15 @@ body{
   font-family: "Arial", sans-serif;
   font-size:16px;
 }
+.box-demo h2{
+  color:#666666;
+}
+.box-demo h3{
+  color:darkBlue;
+}
+.box-demo p{
+  padding:10px;
+}
 hr {
   margin: 20px auto;
 }
@@ -30,43 +39,13 @@ hr {
   display: block;
 }
 /*
-* These styles apply to the css-color.html page
-*/
-/* This .box class applies to all divs in this page */
-.box{
-  display: inline-block;
-  height: 250px;
-  margin:20px;
-  text-align: center;
-  width: 250px;
-}
-.hex-color{
-  background:  #34cbd3;
-}
-.rgb-color{
-  background:  rgb( 52, 203, 211 );
-}
-.hsl-color{
-  background: hsl(183, 75%, 51%);
-}
-.rgba-color{
-  background: rgb( 52, 203, 211 );
-  background:  rgba( 52, 203, 211,.5 );
-}
-.hsla-color{
-  background: hsl(183, 75%, 51%,.5);
-}
-.name-color{
-  background: DarkTurquoise;
-}
-/*
 * These styles apply to the css-background.html page
 */
 /* This .bg class applies to all divs in this page */
 .bg{
   display: inline-block;
   height: 300px;
-  margin:0 20px;
+  margin:15px 20px;
   padding: 20px;
   text-align: center;
   width:300px;
@@ -110,4 +89,77 @@ hr {
 .img.attach{
   background-attachment: fixed;
   background-position: center;
+}
+/*
+* These styles apply to the css-color.html page
+*/
+/* This .box class applies to all divs in this page */
+.box{
+  display: inline-block;
+  height: 250px;
+  margin:20px;
+  text-align: center;
+  width: 250px;
+}
+.hex-color{
+  background:  #34cbd3;
+}
+.rgb-color{
+  background:  rgb( 52, 203, 211 );
+}
+.hsl-color{
+  background: hsl(183, 75%, 51%);
+}
+.rgba-color{
+  background: rgb( 52, 203, 211 );
+  background:  rgba( 52, 203, 211,.5 );
+}
+.hsla-color{
+  background: hsl(183, 75%, 51%,.5);
+}
+.name-color{
+  background: DarkTurquoise;
+}
+.underline{
+  text-decoration: none;
+}
+/*
+* These styles apply to the css-hover.html page
+*/
+/*  */
+.hover-demo .hex{
+  background:  #34cbd3;
+  display: inline-block;
+  height: 300px;
+  margin:0 20px;
+  padding: 20px;
+  text-align: center;
+  width:300px;
+}
+.hex.color:hover{
+  background:#ffd606 ;
+}
+.hex.opacity:hover{
+  background: rgba(52,203,211,.4);
+}
+.hex.dark:hover{
+  background: hsl(183, 75%, 31%);
+}
+.hex.img:hover{
+  background-image: url("../images/pizza.png")
+}
+/* You can use single numbers or percentages to scale */
+.hex.size:hover{
+  scale:110%;
+}
+.hex.rotate:hover{
+  transform: rotate(10deg);
+}
+.hex.image{
+  background-image: url("../images/pizza.png");
+  color:white;
+}
+.hex.image:hover{
+  background-image: url("../images/pizza-plate.jpg");
+  background-size: contain;
 }
