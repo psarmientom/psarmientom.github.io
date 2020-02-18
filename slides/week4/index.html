@@ -575,8 +575,7 @@
 
 
       <!-- SLIDE 5 THE HTML PAGE -->
-      <section>
-        <!--.wrap = container (width: 90%) -->
+      <!-- <section>
         <div class="wrap">
           <div class="grid vertical-align">
             <div class="column">
@@ -593,7 +592,7 @@
 
               </ul>
             </div>
-            <!-- .end .column -->
+
 <div class="column">
             <ul>
               <li> <b>Location:</b> </li>
@@ -606,12 +605,70 @@
               <li>A class or id will be more specific and will get a higher score</li>
             </ul>
 </div>
+
+          </div>
+
+        </div>
+
+      </section> -->
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+            <div class="column">
+              <h3><strong>What does Cascading mean?</strong></h3>
+              <ul>
+              <li>The Cascade is the way the browser decided which style applies to an element</li>
+              <li>The principle of the “cascade” is applied when style rules are in conflict</li>
+              <li>We can think of css rules as having weight or a point system to determine which rule wins</li>
+              <li><a href="https://specificity.keegan.st/">Specificity Calculator</a></li>
+              </li>
+
+              </ul>
+            </div>
+            <!-- .end .column -->
+<div class="column">
+            <p class="med-text">There are some factors that determine which style rule wins out:</p>
+            <ul>
+              <li>Origin &amp; Importance (<b>Most weight</b>)</li>
+              <li>Selector Specificity</li>
+              <li>Order of Appearance</li>
+              <li>Initial &amp; Inherited Properties (<b>least weight</b>)</li>
+            </ul>
+</div>
             <!-- .end .column -->
           </div>
           <!-- .end .grid -->
         </div>
         <!-- .end .wrap -->
       </section>
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+            <div class="column">
+              <h3><strong>Initial &amp; Inherited</strong></h3>
+              <ul>
+                <li>This is the first stop in the Cascade</li>
+                <li><b>Initial</b> applies the default values when there are no styles applied to the element.</li>
+                <li>It is not really part of the cascade but it still counts as it applies styles to the html.</li>
+              </ul>
+            </div>
+            <!-- .end .column -->
+    <div class="column">
+            <ul>
+              <li><b>Inherited</b> applies some parent styles to the children</li>
+              <li>Not all properties can be inherited</li>
+            </ul>
+    </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
     <!-- SLIDE 6 - HTML TAGS 1 -->
       <section class="slide-top">
         <div class="wrap">
@@ -619,7 +676,7 @@
           <ul class="flexblock listing">
             <li>border-collapse</li>
             <li>border-spacing</li>
-            <li>caption-side</li>
+            <li><b>caption-side</b> </li>
             <li> <b>color</b> </li>
             <li>cursor</li>
             <li>direction</li>
@@ -627,10 +684,10 @@
             <li> <b>font-family</b> </li>
             <li> <b>font-size</b> </li>
             <li> <b>font-style</b> </li>
-            <li>font-variant</li>
+            <li><b>font-variant</b> </li>
             <li> <b>font-style</b> </li>
-            <li>font-size-adjust</li>
-            <li>font-stretch</li>
+            <li><b>font-size-adjust</b> </li>
+            <li><b>font-stretch</b> </li>
             <li> <b>font</b> </li>
             <li> <b>letter-spacing</b> </li>
             <li> <b>letter-spacing</b> </li>
@@ -638,19 +695,19 @@
             <li> <b>list-style-position</b> </li>
             <li> <b>list-style-type</b> </li>
             <li> <b>list-style</b> </li>
-            <li>orphans</li>
+            <li><b>orphans</b> </li>
             <li>quotes</li>
             <li>tab-size</li>
             <li> <b>text-align</b> </li>
-            <li>text-align-last</li>
-            <li>text-decoration-color</li>
+            <li><b>text-align-last</b> </li>
+            <li><b>text-decoration-color</b> </li>
             <li> <b>text-indent</b> </li>
             <li> <b>text-justify</b> </li>
-            <li>text-shadow</li>
+            <li><b>text-shadow</b> </li>
             <li> <b>text-transform</b> </li>
             <li>visibility</li>
             <li>white-space</li>
-            <li>widows</li>
+            <li><b>widows</b> </li>
             <li> <b>word-break</b> </li>
             <li> <b>word-spacing</b> </li>
             <li> <b>word-wrap</b> </li>
@@ -659,6 +716,170 @@
       </section>
     <!-- SLIDE 7 - HMTL TAGS 2 -->
 
+    <section>
+      <!--.wrap = container (width: 90%) -->
+      <div class="wrap">
+        <div class="grid vertical-align">
+          <div class="column">
+            <h3><strong>Source Order</strong></h3>
+            <ul>
+              <li>Here the browser looks at all CSS selectors used in the file.</li>
+              <li>Looks at the external, local and inline styles</li>
+              <li>When two selectors have the same attributes and specificity, the one that comes last in the code wins.</li>
+              <li>The order in which you link the styles also matters.</li>
+              <li>You can say that the closest to the element to style, the stronger.</li>
+            </ul>
+          </div>
+          <!-- .end .column -->
+  <!-- <div class="column">
+          <ul>
+            <li><link rel="stylesheet" href="css/styles1.css"> </li>
+            <li><link rel="stylesheet" href="css/styles2.css"> </li>
+            <li><style media="screen">
+                 .myStyles{}
+            </style> </li>
+          </ul>
+  </div> -->
+          <!-- .end .column -->
+        </div>
+        <!-- .end .grid -->
+      </div>
+      <!-- .end .wrap -->
+    </section>
+
+    <section>
+      <!--.wrap = container (width: 90%) -->
+      <div class="wrap">
+        <div class="grid vertical-align">
+          <div class="column">
+            <h3><strong>Selector Specificity</strong></h3>
+            <ul>
+              <li>This is the third stop in the Cascade</li>
+              <li>Here the browser looks at the selectors used in the CSS declaration</li>
+              <li>According to their specificity the "winning" rule will be applied</li>
+            </ul>
+          </div>
+          <!-- .end .column -->
+  <div class="column">
+          <p class="med-text">The order of priority is as follows:</p>
+          <ul>
+            <li>Type and html selectors will be looked first.</li>
+            <li>Classes will override the type and element ones.</li>
+            <li>Id's will override classes.</li>
+            <li>Inline styles will override previous ones.</li>
+          </ul>
+  </div>
+          <!-- .end .column -->
+        </div>
+        <!-- .end .grid -->
+      </div>
+      <!-- .end .wrap -->
+    </section>
+
+
+    <section>
+      <!--.wrap = container (width: 90%) -->
+      <div class="wrap">
+        <div class="grid vertical-align">
+          <div class="column">
+            <h3><strong>Origin &amp; Importance</strong></h3>
+            <ul>
+              <li>This is the last stop in the Cascade</li>
+              <li>Using <b>!important</b> at the end of a declaration overrides everything else</li>
+              <li>Then, Origin looks at where the css rule is originated to see which one wins. (browser, user, website)</li>
+              <li>!important is used as a last resort when all else fails.</li>
+            </ul>
+          </div>
+          <!-- .end .column -->
+  <div class="column">
+          <img src="../static/images/important.png" alt="emergency box" width='500'>
+          <cite><a href="https://www.freepik.com/free-photos-vectors/medical">Created by freepik - www.freepik.com</a></cite>
+  </div>
+          <!-- .end .column -->
+        </div>
+        <!-- .end .grid -->
+      </div>
+      <!-- .end .wrap -->
+    </section>
+
+    <section class="aligncenter">
+      <!--.wrap = container (width: 90%) -->
+      <div class="wrap size-90">
+
+          <img src="../static/images/layout.png" alt="html icon" width="500"/>
+
+        <h2 class="text-landing">Website Layout</h2>
+        <p class="text-intro">Using Cascading Style Sheets</p>
+
+      </div>
+    </section>
+
+    <section class="">
+      <h1><strong>Changing Box Behavior - Display Property</strong></h1>
+      <p class="big-text">Eack box has a default behavior - block or inline -that can be changed with the display property.
+        </p>
+        <div class="demo-block">This is one block element</div>
+        <div class="demo-block">This is another block element</div>
+        <p class="demo-block-p">This is another block element <span>This is an inline element inside a block element</span> and <span class="span1">this is another inline element</span></p>
+        <div class="demo-inline">
+        <div>This is a block element acting line an inline-block  </div>
+        <div>This is another block element acting line an inline-block  </div>
+        </div>
+      <div class="grid top-align">
+
+        <div class="grid">
+
+          <!-- .end .column -->
+
+    <div class="column">
+      <ul>
+        <li> <b>Block:</b> Displays each element in its own line.</li>
+        <li> <b>Inline:</b> Displays the element beside the previous one. Custom height and width will be lost.</li>
+        <li> <b>inline-block:</b> Makes a box element inline, retaining it's block element properties.</li>
+        <li>  display: block; / display: inline; / display: inline-block;</li>
+      </ul>
+    </div>
+    <!-- .end .column -->
+          <!-- .end .column -->
+        </div>
+        <!-- .end .grid -->
+      </div>
+      <!-- .end .wrap -->
+    </section>
+
+    <section class="">
+      <h1><strong>Floats</strong></h1>
+      <p class="big-text">Float is a positioning property that allows one element to wrap around another.
+
+
+      <div class="grid top-align">
+
+        <div class="grid">
+
+    <div class="column">
+      <ul>
+        <li>Mostly used to display images inside content.</li>
+        <li>Previously used to make full page layouts.</li>
+        <li>Floated elements remain a part of the flow of the page.</li>
+      </ul>
+
+    </div>
+
+    <div class="column">
+      <ul>
+        <li> <b>Left:</b> Floats element to the left.</li>
+        <li> <b>Right:</b> Floats element to the right.</li>
+        <li> <b>None:</b> It is the element's default.</li>
+        <li>To clear the floats use <b>clear:</b> none, left or right.</li>
+      </ul>
+    </div>
+    <!-- .end .column -->
+          <!-- .end .column -->
+        </div>
+        <!-- .end .grid -->
+      </div>
+      <!-- .end .wrap -->
+    </section>
 
     <section>
       <!--.wrap = container (width: 90%) -->
@@ -671,6 +892,7 @@
             <ul>
               <li>Each browser has its own rendering engine.</li>
               <li>They all interpret and render web pages slightly different.</li>
+              <li>They also have their own styles for default values.</li>
             </ul>
           </div>
           <!-- .end .column -->

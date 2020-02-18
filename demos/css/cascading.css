@@ -1,0 +1,35 @@
+body{
+  color:#666666;
+  font-size:16px;
+}
+p{
+
+}
+h1{
+  color:red;
+}
+.intro h1{
+  color:yellow;
+}
+h2{
+  color:purple;
+}
+h2{
+  color:red;
+}
+.about{
+  color:blue !important;
+  font-size: 30px;
+}
+h2{
+  color:red;
+}
+.intro .about{
+  color:black;
+}
+h2.about {
+  color: green;
+}
+.intro h2.about{
+  color:pink;
+}

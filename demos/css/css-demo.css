@@ -20,7 +20,7 @@ hr {
 /*
 * You can apply the styles to more than one class
 * These styles apply to the css-demo.html file
-*/
+/* ====================================================== */
 .demo-block, .demo-inline-block, .demo-inline, .demo-inline-as-block{
   background: #efefef;
   height: 45px;
@@ -40,7 +40,7 @@ hr {
 }
 /*
 * These styles apply to the css-background.html page
-*/
+/* ====================================================== */
 /* This .bg class applies to all divs in this page */
 .bg{
   display: inline-block;
@@ -92,7 +92,7 @@ hr {
 }
 /*
 * These styles apply to the css-color.html page
-*/
+/* ====================================================== */
 /* This .box class applies to all divs in this page */
 .box{
   display: inline-block;
@@ -126,7 +126,7 @@ hr {
 /*
 * These styles apply to the css-hover.html page
 */
-/*  */
+/* ====================================================== */
 .hover-demo .hex{
   background:  #34cbd3;
   display: inline-block;
@@ -162,4 +162,34 @@ hr {
 .hex.image:hover{
   background-image: url("../images/pizza-plate.jpg");
   background-size: contain;
+}
+/* Flost Demo */
+/* ====================================================== */
+.clearfix{
+  clear:both;
+}
+.intro-float, .content-float{
+  /* float: left;
+  width: 45%; */
+  /* vertical-align: top; */
+}
+.intro-float{
+  text-align: center;
+}
+.intro-float p{
+  text-align: left;
+}
+.intro-float img, .content-float img{
+  width:300px;
+  margin:0 15px 15px;
+  text-align: center;
+}
+.intro-float img {
+  /* float:left; */
+}
+.content-float img{
+  /* float:right; */
+}
+.content-float p img{
+  /* clear:right; */
 }
