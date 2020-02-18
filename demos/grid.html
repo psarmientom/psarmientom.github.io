@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+
+body {
+  display: grid;
+  grid-template-areas:
+    "one   one  two"
+    ".   four four"
+    "three four four";
+  gap: 1rem;
+  font-family: arial;
+  padding: 1%;
+}
+
+.one {
+  background: #9966ff;
+  grid-area: one;
+}
+
+.two {
+  background: #6666ff;
+  grid-area: two;
+}
+
+.three {
+  background: #6699ff;
+  grid-area: three;
+}
+
+.four {
+  background: #66ff99;
+  grid-area: four;
+  display: grid;
+  grid-template-areas:
+    "one    two"
+    "one    two"
+    "one    two"
+    "three  three"
+    "four   four"
+    "four   four";
+  grid-column-gap: 3rem;
+  grid-row-gap: 1rem;
+}
+
+.four-one {
+  grid-area: one;
+  border: 1px solid black;
+}
+
+.four-two {
+  grid-area: two;
+  border: 1px solid black;
+}
+
+.four-three {
+  grid-area: three;
+  border: 1px solid black;
+}
+
+.four-four {
+  grid-area: four;
+  border: 1px solid black;
+}
+
+section {
+  padding: 1rem;
+}
+
+
+    </style>
+  </head>
+
+
+
+
+<body>
+  <section class="one">
+    <p>Area One</p>
+    <p>Takes up more than one grid cell.<p>
+  </section>
+
+  <section class="two">
+    <p>Area Two</p>
+  </section>
+
+  <span>This blank space is the "period" in the third row of the grid-template-area. You only need one period, but I used multiple to make it look pretty.</span>
+
+  <section class="three">
+    <p>Area Three</p>
+  </section>
+
+  <section class="four">
+    <section class="four-one">
+      <p>Area Four</p>
+      <p>Takes up more than one grid cell -- just like Area One.</p>
+    </section>
+    <section class="four-two">
+      <p>Check your understanding. Use the inspector in your dev tools.</p>
+    </section>
+    <section class="four-three">
+      <p>Doctor: "Grid-cell: I'm afraid I have some bad news. You have grid-gap. A row gap to be specific."</p>
+    </section>
+    <section class="four-four">
+      <p>Grid-cell (on phone with ex): "You should get your gap checked."</p>
+    </section>
+  </section>
+</body>
+</html>

@@ -1,12 +1,37 @@
 .grid-container{
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 100px 150px;
-  grid-gap: 10px 20px;
-
+  grid-template-rows: 100px 250px;
+  grid-gap: 10px; */
 }
 .grid-item{
   background: #ccc;
+  margin:10px;
   /* height: 100px; */
   /* width: 200px; */
+}
+.one{
+  background-color:hsl(178, 64%, 80%);
+  margin-top:30px;
+}
+.one p::first-letter{
+  background: #000;
+  color:#fff;
+  font-size:4rem;
+  line-height: 1rem;
+}
+.two{
+  background-color:hsl(178, 64%, 70%);
+}
+.three{
+  background-color:hsl(178, 64%, 60%);
+}
+.four{
+  background-color:hsl(178, 64%, 50%);
+}
+.five{
+  background-color:hsl(178, 64%, 40%);
+}
+.six{
+  background-color:hsl(178, 64%, 30%);
 }
