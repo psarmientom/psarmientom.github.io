@@ -1,32 +1,79 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>Grid Demo</title>
-    <link rel="stylesheet" href="css/flex-grid.css">
+    <meta charset="UTF-8">
+    <title>CSS Layout</title>
+    <!-- <link rel="stylesheet" href="grid.css"> -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <style media="screen">
+    header {
+      background: skyblue;
+      /* grid-column: 1 / 13; */
+    }
+    main {
+      background: gainsboro;
+      /* grid-column: 4 / 10; */
+    }
+    nav {
+      background: cadetblue;
+      /* grid-column: 1 / 4; */
+    }
+    aside {
+      background: lightseagreen;
+      /* grid-column: 10 / 13; */
+    }
+    main, nav, aside {
+      /* grid-row: 2 / 4; */
+    }
+    footer {
+      background: teal;
+      /* grid-column: 1 / 13; */
+    }
+    .main-wrapper{
+      display: inline-grid;
+      /* Columns */
+      grid-template-columns: 300px 300px 300px;
+      grid-template-columns: 33.33% 33.33% 33.33%;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: 200px repeat(2, 1fr);
+      /* Rows */
+      grid-template-rows: minmax(200px auto);
+      /* Gaps */
+      /* row-gap:10px;
+      column-gap: 10px; */
+      gap: 10px 10px;
+
+
+    }
+    </style>
   </head>
   <body>
-<div class="grid-container">
-  <div class="grid-item one">
-  <p>Petierunt uti sibi concilium totius Galliae in diem certam indicere. Pellentesque habitant morbi tristique senectus et netus. Cras mattis iudicium purus sit amet fermentum.
-Salutantibus vitae elit libero, a pharetra augue. Me non paenitet nullum festiviorem excogitasse ad hoc. Quis aute iure reprehenderit in voluptate velit esse. Ab illo tempore, ab est sed immemorabili.
-Curabitur blandit tempus ardua ridiculus sed magna. Cum ceteris in veneratione tui montes, nascetur mus. Ambitioni dedisse scripsisse iudicaretur. Morbi odio eros, volutpat ut pharetra vitae, lobortis sed nibh.</p>
-  </div>
-  <div class="grid-item two">
-  <p>This is a grid item</p>
-  </div>
-  <div class="grid-item three">
-  This is a grid item
-  </div>
-  <div class="grid-item four">
-  This is a grid item
-  </div>
-  <div class="grid-item five">
-  This is a grid item
-  </div>
-  <div class="grid-item six">
-  This is a grid item
-  </div>
-</div>
+    <div class="main-wrapper">
+      <header>
+        <h1>header</h1>
+      </header>
+      <main id="main-content">
+        <h2>main content</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </main>
+      <nav>
+        <h2>nav</h2>
+        <a href="#main-content">skip navigation</a>
+        <ul>
+          <li>nav item</li>
+          <li>nav item</li>
+          <li>nav item</li>
+          <li>nav item</li>
+        </ul>
+      </nav>
+      <aside>
+        <h2>sidebar</h2>
+        <p>related content</p>
+      </aside>
+      <footer>
+        <h2>footer</h2>
+      </footer>
+    </div>
   </body>
 </html>
