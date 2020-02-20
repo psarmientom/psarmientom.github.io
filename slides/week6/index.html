@@ -87,7 +87,7 @@
             </div>
             <!-- .end .column -->
             <div class="column">
-              <p>Each box has the following components</p>
+              <p class="med-text">Each box has the following components:</p>
               <ul>
                 <li> <b>Content:</b> The text, image or content inside the box.</li>
                 <li> <b>Padding:</b> The space between the content and the border of the box.</li>
@@ -147,30 +147,30 @@
       </section>
 
       <section class="">
-        <h1><strong>Floats</strong></h1>
-        <p class="big-text">Float is a positioning property that allows one element to wrap around another.
 
 
-          <div class="grid top-align">
-
-            <div class="grid">
+          <div class="wrap">
+            <h1><strong>Floats</strong></h1>
+            <div class="grid ms">
 
               <div class="column">
+                <p class="big-text">Float is a positioning property that allows one element to wrap around another.</p>
                 <ul>
                   <li>Mostly used to display images inside content.</li>
                   <li>Previously used to make full page layouts.</li>
                   <li>Floated elements remain a part of the flow of the page.</li>
                 </ul>
-
-              </div>
-
-              <div class="column">
                 <ul>
                   <li> <b>Left:</b> Floats element to the left.</li>
                   <li> <b>Right:</b> Floats element to the right.</li>
                   <li> <b>None:</b> It is the element's default.</li>
                   <li>To clear the floats use <b>clear:</b> none, left or right.</li>
                 </ul>
+
+              </div>
+
+              <div class="column">
+                <img src="../static/images/floats.png" alt="page layout examples" width="400">
               </div>
               <!-- .end .column -->
               <!-- .end .column -->
@@ -179,6 +179,90 @@
           </div>
           <!-- .end .wrap -->
       </section>
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+            <div class="column">
+              <h3><strong>A little bit of History..</strong></h3>
+              <ul>
+                <li>Normal <b>HTML</b> Flow.</li>
+                <li><b>Tables</b>.</li>
+                <li>Positioning - <b>Floats</b>.</li>
+                <li><b>Flexbox</b>. Aligns elements in a single axis, either rows or columns (2015).</li>
+                <li><b>Grid</b>. Works in two dimensios. Rows and columns at the same time. (2017)</li>
+                <li>Multicolumn (working draft as of 03/2019).</li>
+              </ul>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <img src="../static/images/layout-example.jpg" alt="div structure">
+              <cite>https://www.researchgate.net/figure/Example-of-a-main-webpage-layout-in-Blackmon-et-al-2002-2003-2005_fig2_235208267</cite>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide-top bg-white">
+        <div class="bg-white wrap frame links">
+          <img src="../static/images/CSS3-taxonomy.png" alt="CSS3 Taxonomy">
+          <!-- <div class="background" style="background-image:url('../static/images/CSS3-taxonomy.png')"></div> -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section class="slide-top">
+        <!--.wrap = container (width: 90%) -->
+        <div class="grid size-90">
+          <div class="column ms">
+            <img src="../static/images/layout-grid.png" alt="web grid" width="800" />
+          </div>
+          <div class="column sm">
+          <h2 class="text-landing">The Grid</h2>
+          <ul>
+            <li>It's the latest and most powerful CSS layout system available.</li>
+            <li>With the grid you can control the size and position of the "boxes" and their contents in the page.</li>
+            <li>You can alter the visual display of the elements without affecting the semantic markup.</li>
+            <li>You can specify the number of rows and columns.</li>
+            <li>It's fast to develop.</li>
+            <li>reduced code size</li>
+            <li>Most common grid size is 12 because is easily divided by 2, 3, 4, 6</li>
+          </ul>
+        </div>
+        </div>
+      </section>
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <h3><strong>How does the grid work?</strong></h3>
+          <div class="grid vertical-align">
+
+            <div class="column">
+
+              <ul>
+                <li>Column and Row count are applied to the parent container to define the structure of the grid.</li>
+                <li>Placement properties are applied to the individual elements insode the grid.</li>
+              </ul>
+            <hr>
+              <p class="med-text">You can practice grid placement with these games:</p>
+              <ul>
+                <li> <a href="https://cssgridgarden.com/">CSS grid garden</a> </li>
+                <li> <a href="https://flexboxfroggy.com/">Flexbox Froggy</a> </li>
+              </ul>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <img src="../static/images/layout-position.png" alt="">
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
 
       <section>
         <!--.wrap = container (width: 90%) -->
@@ -211,26 +295,12 @@
         <!-- .end .wrap -->
       </section>
 
-      <section class="slide-top bg-white">
-        <div class="bg-white wrap frame links">
-          <img src="../static/images/CSS3-taxonomy.png" alt="CSS3 Taxonomy">
-          <!-- <div class="background" style="background-image:url('../static/images/CSS3-taxonomy.png')"></div> -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
-
-
-
     </article>
     <!-- end article -->
   </main>
 
   <div class="references hide">
-    <ul>
-      <li>20thingsIlearned.com</li>
-      <li>http://hwang.cisdept.cpp.edu/webdev/Text/Structure-Presentation.htm</li>
-      <li>https://www.w3.org/Style/CSS20/history.html</li>
-    </ul>
+
   </div>
   <!-- end main -->
 
