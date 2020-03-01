@@ -91,8 +91,11 @@ h1{
 .seventeen{
 
 }
+.med,.large,.xlarge{
+  display: none;
+}
 /* @media screen and (min-width: 760px) { */
-@media only screen and (min-width: 47.5em) {
+@media only screen and (min-width: 30em) {
   body {
     padding:4em;
   }
@@ -107,7 +110,7 @@ h1{
   /* grid-column: span 2; */
   }
 }
-@media screen and (min-width: 1024px) {
+@media only screen and (min-width: 47.5em) {
   .archive {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   }
