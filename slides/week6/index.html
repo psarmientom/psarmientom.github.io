@@ -368,6 +368,149 @@
       <section>
         <!--.wrap = container (width: 90%) -->
         <div class="wrap">
+          <h3><strong>Grid Template Areas</strong></h3>
+          <div class="grid top-align">
+
+            <div class="column">
+              <img src="../static/images/grid-names.png" alt="template areas" width="550">
+            </div>
+            <div class="column">
+              <h2>Parent Container</h2>
+              <ul>
+                <li><b>display:</b> grid;</li>
+                <li><b>grid-template-areas:</b> <br>
+                   "one one two two" <br>
+                   "three three three three" <br>
+                  "fourt five . seven" <br>
+                  "four . . seven" <br>
+                  ". six six ."; <br>
+                  (use dots to represent empty cells)
+                </li>
+                <li><b>grid-auto-rows:</b> minmax(100px, auto);</li>
+                <li><b>grid-gap:10px;</b></li>
+              </ul>
+              <hr>
+              <h2>Children Containers </h2>
+              <p class="med-text">assign a name to each container</p>
+              <ul>
+                <li><b>.one</b> {grid-area:one;}</li>
+                <li><b>.two</b> {grid-area:two;} etc...</li>
+              </ul>
+            </div>
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section class="aligncenter">
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap size-90">
+
+          <img src="../static/images/responsive.png" alt="html icon" width="800" />
+
+          <h2 class="text-landing">Responsive Web Design</h2>
+          <p class="text-intro">Using the CSS grid</p>
+
+        </div>
+      </section>
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <h3><strong>Why Responsive?</strong></h3>
+          <div class="grid vertical-align">
+
+            <div class="column">
+
+              <ul>
+                <li>Before Mobile devices you only had to worry about the screen resolution of
+                  desktops and laptops.</li>
+                <li>In the mid '00 web started to be introduced in smartphones and this was a game changer.</li>
+                <li>Many times 2 versions of a website were created. One for Desktop and one for mobile.</li>
+                <li>Around 2010 the term Responsive was introduced by Ethan Marcotte. It described content
+                that needed to adapt to its viewport by having one website that provided a seamless experience in any device.</li>
+              </ul>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <h4>Key Points in Responsive Design:</h4>
+              <ul>
+                <li>Use relative widths instead of pixels.</li>
+                <li>Use pixels only in elements you don't want to scale like logos and buttons.</li>
+                <li>The use of media queries allow you to set different layouts for different screen sizes.</li>
+                <li>Use relative widths on images.</li>
+              </ul>
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <h3><strong>What are Media Queries?</strong></h3>
+          <div class="grid vertical-align">
+
+            <div class="column">
+
+              <ul>
+                <li>Media query is a CSS technique that uses the <b>@media</b> rule with style properties for that particular condition.</li>
+                <li><b>@media only screen and (min-width: 600px)</b> {
+                  body {
+                    background-color: lightblue;
+                  }
+                }<br>
+              The background will be applied to any device that has a minimun width of 600px and up. This is called a <b>Breakpoint</b> </li>
+              <li>Start from mobile-up</li>
+              </ul>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <h4>Most common media queries:</h4>
+              <ul> <br>
+                <li>min-width: 480px 	Mobile-landscape (and larger)</li>
+                <li>min-width: 768px 	Tablet-portrait (and larger)</li>
+                <li>min-width: 992px 	Tablet-landscape (and larger)</li>
+                <li>min-width: 1200px 	Laptops (and langer)</li>
+              </ul>
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+
+          <div class="grid vertical-align bg-white shadow">
+  <h4><b>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</b></h4><br>
+            <ul class="flexblock reasons">
+              <li>Add this meta inside your head tag to adjust the page to recognize the diffent viewports</li>
+              <li>Without a viewport meta tag, mobile devices render pages at typical desktop screen widths,
+                and then scale the pages to fit the mobile screens.
+                Setting the viewport enables you to control the width and scaling of the viewport.</li>
+              <li>The width=device-width key-value pair sets the width of the viewport to the width of the device.</li>
+              <li>The initial-scale=1 key-value pair sets the initial zoom level when visiting the page.</li>
+            </ul>
+            <p class="med-text">
+            </p>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
           <h3><strong>A note on Browsers</strong></h3>
           <div class="grid vertical-align">
 

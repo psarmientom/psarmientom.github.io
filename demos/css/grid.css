@@ -59,8 +59,8 @@ header, main,nav,aside, footer{
   /* grid-template-columns: repeat(3, 1fr); */
   /* grid-template-columns: 200px repeat(3, 1fr); */
   /* grid-template-columns: repeat(auto-fill,minmax(25%, 1fr)); */
-  /* grid-template-columns: repeat(12, minmax(0, 1fr)); */
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
 
   /* align-items: center; */
 
@@ -70,7 +70,7 @@ header, main,nav,aside, footer{
   grid-template-rows: 200px repeat(2, 300px);
   grid-template-rows: 3fr repeat(2, 1fr);
   grid-template-rows: repeat(3, minmax(150px, auto));
-  grid-template-rows: repeat(auto-fit, minmax(0, 1fr));
+  /* grid-template-rows: repeat(auto-fit, minmax(0, 1fr)); */
 
   /* Gaps */
   /* This adds gaps between the columns, you can uncomment to see
