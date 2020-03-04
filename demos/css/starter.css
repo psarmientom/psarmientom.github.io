@@ -1,0 +1,18 @@
+/* ========= Add Here the styles that will be used by all viewports and for smaller viewports */
+html{
+  /* I'm adding this class to prevent the containers to change size when they have padding. */
+  box-sizing: border-box;
+}
+
+/* Add Here styles for larger phones and tablets */
+@media only screen and (min-width: 480px) {
+}
+/* Add Here styles for smaller laptops, larger tablets and small screens */
+@media only screen and (min-width: 769px) {
+}
+/* Add Here styles for regular laptops and desktops */
+@media only screen and (min-width: 992px) {
+}
+/* Add Here styles for xLarge monitors */
+@media only screen and (min-width: 1280px) {
+}

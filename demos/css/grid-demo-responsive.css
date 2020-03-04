@@ -128,17 +128,8 @@ header, main,nav,aside, footer{
 .second-nav{
   grid-column: 1 / 4;
 }
-@media only screen and (min-width: 880px) {
-  header {
-    /* grid-column: 1 / 13; */
-    /* display:grid; */
-    /* grid-template-columns: 2fr 8fr 2fr; */
-  }
-  main {
-    /* grid-column: 4 / 10; */
-    /* grid-row: 2 / 6; */
-  }
 
+@media only screen and (min-width: 480px) {
 }
 @media only screen and (min-width: 768px) {
 }
