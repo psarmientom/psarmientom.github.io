@@ -3,6 +3,16 @@ html{
   /* I'm adding this class to prevent the containers to change size when they have padding. */
   box-sizing: border-box;
 }
+/* This makes all the pseudo-elements created by the browser inherit the box-sizing of the html */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/* In case you want to have a full width image or content. The body by default has margin and padding */
+body {
+  padding: 0;
+  margin: 0;
+}
+
 
 /* Add Here styles for larger phones and tablets */
 @media only screen and (min-width: 480px) {
