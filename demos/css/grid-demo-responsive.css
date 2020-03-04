@@ -1,7 +1,3 @@
-/*
-Keyword colors can be found at http://colours.neilorangepeel.com/
-*/
-
 /* border-box fix */
 html {
   box-sizing: border-box;
@@ -9,7 +5,6 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
 body {
   padding: 0;
   margin: 0;
@@ -21,68 +16,50 @@ h1, h2 {
 .main-wrapper{
   font-family: helvetica, arial, sans-serif;
   display: grid;
-  height: 100%;
   /* Columns */
-  /* I'm adding all these examples, but remember that the one that will
-  be applied is the last one. */
-  /* grid-template-columns: 300px 300px 300px; */
-  /* grid-template-columns: 25% 25% 25% 25%; */
-  /* grid-template-columns: repeat(3, 1fr); */
-  /* grid-template-columns: 200px repeat(3, 1fr); */
-  /* grid-template-columns: repeat(auto-fill,minmax(25%, 1fr)); */
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+  grid-template-columns: 1fr;
+  /* align-items:center; */
+  /* justify-items: center; */
+  /* Rows */
+  grid-template-rows: repeat(auto-fit, minmax(0, 1fr));
   grid-auto-columns: auto;
 
-  /* align-items: center; */
-
-  /* Rows */
-  grid-template-rows: 300px 300px;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-rows: 200px repeat(2, 300px);
-  grid-template-rows: 3fr repeat(2, 1fr);
-  grid-template-rows: repeat(3, minmax(150px, auto));
-  grid-template-rows: repeat(auto-fit, minmax(0, 1fr));
-
   /* Gaps */
-  /* This adds gaps between the columns, you can uncomment to see
-  how it looks. */
-  /* row-gap:10px;
-  column-gap: 10px;
-  /* gap: 10px 20px; */ */
-
+  gap: 10px;
 }
-/*================= CHILDREN CONTAINERS ===================*/
+/*=== CHILDREN CONTAINERS ==*/
 header {
   background: skyblue;
   display:grid;
   grid-template-columns: auto-fit;
-  grid-column: 1 / 13;
+  /* grid-column: 1 / 13; */
 }
 main {
   background: gainsboro;
-  grid-column: 4 / 10;
-  grid-row: 2 / 6;
+  /* grid-column: 4 / 10; */
+  /* grid-row: 2 / 6; */
 }
 nav {
   background: cadetblue;
 }
 aside {
   background: lightseagreen;
-  grid-column: 10 / 13;
+  /* grid-column: 10 / 13; */
 }
 footer {
   background: teal;
-  grid-column: 1 / 13;
+  /* grid-column: 1 / 13; */
 }
 /* main, nav, aside { */
 main,aside, .second-nav{
-  grid-row: 2 / 4;
+  /* grid-row: 2 / 4; */
 }
 header, main,nav,aside, footer{
   padding:25px;
 }
-
+.second-nav{
+  /* grid-column: 1 / 4; */
+}
 .gallery{
   background: teal;
   display: grid;
@@ -125,15 +102,91 @@ header, main,nav,aside, footer{
   list-style:none;
   margin:0;
 }
-.second-nav{
-  grid-column: 1 / 4;
-}
-
+/*=====================================================================================*/
+/* Add Here styles for larger phones and tablets */
 @media only screen and (min-width: 480px) {
 }
-@media only screen and (min-width: 768px) {
+/*=====================================================================================*/
+/* Add Here styles for smaller laptops, larger tablets and small screens */
+@media only screen and (min-width: 769px) {
+  .main-wrapper{
+    /* Columns */
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  header {
+    grid-template-columns: auto-fit;
+    grid-column: 1 / 3;
+  }
+  main {
+    grid-column: 1 / 3;
+  }
+  footer{
+    grid-column: 1/3;
+  }
 }
+/*=====================================================================================*/
+/* Add Here styles for regular laptops and desktops */
 @media only screen and (min-width: 992px) {
+  .main-wrapper{
+    /* Columns */
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+  /*=== CHILDREN CONTAINERS =*/
+  header {
+    grid-template-columns: auto-fit;
+    grid-column: 1 / 13;
+  }
+  main {
+    grid-column: 4 / 10;
+    grid-row: 2 / 6;
+  }
+  nav {
+
+  }
+  aside {
+    grid-column: 10 / 13;
+  }
+  footer {
+    grid-column: 1 / 13;
+  }
+  /* main, nav, aside { */
+  main,aside, .second-nav{
+    grid-row: 2 / 4;
+  }
+  header, main,nav,aside, footer{
+    padding:25px;
+  }
+  .gallery{
+    padding: 25px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: 1fr 3fr;
+  }
+  .gallery-item{
+    padding:20px;
+  }
+  .social{
+    gap:10px;
+    align-items:center;
+    justify-content: flex-end;
+  }
+  .social-item{
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+  }
+  .main-nav{
+    justify-content:flex-end;
+    align-items: flex-end;
+  }
+  .main-nav h2{
+  }
+  .main-nav ul{
+  }
+  .second-nav{
+    grid-column: 1 / 4;
+  }
 }
+/*=====================================================================================*/
+/* Add Here styles for xLarge monitors */
 @media only screen and (min-width: 1200px) {
 }

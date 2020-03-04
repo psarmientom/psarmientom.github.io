@@ -13,16 +13,19 @@ body {
   margin: 0;
 }
 
-
+/*=====================================================================================*/
 /* Add Here styles for larger phones and tablets */
 @media only screen and (min-width: 480px) {
 }
+/*=====================================================================================*/
 /* Add Here styles for smaller laptops, larger tablets and small screens */
 @media only screen and (min-width: 769px) {
 }
+/*=====================================================================================*/
 /* Add Here styles for regular laptops and desktops */
 @media only screen and (min-width: 992px) {
 }
+/*=====================================================================================*/
 /* Add Here styles for xLarge monitors */
 @media only screen and (min-width: 1280px) {
 }
