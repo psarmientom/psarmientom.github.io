@@ -1,0 +1,148 @@
+/*
+Keyword colors can be found at http://colours.neilorangepeel.com/
+*/
+
+/* border-box fix */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+h1, h2 {
+  text-transform: uppercase;
+}
+/* ====== PARENT CONTAINER ===========*/
+.main-wrapper{
+  font-family: helvetica, arial, sans-serif;
+  display: grid;
+  height: 100%;
+  /* Columns */
+  /* I'm adding all these examples, but remember that the one that will
+  be applied is the last one. */
+  /* grid-template-columns: 300px 300px 300px; */
+  /* grid-template-columns: 25% 25% 25% 25%; */
+  /* grid-template-columns: repeat(3, 1fr); */
+  /* grid-template-columns: 200px repeat(3, 1fr); */
+  /* grid-template-columns: repeat(auto-fill,minmax(25%, 1fr)); */
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+  grid-auto-columns: auto;
+
+  /* align-items: center; */
+
+  /* Rows */
+  grid-template-rows: 300px 300px;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 200px repeat(2, 300px);
+  grid-template-rows: 3fr repeat(2, 1fr);
+  grid-template-rows: repeat(3, minmax(150px, auto));
+  grid-template-rows: repeat(auto-fit, minmax(0, 1fr));
+
+  /* Gaps */
+  /* This adds gaps between the columns, you can uncomment to see
+  how it looks. */
+  /* row-gap:10px;
+  column-gap: 10px;*/
+  gap: 10px;
+
+}
+/*================= CHILDREN CONTAINERS ===================*/
+header {
+  background: skyblue;
+  display:grid;
+  grid-template-columns: auto-fit;
+  grid-column: 1 / 13;
+}
+main {
+  background: gainsboro;
+  grid-column: 4 / 10;
+  grid-row: 2 / 6;
+}
+nav {
+  background: cadetblue;
+}
+aside {
+  background: lightseagreen;
+  grid-column: 10 / 13;
+}
+footer {
+  background: teal;
+  grid-column: 1 / 13;
+}
+/* main, nav, aside { */
+main,aside, .second-nav{
+  grid-row: 2 / 4;
+}
+header, main,nav,aside, footer{
+  padding:25px;
+}
+
+.gallery{
+  background: teal;
+  display: grid;
+  padding: 25px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: 1fr 3fr;
+  gap:15px;
+}
+.gallery-item{
+  background: rgba( 51, 205, 201, 1  );
+  padding:20px;
+}
+.social{
+  display: flex;
+  gap:10px;
+  align-items:center;
+  justify-content: flex-end;
+}
+.social-item{
+  background: teal;
+  width:30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+}
+.main-nav{
+  background: rgba(255,255,255,.3);
+  display: flex;
+  padding: 0;
+  justify-content:flex-end;
+  align-items: flex-end;
+}
+.main-nav h2{
+  margin:0;
+}
+.main-nav ul{
+  display: flex;
+  list-style:none;
+  margin:0;
+}
+.second-nav{
+  grid-column: 1 / 4;
+}
+@media only screen and (min-width: 880px) {
+  header {
+    /* grid-column: 1 / 13; */
+    /* display:grid; */
+    /* grid-template-columns: 2fr 8fr 2fr; */
+  }
+  main {
+    /* grid-column: 4 / 10; */
+    /* grid-row: 2 / 6; */
+  }
+
+}
+@media only screen and (min-width: 768px) {
+}
+@media only screen and (min-width: 992px) {
+}
+@media only screen and (min-width: 1200px) {
+}
