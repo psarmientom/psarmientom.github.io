@@ -1,0 +1,35 @@
+<html>
+  <head>
+  <title>My Now Amazing Webpage</title>
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  </head>
+  <body>
+
+  <div class="your-class">
+    <img src="https://via.placeholder.com/750/0000FF/808080 ?Text=1"/>
+    <img src="https://via.placeholder.com/750/808080/0000FF ?Text=2"/>
+    <img src="https://via.placeholder.com/750/0000FF/808080 ?Text=3"/>
+  </div>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.your-class').slick({
+        dots: true,
+          infinite: true,
+          speed: 500,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          arrows: true,
+          autoplaySpeed: 2000
+      });
+    });
+  </script>
+
+  </body>
+</html>
