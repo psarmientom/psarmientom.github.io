@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DOM demo</title>
+    <style media="screen">
+      .hide{display:none;}
+    </style>
+  </head>
+  <body>
+
+    <h1>This is the DOM demo</h1>
+    <p>Cras mattis iudicium purus sit amet fermentum.
+      Donec sed odio operae, eu vulputate felis rhoncus.</p>
+      <p class="text-demo">This is the demo text</p>
+      <p class="text-demo1"></p>
+      <p id="testId">This is a test</p>
+
+      <!-- Add Jquery here -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script>
+      $(document).ready(function(){
+        //document.write("<h1>Hello</h1>");
+        $(".text-demo1").html("This is the new demo text");
+        $(".text-demo").toggle(".hide");
+
+      });
+      </script>
+
+
+  </body>
+</html>

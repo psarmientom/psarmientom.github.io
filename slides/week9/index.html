@@ -251,13 +251,25 @@
       <section class="slide-top bg-white">
         <div class="wrap">
           <h1><strong>Why do we use JQuery?</strong></h1>
-          <div class="grid ms">
+          <div class="grid">
             <div class="column">
               <p class="med-text">It's compatible with all browsers.</p>
               <p class="med-text">It's lightweight and fast.</p>
               <p class="med-text">It lets you add complex functionality to your website without having to write full javascript.</p>
               <p class="med-text">It's open source, so anyone can add to it.</p>
               <p class="med-text">It has an extensive plug-in library.</p>
+            </div>
+            <div class="column">
+              <p class="med-text">The jQuery library contains the following features:</p>
+              <ul>
+                <li>HTML/DOM manipulation</li>
+                <li>CSS manipulation</li>
+                <li>HTML event methods</li>
+                <li>Effects and animations</li>
+                <li>AJAX (Asynchronous JavaScript And XML)</li>
+                <li>Utilities</li>
+                <li>Lots of Plugins</li>
+              </ul>
             </div>
           </div>
 
@@ -303,6 +315,173 @@
         <!-- .end .wrap -->
       </section>
 
+      <section class="bg-white">
+        <div class="wrap">
+          <h1><strong>Javascript / JQuery Glossary</strong></h1>
+          <div class="grid">
+            <div class="column">
+
+              <p class="med-text"><b>DOM - Document Object Model</b> . The DOM is how the website structure is broken up in a tree hierarchy.</p>
+              <!-- <p class="med-text">HTML: Is the ancestor of all the other elements</p>
+              <p class="med-text">HEAd and BODY are children an descendants of html</p>
+              <p class="med-text">All the other Elements are children of BODY and descendants of HTML</p> -->
+              <p class="med-text"><b>Why it is important to understand the DOM?</b></p>
+              <p class="med-text">Javascript access the DOM and modifies it to create the interaction.</p>
+              <p class="med-text">Most of the time it looks just like the html, except on the following cases:
+              <ul>
+                <li>It has been modified by a client-side script</li>
+                <li>It has automatically fixed errors in the html</li>
+                <li>There are errors in the source code</li>
+              </ul>
+              </p>
+            </div>
+            <div class="column">
+              <img src="../static/images/dom.png" alt="web tree hierarchy" width="900"/>
+            </div>
+          </div>
+
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section class="bg-white">
+        <div class="wrap">
+          <div class="grid">
+            <div class="column">
+                <h3>Parts of a Jquery script</h3>
+              <ul>
+                <li><b>&lt;script&gt;</b> (Opening Tag)</li>
+                <li><b>$(document).ready(function(){</b> (Tells the script not to run until the document has finished loading)</li>
+                <li><b>document</b> </li>
+                <li><b>$</b> to access JQuery</li>
+                <li><b>(selector)</b> Selects the element in the Dom</li>
+                <li><b>.action()</b> the type of action we want to perform (Here we add what's being changed)</li>
+              </ul>
+            </div>
+            <div class="column">
+
+              <p class="med-text"><b>&lt;script&gt;</b></p>
+              <p class="med-text"><b>$(document).ready(function(){</b></p>
+              <p class="med-text">$(".myClass").html("This is a JQuery text");</p>
+              <p class="med-text"><b>});</b></p>
+              <p class="med-text"><b>&lt;/script&gt;</b></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide-top">
+        <div class="wrap">
+          <h2>Basic Jquery Scripts</h2>
+          <ul class="flexblock features">
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  .css();
+                </h2>
+                <p>Add a css property</p>
+                <p><b>$(".box").css("background-color", "blue");</b> </p>
+                <br>
+                <p>Looks for the class .box on the html and adds a background color.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  .addClass();
+                </h2>
+                <p>Adds a css Class</p>
+                <p><b>$("#myId").addClass( "yourClass" );</b> </p>
+                <p><b>$("#myId").addClass( "yourClass anotherClass" );</b> </p>
+                <br>
+                <p>Looks for the id myId on the html and adds the css class.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  .removeClass();
+                </h2>
+                <p>Adds a css Class</p>
+                <p><b>$("#myId").removeClass( "yourClass" );</b> </p>
+                <p><b>$("#myId").removeClass( "yourClass anotherClass" );</b> </p>
+                <br>
+                <p>Looks for the id myId on the html and removes the css class.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  .html();
+                </h2>
+                <p>Replaces the HTML Content</p>
+                <p><b>$("#myId").html("<p>More information</p>");</b> </p>
+                <br>
+                <p>Looks for the id myId on the html and replaces the content.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  .show() .hide();
+                </h2>
+                <p>Shows/Hides an element</p>
+                <p><b>$("#clickBox").show(); <br>
+                  $("#clickBox").hide();</b> </p>
+                <br>
+                <p>Looks for the id myId on the html and shows or hides the element.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  .toggle();
+                </h2>
+                <p>Toggles the action on the element</p>
+                <p><b>$("#toggleBox").toggle(1000);</b></p>
+                <br>
+                <p>Looks for the id myId on the html and toggles the element.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="slide-top">
+        <div class="wrap">
+          <h2>Basic Jquery Scripts</h2>
+          <ul class="flexblock features">
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  click();
+                </h2>
+                <p>Performs an action when clicked</p>
+                <p><b>$( "#target" ).click(function() { <br>
+                  console.log(“hello”); <br>
+                  });</b> </p>
+                <br>
+                <p>Looks for the id on the html and add the interaction.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  .fadeOut() & .fadeIn()
+                </h2>
+                <p>Adds a css Class</p>
+                <p><b>$("#myDiv").fadeOut(1000);</b> </p>
+                <p><b>$("#myDiv").fadeIn(1000);</b> </p>
+                <br>
+                <p>Looks for the id myId on the html and adds the css class.</p>
+              </div>
+            </li>
+
+
+
+          </ul>
+        </div>
+      </section>
 
     </article>
     <!-- end article -->
