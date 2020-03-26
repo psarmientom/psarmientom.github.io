@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DOM Test</title>
+  </head>
+  <style media="screen">
+    .dynamicClass{
+      font-size:30px;
+    }
+  </style>
+  <body>
+
+    <h1>DOM Test</h1>
+      <p>Cras mattis iudicium purus sit amet fermentum.
+      Donec sed odio operae, eu vulputate felis rhoncus.</p>
+      <p class="text-demo">Demo 1</p>
+      <p class="text-demo1">dfdfdbb</p>
+      <p id="testId">This is a test</p>
+
+      <!-- Jquery file here -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script>
+      $(document).ready(function(){
+        $(".text-demo1").html("This is the new demo text");
+        $(".text-demo1").css("color", "red");
+        $(".text-demo").addClass("dynamicClass");
+
+      });
+      </script>
+
+  </body>
+</html>
