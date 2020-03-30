@@ -10,7 +10,7 @@
     }
     #testId{
     background:lightblue;
-    width:100px;
+    /* width:100px; */
     height:100px;
     position:relative;
     }
@@ -55,13 +55,13 @@ $(document).ready(function(){
             }
         });
         // End of the on() method
-        // $("button").click(function(){
-        //   $("#testId").slideToggle("fast");
-        // });
         $("button").click(function(){
-          $(".demo").after('This is "here"');
+          $("#testId").slideToggle("fast");
         });
         $("button").click(function(){
+           $(".demo").after('This is "here"');
+        });
+        $("button").click(function(){*/
           $("#testId").animate({left:"250px", opacity: "0.5", height:"300px"});
         });
 // Document Ready ends here
