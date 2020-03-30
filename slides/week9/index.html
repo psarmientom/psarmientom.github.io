@@ -351,11 +351,11 @@
                 <h3>Parts of a Jquery script</h3>
               <ul>
                 <li><b>&lt;script&gt;</b> (Opening Tag)</li>
-                <li><b>$(document).ready(function(){</b> (Tells the script not to run until the document has finished loading)</li>
+                <li><b>$(document).ready(function(){</b> (Tells the script not to run until the document has finished loading).</li>
                 <li><b>document</b> </li>
-                <li><b>$</b> to access JQuery</li>
-                <li><b>(selector)</b> Selects the element in the Dom</li>
-                <li><b>.action()</b> the type of action we want to perform (Here we add what's being changed)</li>
+                <li><b>$</b> to access JQuery.</li>
+                <li><b>(selector)</b> Finds and selects the element in the HTML.</li>
+                <li><b>.action()</b> the type of action we want to perform (Here we add what's being changed).</li>
               </ul>
             </div>
             <div class="column">
@@ -372,7 +372,7 @@
 
       <section class="slide-top">
         <div class="wrap">
-          <h2>Basic Jquery Scripts</h2>
+          <h2>Basic Jquery Functions</h2>
           <ul class="flexblock features">
             <li>
               <div>
@@ -381,6 +381,7 @@
                 </h2>
                 <p>Add a css property</p>
                 <p><b>$(".box").css("background-color", "blue");</b> </p>
+                <p><b>.css({"color":"blue","font-size":"30px"});</b> </p>
                 <br>
                 <p>Looks for the class .box on the html and adds a background color.</p>
               </div>
@@ -402,7 +403,7 @@
                 <h2 class="secondary-color">
                   .removeClass();
                 </h2>
-                <p>Adds a css Class</p>
+                <p>Removes a css Class</p>
                 <p><b>$("#myId").removeClass( "yourClass" );</b> </p>
                 <p><b>$("#myId").removeClass( "yourClass anotherClass" );</b> </p>
                 <br>
@@ -420,6 +421,212 @@
                 <p>Looks for the id myId on the html and replaces the content.</p>
               </div>
             </li>
+
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  Add
+                </h2>
+                <p>Adds content at the beginning or end of an element</p>
+                <p><b>$("p").prepend("This will go at the beginning");</b></p>
+                <p><b>$("p").append("This will go at the end");</b></p>
+                <br>
+                <p>Adds content at the before or after an element</p>
+                <p><b>$("p").before("This will go before");</b></p>
+                <p><b>$("p").before("This will go after");</b></p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  Remove
+                </h2>
+                <p>Removes the element.</p>
+                <p><b>$(".element").remove();</b></p>
+                <p>Empties the content of the element without removing it.</p>
+                  <p><b>$(".element").empty();</b></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="slide-top">
+        <div class="wrap">
+          <h2>Basic Jquery Functions</h2>
+          <ul class="flexblock features">
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  .width();
+                </h2>
+                <p>Alters the width of an element.</p>
+                <p><b>$("#myDiv").width("100px");</b> </p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  .height();
+                </h2>
+                <p>Alters the height of an element.</p>
+                  <p><b>$("#myDiv").height("100px");</b> </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="slide-top">
+        <div class="wrap">
+          <h2>Basic Jquery Events</h2>
+          <p class="med-text">In order for these effects to take place, we need an Event Method to trigger them. <br>
+          The most common types of events are: <b>Mouse</b>, <b>Keyboard</b>, <b>Form</b> and <b>Document/Window</b> Events.</p>
+          <h3>Mouse Events</h3>
+          <ul class="flexblock features">
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  click();
+                </h2>
+                <p>Performs an action when clicked</p>
+                <p><b>$( "#target" ).click(function() { <br>
+                  $("p").hide();
+                  });</b> </p>
+                <br>
+                <p>Looks for the id on the html and add the interaction.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  .dblclick()
+                </h2>
+                <p>Performs an action when double clicked</p>
+                <p><b>$("#target").dblclick(function(){ <br>
+                      $("p").hide(); <br>
+                });</b> </p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  .mouseenter()
+                </h2>
+                <p>Performs an action when The mouse enters the area of the selector</p>
+                <p><b>$("#target").mouseenter(function(){ <br>
+                      $("p").hide(); <br>
+                });</b> </p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  .mouseleave()
+                </h2>
+                <p>Performs an action when The mouse leaves the area of the selector</p>
+                <p><b>$("#target").mouseenter(function(){ <br>
+                      $("p").hide(); <br>
+                });</b> </p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  .hover()
+                </h2>
+                <p>Performs an action when The mouse hovers over the area of the selector. </p>
+                <p><b>$("#target").hover(function(){ <br>
+                      $(this).css("color","red");<br>
+                    },<br>
+                      function(){<br>
+                     $(this).css("color","black");<br>
+                   });<br>
+                });</b> </p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+      <!-- <section class="slide-top">
+        <div class="wrap">
+          <h2>Basic Jquery Events</h2>
+          <h3>Keyboard Events</h3>
+          <ul class="flexblock features">
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  .keydown();
+                </h2>
+                <p>Performs an action when the keyboard is pressed down.</p>
+                <p><b>$( "#target" ).keydown(function() { <br>
+                  $("p").hide();
+                  });</b> </p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  .keyup()
+                </h2>
+                <p><p>Performs an action when the key is released.</p></p>
+                <p><b>$("#target").keyup(function(){ <br>
+                      $("p").show(); <br>
+                });</b> </p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  .keypress()
+                </h2>
+                <p>Performs an action when you initiate the act of pressing a key.
+                  Similar to keydown, but this one does not work with control and function keys (ALT, CTRL, SHIFT, ESC)</p>
+                <p><b>$("#target").keypress(function(){ <br>
+                      $("p").hide(); <br>
+                });</b> </p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </section> -->
+
+      <section class="slide-top">
+        <div class="wrap">
+          <h2>Basic Jquery Events</h2>
+          <ul class="flexblock features">
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  The on() Method
+                </h2>
+                <p class="med-text">Allows you to attach more than one event handler to an element. <br>
+                  Specially usefull when you need to restore the element to a previous state after the event is over.</p> <br>
+                <p><b>$("p").on({ <br>
+                      mouseenter: function(){ <br>
+                      $(this).css("background-color", "lightgray"); <br>
+                        }, <br>
+                      mouseleave: function(){ <br>
+                        $(this).css("background-color", "lightblue"); <br>
+                      }, <br>
+                      click: function(){ <br>
+                        $(this).css("background-color", "yellow"); <br>
+                      } <br>
+                      }); </b> </p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+      <section class="slide-top">
+        <div class="wrap">
+          <h2>Basic Jquery Effects</h2>
+          <ul class="flexblock features">
             <li>
               <div>
                 <h2 class="secondary-color">
@@ -435,33 +642,14 @@
             <li>
               <div>
                 <h2 class="secondary-color">
-                  .toggle();
+                  Slide
                 </h2>
-                <p>Toggles the action on the element</p>
-                <p><b>$("#toggleBox").toggle(1000);</b></p>
+                <p>Slides an element Up and Down</p>
+                <p><b>$( "#target" ).slideUp(speed, callback);</b></p>
+                <p><b>$( "#target" ).slideDown(speed, callback);</b></p>
+                <p><b>$( "#target" ).slideToggle(speed, callback);</b></p>
                 <br>
-                <p>Looks for the id myId on the html and toggles the element.</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="slide-top">
-        <div class="wrap">
-          <h2>Basic Jquery Scripts</h2>
-          <ul class="flexblock features">
-            <li>
-              <div>
-                <h2 class="secondary-color">
-                  click();
-                </h2>
-                <p>Performs an action when clicked</p>
-                <p><b>$( "#target" ).click(function() { <br>
-                  console.log(“hello”); <br>
-                  });</b> </p>
-                <br>
-                <p>Looks for the id on the html and add the interaction.</p>
+                <p>You need an event to trigger the effect.</p>
               </div>
             </li>
             <li>
@@ -473,12 +661,36 @@
                 <p><b>$("#myDiv").fadeOut(1000);</b> </p>
                 <p><b>$("#myDiv").fadeIn(1000);</b> </p>
                 <br>
-                <p>Looks for the id myId on the html and adds the css class.</p>
+                <p>Looks for the id myId on the html and fades it.</p>
               </div>
             </li>
-
-
-
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  .toggle();
+                </h2>
+                <p>Toggles the action on the element</p>
+                <p><b>$("#toggleBox").toggle(1000);</b></p>
+                <br>
+                <p>Looks for the id myId on the html and toggles the element.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  .animate();
+                </h2>
+                <p>Allows you to create custom animations based on most css properties.</p>
+                <p><b>$("button").click(function(){ <br>
+                $("div").animate({left: '250px', opacity: '0.5'}); <br>
+                });</b></p>
+                <br>
+                <p>For positioning animation, the element needs to have a position attribute.</p>
+                <p>When animating 2 word properties (padding-left) remove the hyphen and use camelCase instead:
+                  paddingLeft.
+                </p>
+              </div>
+            </li>
           </ul>
         </div>
       </section>

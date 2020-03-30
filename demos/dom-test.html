@@ -8,6 +8,12 @@
     .dynamicClass{
       font-size:30px;
     }
+    #testId{
+    background:lightblue;
+    width:100px;
+    height:100px;
+    position:relative;
+    }
   </style>
   <body>
 
@@ -16,18 +22,51 @@
       Donec sed odio operae, eu vulputate felis rhoncus.</p>
       <p class="text-demo">Demo 1</p>
       <p class="text-demo1">dfdfdbb</p>
-      <p id="testId">This is a test</p>
+      <button>Button</button>
+      <div id="testId"><p>This is a test</p>
+      </div> <br>
+      <p class="demo">  My Name is </p>
+
 
       <!-- Jquery file here -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-      <script>
-      $(document).ready(function(){
+<script>
+$(document).ready(function(){
         $(".text-demo1").html("This is the new demo text");
-        $(".text-demo1").css("color", "red");
+        $(".text-demo1").css({"color": "red" , "font-size" : "30px"});
         $(".text-demo").addClass("dynamicClass");
 
-      });
-      </script>
+        $("#testId").hover(function(){
+              $("#testId").css("color", "red");
+            },
+              function(){
+              $("#testId").css("color", "black");
+        });
+        // End of Hover Option
+        $("#testId").on({
+            mouseenter: function(){
+            $(this).css("background-color", "lightgray");
+            },
+            mouseleave: function(){
+            $(this).css("background-color", "lightblue");
+            },
+            click: function(){
+            $(this).css("background-color", "yellow");
+            }
+        });
+        // End of the on() method
+        // $("button").click(function(){
+        //   $("#testId").slideToggle("fast");
+        // });
+        $("button").click(function(){
+          $(".demo").after('This is "here"');
+        });
+        $("button").click(function(){
+          $("#testId").animate({left:"250px", opacity: "0.5", height:"300px"});
+        });
+// Document Ready ends here
+});
+</script>
 
   </body>
 </html>
