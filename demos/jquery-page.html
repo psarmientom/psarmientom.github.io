@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Easy Crepe Recipe</title>
+    <link rel="stylesheet" href="css/crepe.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <header>
+    <h1>Easy <span>5</span> minute <br>Crepe Recipe</h1>
+    </header>
+    <div class="servings clear">
+      <p>For 7-8</p>
+    </div>
+    <section class="intro">
+      <p>Craving something sweet?</p>
+      <p>In just 5 minutes you can enjoy a delicious crepe!</p>
+      <p>No experience necessary.</p>
+    <button class="step1" type="button" name="start">Start</button>
+    </section>
+    <section class="ingredients hide">
+      <h2>Ingredients</h2>
+      <img src="images/ingredients.png" alt="crepe ingredients">
+      <ul>
+        <li>Butter</li>
+        <li>1 1/2 cups of milk</li>
+        <li>1 cup flour</li>
+        <li>1 Tbsp. Sugar</li>
+        <li>1/2 tsp. salt</li>
+        <li>3 eggs</li>
+      </ul>
+      <p class="ing">See Ingredients</p>
+      <button class="step2" type="button" name="next">Next</button>
+    </section>
+    <section class="mix hide">
+      <h2>Mix</h2>
+      <p>(all the ingredients)</p>
+      <img src="images/mix.png" alt="crepe ingredients">
+      <button class="step3" type="button" name="next">Next</button>
+    </section>
+    <section class="cook hide">
+      <h2>Cook</h2>
+      <p>(about a minute)</p>
+      <img src="images/cook.png" alt="crepe ingredients"> <br>
+      <button class="step4" type="button" name="next">Next</button>
+    </section>
+    <section class="serve hide">
+      <h2>Serve</h2>
+      <p>(combine with chocolate, strawberries or bananas)</p>
+      <img src="images/serve.png" alt="crepe ingredients">
+
+    </section>
+     <cite><a href="https://www.freepik.com/free-photos-vectors/food">Food photo created by freepik</a> <a href="https://www.freepik.com/free-photos-vectors/food">Food vector created by freepik</a></cite>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        // Step One
+        $(".step1").click(function(){
+          $(".intro").hide(1000);
+          $(".ingredients").show(1000);
+          $
+        });
+        // Step Two
+        $(".step2").click(function(){
+          $(".ingredients").slideUp();
+          $(".mix").slideDown();
+        });
+          $("p.ing").on({
+            mouseenter: function(){
+              $(".ingredients img").fadeIn(1000);
+            },
+              mouseleave: function(){
+                $(".ingredients img").fadeOut(1000);
+              }
+          });
+          // Step three
+          $(".step3").click(function(){
+            $(".mix").remove();
+            $(".cook").css("display", "block");
+          });
+          // Step four
+          $(".step4").click(function(){
+            $(".cook").slideUp("slow");
+            $(".serve").show();
+            $(".serve").append("<p class='final'>Enjoy!</p>");
+
+          });
+
+
+      });
+    </script>
+  </body>
+</html>

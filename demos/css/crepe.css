@@ -1,0 +1,153 @@
+/* Color Palette */
+/* Linen: #faf4e6
+Peru: #da8a5c
+Olive: #4b5343
+Brown: #bfab92
+Sienna: #af633c
+green: #8fc0af*/
+
+body{
+  background-color: #fbf4e1;
+  font-family: 'Oxigen', sans-serif;
+  line-height: 2rem;
+  color:#4b5343;
+  font-size: 1.3rem;
+  line-height: 2.3rem;
+}
+main{
+  background: url("../images/bakerySm-bg.jpg") no-repeat top center fixed;
+  background-size:cover;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding:0 2rem;
+}
+/* ==================Header================= */
+header{
+  float:right;
+  width: 50%;
+  margin-right:2rem;
+  /* position:relative;
+  right:2rem; */
+}
+h1, .servings, .final{
+  font-family: 'Pacifico', cursive;
+}
+h1{
+  color:#af633c;
+  font-size:2.2rem;
+  letter-spacing: 0.1rem;
+  line-height: 3rem;
+  margin-top: 0;
+}
+h1 span, .servings{
+  color: #8fc0af;
+}
+h1 {
+  transform:rotate(-22deg);
+}
+h1 span{
+  font-size:3rem;
+}
+.hide{
+  display:none;
+}
+button{
+  background: #da8a5c;
+  padding:.5rem 1rem;
+  font-size: 2rem;
+  color:#ffffff;
+}
+.clear{
+  clear: both;
+}
+/* ==================Intro================= */
+.servings{
+  display:inline-block;
+  margin-top:3rem;
+}
+.intro{
+  font-size:1.5rem;
+  width:60%;
+}
+/* ==================Ingredients================= */
+.intro, .ingredients, .mix, .cook, .serve{
+  /* position: relative;
+  top:1rem; */
+}
+.ingredients img{
+  position:absolute;
+  /* left:-600px; */
+  bottom:9rem;
+  width:60%;
+  display: none;
+}
+.ingredients p{
+  background: #bfab92;
+  display:table;
+  padding:0 .5rem;
+}
+/* ==================Mix================= */
+/* ==================Cook================= */
+/* ==================Serve================= */
+.final{
+  font-size:3rem;
+  color:#af633c;
+}
+cite{
+  position:fixed;
+  bottom:1rem;
+  right:2rem;
+}
+cite a{
+  font-size: .75rem;
+  color:#bfab92;
+}
+/* ==================Media Queries================= */
+@media(min-width:700px){
+  main{
+    background: url("../images/bakery-bg.jpg") no-repeat top center fixed;
+    background-size:cover;
+    padding-left:10%;
+  }
+  h1{
+    font-size: 3rem;
+    line-height: 3.5rem;
+    display:table;
+    margin-top:5rem;
+  }
+  h1 span{
+    font-size:5rem;
+  }
+  /* ==================Header================= */
+  header{
+    float:none;
+    /* padding-top:1rem;
+    margin-top:2rem; */
+  }
+  /* ==================Intro================= */
+  .servings{
+    font-size: 2rem;
+    position: relative;
+    /* top:5rem; */
+  }
+  .intro{
+    font-size: 2rem;
+    line-height: 3.5rem;
+    top:5rem;
+  }
+/* ==================Ingredients================= */
+.intro, .ingredients, .mix, .cook, .serve{
+  top:5rem;
+}
+.ingredients img{
+  width:auto;
+  bottom:20rem;
+}
+/* ==================Mix================= */
+/* ==================Cook================= */
+/* ==================Serve================= */
+}
