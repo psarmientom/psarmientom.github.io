@@ -1,0 +1,588 @@
+.main-wrapper {
+  background-color: white;
+  display: grid;
+  Columns: */ grid-template-columns: repeat(12, minmax(0, 1fr));
+  Rows: */ grid-template-rows: 125px repeat(7, minmax(150px, auto));
+  margin: 1% auto;
+  width: 85%;
+}
+
+header {
+  grid-column: 1/13;
+  display: grid;
+}
+
+.navigation {
+  grid-column: 3/13;
+  background-color: grey;
+  padding: 10px;
+  align-items: center;
+}
+
+.navigation ul {
+  display: block;
+  list-style: none;
+  margin-top: 0px;
+}
+
+.navigation ul li {
+  border: solid 1px;
+  padding: 3px;
+}
+
+.navigation ul li:hover {
+  color: black;
+  background-color: darkgrey;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+.logo {
+  background-color: grey;
+  grid-row: 1/1;
+  grid-column: 1/3;
+}
+
+.logo img {
+  height: 120px;
+  width: 120px;
+}
+
+.main-section {
+  background-color: grey;
+  grid-column: 1/13;
+  grid-row: 2/3;
+  height: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.main-section img {
+  width: 100%;
+}
+
+.main-section-txt p {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 2rem;
+  font-family: 'Caveat', cursive;
+  line-height: 2rem;
+  margin-bottom: 0px;
+}
+
+div.gallery {
+  grid-column: 1/13;
+  grid-row: 3/5;
+  background-color: lightgrey;
+  width: 100%;
+}
+
+.gallery-text h2 {
+  color: black;
+  font-size: 2rem;
+  font-family: 'Caveat', cursive;
+}
+
+div.vacation {
+  width: 200px;
+  height: 200px;
+  margin: 4%;
+  border: 2px solid;
+  color: black;
+  margin: 0 auto 4% auto;
+}
+
+.gallery div:hover {
+  background-color: white;
+}
+
+.vacation img {
+  width: 200px;
+  : 200px;
+  */
+}
+
+div.description {
+  padding: 15px;
+  text-align: center;
+}
+
+.vacation-descriptions {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, minmax(150px, auto));
+  grid-column: 1/13;
+  background-color: grey;
+}
+
+.vacation-descriptions img {
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+}
+
+.about-us {
+  grid-row: 6/7;
+  grid-column: 1/13;
+  background-color: lightgrey;
+}
+
+.about-us p {
+  margin: 5% auto;
+  width: 80%;
+}
+
+.about-us h2 {
+  font-family: 'Caveat', cursive;
+  font-size: 40px;
+}
+
+.about-us img {
+  height: 35%;
+  width: 35%;
+  border-radius: 50%;
+  border: solid 1px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+br {
+  height: 10%;
+}
+
+.contact-us {
+  grid-row: 7/8;
+  grid-column: 1/13;
+  background-color: grey;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(150px, auto));
+}
+
+.contact-us h2 {
+  font-family: 'Caveat', cursive;
+  font-size: 40px;
+  grid-row: 1/1;
+}
+
+.contact-form {
+  grid-column: 1/1;
+  grid-row: 2/2;
+  float: right;
+  margin: 0 0 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+.footer {
+  background-color: darkgrey;
+  grid-column: 1/13;
+  grid-row: 8/8;
+}
+
+.footer p {
+  text-align: center;
+  font-size: .5rem;
+}
+.sticky {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  border-top: 0;
+}
+/* Small Viewport: */
+@media only screen and (min-width: 469px) {
+  .main-wrapper {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    margin: 0 0 0px;
+    width: 100%;
+    height: auto;
+    grid-gap: 0px;
+  }
+
+  .gallery-text h2 {
+    color: black;
+    font-size: 2rem;
+    font-family: 'Caveat', cursive;
+  }
+
+  div.vacation {
+    align-items: center;
+  }
+
+  .navigation {
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    width: 1fr;
+  }
+
+  .navigation ul {
+    display: block;
+    list-style: none;
+    margin-top: 0px;
+  }
+
+  .navigation ul li {
+    border: solid 1px;
+    padding: .1rem;
+    width: 8rem;
+  }
+
+  .main-section-txt p {
+    font-size: 3rem;
+    margin-top: 0px;
+    top: 80%;
+    left: 50%;
+  }
+
+  .vacation-descriptions {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  h2 {
+    text-align: left;
+  }
+
+  .bora-bora {
+    grid-column: 1/5;
+    grid-row: 1/2;
+  }
+
+  .bora-bora p {
+    border: 1px solid;
+    text-align: left;
+    display: block;
+    font-size: 1rem;
+    width: 30rem;
+  }
+
+  .bora-bora img {
+    width: 30rem;
+    height: auto;
+  }
+
+  .hawaii {
+    grid-column: 1/5;
+    grid-row: 2/3;
+  }
+
+  .hawaii p {
+    border: 1px solid;
+    text-align: left;
+    display: block;
+    font-size: 1rem;
+    width: 30rem;
+  }
+
+  .hawaii img {
+    width: 30rem;
+    height: auto;
+  }
+
+  .paris {
+    grid-column: 1/5;
+    grid-row: 3/4;
+  }
+
+  .paris p {
+    border: 1px solid;
+    text-align: left;
+    display: block;
+    font-size: 1rem;
+    width: 30rem;
+  }
+
+  .paris img {
+    width: 30rem;
+    height: auto;
+  }
+
+  .bahamas {
+    grid-column: 1/5;
+    grid-row: 4/4;
+  }
+
+  .bahamas p {
+    border: 1px solid;
+    text-align: left;
+    display: block;
+    font-size: 1rem;
+    width: 30rem;
+  }
+
+  .bahamas img {
+    width: 30rem;
+    height: auto;
+  }
+
+  .footer p {
+    text-align: center;
+    font-size: 1rem;
+    padding: 10%;
+  }
+}
+
+/* Medium Viewport: */
+@media only screen and (min-width: 769px) {
+  .main-wrapper {
+    grid-template-rows: 100px repeat(7, minmax(150px, auto));
+  }
+
+  .main-section {
+    top: 0%;
+  }
+
+  .navigation {
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+  }
+
+  .navigation ul li {
+    border: solid 1px;
+    padding: .5rem;
+    margin-left: 4px;
+    margin-top: 1rem;
+  }
+
+  .navigation ul {
+    display: flex;
+    list-style: none;
+    margin-top: 0px;
+  }
+
+  div.vacation {
+    width: 200px;
+    height: 200px;
+    margin: 4%;
+    border: 2px solid;
+    color: black;
+    float: left;
+  }
+
+  .main-section-txt p {
+    font-size: 3rem;
+    bottom: 10%;
+  }
+
+  .gallery-text h2 {
+    font-size: 3rem;
+  }
+
+  .vacation-descriptions {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-column: 1/13;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .bora-bora {
+    grid-column: 1/5;
+    grid-row: 1/2;
+  }
+
+  .bora-bora p {
+    margin: 1rem;
+    grid-column: 1/3;
+    border: solid 1px;
+    float: left;
+    width: 25rem;
+  }
+
+  .bora-bora img {
+    max-width: 35%;
+    height: auto;
+    border: solid 1px;
+    top: 25%;
+    right: 4%;
+    float: right;
+    position: relative;
+    margin: .5rem;
+  }
+
+  .hawaii img {
+    max-width: 35%;
+    height: auto;
+    float: left;
+    margin: 1rem;
+    border: solid 1px;
+    position: relative;
+    top: 20%;
+  }
+
+  .hawaii p {
+    border: solid 1px;
+    float: right;
+    width: 25rem;
+  }
+
+  .paris img {
+    max-width: 35%;
+    height: auto;
+    border: solid 1px;
+    top: 25%;
+    right: 4%;
+    float: right;
+    position: relative;
+  }
+
+  .paris p {
+    margin: 1rem;
+    grid-column: 1/3;
+    border: solid 1px;
+    float: left;
+    width: 25rem;
+  }
+
+  .bahamas p {
+    border: solid 1px;
+    float: right;
+    width: 25rem;
+  }
+
+  .bahamas img {
+    max-width: 35%;
+    height: auto;
+    float: left;
+    margin: 20px;
+    border: solid 1px;
+    position: relative;
+    top: 20%;
+  }
+}
+
+/* Large Viewport: */
+@media only screen and (min-width: 992px) {
+  .main-wrapper {
+    background-color: white;
+    display: grid;
+    Columns: */ grid-template-columns: repeat(12, minmax(0, 1fr));
+    Rows: */ grid-template-rows: 100px repeat(7, minmax(150px, auto));
+    margin: 1% auto;
+    width: 85%;
+  }
+
+  .main-section {
+    top: 0%;
+  }
+
+  .main-section-txt p {
+    font-size: 4rem;
+  }
+
+  .navigation {
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+  }
+
+  .navigation ul li {
+    border: solid 1px;
+    padding: .5rem;
+    margin-left: 4px;
+    margin-top: 1rem;
+    margin-right: .5rem;
+    display: flex;
+  }
+
+  .navigation ul {
+    display: flex;
+    list-style: none;
+    margin-top: 0px;
+  }
+
+  .vacation-descriptions {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: repeat(4, minmax(150px, auto));
+    grid-column: 1fr;
+    grid-row: 5/6;
+    background-color: grey;
+    gap: 4fr;
+  }
+
+  .bora-bora p {
+    border: solid 1px;
+    text-align: center;
+  }
+
+  .bora-bora img {
+    max-width: 40%;
+    height: auto;
+    float: right;
+    margin: 20px;
+    border: solid 1px;
+    position: relative;
+    top: 5%;
+  }
+
+  .hawaii img {
+    max-width: 40%;
+    height: auto;
+    float: left;
+    margin: 20px;
+    border: solid 1px;
+    position: relative;
+    top: 5%;
+  }
+
+  .hawaii p {
+    border: solid 1px;
+    text-align: center;
+    margin: 16px;
+  }
+
+  .paris p {
+    border: solid 1px;
+    text-align: center;
+  }
+
+  .paris img {
+    max-width: 40%;
+    height: auto;
+    float: right;
+    margin: 20px;
+    border: solid 1px;
+    position: relative;
+    top: 5%;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .bahamas img {
+    max-width: 40%;
+    height: auto;
+    float: left;
+    margin: 20px;
+    border: solid 1px;
+    position: relative;
+    top: 5%;
+  }
+
+  .bahamas p {
+    border: solid 1px;
+    text-align: center;
+    margin: 16px;
+  }
+}

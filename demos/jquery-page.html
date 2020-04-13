@@ -40,7 +40,9 @@
       <h2>Mix</h2>
       <p>(all the ingredients)</p>
       <img src="images/mix.png" alt="crepe ingredients">
+      <button class="back2" type="button" name="next">Back</button>
       <button class="step3" type="button" name="next">Next</button>
+
     </section>
     <section class="cook hide">
       <h2>Cook</h2>
@@ -54,45 +56,65 @@
       <img src="images/serve.png" alt="crepe ingredients">
 
     </section>
+
      <cite><a href="https://www.freepik.com/free-photos-vectors/food">Food photo created by freepik</a> <a href="https://www.freepik.com/free-photos-vectors/food">Food vector created by freepik</a></cite>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="js/nav1.js"></script> -->
     <script type="text/javascript">
-      $(document).ready(function(){
-        // Step One
-        $(".step1").click(function(){
-          $(".intro").hide(1000);
-          $(".ingredients").show(1000);
-          $
-        });
-        // Step Two
-        $(".step2").click(function(){
-          $(".ingredients").slideUp();
-          $(".mix").slideDown();
-        });
-          $("p.ing").on({
-            mouseenter: function(){
-              $(".ingredients img").fadeIn(1000);
-            },
-              mouseleave: function(){
-                $(".ingredients img").fadeOut(1000);
-              }
-          });
-          // Step three
-          $(".step3").click(function(){
-            $(".mix").remove();
-            $(".cook").css("display", "block");
-          });
-          // Step four
-          $(".step4").click(function(){
-            $(".cook").slideUp("slow");
-            $(".serve").show();
-            $(".serve").append("<p class='final'>Enjoy!</p>");
-
-          });
-
-
+    $(document).ready(function(){
+      // Step One
+      $(".step1").click(function(){
+        $(".intro").hide(1000);
+        $(".ingredients").show(1000);
+        $
       });
+      // Step Two
+      $(".step2").click(function(){
+        $(".ingredients").slideUp();
+        $(".mix").slideDown();
+
+        $(document).on("click", ".back2", function(){
+          $(".ingredients").slideDown();
+          // $(".mix").slideUp();
+          $(".ingredients").after("<section class=\"mix hide\"><h2>Mix Appended</h2><p>(all the ingredients)</p>" + "<img src=\"images/mix.png\" alt=\"crepe ingredients\">" + "<button class=\"back2\" type=\"button\" name=\"next\">Back</button>"
+          + "<button class=\"step3\" type=\"button\" name=\"next\">Next</button></section>");
+
+
+        });
+        $(".step2").click(function(){
+          $(".mix").removeClass(".hide").slideDown();
+        });
+      });
+        $("p.ing").on({
+          mouseenter: function(){
+            $(".ingredients img").fadeIn(1000);
+          },
+            mouseleave: function(){
+              $(".ingredients img").fadeOut(1000);
+            }
+        });
+        // Step three
+        $(".step3").click(function(){
+          $(".mix").slideUp();
+          $(".cook").css("display", "block");
+        });
+        // Back to two
+        $(".back2").click(function(){
+          $(".mix").remove();
+          $(".ingredients").slideDown();
+        });
+        // Step four
+        $(".step4").click(function(){
+          $(".cook").slideUp("slow");
+          $(".serve").show();
+          $(".serve").append("<p class='final'>Enjoy!</p>");
+
+        });
+
+
+    });
     </script>
+
   </body>
 </html>

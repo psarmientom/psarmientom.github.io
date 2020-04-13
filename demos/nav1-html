@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nav1 demo</title>
+    <link rel="stylesheet" href="css/nav1.css">
+  </head>
+	<body>
+
+		<div class="main-wrapper">
+		    <header class="nav">
+		      <nav class="navigation">
+		        <ul>
+		          <li><a href="#home">Home</a></li>
+		          <li><a href="#destinations">Destinations</a></li>
+		          <li><a href="#about-us">About Us </a></li>
+		          <li><a href="#contact">Contact</a></li>
+		        </ul>
+		      </nav>
+		      <section class="logo">
+		        <img src="https://sebastian-crist.github.io/grid-practice/photos/photos/logo.png" alt="Logo">
+		      </section>
+		    </header>
+		    <section class="main-section">
+		      <p id="home"><img src="https://sebastian-crist.github.io/grid-practice/photos/homepage-photo.jpg" alt="Homepage">
+		        <div class="main-section-txt">
+		          <p> Adventure Awaits! </p>
+		        </div>
+		    </section>
+		    <div class="gallery">
+		      <p id="destinations">
+		        <section class="gallery-text">
+		          <h2> Choose a Destination: </h2>
+		        </section>
+		        <div class="vacation">
+		          <a href="#bora">
+		            <img src="https://sebastian-crist.github.io/grid-practice/photos/photos/bora.jpg" alt="Bora Bora">
+		            <div class="description">
+		              Bora Bora
+		            </div>
+		          </a>
+		        </div>
+		        <a href="#hawaii">
+		          <div class="vacation">
+		            <img src="https://sebastian-crist.github.io/grid-practice/photos/photos/hawaii.jpg" alt="Hawaii">
+		            <div class="description">
+		              Hawaii
+		            </div>
+		          </div>
+		        </a>
+		        <a href="#paris">
+		          <div class="vacation">
+		            <img src="https://sebastian-crist.github.io/grid-practice/photos/photos/france.jpg" alt="Paris">
+		            <div class="description">
+		              Paris
+		            </div>
+		          </div>
+		        </a>
+		        <a href="#bahamas">
+		          <div class="vacation">
+		            <img src="photos/bahamas.jpg" alt="Bahamas">
+		            <p id="bora">
+		              <div class="description">
+		                Bahamas
+		              </div>
+		          </div>
+		        </a>
+		    </div>
+		    <div class="vacation-descriptions">
+		      <div class="bora-bora">
+		        <img src="photos/bora-bora-desc.jpg" alt="Bora Description">
+		        <h2> Bora Bora </h2>
+		        <p id="hawaii"> Bora Bora is a small South Pacific island northwest of Tahiti in French Polynesia. These white sand beaches and turqoise waters have become known as a scuba diving/snorkeling paradise. Whether you are looking for a romantic
+		          getaway or simply looking to soak up some sun, the luxurious shores of Bora Bora are awaiting you. Enjoy the colorful reefs and wide variety of fish while scuba diving or enjoy other activities such as: fishing, cruises, jet skiing,
+		          kiteboarding, paddleboarding, outrigger canoe rides, kayaking, island tours and more! </p>
+		      </div>
+		      <div class="hawaii">
+		        <img src="photos/hawaii.jpg" alt="Hawaii Description">
+		        <h2> Hawaii </h2>
+		        <p id="paris"> There are six major islands to visit in Hawaii: Kauai, Oahu, Molokai, Lanai, Maui, and the island of Hawaii. Home to the world’s most active volcanoe and the welcoming aloha spirit — Hawaii is like no place on earth. This
+		          vacation hotspot has everything needed for an action packed vacation or a relaxing beach getaway. From snorkeling to whale watching, hiking to sightseeing, beach hopping to cultural activities, Hawaii has something for everyone.</p>
+		      </div>
+		      <div class="paris">
+		        <img src="photos/france.jpg" alt="Paris">
+		        <h2> Paris </h2>
+		        <p id="bahamas"> Bask in the glory of the city beneath you as you ascend the Eiffel Tower under a moonlight Paris sky. Practice your French over croissants at a local cafe and unravel the mysteries of this historic gem. Stop by the Louvre to
+		          visit the Mona Lisa and end your day at one of the many Michelin star restaurants. Whether you’re looking for a breathtaking view, a gastronomical delight or a immersion of rich culture, Paris has it all. </p>
+		      </div>
+		      <div class="bahamas">
+		        <img src="photos/bahamas.jpg" alt="Bahamas">
+		        <h2> Bahamas </h2>
+		        <p> Get lost in the turquoise waters that surround you as you explore the majesty that is the Bahamas. Spend the day sliding through tropical waters at the world renowned Atlantis Resort, or relax by the ocean enjoying the bright Bahamian
+		          sun. Whether its snorkeling, lounging by the pool, or swimming with sharks, the Bahamas is the perfect paradise to escape to. </p>
+		      </div>
+		    </div>
+		    <section class="about-us">
+		      <p id="about-us">
+		        <h2> About Us </h2>
+		        <img src="photos/airplame.jpg" alt="Airplane">
+		        <p> Our team at Deluxe Travels pride ourselves in putting customers first. Not only do we excel at customer service, but we truly focus our company around people. The bread and butter of Deluxe Travels is our employees; we're not just a
+		          company, we're a family. Our top of the line concierges are hungry to help others and provide the best possible service possible to anyone and everyone.</p>
+
+		        <p> Founded in 2020, Deluxe Travels has assisted over 1 customer and we are ready to make our mark in the travel industry. We are able to obtain vacation packages by combining flights, hotel, and excursions for a discounted price provided the
+		          our clients. Simply give us a call or email and we would be happy to assist you! </p>
+		        <p id="contact">
+		    </section>
+		    <section class="contact-us">
+		      <h2> Contact Us </h2>
+		      <div class="contact-form">
+		        <script type="text/javascript" src="https://form.jotform.com/jsform/200834857865164"></script>
+		      </div>
+		    </section>
+		    <footer class="footer">
+		      <p> © Deluxe Travels. All rights reserved. FST #ST41395
+		        Privacy Policy Terms & Conditions Apply </p>
+		    </footer>
+		  </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<!-- <script type="text/javascript" src="js/nav1.js"> -->
+		<script type="text/javascript">
+			$(document).ready(function(){
+				// grab the initial top offset of the navigation
+				var stickyNavTop = $('.nav').offset().top;
+
+				// our function that decides weather the navigation bar should have "fixed" css position or not.
+				var stickyNav = function(){
+					var scrollTop = $(window).scrollTop(); // our current vertical position from the top
+
+					// if we've scrolled more than the navigation, change its position to fixed to stick to top,
+					// otherwise change it back to relative
+					if (scrollTop > stickyNavTop) {
+							$('.nav').addClass('sticky');
+							$('.nav').css("opacity","0.8");
+					} else {
+							$('.nav').removeClass('sticky');
+							$('.nav').css("opacity","1");
+					}
+			};
+
+			stickyNav();
+			// and run it again every time you scroll
+			$(window).scroll(function() {
+				stickyNav();
+			});
+			});
+		</script>
+
+  	<!-- </script> -->
+  </body>
+</html>

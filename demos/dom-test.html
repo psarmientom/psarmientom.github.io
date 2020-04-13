@@ -43,17 +43,20 @@ $(document).ready(function(){
               $("#testId").css("color", "black");
         });
         // End of Hover Option
-        $("#testId").on({
-            mouseenter: function(){
-            $(this).css("background-color", "lightgray");
-            },
-            mouseleave: function(){
-            $(this).css("background-color", "lightblue");
-            },
-            click: function(){
-            $(this).css("background-color", "yellow");
-            }
-        });
+        // $("#testId").on({
+        //     mouseenter: function(){
+        //     $(this).css("background-color", "lightgray");
+        //     },
+        //     mouseleave: function(){
+        //     $(this).css("background-color", "lightblue");
+        //     },
+        //     click: function(){
+        //     $(this).css("background-color", "yellow");
+        //     }
+        // });
+      
+   // $(this).stop();
+ });
         // End of the on() method
         $("button").click(function(){
           $("#testId").slideToggle("fast");
@@ -61,7 +64,7 @@ $(document).ready(function(){
         $("button").click(function(){
            $(".demo").after('This is "here"');
         });
-        $("button").click(function(){*/
+        $("button").click(function(){
           $("#testId").animate({left:"250px", opacity: "0.5", height:"300px"});
         });
 // Document Ready ends here
