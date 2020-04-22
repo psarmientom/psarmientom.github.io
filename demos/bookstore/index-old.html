@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The BookWorm - The Biggest Collection of Books</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/92123ffbf2.js" crossorigin="anonymous"></script>
+    <!-- My CSS files -->
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <section class="top">
+      <nav>
+        <ul>
+          <li>My Account</li>
+          <li>Checkout</li>
+          <li>Log In</li>
+        </ul>
+      </nav>
+    </section>
+    <header>
+      <div class="logo">
+        <img src="images/BookWorm-logo.png" alt="The BookWorm Logo">
+      </div>
+      <div class="search collapsed">
+        <input type="text" placeholder="Search">
+        <a>&nbsp;</a>
+      </div>
+      <nav class="topnav" id="myTopnav">
+      <ul>
+        <!-- <li><a href="#">Home</a></li> -->
+        <li class="dropdown"><a class="dropbtn" href="#">Categories <i class="fa fa-caret-down"></i></a>
+          <ul class="dropdown-content">
+            <li><a href="#">Fiction</a></li>
+            <li><a href="#">Non-Fiction</a></li>
+            <li><a href="#">Romance</a></li>
+            <li><a href="#">Thrillers</a></li>
+            <li><a href="#">Technology</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a class="dropbtn" href="#">Fiction <i class="fa fa-caret-down"></i></a>
+          <ul class="dropdown-content">
+            <li>Teen Fiction</li>
+            <li>Adult Fiction</li>
+          </ul>
+        </li>
+        <li>Non-Fiction</li>
+        <li class="dropdown"><a class="dropbtn" href="#">Events <i class="fa fa-caret-down"></i></a>
+          <ul class="dropdown-content">
+            <li>Book Club</li>
+          </ul>
+        </li>
+        <li class="dropdown"><a class="dropbtn" href="#">About Us <i class="fa fa-caret-down"></i></a>
+          <ul class="dropdown-content">
+            <li>Directions</li>
+            <li>Return Policy</li>
+          </ul>
+        </li>
+      </ul>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </nav>
+      <div class="cart">
+      <ul>
+        <li>My Cart</li>
+        <li>2</li>
+      </ul>
+    </div>
+    </header>
+    <section class="hero">
+      <h2>Summer Reads</h2>
+      <p>Petierunt uti sibi concilium totius Galliae in diem certam indicere. Mercedem aut nummos unde unde extricat, amaras. Ut enim ad minim veniam, quis nostrud exercitation. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae.
+Magna pars studiorum, prodita quaerimus. Morbi odio eros, volutpat ut pharetra vitae, lobortis sed nibh. Paullum deliquit, ponderibus modulisque suis ratio utitur. Fabio vel iudice vincam, sunt in culpa qui officia. At nos hinc posthac, sitientis piros Afros. Quisque placerat facilisis egestas cillum dolore.
+Ambitioni dedisse scripsisse iudicaretur. Gallia est omnis divisa in partes tres, quarum. Phasellus laoreet lorem vel dolor tempus vehicula. Quid securi etiam tamquam eu fugiat nulla pariatur. Cras mattis iudicium purus sit amet fermentum.</p>
+      <button class="more">Read More</button>
+    </section>
+    <main>
+      <section class="cats">
+        <a href="/fiction.html"><img src="images/fiction.png" alt=""></a>
+        <a href="/non-fiction.html"></a>
+        <a href="/easy-reads.html"></a>
+      </section>
+    </main>
+
+
+<!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bookScripts.js"></script>
+  <script type="text/javascript">
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+        console.log("responsive");
+      } else {
+        x.className = "topnav";
+        console.log("non-responsive");
+      }
+    };
+  </script>
+  </body>
+</html>

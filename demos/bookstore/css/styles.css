@@ -1,0 +1,231 @@
+/* Colors
+Main: #428A8E
+top bar: #2C2E32
+Font: #222222
+Accent: #F89D18 */
+/******************************************************/
+/******************* General Styles *******************/
+/******************************************************/
+body {
+  font-family: "Lato", sans-serif;
+  color:#222222;
+  margin:0;
+  padding:0;
+  box-sizing: content-box;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+/******************* Search *******************/
+.search, .cart{
+  display: none;
+}
+/******************* Top Sliver *******************/
+.top{
+  background-color: #000000;
+  color: #ffffff;
+}
+.top ul{
+  display: flex;
+  margin:0;
+  padding:0;
+  justify-content: space-around;
+}
+.top ul li, header .cart ul{
+  list-style: none;
+}
+.top ul li{
+  padding:.5rem 0;
+}
+.top nav a{
+  color: #fff;
+}
+/******************* Responsive Navigation *******************/
+#cssmenu{
+  border:none;
+}
+#cssmenu > ul > li:hover, #cssmenu ul li.active:hover, #cssmenu ul li.active, #cssmenu ul li.has-sub.active:hover{
+  background: #428A8E !important;
+}
+.button.menu-opened::before, .button.menu-opened::after{
+  background: #ccc;
+}
+#cssmenu #head-mobile{
+  padding: 28px;
+}
+#cssmenu .submenu-button, #cssmenu ul li{
+  border-color: #ccc;
+}
+#cssmenu ul ul li{
+  background: #efefef !important;
+}
+#cssmenu ul ul li a{
+  color:#222222;
+}
+#cssmenu ul ul li:hover > a, #cssmenu ul ul li a:hover{
+  color: #428A8E !important;
+}
+#cssmenu .submenu-button.submenu-opened{
+  background: #428A8E;
+}
+#cssmenu li.search{
+  display: flex;
+}
+#cssmenu li.search > input{
+  width:100%;
+  padding 5px;
+}
+#cssmenu ul li.active{
+  background: none !important;
+}
+#cssmenu .fa{
+  color:#222222;
+}
+#cssmenu ul li.search a:last-child{
+  width: 0;
+  padding:0;
+}
+/*******************Footer *******************/
+footer{
+  background:#428A8E;
+  color:#fff;
+  padding:2rem;
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+footer a{
+  color: #fff;
+}
+footer ul{
+  list-style: none;
+}
+/******************************************************************/
+/*
+/***** MEDIA QUERIES
+/*
+/******************************************************************/
+@media only screen and (min-width: 768px){
+/******************* Top Sliver *******************/
+  .top ul{
+    justify-content: end;
+    padding-right: 1rem;
+  }
+  .top ul li{
+    padding:.5rem 2rem .5rem 0;
+  }
+  /*******************Footer *******************/
+  footer{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/******************************************************************/
+@media only screen and (min-width: 1024px){
+  /******************* Search Styles *******************/
+  #cssmenu ul li.active{
+  background: #428A8E !important;
+  width:46px;
+  height: 46px;
+  margin-top:0;
+  border-right:solid 1px white;
+}
+#cssmenu .categories{
+  background: #428A8E;
+  color:#ffffff;
+}
+  li.search.mobile input, li.search.mobile a:before{
+    display:none;
+  }
+  .search.collapsed.mobile.active{
+    margin-left:0;
+    width: 2em;
+  }
+
+  .search, .cart{
+    display: block;
+  }
+  .search {
+    width: 18em;
+    height: 2em;
+    padding: 0;
+    margin: 0;
+    margin-top:4px;
+    line-height: 2em;
+    background-color: #fff;
+    position: relative;
+    transition: all .25s linear;
+  }
+  .search input {
+    width: 9.5em;
+    height: 2em;
+    line-height: 1em;
+    padding: 0 0 0 .5em;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 1em;
+    color: #ccc;
+    float: left;
+    transition: all .25s linear;
+  }
+  .search a {
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    padding: 0;
+    color: #ccc;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all .25s linear;
+  }
+  .search a:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-style: normal;
+  }
+  .search a:hover {
+    color: #eee;
+  }
+  .search.collapsed {
+    width: 8em;
+    margin-left: 10em;
+    margin-top:4px;
+  }
+  .search.collapsed input {
+    width: 0;
+  }
+  .search.collapsed a {
+    color: #999;
+  }
+  .search.collapsed a:hover {
+    color: #bbb;
+  }
+  /******************* Dropdown Navigation *******************/
+  header{
+    max-width:1280px;
+    border-bottom: 1px solid #ccc;
+    /* background: #ccc; */
+    padding:2rem 0 0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  /*******************Footer *******************/
+  footer{
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+/******************************************************************/
+@media only screen and (min-width: 1280px){
+
+/******************************************************************/
+@media only screen and (min-width: 1920px){
+
+}
