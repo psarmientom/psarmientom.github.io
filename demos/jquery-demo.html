@@ -12,21 +12,28 @@
       margin:5% auto;
     }
     .slider-for{
-      height:500px;
-      width:500px;
+      height:315px;
+      width:560px;
     }
     .slider-nav{
       height:100px;
       width:200px;
+    }
+    .slider-nav .slick-list{
+      width: 460px;
+      margin-top: 30px;
     }
   </style>
 </head>
   <body>
   <main>
   <div class="slider slider-for">
-    <img src="https://via.placeholder.com/500/0000FF/808080 ?Text=Digital.com"/>
-    <img src="https://via.placeholder.com/500/FF0000/FFFFFF?Text=Down.com"/>
-    <img src="https://via.placeholder.com/500/FFFF00/000000?Text=WebsiteBuilders.com"/>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/M61viP3prdQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jPOxWOE-3Xk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/0Jj4aNsSXUc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- <img src="https://via.placeholder.com/500/0000FF/808080 ?Text=Digital.com"/> -->
+    <!-- <img src="https://via.placeholder.com/500/FF0000/FFFFFF?Text=Down.com"/> -->
+    <!-- <img src="https://via.placeholder.com/500/FFFF00/000000?Text=WebsiteBuilders.com"/> -->
   </div>
   <div class="slider slider-nav">
     <img src="https://via.placeholder.com/300/0000FF/808080 ?Text=Digital.com"/>
@@ -53,18 +60,20 @@
  slidesToShow: 1,
  slidesToScroll: 1,
  arrows: true,
- autoplay: true,
+ // autoplay: true,
  autoplaySpeed: 500,
  fade: true,
  asNavFor: '.slider-nav'
 });
 $('.slider-nav').slick({
- slidesToShow: 3,
+ slidesToShow: 2,
  slidesToScroll: 1,
  asNavFor: '.slider-for',
  dots: true,
+ arrows: false,
  centerMode: true,
- focusOnSelect: true
+ focusOnSelect: true,
+ infinite: true
 });
 
     });
