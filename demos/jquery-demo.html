@@ -1,5 +1,7 @@
-<html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
   <head>
+    <meta charset="utf-8">
   <title>Slider Demo</title>
   <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
@@ -28,9 +30,15 @@
   <body>
   <main>
   <div class="slider slider-for">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/M61viP3prdQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/jPOxWOE-3Xk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/0Jj4aNsSXUc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="item youtube">
+    <iframe class="embed-player slide-media" width="560" height="315" src="https://www.youtube.com/embed/M61viP3prdQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="item youtube">
+    <iframe class="embed-player slide-media" width="560" height="315" src="https://www.youtube.com/embed/jPOxWOE-3Xk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="item youtube">
+    <iframe class="embed-player slide-media" width="560" height="315" src="https://www.youtube.com/embed/0Jj4aNsSXUc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
     <!-- <img src="https://via.placeholder.com/500/0000FF/808080 ?Text=Digital.com"/> -->
     <!-- <img src="https://via.placeholder.com/500/FF0000/FFFFFF?Text=Down.com"/> -->
     <!-- <img src="https://via.placeholder.com/500/FFFF00/000000?Text=WebsiteBuilders.com"/> -->
@@ -57,24 +65,95 @@
       //     autoplaySpeed: 2000
       // });
       $('.slider-for').slick({
- slidesToShow: 1,
- slidesToScroll: 1,
- arrows: true,
- // autoplay: true,
- autoplaySpeed: 500,
- fade: true,
- asNavFor: '.slider-nav'
-});
-$('.slider-nav').slick({
- slidesToShow: 2,
- slidesToScroll: 1,
- asNavFor: '.slider-for',
- dots: true,
- arrows: false,
- centerMode: true,
- focusOnSelect: true,
- infinite: true
-});
+       slidesToShow: 1,
+       slidesToScroll: 1,
+       arrows: true,
+       // autoplay: true,
+       autoplaySpeed: 500,
+       fade: true,
+       asNavFor: '.slider-nav'
+      });
+      $('.slider-nav').slick({
+       slidesToShow: 2,
+       slidesToScroll: 1,
+       asNavFor: '.slider-for',
+       dots: true,
+       arrows: false,
+       centerMode: true,
+       focusOnSelect: true,
+       infinite: true
+      });
+
+
+      var slideWrapper = $(".main-slider"),
+        iframes = slideWrapper.find('.embed-player');
+
+        // POST commands to YouTube or Vimeo API
+        function postMessageToPlayer(player, command){
+          if (player == null || command == null) return;
+          player.contentWindow.postMessage(JSON.stringify(command), "*");
+        }
+        // When the slide is changing
+        function playPauseVideo(slick, control){
+          var currentSlide, slideType, startTime, player, video;
+
+          currentSlide = slick.find(".slick-current");
+          slideType = currentSlide.attr("class").split(" ")[1];
+          player = currentSlide.find("iframe").get(0);
+          startTime = currentSlide.data("video-start");
+
+          if (slideType === "vimeo") {
+    switch (control) {
+      case "play":
+        if ((startTime != null && startTime > 0 ) && !currentSlide.hasClass('started')) {
+          currentSlide.addClass('started');
+          postMessageToPlayer(player, {
+            "method": "setCurrentTime",
+            "value" : startTime
+          });
+        }
+        postMessageToPlayer(player, {
+          "method": "play",
+          "value" : 1
+        });
+        break;
+      case "pause":
+        postMessageToPlayer(player, {
+          "method": "pause",
+          "value": 1
+        });
+        break;
+    }
+  } else if (slideType === "youtube") {
+    switch (control) {
+      case "play":
+        postMessageToPlayer(player, {
+          "event": "command",
+          "func": "mute"
+        });
+        postMessageToPlayer(player, {
+          "event": "command",
+          "func": "playVideo"
+        });
+        break;
+      case "pause":
+        postMessageToPlayer(player, {
+          "event": "command",
+          "func": "pauseVideo"
+        });
+        break;
+    }
+  } else if (slideType === "video") {
+    video = currentSlide.children("video").get(0);
+    if (video != null) {
+      if (control === "play"){
+        video.play();
+      } else {
+        video.pause();
+      }
+    }
+  }
+}
 
     });
   </script>
