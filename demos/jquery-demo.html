@@ -1,162 +1,48 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-  <title>Slider Demo</title>
-  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-  <style media="screen">
-    body{
-      background:#000;
-    }
-    main{
-      width:50%;
-      margin:5% auto;
-    }
-    .slider-for{
-      height:315px;
-      width:560px;
-    }
-    .slider-nav{
-      height:100px;
-      width:200px;
-    }
-    .slider-nav .slick-list{
-      width: 460px;
-      margin-top: 30px;
-    }
-  </style>
+<head>
+<title>Slider Demo</title>
+<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
-  <body>
-  <main>
-  <div class="slider slider-for">
-    <div class="item youtube">
-    <iframe class="embed-player slide-media" width="560" height="315" src="https://www.youtube.com/embed/M61viP3prdQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div class="item youtube">
-    <iframe class="embed-player slide-media" width="560" height="315" src="https://www.youtube.com/embed/jPOxWOE-3Xk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div class="item youtube">
-    <iframe class="embed-player slide-media" width="560" height="315" src="https://www.youtube.com/embed/0Jj4aNsSXUc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <!-- <img src="https://via.placeholder.com/500/0000FF/808080 ?Text=Digital.com"/> -->
-    <!-- <img src="https://via.placeholder.com/500/FF0000/FFFFFF?Text=Down.com"/> -->
-    <!-- <img src="https://via.placeholder.com/500/FFFF00/000000?Text=WebsiteBuilders.com"/> -->
-  </div>
-  <div class="slider slider-nav">
-    <img src="https://via.placeholder.com/300/cccccc/808080?Video1"/>
-    <img src="https://via.placeholder.com/300/cccccc/FFFFFF?Text=Video2"/>
-    <img src="https://via.placeholder.com/300/cccccc/000000?Text=Video3"/>
-  </div>
-  </main>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
-
-  <script type="text/javascript">
-    $(document).ready(function(){
-      // $('.slider').slick({
-      //      // fade: true,
-      //     speed: 500,
-      //     slidesToShow: 1,
-      //     slidesToScroll: 1,
-      //     autoplay: true,
-      //     arrows: true,
-      //     autoplaySpeed: 2000
-      // });
-      $('.slider-for').slick({
-       slidesToShow: 1,
-       slidesToScroll: 1,
-       arrows: true,
-       // autoplay: true,
-       autoplaySpeed: 500,
-       fade: true,
-       asNavFor: '.slider-nav'
-      });
-      $('.slider-nav').slick({
-       slidesToShow: 2,
-       slidesToScroll: 1,
-       asNavFor: '.slider-for',
-       dots: true,
-       arrows: false,
-       centerMode: true,
-       focusOnSelect: true,
-       infinite: true
-      });
-
-
-      var slideWrapper = $(".main-slider"),
-        iframes = slideWrapper.find('.embed-player');
-
-        // POST commands to YouTube or Vimeo API
-        function postMessageToPlayer(player, command){
-          if (player == null || command == null) return;
-          player.contentWindow.postMessage(JSON.stringify(command), "*");
-        }
-        // When the slide is changing
-        function playPauseVideo(slick, control){
-          var currentSlide, slideType, startTime, player, video;
-
-          currentSlide = slick.find(".slick-current");
-          slideType = currentSlide.attr("class").split(" ")[1];
-          player = currentSlide.find("iframe").get(0);
-          startTime = currentSlide.data("video-start");
-
-          if (slideType === "vimeo") {
-    switch (control) {
-      case "play":
-        if ((startTime != null && startTime > 0 ) && !currentSlide.hasClass('started')) {
-          currentSlide.addClass('started');
-          postMessageToPlayer(player, {
-            "method": "setCurrentTime",
-            "value" : startTime
-          });
-        }
-        postMessageToPlayer(player, {
-          "method": "play",
-          "value" : 1
-        });
-        break;
-      case "pause":
-        postMessageToPlayer(player, {
-          "method": "pause",
-          "value": 1
-        });
-        break;
-    }
-  } else if (slideType === "youtube") {
-    switch (control) {
-      case "play":
-        postMessageToPlayer(player, {
-          "event": "command",
-          "func": "mute"
-        });
-        postMessageToPlayer(player, {
-          "event": "command",
-          "func": "playVideo"
-        });
-        break;
-      case "pause":
-        postMessageToPlayer(player, {
-          "event": "command",
-          "func": "pauseVideo"
-        });
-        break;
-    }
-  } else if (slideType === "video") {
-    video = currentSlide.children("video").get(0);
-    if (video != null) {
-      if (control === "play"){
-        video.play();
-      } else {
-        video.pause();
-      }
-    }
+<style media="screen">
+  body{
+    background:#000;
   }
-}
+  main{
+    width:50%;
+    margin:5% auto;
+  }
+  .slider{
+    height:500px;
+    width:500px;
+  }
+</style>
+<body>
+<main>
+<div class="slider">
+  <img src="https://via.placeholder.com/500/0000FF/808080 ?Text=Digital.com"/>
+  <img src="https://via.placeholder.com/500/FF0000/FFFFFF?Text=Down.com"/>
+  <img src="https://via.placeholder.com/500/FFFF00/000000?Text=WebsiteBuilders.com"/>
+</div>
+</main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
 
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.slider').slick({
+         // fade: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        arrows: true,
+        autoplaySpeed: 2000
     });
-  </script>
+  });
+</script>
 
-  </body>
+</body>
 </html>

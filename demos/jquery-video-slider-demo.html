@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+  <title>Slider Demo</title>
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <style media="screen">
+    body{
+      background:#000;
+    }
+    main{
+      width:50%;
+      margin:5% auto;
+    }
+    .slider-for{
+      height:315px;
+      width:560px;
+    }
+    .slider-nav img{
+      height:150px;
+      width:200px;
+    }
+    .slider-nav .slick-list{
+      width: 460px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+  <body>
+  <main>
+  <div class="main-slider slider slider-for">
+    <div class="item youtube">
+    <iframe class="embed-player slide-media" width="560" height="315" src="https://www.youtube.com/embed/M61viP3prdQ?enablejsapi=1&controls=1&fs=1&iv_load_policy=3&loop=0&autoplay=0" frameborder="0" allow="encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="item youtube">
+    <iframe class="embed-player slide-media" width="560" height="315" src="https://www.youtube.com/embed/jPOxWOE-3Xk?enablejsapi=1&controls=1&fs=1&iv_load_policy=3&loop=0&autoplay=0" frameborder="0" allow="encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="item youtube">
+    <iframe class="embed-player slide-media" width="560" height="315" src="https://www.youtube.com/embed/0Jj4aNsSXUc?enablejsapi=1&controls=1&fs=1&iv_load_policy=3&loop=0&autoplay=0" frameborder="0" allow="encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></iframe>
+    </div>
+    <!-- <img src="https://via.placeholder.com/500/0000FF/808080 ?Text=Digital.com"/> -->
+    <!-- <img src="https://via.placeholder.com/500/FF0000/FFFFFF?Text=Down.com"/> -->
+    <!-- <img src="https://via.placeholder.com/500/FFFF00/000000?Text=WebsiteBuilders.com"/> -->
+  </div>
+  <div class="slider slider-nav">
+    <img src="https://via.placeholder.com/300/cccccc/808080?Video1"/>
+    <img src="https://via.placeholder.com/300/666666/FFFFFF?Text=Video2"/>
+    <img src="https://via.placeholder.com/300/999999/000000?Text=Video3"/>
+  </div>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      // $('.slider').slick({
+      //      // fade: true,
+      //     speed: 500,
+      //     slidesToShow: 1,
+      //     slidesToScroll: 1,
+      //     autoplay: true,
+      //     arrows: true,
+      //     autoplaySpeed: 2000
+      // });
+    });
+
+  var slideWrapper = $(".main-slider"),
+    iframes = slideWrapper.find('.embed-player'),
+    lazyImages = slideWrapper.find('.slide-image'),
+    lazyCounter = 0;
+
+// POST commands to YouTube or Vimeo API
+function postMessageToPlayer(player, command){
+  if (player == null || command == null) return;
+  player.contentWindow.postMessage(JSON.stringify(command), "*");
+}
+
+// When the slide is changing
+function playPauseVideo(slick, control){
+  var currentSlide, slideType, startTime, player, video;
+
+  currentSlide = slick.find(".slick-current");
+  slideType = currentSlide.attr("class").split(" ")[1];
+  player = currentSlide.find("iframe").get(0);
+  startTime = currentSlide.data("video-start");
+
+  if (slideType === "vimeo") {
+    switch (control) {
+      case "play":
+        if ((startTime != null && startTime > 0 ) && !currentSlide.hasClass('started')) {
+          currentSlide.addClass('started');
+          postMessageToPlayer(player, {
+            "method": "setCurrentTime",
+            "value" : startTime
+          });
+        }
+        postMessageToPlayer(player, {
+          "method": "play",
+          "value" : 1
+        });
+        break;
+      case "pause":
+        postMessageToPlayer(player, {
+          "method": "pause",
+          "value": 1
+        });
+        break;
+    }
+  } else if (slideType === "youtube") {
+    switch (control) {
+      case "play":
+        postMessageToPlayer(player, {
+          "event": "command",
+          "func": "unmute"
+        });
+        postMessageToPlayer(player, {
+          "event": "command",
+          "func": "pauseVideo"
+        });
+        break;
+      case "pause":
+        postMessageToPlayer(player, {
+          "event": "command",
+          "func": "pauseVideo"
+        });
+        break;
+    }
+  } else if (slideType === "video") {
+    video = currentSlide.children("video").get(0);
+    if (video != null) {
+      if (control === "play"){
+        video.play();
+      } else {
+        video.pause();
+      }
+    }
+  }
+}
+
+// Resize player
+function resizePlayer(iframes, ratio) {
+  if (!iframes[0]) return;
+  var win = $(".main-slider"),
+      width = win.width(),
+      playerWidth,
+      height = win.height(),
+      playerHeight,
+      ratio = ratio || 16/9;
+
+  iframes.each(function(){
+    var current = $(this);
+    if (width / ratio < height) {
+      playerWidth = Math.ceil(height * ratio);
+      current.width(playerWidth).height(height).css({
+        left: (width - playerWidth) / 2,
+         top: 0
+        });
+    } else {
+      playerHeight = Math.ceil(width / ratio);
+      current.width(width).height(playerHeight).css({
+        left: 0,
+        top: (height - playerHeight) / 2
+      });
+    }
+  });
+}
+
+// DOM Ready
+$(function() {
+  // Initialize
+  slideWrapper.on("init", function(slick){
+    slick = $(slick.currentTarget);
+    setTimeout(function(){
+      playPauseVideo(slick,"play");
+    }, 1000);
+    resizePlayer(iframes, 16/9);
+  });
+  slideWrapper.on("beforeChange", function(event, slick) {
+    slick = $(slick.$slider);
+    playPauseVideo(slick,"pause");
+  });
+  slideWrapper.on("afterChange", function(event, slick) {
+    slick = $(slick.$slider);
+    playPauseVideo(slick,"play");
+  });
+  slideWrapper.on("lazyLoaded", function(event, slick, image, imageSource) {
+    lazyCounter++;
+    if (lazyCounter === lazyImages.length){
+      lazyImages.addClass('show');
+      // slideWrapper.slick("slickPlay");
+    }
+  });
+
+  //start the slider
+  // slideWrapper.slick({
+  //   // fade:true,
+  //   autoplaySpeed:4000,
+  //   lazyLoad:"progressive",
+  //   speed:600,
+  //   arrows:false,
+  //   dots:true,
+  //   cssEase:"cubic-bezier(0.87, 0.03, 0.41, 0.9)"
+  // });
+  // $('.slider-for').slick({
+  slideWrapper.slick({
+   slidesToShow: 1,
+   slidesToScroll: 1,
+   arrows: true,
+   // autoplay: true,
+   cssEase:"cubic-bezier(0.87, 0.03, 0.41, 0.9)",
+   // autoplaySpeed: 500,
+   fade: true,
+   asNavFor: '.slider-nav'
+  });
+  $('.slider-nav').slick({
+   slidesToShow: 2,
+   slidesToScroll: 1,
+   asNavFor: '.slider-for',
+   dots: true,
+   arrows: false,
+   centerMode: true,
+   focusOnSelect: true,
+   infinite: true
+  });
+
+
+
+});
+
+// Resize event
+$(window).on("resize.slickVideoPlayer", function(){
+  resizePlayer(iframes, 16/9);
+});
+
+  </script>
+
+  </body>
+</html>
