@@ -1,0 +1,36 @@
+/* We want to eliminate the default margin of the body tag */
+body{
+  margin:0;
+  padding:0;
+  font-size: 20px;
+  height: 100%;
+}
+section{
+  position: fixed;
+}
+/* I'm applying this to all section images but if you're going to have additional images do it by class */
+section img{
+  /* height:auto; */
+  width:100%;
+  height: 100%;
+}
+/* We need to hide the sections that we're not showing on load. */
+.hide{
+  display:none;
+}
+.content-green{
+  position: absolute;
+  top: 3rem;
+  left:4rem;
+  color:white;
+}
+.content-yellow{
+  position: absolute;
+  top: 3rem;
+  left:4rem;
+}
+.content-acqua{
+  position: absolute;
+  top: 20%;
+  right:4rem;
+}

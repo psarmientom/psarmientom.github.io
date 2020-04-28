@@ -8,7 +8,6 @@
   <style media="screen">
     body{
       background:#000;
-      color: #ffffff;
     }
     main{
       width:70%;
@@ -30,38 +29,33 @@
   <body>
   <main>
     <!-- This is the top part where you show the videos. Keep the same class names because they are referenced in the jquery. -->
-  <h1>Video slider with content</h1>
-  <h2>Content is optional but you can add it to the slider</h2>
   <div class="slider-container">
     <div class="slider slider-for">
       <div class="item youtube">
       <iframe class="embed-player slide-media" width="560" height="315" src="https://www.youtube.com/embed/iApVVKsF94E?enablejsapi=1&controls=0&fs=0&iv_load_policy=3&loop=1&autoplay=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <h3>Slide 1</h3>
-      <p>This is the caption for slide 1</p>
       </div>
       <div class="item youtube">
       <iframe class="embed-player slide-media" width="560" height="315" src="https://www.youtube.com/embed/lRTtMcx6rSM?enablejsapi=1&controls=1&fs=1&iv_load_policy=3&loop=0&autoplay=0" frameborder="0" allow="encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <h3>Slide 2</h3>
-      <p>This is the caption for slide 2</p>
       </div>
       <div class="item youtube">
       <iframe class="embed-player slide-media" width="560" height="315" src="https://www.youtube.com/embed/43ngkc2Ejgw?enablejsapi=1&controls=1&fs=1&iv_load_policy=3&loop=0&autoplay=0" frameborder="0" allow="encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></iframe>
-      <h3>Slide 3</h3>
-      <p>This is the caption for slide 3</p>
      </div>
       <div class="item youtube">
       <iframe class="embed-player slide-media" width="560" height="315" src="https://www.youtube.com/embed/hqNkGnR4Lz8?enablejsapi=1&controls=1&fs=1&iv_load_policy=3&loop=0&autoplay=0" frameborder="0" allow="encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></iframe>
-      <h3>Slide 4</h3>
-      <p>This is the caption for slide 4</p>
       </div>
       <div class="item youtube">
       <iframe class="embed-player slide-media" width="560" height="315" src="https://www.youtube.com/embed/r6-MZFQbO_M?enablejsapi=1&controls=1&fs=1&iv_load_policy=3&loop=0&autoplay=0" frameborder="0" allow="encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></iframe>
-      <h3>Slide 5</h3>
-      <p>This is the caption for slide 5</p>
       </div>
     </div>
   </div>
-
+  <!-- These are just images of the videos in case you want to use an image navigation -->
+  <div class="slider slider-nav">
+    <img src="images/video1.png"/>
+    <img src="images/video2.png"/>
+    <img src="images/video3.png"/>
+    <img src="images/video4.png"/>
+    <img src="images/video5.png"/>
+  </div>
   </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -161,11 +155,22 @@ $(function() {
   slideWrapper.slick({
    slidesToShow: 3,
    slidesToScroll: 1,
-   arrows: true,
+   arrows: false,
    // autoplay: true,
    cssEase:"cubic-bezier(0.87, 0.03, 0.41, 0.9)",
    // autoplaySpeed: 500,
-   fade: true
+   fade: true,
+   asNavFor: '.slider-nav'
+  });
+  $('.slider-nav').slick({
+   slidesToShow: 2,
+   slidesToScroll: 1,
+   asNavFor: '.slider-for',
+   dots: true,
+   arrows: true,
+   centerMode: true,
+   focusOnSelect: true,
+   infinite: true
   });
 
 });
