@@ -1,9 +1,17 @@
 body{
-  padding:2rem;
   font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.7rem;
 }
-.red{
-  color: #FF0000;
+h2{
+  color: #687796;
 }
-p{color: #666666;
-font-size: 14px;}
+main{
+  background-color: #efefef;
+  margin: 80px auto;
+  padding: 30px;
+  width: 70%;
+}
+a{
+  color: #666666;
+}

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Crepe Recipe</title>
-    <link rel="stylesheet" href="/css/crepe.css">
+    <link rel="stylesheet" href="css/crepe.css">
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   </head>
@@ -19,7 +19,7 @@
         <p>No experience necessary.</p>
       <button class="step1" type="button" name="start">Start</button>
       </section>
-      <section class="ingredients">
+      <section class="ingredients hide">
         <h2>Ingredients</h2>
         <img src="images/ingredients.png" alt="crepe ingredients">
         <ul>
@@ -33,24 +33,64 @@
         <p class="ing">See Ingredients</p>
         <button class="step2" type="button" name="next">Next</button>
       </section>
-      <section class="mix">
+      <section class="mix hide">
         <h2>Mix</h2>
         <p>(all the ingredients)</p>
         <img src="images/mix.png" alt="crepe ingredients">
         <button class="step3" type="button" name="next">Next</button>
       </section>
-      <section class="cook">
+      <section class="cook hide">
         <h2>Cook</h2>
         <p>(about a minute)</p>
         <img src="images/cook.png" alt="crepe ingredients"> <br>
         <button class="step4" type="button" name="next">Next</button>
       </section>
-      <section class="serve">
+      <section class="serve hide">
         <h2>Serve</h2>
         <p>(combine with chocolate, strawberries or bananas)</p>
         <img src="images/serve.png" alt="crepe ingredients">
       </section>
     </main>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      // Step One
+      $(".step1").click(function(){
+        $(".intro").hide(1000);
+        $(".ingredients").show(1000);
+      });
+      // Step Two
+      $(".step2").click(function(){
+        $(".ingredients").slideUp();
+        $(".mix").slideDown();
+       });
+      // $(".ing").on({
+      //   mouseenter: function(){
+      //     $(".ingredients img").fadeIn(1000);
+      //   },
+      //   mouseleave: function(){
+      //     $(".ingredients img").fadeOut(1000);
+      //   }
+      // });
+      $(".ing").mouseenter(function(){
+        $(".ingredients img").fadeIn(1000);
+      });
+      $(".ing").mouseleave(function(){
+        $(".ingredients img").fadeOut(1000);
+      });
+      // Step three
+      $(".step3").click(function(){
+        $(".mix").remove();
+        $(".cook").css("display", "block");
+      });
+      // Step four
+      $(".step4").click(function(){
+        $(".cook").slideUp("slow");
+        $(".serve").show(1000);
+        $(".serve").after('<p class="final">Enjoy!</p>');
+      });
+    // End of scripts
+    });
+    </script>
   </body>
 </html>
