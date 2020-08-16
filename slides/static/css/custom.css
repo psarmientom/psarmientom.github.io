@@ -1,0 +1,145 @@
+/*======PS=======*/
+.big-text{
+  font-size:3.5rem;
+}
+.med-text{
+  font-size:2.5rem;
+}
+.sm-text{
+  font-size:2rem;
+}
+.big-text, .big-text li{
+  line-height: 5rem;
+  text-align: left;
+}
+.column .big-text li{
+  list-style: square;
+  list-style-position: inside;
+}
+.column .big-text li a{
+  text-decoration: underline;
+}
+.column i{
+  font-size:4rem;
+  text-align: left;
+  margin-bottom: 20px;
+}
+p.presentation, h4.presentation{
+  color#ffffff;
+  font-size: 12rem;
+  padding:50px 0;
+  font-weight: bolder;
+}
+.primary-color{
+  color:#44d;
+}
+.secondary-color{
+  color:#67d;
+}
+.red{
+  color:#c40a23;
+}
+.bluegreen-light{
+  color:#32d1ce;
+}
+.bluegreen{
+  color:#108e82;
+}
+.flexblock.features .headings h1, .flexblock.features .headings h2, .flexblock.features .headings h3, .flexblock.features .headings h4, .flexblock.features .headings h5, .flexblock.features .headings h6{
+  display: inline-block;
+  font-weight: normal;
+  text-transform: lowercase;
+}
+.flexblock.features .headings h2{
+  font-size: 5rem;
+}
+.flexblock.features .headings h3{
+  font-size: 4.5rem;
+}
+.flexblock.features .headings h4{
+  font-size: 4rem;
+}
+.flexblock.features .headings h5{
+  font-size: 3.5rem;
+}
+.flexblock.features .headings h6{
+  font-size: 3rem;
+}
+.grid.table .column{
+  width:auto;
+}
+.headings hr{
+  border: 1px solid #cccccc;
+}
+.wrap.links{
+  height: 700px;
+}
+blockquote, q{
+  font-style: italic;
+}
+figure.demo{
+  background: #000;
+  padding:20px;
+  width:100px;
+}
+figure.demo figcaption{
+  color:#fff;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+}
+.flexblock.features li p span{
+  font-size: inherit;
+  line-height: inherit;
+  color:#ff0000;
+  float:none;
+  display: inline;
+}
+.emoji{
+  font-size:5rem;
+}
+cite.small{
+  font-size: 12px;
+}
+ul.flexblock.listing li{
+  padding:1.5rem;
+  font-size:2.2rem;
+}
+.type-serif{
+  font-family: "Timed New Roman",serif;
+  font-size: 8rem;
+}
+.type-sans{
+  font-family: "Arial", sans-serif;
+  font-size: 8rem;
+}
+.font-demo{
+  font-family: "Lobster", cursive;
+  font-size: 60px;
+}
+.demo-block{
+  display: block;
+  height:40px;
+  background: #cccccc;
+  padding:10px;
+  margin:10px;
+}
+.demo-block-p{
+  background: #cccccc;
+  padding: 10px;
+  margin-top:10px;
+}
+.demo-block-p span{
+  background: #000000;
+  color:#ffffff;
+}
+.demo-block-p .span1{
+  background: #666666;
+  color:#ffffff;
+}
+.demo-inline div{
+  display: inline-block;
+  height:40px;
+  background: #cccccc;
+  padding:10px;
+  margin-right:10px;
+}
