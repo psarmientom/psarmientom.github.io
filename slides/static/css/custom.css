@@ -12,6 +12,9 @@
   line-height: 5rem;
   text-align: left;
 }
+.big-text.aligncenter{
+  text-align: center;
+}
 .column .big-text li{
   list-style: square;
   list-style-position: inside;
