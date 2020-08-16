@@ -48,6 +48,9 @@ p.presentation, h4.presentation{
 h1.bluegreen a:link, h1 a:visited, h1 a{
   color:#108e82;
 }
+.underlined{
+  text-decoration: underline;
+}
 .flexblock.features .headings h1, .flexblock.features .headings h2, .flexblock.features .headings h3, .flexblock.features .headings h4, .flexblock.features .headings h5, .flexblock.features .headings h6{
   display: inline-block;
   font-weight: normal;
