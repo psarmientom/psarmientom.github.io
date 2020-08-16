@@ -45,9 +45,13 @@ p.presentation, h4.presentation{
 .bluegreen{
   color:#108e82;
 }
+.orange{
+  color:#f15a24;
+}
 h1.bluegreen a:link, h1 a:visited, h1 a{
   color:#108e82;
 }
+cite a{color:#999;}
 .underlined{
   text-decoration: underline;
 }
