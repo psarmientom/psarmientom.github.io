@@ -64,6 +64,21 @@ cite a{color:#999;}
 .underlined{
   text-decoration: underline;
 }
+.padding-t1{
+  padding-top:1rem;
+}
+.padding-t2{
+  padding-top:2rem;
+}
+.padding-t3{
+  padding-top:3rem;
+}
+.padding-t4{
+  padding-top:4rem;
+}
+.padding-t5{
+  padding-top:5rem;
+}
 .flexblock.features .headings h1, .flexblock.features .headings h2, .flexblock.features .headings h3, .flexblock.features .headings h4, .flexblock.features .headings h5, .flexblock.features .headings h6{
   display: inline-block;
   font-weight: normal;
