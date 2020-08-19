@@ -23,7 +23,7 @@
   text-decoration: underline;
 }
 .column i{
-  font-size:4rem;
+  font-size:7rem;
   text-align: left;
   margin-bottom: 20px;
 }
@@ -45,6 +45,9 @@ p.presentation, h4.presentation{
 .secondary-color{
   color:#f15a24;
 }
+.white{
+  color:#ffffff;
+}
 .red{
   color:#c40a23;
 }
@@ -53,6 +56,9 @@ p.presentation, h4.presentation{
 }
 .bluegreen{
   color:#108e82;
+}
+.bg-bluegreen, .bg-primary{
+  background-color:#108e82;
 }
 .orange{
   color:#f15a24;
