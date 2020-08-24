@@ -248,10 +248,27 @@
         </div>
         <!-- .end .wrap -->
       </section>
+      <!-- SLIDE 4 HTML TAG STRUCTURE -->
+      <section class="slide-medium">
+        <div class="wrap size-80 aligncenter">
+          <h2 class="text-serif bluegreen">HTML Structure</h2>
+
+          <div class="grid padding-t5">
+
+            <div class="column">
+              <img class="aligncenter" src="../static/images/html.gif" alt="binary code image" width="990"/>
+            </div>
+
+          </div>
+
+          <!-- .end .bg-white shadow -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
     <!-- SLIDE 6 - HTML TAGS 1 -->
       <section class="slide-top">
         <div class="wrap">
-          <h2 class="text-serif bluegreen aligncenter">HTML Tags</h2>
+          <h2 class="text-serif bluegreen aligncenter">HTML Tags (Body)</h2>
           <ul class="flexblock features">
             <li>
               <div>
@@ -269,6 +286,7 @@
                   Paragraphs
                 </h2>
                 <p class="sm-text"><strong>&lt;p&gt;</strong> One or more sentences that make part of the content on a webpage <strong>&lt;/p&gt;</strong></p>
+                <p>You can have as many paragraphs as you need</p>
               </div>
             </li>
             <li>
@@ -276,8 +294,10 @@
                 <h2 class="primary-color">
                   Bold or Strong?
                 </h2>
-                <p class="sm-text">Use &lt;b&gt; when you want to give <b>&lt;b&gt;visual&lt;/b&gt;</b> contrast</p> <br>
+                <p class="sm-text">Use &lt;b&gt; when you want to give <b>&lt;b&gt;visual&lt;/b&gt;</b> contrast</p>
+                <p class="sm-text">University of Miami colors are <b>green and orange</b> </p> <br>
                 <p class="sm-text">Use &lt;strong&gt; when you want to give <b>&lt;strong&gt;importance&lt;/strong&gt;</b> to part of the paragraph</p>
+                <p class="sm-text">If someone rings the doorbell <strong>do not open the door</strong>
               </div>
             </li>
             <li>
@@ -285,37 +305,113 @@
                 <h2 class="primary-color">
                   Italic or Emphasis?
                 </h2>
-                <p class="sm-text">Use &lt;i&gt; when you want to give <b>&lt;i&gt;visual&lt;/i&gt;</b> emphasis</p> <br>
+                <p class="sm-text">Use &lt;i&gt; when you want to give an <b>&lt;i&gt;alternate voice or mood&lt;/i&gt;</b></p>
+                <p class="sm-text">The words in <i>italic</i> are usually represented with cursive fonts.</p> <br>
                 <p class="sm-text">Use &lt;em&gt; when you want to give <b>&lt;em&gt;emphasis&lt;/em&gt;</b> to a word</p>
+                <p class="sm-text">Turn off your phone <i>NOW</i>.</p>
               </div>
             </li>
             <li>
               <div>
                 <h2 class="primary-color">
-                  Links
+                  Blockquote / Cite
                 </h2>
-                <p class="sm-text">Are used to link to other pages inside or outside your website</p>
+                <div class="headings">
+                <p><b>Blockquote</b> Defines a section that is quoted from another source</p>
+                <p><b>Cite</b> describes a reference to a cited creative work, and must include the title of that work</p>
+              </div>
+              <blockquote>
+                <p class="padding-t4">To be, or not to be, that is the question</p>
+                <cite><a href="https://www.poetryfoundation.org/poems/56965/speech-to-be-or-not-to-be-that-is-the-question">from Hamlet, spoken by Hamlet</a></cite>
+              </blockquote>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="primary-color">
+                  Hyperlinks
+                </h2>
+                <p class="sm-text">Are used to link to other pages inside or outside your website.</p>
                   <p><b>&lt;a href="http://google.com"&gt; Go to Google&lt;/a&gt;</b> </p> <br>
                   <p> <a href="http://google.com">Go to Google</a> </p>
-              </div>
-            </li>
-            <li>
-              <div>
-                <h2 class="primary-color">
-                  Images
-                </h2>
-                  <img src="../static/images/beach-sm.jpg" alt="empty chair on a beach" width="500"/><br>
-                  <p><b>&lt;img src="images/myImage.png" alt="add description here" width="50" height="50"/&gt;</b> </p>
-                  <p>The image size can be given here or in the css. If you give the width only, the height will be calculated proportionally.</p>
               </div>
             </li>
           </ul>
         </div>
       </section>
+      <!--- SLIDE 9 LINK TYPES----->
+      <section>
+        <div class="wrap">
+          <div class="grid center-align">
+            <div class="column">
+              <i class="fas fa-link"></i>
+              <h4>
+                <strong>Web links</strong>
+              </h4>
+              <ul>
+                <li>Links to other pages or files on your website</li>
+                <li><b>&lt;a href="myPage.html"&gt;</b></li>
+                <li>Links to other websites</li>
+                <li><b>&lt;a href="http://otherPage.html"&gt;</b></li>
+              </ul>
+            </div>
+            <div class="column">
+              <i class="fas fa-anchor"></i>
+              <h4>
+                <strong>Anchor Links</strong></h4>
+              <ul>
+                <li>Links to other sections of the same page</li>
+                <li>identify the link using the #</li>
+                <li><b>&lt;a href="#newSection"&gt;</b></li>
+                <li>And the target section</li>
+                <!-- <li><b>&lt;a name="newSection"&gt;</b></li>
+                <li>or</li> -->
+                <li><b>&lt;p id="newSection"&gt;</b></li>
+              </ul>
+            </div>
+            <div class="column">
+              <i class="far fa-envelope"></i>
+              <h4>
+                <strong>Email Links</strong>
+              </h4>
+              <ul>
+                <li>Opens your default email client</li>
+                <li> <a href="mailto:myEmail@mail.com">myEmail@email.com</a> </li>
+                <li><b>&lt;a href="mailto:myEmail@email.com"&gt;</b></li>
+                <li>Vulnerable to spam bots getting your email address unless
+                you use some scripting to encript the address.</li>
+              </ul>
+            </div>
+          </div>
+          <!--end .grid -->
+        </div>
+      </section>
+      <!-- Anatomy of a Link -->
+      <section class="slide-middle">
+        <div class="wrap size-80 aligncenter">
+          <h2 class="text-serif bluegreen aligncenter">Anatomy of a link</h2>
+          <div class="grid">
+            <div class="column">
+              <p class="big-text bg-primary">&lt;a href="http://www.miami.edu/about/index.html"&gt;</p>
+
+            <ul>
+              <li>href: is an attribute of the a tag that specifies the link destination</li>
+              <li>http:// is the protocol used</li>
+              <li>www.miami.edu: website URL</li>
+              <li>about: one section of the website where the page is located</li>
+              <li>index.html: files being displayed</li>
+            </ul>
+  </div>
+          </div>
+
+          <!-- .end .bg-white shadow -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
     <!-- SLIDE 7 - HMTL TAGS 2 -->
       <section class="slide-top">
         <div class="wrap">
-          <h2 class="text-serif bluegreen aligncenter">More HTML Tags</h2>
+          <h2 class="text-serif bluegreen aligncenter">More HTML Tags (Body)</h2>
           <ul class="flexblock features">
             <li>
                 <h2 class="primary-color">
@@ -402,6 +498,80 @@
           </ul>
       </div>
       </section>
+      <!-- SLIDE 6 - HTML TAGS 1 -->
+        <section class="slide-top">
+          <div class="wrap">
+            <ul class="flexblock features">
+              <li>
+                <div>
+                  <h2 class="primary-color">
+                    Images
+                  </h2>
+                    <img src="../static/images/beach-sm.jpg" alt="empty chair on a beach" width="500"/><br>
+                    <p><b>&lt;img src="images/myImage.png" alt="add description here" width="50" height="50"/&gt;</b> </p>
+                    <p>The image size can be given here or in the css. If you give the width only, the height will be calculated proportionally.</p>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <h2 class="primary-color">
+                    Figure / Figcaption
+                  </h2>
+                  <p class="sm-text">Use &lt;figure&gt; to represent self-contained content with an optional caption. This content can be moved away without affecting the content's meaning.<br>
+                  Commonly used for images.</p> <br>
+                  <p class="sm-text">Use &lt;figcaption&gt; to add a caption to the image or figure content.</p> <br>
+                  <figure style="background:#000;padding:1rem;">
+                    <img style="float:none;margin:1rem;" src="../static/images/beach-sm.jpg" alt="empty chair on a beach" width="500"/>
+                    <figcaption class="white">This is a chair on the beach</figcaption>
+                  </figure>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h2 class="primary-color">
+                    iframe
+                  </h2>
+                  <p class="sm-text">Use &lt;iframe&gt; when you want to embed external content into your website&lt;/iframe&gt;</p> <br>
+                  <p class="sm-text"><iframe width="560" height="315" src="index.html" frameborder="0"></iframe></p>
+                </div>
+              </li>
+                <li>
+                  <div>
+                    <h2 class="primary-color">
+                      iframe
+                    </h2>
+                    <p class="sm-text">Use &lt;iframe&gt; when you want to embed external videos into your website&lt;/iframe&gt;</p> <br>
+                    <p class="sm-text"><iframe width="560" height="315" src="https://www.youtube.com/embed/m-rTjMmUbFE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+                  </div>
+                </li>
+                <li>
+                <div>
+                  <h2 class="primary-color">
+                    Video
+                  </h2>
+                  <p class="sm-text">Are used to embed locally hosted videos.</p>
+                  <video width="320" controls>
+                      <source src="../static/video/hd0992.mp4" type="video/mp4">
+                        Sorry, your browser doesn't support embedded videos.
+                </video>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h2 class="primary-color">
+                    Audio
+                  </h2>
+                  <p class="sm-text">The audio tag is used to embed sound content in websites.</p>
+                  <audio controls src="../static/audio/Visionary-WVM011601.mp3">
+                    Your browser does not support the
+                <code>audio</code> element.
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </section>
       <!-- SLIDE 8 -TABLES -->
       <section class="slide-top">
         <div class="wrap">
@@ -452,75 +622,84 @@
           </ul>
         </div>
       </section>
-      <!--- SLIDE 9 LINK TYPES----->
-      <section>
-        <div class="wrap">
-          <div class="grid center-align">
-            <div class="column">
-              <i class="fas fa-link"></i>
-              <h4>
-                <strong>Web links</strong>
-              </h4>
-              <ul>
-                <li>Links to other pages or files on your website</li>
-                <li><b>&lt;a href="myPage.html"&gt;</b></li>
-                <li>Links to other websites</li>
-                <li><b>&lt;a href="http://otherPage.html"&gt;</b></li>
-              </ul>
-            </div>
-            <div class="column">
-              <i class="fas fa-anchor"></i>
-              <h4>
-                <strong>Anchor Links</strong></h4>
-              <ul>
-                <li>Links to other sections of the same page</li>
-                <li>identify the link using the #</li>
-                <li><b>&lt;a href="#newSection"&gt;</b></li>
-                <li>And the target section</li>
-                <!-- <li><b>&lt;a name="newSection"&gt;</b></li>
-                <li>or</li> -->
-                <li><b>&lt;p id="newSection"&gt;</b></li>
-              </ul>
-            </div>
-            <div class="column">
-              <i class="far fa-envelope"></i>
-              <h4>
-                <strong>Email Links</strong>
-              </h4>
-              <ul>
-                <li>Opens your default email client</li>
-                <li> <a href="mailto:myEmail@mail.com">myEmail@email.com</a> </li>
-                <li><b>&lt;a href="mailto:myEmail@email.com"&gt;</b></li>
-                <li>Vulnerable to spam bots getting your email address unless
-                you use some scripting to encript the address.</li>
-              </ul>
-            </div>
-          </div>
-          <!--end .grid -->
-        </div>
-      </section>
 
+      <!-- HEAD TAGS -->
       <section class="slide-top">
         <div class="wrap size-80 aligncenter">
-          <h2><strong>Anatomy of a link</strong></h2>
-          <div class="grid">
-            <div class="column">
-              <p class="big-text bg-primary">&lt;a href="http://com.miami.edu/about/index.html"&gt;</p>
+          <h2 class="text-serif bluegreen aligncenter">Head Tags</h2>
+          <p class="med-text"> Head tags contains the metadata about the HTML document.</p>
+          <ul class="flexblock features">
+            <li>
+              <div>
+                <h2 class="primary-color">
+                  Title
+                </h2>
+                  <p> Contains the Title of the website on the browser toolbar, your bookmarks and is used as a page title in search results.</p>
+              </div>
+            </li>
 
-            <ul>
-              <li>href: is an attribute of the a tag that specifies the link destination</li>
-              <li>http:// is the protocol used</li>
-              <li>com.miami.edu: website URL</li>
-              <li>about: one section of the website where the page is located</li>
-              <li>index.html: files being displayed</li>
-            </ul>
-  </div>
-          </div>
+            <li>
+              <div>
+                <h2 class="primary-color">
+                  Head Links
+                </h2>
+                <p class="sm-text">Indicates the location of external files associated with the html document.</p>
+                <code>&lt;link rel="stylesheet" href="mystyle.css"></code>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="primary-color">
+                  meta script
+                </h2>
+                <p class="sm-text">Sets the viewport to make your website look good on all devices:.</p>
+                <code>&lt;script>
+  alert('Hello World!');&lt;/script>></code>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="primary-color">
+                  meta keywords
+                </h2>
+                <p class="sm-text">Define keywords for search engines.</p>
+                <code>&lt;meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript"></code>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="primary-color">
+                  meta description
+                </h2>
+                <p class="sm-text">Define a description of your web page.</p>
+                <code>&lt;meta name="description" content="Free Web tutorials on HTML and CSS"></code>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="primary-color">
+                  meta author
+                </h2>
+                <p class="sm-text">Define the author of a page.</p>
+                <code>&lt;meta name="author" content="John Doe"></code>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="primary-color">
+                  meta viewport
+                </h2>
+                <p class="sm-text">Sets the viewport to make your website look good on all devices:.</p>
+                <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"></code>
+              </div>
+            </li>
+          </ul>
 
           <!-- .end .bg-white shadow -->
         </div>
         <!-- .end .wrap -->
       </section>
+
       <!-- SLIDE 10 - LINKING -->
       <section class="slide-top bg-black">
         <div class="bg-white wrap frame links">
