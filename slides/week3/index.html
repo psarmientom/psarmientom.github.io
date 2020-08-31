@@ -28,6 +28,7 @@
   <script src="https://kit.fontawesome.com/92123ffbf2.js" crossorigin="anonymous"></script>
   <!-- CSS WebSlides -->
   <link rel="stylesheet" type='text/css' media='all' href="../static/css/webslides.css">
+  <link rel="stylesheet" type='text/css' media='all' href="../static/css/custom.css">
 
   <!-- Optional - CSS SVG Icons (Font Awesome) -->
   <link rel="stylesheet" type='text/css' media='all' href="../static/css/svg-icons.css">
@@ -53,7 +54,7 @@
 <body>
 
   <main role="main">
-    <article id="webslides" class="vertical">
+    <article id="webslides" class="horizontal">
       <!-- Quick Guide
           - Each parent <section> in the <article id="webslides"> element is an individual slide.
           - Vertical sliding = <article id="webslides" class="vertical">
@@ -71,8 +72,8 @@
     <!-- SLIDE 6 - HTML TAGS 1 -->
       <section class="slide-top">
         <div class="wrap">
-          <h2>Inline HTML Tags</h2>
-          <p>Tags that are used inside other tags to change the apperance or meaning</p>
+          <h2 class="text-serif aligncenter bluegreen">Inline HTML Tags</h2>
+          <p class="med-text aligncenter">Tags that are used inside other tags to change the apperance or meaning</p>
           <ul class="flexblock features">
             <li>
               <div>
@@ -141,6 +142,8 @@
       </section>
     <!-- SLIDE 7 - HMTL TAGS 2 -->
       <section class="slide-top">
+        <h2 class="text-serif aligncenter bluegreen">Grouping HTML Tags</h2>
+        <p class="med-text aligncenter">Tags that are used to create a grup of a specific type of content.</p>
         <div class="wrap">
           <ul class="flexblock features">
             <li>
@@ -196,21 +199,25 @@
       <section>
         <!--.wrap = container (width: 90%) -->
         <div class="wrap">
+          <h2 class="text-serif bluegreen">Structural HTML Tags</h2>
+          <p class="med-text">We use them to structure the content of webpages.</p>
+
           <div class="grid vertical-align">
             <div class="column">
-              <h3><strong>The DIV tag</strong></h3>
+              <h3>The DIV Tag</h3>
               <ul>
                 <li><b>&lt;div&gt;&lt;/div&gt;</b></li>
                 <li>This is called the Division Tag.</li>
                 <li>Is the most used tag in web development.</li>
                 <li>It is a generic container tag used to separate and structure content.</li>
                 <li>Groups various HTML tags so they can be styled as a group.</li>
-                <li>They are used with ids and classes for styling and positioning</li>
+                <li>They are used with ids and classes for styling and positioning.</li>
+                <li>Divs do not give semantic meaning to the content inside.</li>
               </ul>
             </div>
             <!-- .end .column -->
             <div class="column">
-              <img src="../static/images/divs.jpg" alt="div structure">
+              <img src="../static/images/divs.jpg" alt="div structure" width="800">
             </div>
           </div>
         </div>
@@ -218,32 +225,19 @@
 
       <section class="slide-top">
         <div class="wrap">
-          <h3><strong>Semantic structural tags</strong></h3>
-          <p class="big-text">These tags give semantic meaning to the content inside.</p>
+          <h2 class="text-serif bluegreen aligncenter">Semantic structural tags</h2>
+          <p class="med-text aligncenter">These tags give semantic meaning to the content inside.</p>
           <ul class="flexblock features">
-            <li>
-              <div>
-                <h2 class="secondary-color">
-                  Article
-                </h2>
-                  <p><b>&lt;article&gt; &lt;/article&gt;</b> </p>
-                <ul>
-                  <li>• Represents a complete, or self-contained, composition in a page</li>
-                  <li>• Can be independently distributed or reused</li>
-                  <li>• Think of a magazine article</li>
-                </ul>
-              </div>
-            </li>
             <li>
               <div>
                 <h2 class="secondary-color">
                   Section
                 </h2>
                 <p><b>&lt;section&gt; &lt;/section&gt;</b> </p>
-                <p>• Use it to group content</p>
-                <p>• Can group articles</p>
-                <p>• Can define parts of an article</p>
-                <p>• Think of chapters on a book</p>
+                <p>• Similar to divs but its used to group related content</p>
+                <p>• Can group articles (e.g. sports section, news section).</p>
+                <p>• Can define parts of an article.</p>
+                <p>• Think of chapters on a book.</p>
               </div>
             </li>
             <li>
@@ -252,9 +246,10 @@
                   Header
                 </h2>
                 <p><b>&lt;header&gt; &lt;/header&gt;</b> </p>
-                <p>• Marks the introductory content</p>
-                <p>• Mostly used for the website top area</p>
-                <p>• It can also mark the header of an article or section</p>
+                <p>• <strong>Not to be confused with the &lt;head> tag</strong> </p>
+                <p>• Marks the introductory content of a website or a section.</p>
+                <p>• Mostly used for the website top area or masthead.</p>
+                <p>• It can also mark the header of an article or section.</p>
               </div>
             </li>
             <li>
@@ -263,8 +258,9 @@
                   Nav
                 </h2>
                 <p><b>&lt;nav&gt; &lt;/nav&gt;</b> </p>
-                <p>• Contains the navigation (menu) sections of your website.</p>
-                <p>• Can be located anywhere in the page, but usually inside the header. There can also be inside a side bar or the footer.</p>
+                <p>• Contains the main navigation (menu) sections of your website.</p>
+                <p>• Can be located anywhere in the page, but usually inside the header.</p>
+                <p>• Not every group of links belong inside the nav element.</p>
               </div>
             </li>
             <li>
@@ -273,9 +269,10 @@
                   Footer
                 </h2>
                 <p><b>&lt;footer&gt; &lt;/footer&gt;</b> </p>
-                <p>• Similar to headers, but at the end of a document</p>
-                <p>• Mostly used for the website bottom area</p>
-                <p>• It can also mark the footer of an article or section</p>
+                <p>• Similar to headers, but at the end of a document.</p>
+                <p>• Mostly used for the website bottom area.</p>
+                <p>• Footer should contain information about the article author, copyright information and links to related content.</p>
+                <p>• It can also mark the footer of an article or section.</p>
               </div>
             </li>
             <li>
@@ -284,12 +281,26 @@
                   Aside
                 </h2>
                 <p><b>&lt;aside&gt; &lt;/aside&gt;</b> </p>
-                <p>• Use it for extra information related to the content but not part of it</p>
-                <p>• Mostly used for Side bars</p>
+                <p>• Use it for extra information related to the content but not part of it.</p>
+                <p>• Mostly used for Sidebars, but sidebar does not refers to position.</p>
                 <p>• Ads related to the content can be placed here</p>
+                <p>If the content can be removed without affecting the meaning, it can be an aside.</p>
               </div>
             </li>
-
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  Article
+                </h2>
+                  <p><b>&lt;article&gt; &lt;/article&gt;</b> </p>
+                <ul>
+                  <li>• Represents a complete, or self-contained composition in a page</li>
+                  <li>• Can be independently distributed or reused</li>
+                  <li>• Think of a magazine article</li>
+                  <li>• Common examples of articles are: Blog post, News story, Comment, Review.</li>
+                </ul>
+              </div>
+            </li>
 
           </ul>
         </div>
@@ -313,11 +324,28 @@
         </div>
       </section>
       <!-- SLIDE 12 RASTER VS VECTOR -->
-
+      <!-- Article or section -->
       <section>
         <!--.wrap = container (width: 90%) -->
         <div class="wrap">
-          <h3><strong>A note on closing tags</strong></h3>
+          <h2 class="text-serif bluegreen aligncenter">Section or Article?</h2>
+          <p class="med-text aligncenter">When to use them.</p>
+
+          <!-- <div class="vertical-align aligncenter"> -->
+            <!-- .end .column -->
+            <p class="aligncenter">Sections can contain articles. <br>
+            Articles can be shared independently as a unit.</p>
+              <img class="aligncenter" src="../static/images/articles-sections.gif" alt="div structure" width="1200">
+
+
+          <!-- </div> -->
+        </div>
+      </section>
+      <!-- Note on closing tags -->
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <h2 class="text-serif bluegreen aligncenter">A note on closing tags</h2>
           <div class="grid vertical-align">
 
             <div class="column">
@@ -333,9 +361,7 @@
             <ul>
               <li>There are some tags that do not need closing, because they hold no content in between.</li>
               <li>They are empty elements that either add external elements or break the flow of the page</li>
-              <li><b>&lt;img&gt;</b>, <b>&lt;br&gt;</b>, <b>&lt;hr&gt;</b>, <b>&lt;link&gt;</b>, <b>&lt;input&gt;</b></li>
-              <li>They do not need the <b>/</b> as the regular html tags, but it's a good practice to add it <b>after the tag name</b> <b>&lt;br/&gt;</b>. Not at the beginning like the regular closing tags.</li>
-              <li><b>&lt;br&gt;</b> and <b>&lt;br/&gt;</b> will be the same in non-closing tags.</li>
+              <li><b>&lt;img&gt;</b>, <b>&lt;br&gt;</b>, <b>&lt;hr&gt;</b>, <b>&lt;link&gt;</b>, <b>&lt;meta&gt;</b>, <b>&lt;input&gt;</b> are the most common.</li>
             </ul>
       </div>
             <!-- .end .column -->
@@ -345,45 +371,7 @@
         <!-- .end .wrap -->
       </section>
 
-      <section class="slide-top">
-        <div class="wrap">
-          <h3><strong>Meta Tags</strong></h3>
-          <p class="big-text">The meta tags give the browser and search engines more information about the page.</p>
-          <ul class="flexblock features">
-            <li>
-              <div>
-                <h2 class="secondary-color">
-                  Description
-                </h2>
 
-                <ul>
-                  <li>•  &lt;meta name="description" content="Basic HTML tutorial"&gt; </li>
-                  <li>• This is the information displayed on the search results listings.</li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <div>
-                <h2 class="secondary-color">
-                  Author
-                </h2>
-                <p>•  &lt;meta name="author" content="John Doe"&gt; </p>
-              </div>
-            </li>
-            <li>
-              <div>
-                <h2 class="secondary-color">
-                  Keywords
-                </h2>
-
-                <p>•  &lt;meta name="keywords" content="HTML,CSS,XML,JavaScript"&gt; </p>
-                <p>•  These are terms you want your site to be searched for. </p>
-              </div>
-            </li>
-
-          </ul>
-        </div>
-      </section>
 
 
     </article>

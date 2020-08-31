@@ -55,14 +55,14 @@
 <body>
 
   <main role="main">
-    <article id="webslides" class="vertical">
+    <article id="webslides" class="horizontal">
       <!-- Quick Guide
           - Each parent <section> in the <article id="webslides"> element is an individual slide.
           - Vertical sliding = <article id="webslides" class="vertical">
           - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
         -->
       <!-- SLIDE 1 INTRO -->
-      <section class="aligncenter">
+      <section class="aligncenter bg-white">
         <!--.wrap = container (width: 90%) -->
         <div class="wrap size-90">
 
@@ -78,11 +78,12 @@
       <section class="bg-white slide-top">
         <!--.wrap = container (width: 90%) -->
         <div class="wrap size-80 frame">
-          <h2 class="text-serif aligncenter">What is CSS?</h2>
+          <h2 class="text-serif aligncenter bluegreen">What is CSS?</h2>
           <p class="text-symbols">* * *</p>
           <div class="grid">
             <div class="column">
               <ul class="big-text">
+                <li><b>Defines a Web page’s appearance</b> </li>
                 <li>Plain text file with rules for the display of HTML elements </li>
                 <li>CSS associates style rules with HTML elements</li>
                 <li>Separates style and content</li>
@@ -103,46 +104,57 @@
         <div class="wrap">
           <div class="grid vertical-align">
             <div class="column">
-              <h3><strong>Before CSS..</strong></h3>
-              <ul>
-                <li>Pages were styled with some HTML tags and attributes.
+              <h2 class="text-serif bluegreen">Before CSS..</h2>
                   <ul>
+                    <li>Pages were styled with some HTML tags and attributes.</li>
                     <li>&lt;center&gt;, &lt;align&gt;</li>
                     <li>&lt;font&gt;, &lt;text&gt;</li>
                     <li>&lt;background&gt;, &lt;bgcolor&gt; etc</li>
                   </ul>
-                </li>
+                <ul>
                 <li>the W3C recommended CSS1 in 1996</li>
                 <li>The first commercial browser to support CSS was Microsoft's Internet Explorer 3, released in 1996. </li>
                 <li>Later on, all browsers offered support for CSS</li>
               </ul>
             </div>
-            <!-- .end .column -->
-<div class="column">
+
+          <div class="column">
             <ul>
               <li>CSS2 was released in 1998</li>
               <li>CSS 3 is the latest standard for CSS </li>
               <li>CSS is evolving constantly and there are always new features coming up</li>
-              <li>Modern browsers support many aspects of CSS3 but is a good idea to check support at <a href="https://caniuse.com/">caniuse.com</a> </li>
             </ul>
-</div>
-            <!-- .end .column -->
-          </div>
-          <!-- .end .grid -->
         </div>
-        <!-- .end .wrap -->
+
+          </div>
+
+        </div>
+      </section>
+
+<!-- Taxonomy -->
+      <section>
+        <div class="wrap">
+          <h2 class="text-serif aligncenter bluegreen">Is this supported?</h2>
+          <p class="med-text aligncenter">Modern browsers support many aspects of CSS3 but is a good idea to check support at <a href="https://caniuse.com/">caniuse.com</a></p>
+          <div class="grid padding-t5">
+
+
+              <img class="aligncenter" src="../static/images/CSS3-taxonomy.png" alt="CSS3 Taxonomy" width="900"/>
+
+
+          </div>
+          <!--end .grid -->
+        </div>
       </section>
 
       <section>
         <div class="wrap">
-            <h2 class="text-serif aligncenter">How do we use CSS?</h2>
+          <h2 class="text-serif aligncenter bluegreen">How do we use CSS?</h2>
           <div class="grid center-align">
 
             <div class="column">
               <p class="emoji">&#128512;</p>
-              <h4>
-                <strong>External File</strong>
-              </h4>
+              <h4>External File</h4>
               <ul>
                 <li>Better for maintainig multiple files</li>
                 <li>Keeps structure and presentation separate</li>
@@ -152,8 +164,7 @@
             </div>
             <div class="column">
               <p class="emoji">&#128578;</p>
-              <h4>
-                <strong>On the Head tag</strong></h4>
+              <h4>On the Head tag</h4>
               <ul>
                 <li>It is always recommended to use external styles</li>
                 <li>Internal styles are good if you have a page with different styles than the rest</li>
@@ -163,7 +174,7 @@
             <div class="column">
               <p class="emoji">&#129326;</p>
               <h4>
-                <strong>Inline</strong>
+                Inline
               </h4>
               <ul>
                 <li>Not recommended</li>
@@ -177,12 +188,13 @@
       </section>
 
 
+
       <section>
         <!--.wrap = container (width: 90%) -->
         <div class="wrap">
           <div class="grid vertical-align">
             <div class="column">
-              <h3><strong>How does CSS work?</strong></h3>
+              <h2 class="text-serif bluegreen">How does CSS work?</h2>
               <ul>
                 <li>Imagine there is an invisible box around every HTML element</li>
                 <li>You assign an id or a class and apply the style on the css file</li>
@@ -190,9 +202,9 @@
               </ul>
             </div>
             <!-- .end .column -->
-      <div class="column">
-            <img src="../static/images/css-structure.png" alt="css structure">
-      </div>
+            <div class="column">
+                  <img src="../static/images/css-structure.png" alt="css structure">
+            </div>
             <!-- .end .column -->
           </div>
           <!-- .end .grid -->
@@ -205,7 +217,7 @@
 
       <section class="slide-top">
         <div class="wrap size-80 aligncenter">
-          <h2><strong>ID's and Clases</strong></h2>
+          <h2 class="text-serif bluegreen">ID's and Clases</h2>
           <p class="big-text">These are CSS selectors that allow you to identify the HTML elements for styling and scripting</p>
           <div class="grid">
             <div class="column bg-primary">
@@ -217,7 +229,7 @@
                 <li>&lt;p id="blue"&gt;This is the text with an id &lt;/p&gt;</li>
               </ul>
             </div>
-                <div class="column bg">
+                <div class="column bg-gray">
                   <h3>Other selectors</h3>
                   <ul>
                     <li>Type selectors: Applied to any type tag, p, h1,h2, etc</li>
@@ -246,10 +258,12 @@
       <section class="slide-top">
         <!--.wrap = container (width: 90%) -->
         <div class="wrap">
+          <h2 class="text-serif aligncenter bluegreen">Basic Structure of CSS Rules.</h2>
+        <p class="med-text aligncenter">Rules are made of selectors (where the style is applied to) and declarations (the attribute to apply)</p>
           <div class="grid vertical-align">
+
             <div class="column">
-              <h3><strong>Basic Structure of CSS Rules.</strong></h3>
-              <p>Rules are made of selectors (where the style is applied to) and declarations (the attribute to apply)</p>
+
               <img src="../static/images/css-basic-structure.png" alt="css structure" width="400">
               <img src="../static/images/multiple-selectors.png" alt="multiple selectors" width="400">
               <ul>
@@ -263,7 +277,7 @@
             </div>
             <!-- .end .column -->
 <div class="column">
-            <h3><strong>CSS Declaration</strong></h3>
+            <h3 class="text-serif">CSS Declaration</h3>
             <img src="../static/images/css-declaration.png" alt="css declaration" width="400">
             <img src="../static/images/declaration-blocks.png" alt="declaration blocks" width="400">
             <ul>
@@ -909,14 +923,6 @@
           <!-- .end .column -->
         </div>
         <!-- .end .grid -->
-      </div>
-      <!-- .end .wrap -->
-    </section>
-
-    <section class="slide-top bg-white">
-      <div class="bg-white wrap frame links">
-        <img src="../static/images/CSS3-taxonomy.png" alt="CSS3 Taxonomy">
-    <!-- <div class="background" style="background-image:url('../static/images/CSS3-taxonomy.png')"></div> -->
       </div>
       <!-- .end .wrap -->
     </section>
