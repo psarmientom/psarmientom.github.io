@@ -131,7 +131,7 @@
         </div>
       </section>
 
-<!-- Taxonomy -->
+      <!-- Taxonomy -->
       <section>
         <div class="wrap">
           <h2 class="text-serif aligncenter bluegreen">Is this supported?</h2>
@@ -293,8 +293,10 @@
       </section>
 
       <!-- The box Model -->
-      <section class="slide-top">
-        <h1><strong>The Box Model</strong></h1>
+      <section class="slide-med">
+        <div class="wrap size-90">
+        <h2 class="text-serif aligncenter bluegreen">The Box Model</h2>
+        <p class="med-text aligncenter">Each box can have padding and margin. The default value is 0 unless it has a pre-set browser style. <br> (e.g.: paragraphs and headings have default margins.)</p>
 
         <div class="grid top-align">
 
@@ -304,37 +306,58 @@
               <img src="../static/images/box-model.png" alt="The css box model">
             </div>
             <!-- .end .column -->
-      <div class="column">
-            <p>Each box has the following components</p>
+          <div class="column">
+                <p class="med-text">Each box has the following components</p>
+                <ul>
+                  <li> <b>Content:</b> The text, image or content inside the box.</li>
+                  <li> <b>Padding:</b> The space between the content and the border of the box.</li>
+                  <li> <b>Border:</b> The edge of the box</li>
+                  <li> <b>Margin:</b> The space between the box and surrounding elements.</li>
+                  <li>By default the box will take the dimensions of the content</li>
+                  <li>You can specify the dimensions using px, %, or ems.</li>
+                </ul>
+          </div>
+          <div class="column">
+                <h2>Block or Inline</h2>
             <ul>
-              <li> <b>Content:</b> The text, image or content inside the box.</li>
-              <li> <b>Padding:</b> The space between the content and the border of the box.</li>
-              <li> <b>Border:</b> The edge of the box</li>
-              <li> <b>Margin:</b> The space between the box and surrounding elements.</li>
-              <li>By default the box will take the dimensions of the content</li>
-              <li>You can specify the dimensions using px, %, or ems.</li>
+              <li>All HTML boxes are by default block or inline</li>
+              <li> <b>Block:</b> The element will take the full width of the parent container and will start in a new line. (h1, p, div)</li>
+              <li> <b>Inline:</b> The element will only take the space of its content and will not break the flow of content (b, i, span)</li>
             </ul>
-      </div>
-      <div class="column">
-            <h2>Block or Inline</h2>
-        <ul>
-          <li>All HTML boxes are by default block or inline</li>
-          <li> <b>Block:</b> The element will take the full width of the parent container and will start in a new line. (h1, p, div)</li>
-          <li> <b>Inline:</b> The element will only take the space of its content and will not break the flow of content (b, i, span)</li>
-        </ul>
-      </div>
-      <!-- .end .column -->
-            <!-- .end .column -->
+          </div>
           </div>
           <!-- .end .grid -->
         </div>
-        <!-- .end .wrap -->
+      </div>
       </section>
 
-      <section class="">
-        <h1><strong>Changing Box Behavior - Display Property</strong></h1>
-        <p class="big-text">Eack box has a default behavior that can be changed with the display property.
-          It is the backbone of Website layouts.</p>
+      <!-- Margin or Padding -->
+      <section>
+        <div class="wrap">
+          <h2 class="text-serif aligncenter bluegreen">Margin or Padding?</h2>
+          <p class="med-text aligncenter">Modern browsers support many aspects of CSS3 but is a good idea to check support at <a href="https://caniuse.com/">caniuse.com</a></p>
+          <div class="grid padding-t5">
+              <img class="aligncenter" src="../static/images/padding.png" alt="Difference between Margin and Padding" width="900"/>
+          </div>
+        </div>
+      </section>
+
+      <!-- Developer Tools -->
+      <section>
+        <div class="wrap">
+          <h2 class="text-serif aligncenter bluegreen">Developer Tools</h2>
+          <p class="med-text aligncenter">Every Browser has a tool to inspect the content of a website. It's an important tool for web developers.</p>
+          <div class="grid padding-t5">
+              <img class="aligncenter" src="../static/images/dev-tools.png" alt="Developer Tools screenshot" width="900"/>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap size-80">
+        <h2 class="text-serif aligncenter bluegreen">The Display Property: Changing Box Behavior</h2>
+        <p class="med-text aligncenter">Eack box has a default behavior that can be changed with the display property. <br>
+          By default every element is <b>block</b> or <b>inline</b>.</p>
           <div class="demo-block">This is one block element</div>
           <div class="demo-block">This is another block element</div>
           <p class="demo-block-p">This is another block element <span>This is an inline element inside a block element</span> and <span class="span1">this is another inline element</span></p>
@@ -348,26 +371,26 @@
 
             <!-- .end .column -->
 
-      <div class="column">
-        <ul>
-          <li> <b>Block:</b> Displays each element in its own line.</li>
-          <li> <b>Inline:</b> Displays the element beside the previous one. Custom height and width will be lost.</li>
-          <li> <b>inline-block:</b> Makes a box element inline, retaining it's block element properties.</li>
-          <li>  display: block; / display: inline; / display: inline-block;</li>
-        </ul>
-      </div>
-      <!-- .end .column -->
-            <!-- .end .column -->
+          <div class="column">
+            <ul>
+              <li> <b>Block:</b> Displays each element in its own line.</li>
+              <li> <b>Inline:</b> Displays the element beside the previous one. Custom height and width will be lost.</li>
+              <li> <b>inline-block:</b> Makes a box element inline, retaining it's block element properties.</li>
+              <li>  display: block; / display: inline; / display: inline-block;</li>
+            </ul>
+          </div>
+
           </div>
           <!-- .end .grid -->
         </div>
-        <!-- .end .wrap -->
+      </div>
       </section>
 
-      <section class="slide-top">
-        <h1><strong>CSS Color</strong></h1>
-        <p class="med-text">Specifies the color of the text on the document</p>
-        <p>  <a href="https://htmlcolorcodes.com/">HTML Color Codes</a></p>
+      <section class="slide-med">
+        <div class="wrap size-90">
+        <h2 class="text-serif aligncenter bluegreen">CSS Color</h2>
+        <p class="med-text aligncenter">Specifies the color of the text on the document</p>
+        <p class="med-text aligncenter">  <a href="https://htmlcolorcodes.com/">HTML Color Codes</a></p>
         <div class="grid top-align">
 
           <div class="grid">
@@ -384,42 +407,41 @@
               </ul>
             </div>
             <!-- .end .column -->
-      <div class="column">
-            <h2>RGB</h2>
+          <div class="column">
+                <h2>RGB</h2>
+                <ul>
+                  <li>It's the combination of Red, Green and Blue values</li>
+                  <li>It is the standard color system for computer screens and displays</li>
+                  <li>The property always states the color system and the values in (). <b>color: rgb(0,0,0);</b> </li>
+                  <li>There are 255 possible values for each color</li>
+                  <li>rgb (0,0,0) = Black</li>
+                  <li>rgb (255,255,255) = White</li>
+                  <li>You can also add transparency by adding an alpha value (0 to 1)</li>
+                  <li><b>color: rgba(0,0,0,.5);</b></li>
+                </ul>
+          </div>
+          <div class="column">
+                <h2>HSL</h2>
             <ul>
-              <li>It's the combination of Red, Green and Blue values</li>
-              <li>It is the standard color system for computer screens and displays</li>
-              <li>The property always states the color system and the values in (). <b>color: rgb(0,0,0);</b> </li>
-              <li>There are 255 possible values for each color</li>
-              <li>rgb (0,0,0) = Black</li>
-              <li>rgb (255,255,255) = White</li>
-              <li>You can also add transparency by adding an alpha value (0 to 1)</li>
-              <li><b>color: rgba(0,0,0,.5);</b></li>
+              <li>It's the combination of Hue, Saturation and Lightness or Luminosity</li>
+              <li>It is used in the same way as the rgba values.</li>
             </ul>
-      </div>
-      <div class="column">
-            <h2>HSL</h2>
-        <ul>
-          <li>It's the combination of Hue, Saturation and Lightness or Luminosity</li>
-          <li>It is used in the same way as the rgba values.</li>
-        </ul>
-        <h2>Named Colors</h2>
-        <ul>
-          <li>There are 140 pre-defined colors that browsers recognize by name</li>
-          <li>You can use the name or the hex or rgb value.</li>
-        </ul>
-      </div>
-      <!-- .end .column -->
-            <!-- .end .column -->
+            <h2>Named Colors</h2>
+            <ul>
+              <li>There are 140 pre-defined colors that browsers recognize by name</li>
+              <li>You can use the name or the hex or rgb value.</li>
+            </ul>
+          </div>
           </div>
           <!-- .end .grid -->
         </div>
-        <!-- .end .wrap -->
+      </div>
       </section>
 
-      <section class="slide-top">
-        <h1><strong>Backgrounds</strong></h1>
-        <p class="med-text">Since CSS treats HTML elements as if they were inside an imaginary box, we can add a backround to them.</p>
+      <section class="slide-med">
+        <div class="wrap size-90">
+        <h2 class="text-serif aligncenter bluegreen">Backgrounds</h2>
+        <p class="med-text aligncenter">Since CSS treats HTML elements as if they were inside an imaginary box, we can add a backround to them.</p>
         <div class="grid top-align">
 
           <div class="grid">
@@ -439,36 +461,35 @@
               </ul>
             </div>
             <!-- .end .column -->
-      <div class="column">
-              <h2>Background Color</h2>
+          <div class="column">
+                  <h2>Background Color</h2>
+                <ul>
+                  <li>You can apply a background color the same way you apply the font color</li>
+                  <li>Use Hex colors, RGB, HSL and named colors.</li>
+                  <li>background-color:#ff0000;</li>
+                </ul>
+          </div>
+          <div class="column">
+                <h2>Background Images</h2>
             <ul>
-              <li>You can apply a background color the same way you apply the font color</li>
-              <li>Use Hex colors, RGB, HSL and named colors.</li>
-              <li>background-color:#ff0000;</li>
+              <li>Images can be used as backgrounds</li>
+              <li>Only use them if they are not part of the content and are meant as a decorative background</li>
+              <li>Background images are ignored by web crawlers and screen readers</li>
+              <li>background-image: url(images/my-image.png)</li>
             </ul>
-      </div>
-      <div class="column">
-            <h2>Background Images</h2>
-        <ul>
-          <li>Images can be used as backgrounds</li>
-          <li>Only use them if they are not part of the content and are meant as a decorative background</li>
-          <li>Background images are ignored by web crawlers and screen readers</li>
-          <li>background-image: url(images/my-image.png)</li>
-        </ul>
-      </div>
-      <!-- .end .column -->
-            <!-- .end .column -->
+          </div>
           </div>
           <!-- .end .grid -->
         </div>
-        <!-- .end .wrap -->
+      </div>
       </section>
 
 
-      <section class="slide-top">
-        <h1><strong>Fonts</strong></h1>
-        <p class="med-text"><i>I have a lot of fonts on my computer. Can I use them on my website?</i> </p>
-        <p class="med-text">Desktop fonts are different than webfonts. You cannot use the fonts on your computer for websites unless you have a web version uploaded to the server or a web font link.</p>
+      <section class="slide-med">
+        <div class="wrap size-90">
+        <h2 class="text-serif aligncenter bluegreen">Fonts</h2>
+        <p class="med-text aligncenter"><i>I have a lot of fonts on my computer. Can I use them on my website?</i> </p>
+        <p class="med-text aligncenter">Desktop fonts are different than webfonts. You cannot use the fonts on your computer for websites unless you have a web version uploaded to the server or a web font link.</p>
 
         <div class="grid top-align">
 
@@ -484,43 +505,42 @@
               </ul>
             </div>
             <!-- .end .column -->
-      <div class="column">
-              <h2>Serif Fonts</h2>
-              <p class="med-text">A serif is a small decorative stroke at the end of a letter or symbol.</p>
-            <ul>
-              <li><span class="type-serif"> ABC</span></li>
-                <!-- <li>Serif Fonts Say Traditional, Established, and Trustworthy</li>
-                <li>Serif fonts are traditionally used for content in print and for headings and display text on web</li>
-                <li>In low resolution displays they are not as easy to read in small sizes</li> -->
+            <div class="column">
+                    <h2>Serif Fonts</h2>
+                    <p class="med-text">A serif is a small decorative stroke at the end of a letter or symbol.</p>
+                  <ul>
+                    <li><span class="type-serif"> ABC</span></li>
+                      <!-- <li>Serif Fonts Say Traditional, Established, and Trustworthy</li>
+                      <li>Serif fonts are traditionally used for content in print and for headings and display text on web</li>
+                      <li>In low resolution displays they are not as easy to read in small sizes</li> -->
 
-            </ul>
-      </div>
-      <div class="column">
-            <h2>San Serif Fonts</h2>
-            <p class="med-text">San Serif means that the letter does not have the lines attached.</p>
-        <ul>
-          <li><span class="type-sans"> ABC</span</li>
-            <!-- <li>Sans Serif Fonts Say Modern, Approachable, and Clean </li>
-            <li>In small screens and low resolution displays, San Serif offers better readability so it's used for content.</li> -->
-        </ul>
-      </div>
-      <p class="med-text">Always choose a font that is easy to read, has good contrast and can be read in different devices. <a href="https://medium.com/rareview/typography-on-the-web-4cd494d6b165">More info about fonts</a></p>
-      <!-- .end .column -->
-            <!-- .end .column -->
+                  </ul>
+              </div>
+              <div class="column">
+                    <h2>San Serif Fonts</h2>
+                    <p class="med-text">San Serif means that the letter does not have the lines attached.</p>
+                <ul>
+                  <li><span class="type-sans"> ABC</span</li>
+                    <!-- <li>Sans Serif Fonts Say Modern, Approachable, and Clean </li>
+                    <li>In small screens and low resolution displays, San Serif offers better readability so it's used for content.</li> -->
+                </ul>
+              </div>
+              <p class="med-text">Always choose a font that is easy to read, has good contrast and can be read in different devices. <a href="https://medium.com/rareview/typography-on-the-web-4cd494d6b165">More info about fonts</a></p>
           </div>
           <!-- .end .grid -->
         </div>
-        <!-- .end .wrap -->
+        </div>
       </section>
 
 
-      <section class="slide-top">
+      <section class="slide-med">
+        <div class="wrap size-90">
         <div class="grid top-align">
 
           <div class="grid">
 
             <div class="column flexbox Features">
-              <h2>Font Attributes</h2>
+              <h2 class="text-serif bluegreen">Font Attributes</h2>
               <p class="med-text">Below are the most common properties you can change in web fonts:</p>
               <ul>
                 <li><b>color:</b> Changes the font color</li>
@@ -534,53 +554,49 @@
               </ul>
             </div>
             <!-- .end .column -->
-      <div class="column">
-              <h2>Google Fonts</h2>
-              <p class="med-text">Google fonts allows you to use different fonts on your website by replacing the default font family with the one you choose.</p>
-              <p class="font-demo">I'm a Google Font</p>
-              <img src="../static/images/google-fonts.png" alt="google fonts embed instructions" width="450">
-      </div>
-      <!-- .end .column -->
-            <!-- .end .column -->
+          <div class="column">
+                  <h2 class="text-serif bluegreen">Google Fonts</h2>
+                  <p class="med-text">Google fonts allows you to use different fonts on your website by replacing the default font family with the one you choose.</p>
+                  <p class="font-demo">I'm a Google Font</p>
+                  <img src="../static/images/google-fonts.png" alt="google fonts embed instructions" width="450">
+          </div>
           </div>
           <!-- .end .grid -->
         </div>
-        <!-- .end .wrap -->
+      </div>
       </section>
 
-      <section class="slide-top">
-        <div class="grid top-align">
+      <section class="slide-med">
+        <div class="wrap size-90 grid top-align">
 
           <div class="grid">
 
             <div class="column flexbox Features">
-              <h2>Hover Selector</h2>
+              <h2 class="text-serif bluegreen">Hover Selector</h2>
               <p class="med-text">The CSS :hover selector is one of many pseudo-classes that are used to style elements</p>
               <p class="med-text">Pseudo-classes are used to define a special state of an element</p>
               <p class="med-text">There are many pseudo classes but the most common is the :hover. It is most often applied to links but it can be applied to any element.</p>
             </div>
             <!-- .end .column -->
-      <div class="column">
-            <p class="med-text">Most common uses for :hover are:
-              <ul>
-                <li>Change the color and attributes of links</li>
-                <li>Change background</li>
-                <li>Swap images</li>
-                <li>Transform element</li>
-              </ul>
-              <hr>
-              <p class="med-text">
-                .myLink{
-                  color:#000000;
-                }</p>
-                <p class="med-text">
-                  .myLink:hover{
-                  color:#ff0000;
-                }
-              </p>
-      </div>
-      <!-- .end .column -->
-            <!-- .end .column -->
+            <div class="column">
+                  <p class="med-text">Most common uses for :hover are:
+                    <ul>
+                      <li>Change the color and attributes of links</li>
+                      <li>Change background</li>
+                      <li>Swap images</li>
+                      <li>Transform element</li>
+                    </ul>
+                    <hr>
+                    <p class="med-text">
+                      .myLink{
+                        color:#000000;
+                      }</p>
+                      <p class="med-text">
+                        .myLink:hover{
+                        color:#ff0000;
+                      }
+                    </p>
+            </div>
           </div>
           <!-- .end .grid -->
         </div>
@@ -628,10 +644,10 @@
       </section> -->
       <section>
         <!--.wrap = container (width: 90%) -->
-        <div class="wrap">
+        <div class="wrap size-90">
           <div class="grid vertical-align">
             <div class="column">
-              <h3><strong>What does Cascading mean?</strong></h3>
+              <h2 class="text-serif bluegreen">What does Cascading mean?</h2>
               <ul>
               <li>The Cascade is the way the browser decided which style applies to an element</li>
               <li>The principle of the “cascade” is applied when style rules are in conflict</li>
@@ -642,15 +658,16 @@
               </ul>
             </div>
             <!-- .end .column -->
-<div class="column">
-            <p class="med-text">There are some factors that determine which style rule wins out:</p>
-            <ul>
-              <li>Origin &amp; Importance (<b>Most weight</b>)</li>
-              <li>Selector Specificity</li>
-              <li>Order of Appearance</li>
-              <li>Initial &amp; Inherited Properties (<b>least weight</b>)</li>
-            </ul>
-</div>
+            <div class="column">
+                <p class="med-text">There are some factors that determine which style rule wins out:</p>
+                <ul>
+                  <li>Origin &amp; Importance (<b>Most weight</b>)</li>
+                  <li>Selector Specificity</li>
+                  <li>Order of Appearance</li>
+                  <li>Initial &amp; Inherited Properties (<b>least weight</b>)</li>
+                  <li><a href="https://wattenberger.com/blog/css-cascade">Understanding the Cascade</a></li>
+                </ul>
+            </div>
             <!-- .end .column -->
           </div>
           <!-- .end .grid -->
@@ -663,7 +680,7 @@
         <div class="wrap">
           <div class="grid vertical-align">
             <div class="column">
-              <h3><strong>Initial &amp; Inherited</strong></h3>
+              <h2 class="text-serif bluegreen">Initial &amp; Inherited</h2>
               <ul>
                 <li>This is the first stop in the Cascade</li>
                 <li><b>Initial</b> applies the default values when there are no styles applied to the element.</li>
@@ -671,12 +688,12 @@
               </ul>
             </div>
             <!-- .end .column -->
-    <div class="column">
-            <ul>
-              <li><b>Inherited</b> applies some parent styles to the children</li>
-              <li>Not all properties can be inherited</li>
-            </ul>
-    </div>
+            <div class="column">
+                    <ul>
+                      <li><b>Inherited</b> applies some parent styles to the children</li>
+                      <li>Not all properties can be inherited</li>
+                    </ul>
+            </div>
             <!-- .end .column -->
           </div>
           <!-- .end .grid -->
@@ -684,11 +701,12 @@
         <!-- .end .wrap -->
       </section>
 
-    <!-- SLIDE 6 - HTML TAGS 1 -->
-      <section class="slide-top">
-        <div class="wrap">
-          <h2>Inherited Tags</h2>
-          <ul class="flexblock listing">
+    <!-- SLIDE Inherited TAGS 1 -->
+      <section class="slide-med">
+        <div class="wrap size-90">
+          <h2 class="text-serif aligncenter bluegreen">Inherited Tags</h2>
+          <p class="med-text aligncenter">Some tags take the properties of the parent element and others are applied to the selected element.</p>
+          <ul class="flexblock listing padding-t5">
             <li>border-collapse</li>
             <li>border-spacing</li>
             <li><b>caption-side</b> </li>
@@ -729,6 +747,15 @@
           </ul>
         </div>
       </section>
+
+      <!-- SLIDE 6 - HTML TAGS 1 -->
+        <section class="slide-med">
+          <div class="wrap size-90">
+            <h2 class="text-serif aligncenter bluegreen">Tags have parents too!</h2>
+            <p class="med-text aligncenter">The relationships between tags</p>
+            
+          </div>
+        </section>
     <!-- SLIDE 7 - HMTL TAGS 2 -->
 
     <section>
