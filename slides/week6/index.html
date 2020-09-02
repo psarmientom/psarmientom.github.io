@@ -54,13 +54,90 @@
 <body>
 
   <main role="main">
-    <article id="webslides" class="vertical">
+    <article id="webslides" class="horizontal">
       <!-- Quick Guide
           - Each parent <section> in the <article id="webslides"> element is an individual slide.
           - Vertical sliding = <article id="webslides" class="vertical">
           - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
         -->
       <!-- SLIDE 1 INTRO -->
+
+      <section class="aligncenter">
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap size-90">
+
+            <img src="../static/images/layout.png" alt="html icon" width="500"/>
+
+          <h2 class="text-landing">Website Layout</h2>
+          <p class="text-intro">Using Cascading Style Sheets</p>
+
+        </div>
+      </section>
+
+      <section class="">
+        <h1><strong>Changing Box Behavior - Display Property</strong></h1>
+        <p class="big-text">Eack box has a default behavior - block or inline -that can be changed with the display property.
+          </p>
+          <div class="demo-block">This is one block element</div>
+          <div class="demo-block">This is another block element</div>
+          <p class="demo-block-p">This is another block element <span>This is an inline element inside a block element</span> and <span class="span1">this is another inline element</span></p>
+          <div class="demo-inline">
+          <div>This is a block element acting line an inline-block  </div>
+          <div>This is another block element acting line an inline-block  </div>
+          </div>
+        <div class="grid top-align">
+
+          <div class="grid">
+
+            <!-- .end .column -->
+
+          <div class="column">
+            <ul>
+              <li> <b>Block:</b> Displays each element in its own line.</li>
+              <li> <b>Inline:</b> Displays the element beside the previous one. Custom height and width will be lost.</li>
+              <li> <b>inline-block:</b> Makes a box element inline, retaining it's block element properties.</li>
+              <li>  display: block; / display: inline; / display: inline-block;</li>
+            </ul>
+          </div>
+
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section class="">
+        <h1><strong>Floats</strong></h1>
+        <p class="big-text">Float is a positioning property that allows one element to wrap around another.
+
+
+        <div class="grid top-align">
+
+          <div class="grid">
+
+          <div class="column">
+            <ul>
+              <li>Mostly used to display images inside content.</li>
+              <li>Previously used to make full page layouts.</li>
+              <li>Floated elements remain a part of the flow of the page.</li>
+            </ul>
+
+          </div>
+
+          <div class="column">
+            <ul>
+              <li> <b>Left:</b> Floats element to the left.</li>
+              <li> <b>Right:</b> Floats element to the right.</li>
+              <li> <b>None:</b> It is the element's default.</li>
+              <li>To clear the floats use <b>clear:</b> none, left or right.</li>
+            </ul>
+          </div>
+
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
 
       <section class="aligncenter">
         <!--.wrap = container (width: 90%) -->

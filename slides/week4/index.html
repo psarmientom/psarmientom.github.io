@@ -335,10 +335,15 @@
       <section>
         <div class="wrap">
           <h2 class="text-serif aligncenter bluegreen">Margin or Padding?</h2>
-          <p class="med-text aligncenter">Modern browsers support many aspects of CSS3 but is a good idea to check support at <a href="https://caniuse.com/">caniuse.com</a></p>
-          <div class="grid padding-t5">
+          <div class="grid">
               <img class="aligncenter" src="../static/images/padding.png" alt="Difference between Margin and Padding" width="900"/>
           </div>
+          <div class="aligncenter">
+          <p>Depending on the box-sizing settings, the padding will be added to the inside or the outside of the element</p>
+            <p> <b>box-sizing: content-box</b> (padding expands the size of the element) <br>
+            <b>box-sizing: border-box</b> (padding does not affect the size of the element)</p>
+
+        </div>
         </div>
       </section>
 
@@ -665,7 +670,6 @@
                   <li>Selector Specificity</li>
                   <li>Order of Appearance</li>
                   <li>Initial &amp; Inherited Properties (<b>least weight</b>)</li>
-                  <li><a href="https://wattenberger.com/blog/css-cascade">Understanding the Cascade</a></li>
                 </ul>
             </div>
             <!-- .end .column -->
@@ -689,10 +693,12 @@
             </div>
             <!-- .end .column -->
             <div class="column">
+              <h3 class="">Tags have parents too!</h3>
                     <ul>
                       <li><b>Inherited</b> applies some parent styles to the children</li>
                       <li>Not all properties can be inherited</li>
                     </ul>
+                    <img src="../static/images/inheritance.png" alt="tag inheritance graphic" width="700"/>
             </div>
             <!-- .end .column -->
           </div>
@@ -748,14 +754,7 @@
         </div>
       </section>
 
-      <!-- SLIDE 6 - HTML TAGS 1 -->
-        <section class="slide-med">
-          <div class="wrap size-90">
-            <h2 class="text-serif aligncenter bluegreen">Tags have parents too!</h2>
-            <p class="med-text aligncenter">The relationships between tags</p>
-            
-          </div>
-        </section>
+
     <!-- SLIDE 7 - HMTL TAGS 2 -->
 
     <section>
@@ -830,6 +829,7 @@
               <li>Using <b>!important</b> at the end of a declaration overrides everything else</li>
               <li>Then, Origin looks at where the css rule is originated to see which one wins. (browser, user, website)</li>
               <li>!important is used as a last resort when all else fails.</li>
+              <li><a href="https://wattenberger.com/blog/css-cascade">Understanding the Cascade</a></li>
             </ul>
           </div>
           <!-- .end .column -->
@@ -844,84 +844,7 @@
       <!-- .end .wrap -->
     </section>
 
-    <section class="aligncenter">
-      <!--.wrap = container (width: 90%) -->
-      <div class="wrap size-90">
-
-          <img src="../static/images/layout.png" alt="html icon" width="500"/>
-
-        <h2 class="text-landing">Website Layout</h2>
-        <p class="text-intro">Using Cascading Style Sheets</p>
-
-      </div>
-    </section>
-
-    <section class="">
-      <h1><strong>Changing Box Behavior - Display Property</strong></h1>
-      <p class="big-text">Eack box has a default behavior - block or inline -that can be changed with the display property.
-        </p>
-        <div class="demo-block">This is one block element</div>
-        <div class="demo-block">This is another block element</div>
-        <p class="demo-block-p">This is another block element <span>This is an inline element inside a block element</span> and <span class="span1">this is another inline element</span></p>
-        <div class="demo-inline">
-        <div>This is a block element acting line an inline-block  </div>
-        <div>This is another block element acting line an inline-block  </div>
-        </div>
-      <div class="grid top-align">
-
-        <div class="grid">
-
-          <!-- .end .column -->
-
-    <div class="column">
-      <ul>
-        <li> <b>Block:</b> Displays each element in its own line.</li>
-        <li> <b>Inline:</b> Displays the element beside the previous one. Custom height and width will be lost.</li>
-        <li> <b>inline-block:</b> Makes a box element inline, retaining it's block element properties.</li>
-        <li>  display: block; / display: inline; / display: inline-block;</li>
-      </ul>
-    </div>
-    <!-- .end .column -->
-          <!-- .end .column -->
-        </div>
-        <!-- .end .grid -->
-      </div>
-      <!-- .end .wrap -->
-    </section>
-
-    <section class="">
-      <h1><strong>Floats</strong></h1>
-      <p class="big-text">Float is a positioning property that allows one element to wrap around another.
-
-
-      <div class="grid top-align">
-
-        <div class="grid">
-
-    <div class="column">
-      <ul>
-        <li>Mostly used to display images inside content.</li>
-        <li>Previously used to make full page layouts.</li>
-        <li>Floated elements remain a part of the flow of the page.</li>
-      </ul>
-
-    </div>
-
-    <div class="column">
-      <ul>
-        <li> <b>Left:</b> Floats element to the left.</li>
-        <li> <b>Right:</b> Floats element to the right.</li>
-        <li> <b>None:</b> It is the element's default.</li>
-        <li>To clear the floats use <b>clear:</b> none, left or right.</li>
-      </ul>
-    </div>
-    <!-- .end .column -->
-          <!-- .end .column -->
-        </div>
-        <!-- .end .grid -->
-      </div>
-      <!-- .end .wrap -->
-    </section>
+  
 
     <section>
       <!--.wrap = container (width: 90%) -->
@@ -938,15 +861,15 @@
             </ul>
           </div>
           <!-- .end .column -->
-    <div class="column">
-      <ul>
-      <li>Blink – Used in Google Chrome, and Opera browsers.</li>
-      <li>WebKit – Used in Safari browsers.</li>
-      <li>Gecko – Used in Mozilla Firefox browsers.</li>
-      <li>Trident – Used in Internet Explorer browsers.</li>
-      <li>EdgeHTML – Used in Edge browsers.</li>
-    </ul>
-    </div>
+          <div class="column">
+            <ul>
+            <li>Blink – Used in Google Chrome, and Opera browsers.</li>
+            <li>WebKit – Used in Safari browsers.</li>
+            <li>Gecko – Used in Mozilla Firefox browsers.</li>
+            <li>Trident – Used in Internet Explorer browsers.</li>
+            <li>EdgeHTML – Used in Edge browsers.</li>
+          </ul>
+          </div>
           <!-- .end .column -->
         </div>
         <!-- .end .grid -->
