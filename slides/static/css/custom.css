@@ -15,6 +15,10 @@
 .big-text.aligncenter{
   text-align: center;
 }
+.big-headline{
+  font-size:120px;
+  font-weight: bold;
+}
 .column .big-text li{
   list-style: square;
   list-style-position: inside;
@@ -187,4 +191,30 @@ ul.flexblock.listing li{
   background: #cccccc;
   padding:10px;
   margin-right:10px;
+}
+.center-flex{
+  justify-content: center;
+  align-items: center;
+}
+/* WEEK 5 */
+.imageUse{
+  background-image: url("../../static/images/dogs.png");
+  background-repeat:no-repeat;
+  width:870px;
+  height:600px;
+  margin-top:30px;
+}
+.imageUse p{
+  width:870px;
+  height:600px;
+}
+.imageUse:hover div::after{
+  background: black;
+  color:red;
+  content: "NO";
+  font-size:200px;
+  font-weight: bold;
+  position: absolute;
+  top:50%;
+  left:40%;
 }
