@@ -43,7 +43,7 @@ p.presentation, h4.presentation{
 .secondary-color{
   color:#67d;
 }
-.primary-color{
+.primary-color, p a:link{
   color:#108e82;
 }
 .secondary-color{
@@ -93,6 +93,17 @@ cite a{color:#999;}
 }
 .padding-t5{
   padding-top:5rem;
+}
+.padding-r3{
+  padding-right:3rem;
+  box-sizing: content-box;
+}
+.padding-2{
+  padding:2rem;
+  box-sizing: content-box;
+}
+.margin-r2{
+  margin-right:2rem !important;
 }
 .flexblock.features .headings h1, .flexblock.features .headings h2, .flexblock.features .headings h3, .flexblock.features .headings h4, .flexblock.features .headings h5, .flexblock.features .headings h6{
   display: inline-block;
