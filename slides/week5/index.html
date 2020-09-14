@@ -153,7 +153,7 @@
             <ul>
               <li>Look for credits in the image (caption, embedded in the photo).</li>
               <li>Look for a Watermark.</li>
-              <li>Check for the image Metadata.</li>
+              <li>Check for the image Metadata. <a href="http://metapicz.com/#landing">Metapix</a></li>
               <li>Do an image reverse search in <a href="https://tineye.com/">TinEye</a> </li>
             </ul>
           </div>
@@ -165,7 +165,7 @@
       </section>
 
       <!-- SLIDE 5 -->
-      <section class="align-top">
+      <section class="slide-top">
         <div class="wrap size-80">
         <img class="aligncenter" src="../static/images/cc-logo.png" />
         <h2 class="text-serif bluegreen aligncenter">Creative Commons</h2>
@@ -218,524 +218,73 @@
         </div>
       </section>
 
-      <section class="aligncenter">
-        <!--.wrap = container (width: 90%) -->
-        <div class="wrap size-90">
 
-          <img src="../static/images/layout.png" alt="html icon" width="500" />
-
-          <h2 class="text-landing">Website Layout</h2>
-          <p class="text-intro">Using Cascading Style Sheets</p>
-
-        </div>
-      </section>
 
       <!-- The box Model -->
-      <section class="slide-top">
-        <h1><strong>The Box Model</strong></h1>
+      <section class="slide-middle">
+        <div class="wrap size-60">
+        <h2 class="text-serif bluegreen aligncenter">Where do I Find Images?</h2>
 
         <div class="grid top-align">
 
-          <div class="grid">
+
 
             <div class="column">
-              <img src="../static/images/box-model.png" alt="The css box model">
-            </div>
-            <!-- .end .column -->
-            <div class="column">
-              <p class="med-text">Each box has the following components:</p>
-              <ul>
-                <li> <b>Content:</b> The text, image or content inside the box.</li>
-                <li> <b>Padding:</b> The space between the content and the border of the box.</li>
-                <li> <b>Border:</b> The edge of the box</li>
-                <li> <b>Margin:</b> The space between the box and surrounding elements.</li>
-                <li>By default the box will take the dimensions of the content</li>
-                <li>You can specify the dimensions using px, %, or ems.</li>
-              </ul>
-            </div>
-            <div class="column">
-              <h2>Block or Inline</h2>
-              <ul>
-                <li>All HTML boxes are by default block or inline</li>
-                <li> <b>Block:</b> The element will take the full width of the parent container and will start in a new line. (h1, p, div)</li>
-                <li> <b>Inline:</b> The element will only take the space of its content and will not break the flow of content (b, i, span)</li>
-              </ul>
-            </div>
-            <!-- .end .column -->
-            <!-- .end .column -->
-          </div>
-          <!-- .end .grid -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
-
-      <section class="">
-        <h1><strong>Changing Box Behavior - Display Property</strong></h1>
-        <p class="big-text">Eack box has a default behavior - block or inline -that can be changed with the display property.
-        </p>
-        <div class="demo-block">This is one block element</div>
-        <div class="demo-block">This is another block element</div>
-        <p class="demo-block-p">This is another block element <span>This is an inline element inside a block element</span> and <span class="span1">this is another inline element</span></p>
-        <div class="demo-inline">
-          <div>This is a block element acting line an inline-block </div>
-          <div>This is another block element acting line an inline-block </div>
-        </div>
-        <div class="grid top-align">
-
-          <div class="grid">
-
-            <!-- .end .column -->
-
-            <div class="column">
-              <ul>
-                <li> <b>Block:</b> Displays each element in its own line.</li>
-                <li> <b>Inline:</b> Displays the element beside the previous one. Custom height and width will be lost.</li>
-                <li> <b>inline-block:</b> Makes a box element inline, retaining it's block element properties.</li>
-                <li> display: block; / display: inline; / display: inline-block;</li>
-              </ul>
-            </div>
-            <!-- .end .column -->
-            <!-- .end .column -->
-          </div>
-          <!-- .end .grid -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
-
-      <section class="">
-
-
-          <div class="wrap">
-            <h1><strong>Floats</strong></h1>
-            <div class="grid ms">
-
-              <div class="column">
-                <p class="big-text">Float is a positioning property that allows one element to wrap around another.</p>
-                <ul>
-                  <li>Mostly used to display images inside content.</li>
-                  <li>Previously used to make full page layouts.</li>
-                  <li>Floated elements remain a part of the flow of the page.</li>
-                </ul>
-                <ul>
-                  <li> <b>Left:</b> Floats element to the left.</li>
-                  <li> <b>Right:</b> Floats element to the right.</li>
-                  <li> <b>None:</b> It is the element's default.</li>
-                  <li>To clear the floats use <b>clear:</b> none, left or right.</li>
-                </ul>
-
-              </div>
-
-              <div class="column">
-                <img src="../static/images/floats.png" alt="page layout examples" width="400">
-              </div>
-              <!-- .end .column -->
-              <!-- .end .column -->
-            </div>
-            <!-- .end .grid -->
-          </div>
-          <!-- .end .wrap -->
-      </section>
-
-      <section>
-        <!--.wrap = container (width: 90%) -->
-        <div class="wrap">
-          <div class="grid vertical-align">
-            <div class="column">
-              <h3><strong>A little bit of History..</strong></h3>
-              <ul>
-                <li>Normal <b>HTML</b> Flow.</li>
-                <li><b>Tables</b>.</li>
-                <li>Positioning - <b>Floats</b>.</li>
-                <li><b>Flexbox</b>. Aligns elements in a single axis, either rows or columns (2015).</li>
-                <li><b>Grid</b>. Works in two dimensios. Rows and columns at the same time. (2017)</li>
-                <li>Multicolumn (working draft as of 03/2019).</li>
-              </ul>
-            </div>
-            <!-- .end .column -->
-            <div class="column">
-              <img src="../static/images/layout-example.jpg" alt="div structure">
-              <cite>https://www.researchgate.net/figure/Example-of-a-main-webpage-layout-in-Blackmon-et-al-2002-2003-2005_fig2_235208267</cite>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="slide-top bg-white">
-        <div class="bg-white wrap frame links">
-          <img src="../static/images/CSS3-taxonomy.png" alt="CSS3 Taxonomy">
-          <!-- <div class="background" style="background-image:url('../static/images/CSS3-taxonomy.png')"></div> -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
-
-      <section class="slide-top">
-        <!--.wrap = container (width: 90%) -->
-        <div class="grid size-90">
-          <div class="column ms">
-            <img src="../static/images/layout-grid.png" alt="web grid" width="800" />
-          </div>
-          <div class="column sm">
-          <h2 class="text-landing">The Grid</h2>
-          <ul>
-            <li>It's the latest and most powerful CSS layout system available.</li>
-            <li>With the grid you can control the size and position of the "boxes" and their contents in the page.</li>
-            <li>You can alter the visual display of the elements without affecting the semantic markup.</li>
-            <li>You can specify the number of rows and columns.</li>
-            <li>It's fast to develop.</li>
-            <li>reduced code size</li>
-            <li>Most common grid size is 12 because is easily divided by 2, 3, 4, 6</li>
-          </ul>
-        </div>
-        </div>
-      </section>
-
-      <section>
-        <!--.wrap = container (width: 90%) -->
-        <div class="wrap">
-          <h3><strong>How does the grid work?</strong></h3>
-          <div class="grid vertical-align">
-
-            <div class="column">
-
-              <ul>
-                <li>Column and Row count are applied to the parent container to define the structure of the grid.</li>
-                <li>Placement properties are applied to the individual elements insode the grid.</li>
-              </ul>
-            <hr>
-              <p class="med-text">You can practice grid placement with these games:</p>
-              <ul>
-                <li> <a href="https://cssgridgarden.com/">CSS grid garden</a> </li>
-                <li> <a href="https://flexboxfroggy.com/">Flexbox Froggy</a> </li>
-              </ul>
-            </div>
-            <!-- .end .column -->
-            <div class="column">
-              <img src="../static/images/layout-position.png" alt="">
-            </div>
-            <!-- .end .column -->
-          </div>
-          <!-- .end .grid -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
-
-      <section>
-        <!--.wrap = container (width: 90%) -->
-        <div class="wrap">
-
-          <div class="vertical-align">
-            <h3><strong>Grid Structure</strong></h3>
-            <div class="column">
-
-              <img src="../static/images/layout-details.png" alt="">
-            </div>
-          </div>
-          <!-- .end .grid -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
-
-      <section>
-        <!--.wrap = container (width: 90%) -->
-        <div class="wrap">
-          <h3><strong>The Parent Grid Container</strong></h3>
-          <div class="grid vertical-align">
-
-            <div class="column">
-
-              <img src="../static/images/outer-container.png" alt="">
-            </div>
-            <div class="column">
-            <ul>
-              <li><b>Grid Template Areas:</b> </li>
-              <li>You can name the containers and assign them to the grid however you want.</li>
-              <li>grid-template-areas: <br>
-              "header header header header" <br>
-              "main main . sidebar" <br>
-              "footer footer footer footer";</li>
-              <li>A period . denotes an empty cell</li>
-              <li><b>grid-column-gap:</b> </li>
-              <li><b>grid-row-gap:</b> </li>
-              <li><b>grid-gap:</b> is used for column and rows </li>
-              <li><b>gap:</b> shorthand for column and rows </li>
-              <li><b>align-items:</b> start | end | center | stretch</li>
-              <li><b>justify-items:</b> start | end | center | stretch (items have to be smaller than the grid)</li>
-              <li><b>align-content:</b> start | end | center | stretch | space-around | space-between | space-evenly</li>
-              <li><b>justify-content:</b> start | end | center | stretch | space-around | space-between | space-evenly (items have to be smaller than the grid)</li>
-              <!-- <li><b>place-content:</b> sets both the align-content and justify-content.</li> -->
-            </ul>
-            </div>
-          </div>
-          <!-- .end .grid -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
-
-      <section>
-        <!--.wrap = container (width: 90%) -->
-        <div class="wrap">
-          <h3><strong>The Children Grid Containers</strong></h3>
-          <div class="grid vertical-align">
-
-            <div class="column">
-
-              <img src="../static/images/inner-container.png" alt="">
-            </div>
-            <div class="column">
-            <ul>
-              <li><b>grid-column-start:</b> </li>
-              <li><b>grid-column-end:</b> </li>
-              <li><b>grid-column:</b> Shorthand for grid-column start and end (2/5)</li>
-              <li><b>grid-row-start:</b> </li>
-              <li><b>grid-row-end:</b> </li>
-              <li><b>grid-row:</b> Shorthand for grid-row start and end</li>
-              <li><b>grid-area:</b>You can name individual areas and position them on the parent container using <b>grid-template-areas</b> </li>
-              <li><b>justify-self:</b> start | end | center | stretch </li>
-              <li><b>align-self:</b> start | end | center | stretch</li>
-              <li><b>place-self:</b> Shorthand for justify and align self (not fully suported)</li>
-            </ul>
-            </div>
-          </div>
-          <!-- .end .grid -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
-
-      <section>
-        <!--.wrap = container (width: 90%) -->
-        <div class="wrap">
-          <h3><strong>Grid Alignment</strong></h3>
-          <div class="grid top-align">
-
-            <div class="column">
-              <h2>Justify</h2>
-              <img src="../static/images/justify.png" alt="justify grid">
-            </div>
-            <div class="column">
-              <h2>Align</h2>
-            <img src="../static/images/align.png" alt="align grid">
-            </div>
-          </div>
-          <!-- .end .grid -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
-
-      <section>
-        <!--.wrap = container (width: 90%) -->
-        <div class="wrap">
-          <h3><strong>Grid Template Areas</strong></h3>
-          <div class="grid top-align">
-
-            <div class="column">
-              <img src="../static/images/grid-names.png" alt="template areas" width="550">
-            </div>
-            <div class="column">
-              <h2>Parent Container</h2>
-              <ul>
-                <li><b>display:</b> grid;</li>
-                <li><b>grid-template-areas:</b> <br>
-                   "one one two two" <br>
-                   "three three three three" <br>
-                  "fourt five . seven" <br>
-                  "four . . seven" <br>
-                  ". six six ."; <br>
-                  (use dots to represent empty cells)
+              <h4>Free Images</h4>
+              <ul class="padding-t3">
+                <li><a href="https://search.creativecommons.org/">Creative Commons</a></li>
+                <li><a href="https://openclipart.org/">Open Clipart</a></li>
+                <li><a href="https://unsplash.com/">Unsplash</a>
+                  <ul>
+                    <li><a href="https://unsplash.com/license">License</a></li>
+                  </ul>
                 </li>
-                <li><b>grid-auto-rows:</b> minmax(100px, auto);</li>
-                <li><b>grid-gap:10px;</b></li>
-              </ul>
-              <hr>
-              <h2>Children Containers </h2>
-              <p class="med-text">assign a name to each container</p>
-              <ul>
-                <li><b>.one</b> {grid-area:one;}</li>
-                <li><b>.two</b> {grid-area:two;} etc...</li>
+                <li><a href="https://www.pexels.com/">Pexels</a>
+                  <ul>
+                    <li><a href="https://www.pexels.com/license/">faq's</a></li>
+                  </ul>
+                </li>
+                <li><a href="https://pixabay.com/">Pixabay</a>
+                  <ul>
+                    <li><a href="https://pixabay.com/service/faq/">faq's</a></li>
+                  </ul>
+                </li>
+                <li><a href="https://www.wpbeginner.com/showcase/16-sources-for-free-public-domain-and-cc0-licensed-images/">More Images</a></li>
               </ul>
             </div>
-          </div>
+            <!-- .end .column -->
+              <div class="column">
+                <h4>Purchasing an image license</h4>
+                <ul class="padding-t4">
+                  <li>Even if you pay for an image, it does not mean you can use it anywhere.</li>
+                  <li><a href="https://www.istockphoto.com/">iStockPhoto</a></li>
+                  <li><a href="https://stock.adobe.com/">Adobe Stock</a></li>
+                  <li><a href="https://www.gettyimages.com/">Getty Images</a></li>
+                  <li><a href="https://www.istockphoto.com/help/licenses">Different Licenses.</a></li>
+                  <li><a href="https://www.istockphoto.com/legal/license-agreement#restricted-use">Typical agreement</a></li>
+                  <li>Editorial Imgaes cannot be used to sell o promote a product or business. They can only be used on news-related content. </li>
+                </ul>
+              </div>
+
           <!-- .end .grid -->
         </div>
-        <!-- .end .wrap -->
+       </div>
       </section>
+    <!-- Slide Memes -->
+      <!-- <section class="slide-middle">
+        <div class="wrap size-60">
+        <h2 class="text-serif bluegreen aligncenter">What about Memes?</h2>
 
-      <section class="aligncenter">
-        <!--.wrap = container (width: 90%) -->
-        <div class="wrap size-90">
-
-          <img src="../static/images/responsive.png" alt="html icon" width="800" />
-
-          <h2 class="text-landing">Responsive Web Design</h2>
-          <p class="text-intro">Using the CSS grid</p>
-
-        </div>
-      </section>
-
-      <section>
-        <!--.wrap = container (width: 90%) -->
-        <div class="wrap">
-          <h3><strong>Why Responsive?</strong></h3>
-          <div class="grid vertical-align">
-
+        <div class="grid top-align">
             <div class="column">
 
-              <ul>
-                <li>Before Mobile devices you only had to worry about the screen resolution of
-                  desktops and laptops.</li>
-                <li>In the mid '00 web started to be introduced in smartphones and this was a game changer.</li>
-                <li>Many times 2 versions of a website were created. One for Desktop and one for mobile.</li>
-                <li>Around 2010 the term Responsive was introduced by Ethan Marcotte. It described content
-                that needed to adapt to its viewport by having one website that provided a seamless experience in any device.</li>
-              </ul>
             </div>
-            <!-- .end .column -->
-            <div class="column">
-              <h4>Key Points in Responsive Design:</h4>
-              <ul>
-                <li>Use relative widths instead of pixels.</li>
-                <li>Use pixels only in elements you don't want to scale like logos and buttons.</li>
-                <li>The use of media queries allows you to set different layouts for different screen sizes.</li>
-                <li>You can add the media query at the bottom of your css file or you can add a separate one for each viewport.</li>
-              </ul>
-            </div>
-            <!-- .end .column -->
-          </div>
-          <!-- .end .grid -->
+              <div class="column">
+
+              </div>
         </div>
-        <!-- .end .wrap -->
-      </section>
-
-      <section>
-        <!--.wrap = container (width: 90%) -->
-        <div class="wrap">
-          <h3><strong>What are Media Queries?</strong></h3>
-          <div class="grid vertical-align">
-
-            <div class="column">
-
-              <ul>
-                <li>Media query is a CSS technique that uses the <b>@media</b> rule with style properties for that particular condition.</li>
-                <li><b>@media only screen and (min-width: 600px)</b> {<br>
-                  body { <br>
-                    background-color: lightblue; <br>
-                  } <br>
-                }<br>
-              The background will be applied to any device that has a minimun width of 600px and up. This is called a <b>Breakpoint</b> </li>
-              <li>Start from mobile-up</li>
-              </ul>
-            </div>
-            <!-- .end .column -->
-            <div class="column">
-              <h4>Most common media queries:</h4>
-              <ul> <br>
-                <li>min-width: 480px 	Mobile-landscape (and larger)</li>
-                <li>min-width: 768px 	Tablet-portrait (and larger)</li>
-                <li>min-width: 992px 	Tablet-landscape (and larger)</li>
-                <li>min-width: 1200px 	Laptops (and langer)</li>
-              </ul>
-
-              <p class="med-text"> <br>
-                <a href="https://mediaqueri.es/2/">Some examples of layouts with media queries</a></p>
-            </div>
-            <!-- .end .column -->
-          </div>
-          <!-- .end .grid -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
-
-    <section>
-      <div class="wrap">
-        <h3><strong>Most common Device sizes</strong></h3>
-        <div class="grid vertical-align">
-
-          <div class="column">
-
-          <img src="../static/images/viewports.png" alt="common viewport sizes" >
-          </div>
-          <!-- .end .column -->
-
-        </div>
-        <!-- .end .grid -->
-      </div>
-      <!-- .end .wrap -->
-    </section>
-
-      <section>
-        <!--.wrap = container (width: 90%) -->
-        <div class="wrap">
-
-          <div class="grid vertical-align bg-white shadow">
-  <h4><b>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</b></h4><br>
-            <ul class="flexblock reasons">
-              <li>Add this meta inside your head tag to adjust the page to recognize the diffent viewports</li>
-              <li>Without a viewport meta tag, mobile devices render pages at typical desktop screen widths,
-                and then scale the pages to fit the mobile screens.
-                Setting the viewport enables you to control the width and scaling of the viewport.</li>
-              <li>The width=device-width key-value pair sets the width of the viewport to the width of the device.</li>
-              <li>The initial-scale=1 key-value pair sets the initial zoom level when visiting the page.</li>
-            </ul>
-            <p class="med-text">
-            </p>
-            <!-- .end .column -->
-          </div>
-          <!-- .end .grid -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
-
-      <section>
-        <!--.wrap = container (width: 90%) -->
-        <div class="wrap">
-        <h4><b>Relative Units</b></h4><br>
-          <div class="grid vertical-align bg-white shadow">
-
-          <div class="column">
-            <ul>
-              <li>Ems are a relative unit based on the base font size.</li>
-              <li><a href="http://pxtoem.com/">Convert pixels to ems</a> </li>
-            </ul>
-          </div>
-          <div class="column">
-            <img src="../static/images/ems.png" alt="typography units">
-          </div>
-            <!-- .end .column -->
-          </div>
-          <!-- .end .grid -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
-
-      <section>
-        <!--.wrap = container (width: 90%) -->
-        <div class="wrap">
-          <h3><strong>A note on Browsers</strong></h3>
-          <div class="grid vertical-align">
-
-            <div class="column">
-
-              <ul>
-                <li>Each browser has its own rendering engine.</li>
-                <li>They all interpret and render web pages slightly different.</li>
-                <li>They also have their own styles for default values.</li>
-              </ul>
-            </div>
-            <!-- .end .column -->
-            <div class="column">
-              <ul>
-                <li>Blink – Used in Google Chrome, and Opera browsers.</li>
-                <li>WebKit – Used in Safari browsers.</li>
-                <li>Gecko – Used in Mozilla Firefox browsers.</li>
-                <li>Trident – Used in Internet Explorer browsers.</li>
-                <li>EdgeHTML – Used in Edge browsers.</li>
-              </ul>
-            </div>
-            <!-- .end .column -->
-          </div>
-          <!-- .end .grid -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
+       </div>
+      </section> -->
 
     </article>
     <!-- end article -->

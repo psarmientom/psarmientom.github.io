@@ -164,6 +164,9 @@ ul.flexblock.listing li{
   padding:1.5rem;
   font-size:2.2rem;
 }
+ul li ul{
+  margin-left:4rem;
+}
 .type-serif{
   font-family: "Timed New Roman",serif;
   font-size: 8rem;
@@ -228,4 +231,8 @@ ul.flexblock.listing li{
   position: absolute;
   top:50%;
   left:40%;
+}
+/* moth example */
+.moth{
+  background-image:url(../static/images/atlas-moth.png);
 }
