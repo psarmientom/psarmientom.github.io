@@ -5,6 +5,9 @@
 .med-text{
   font-size:2.5rem;
 }
+ul.med-text li{
+  line-height: 3.5rem;
+}
 .sm-text{
   font-size:2rem;
 }
@@ -30,6 +33,9 @@
   font-size:7rem;
   text-align: left;
   margin-bottom: 20px;
+}
+.textLeft{
+  text-align: left;
 }
 p.presentation, h4.presentation{
   color#ffffff;
@@ -58,7 +64,7 @@ p.presentation, h4.presentation{
 .bluegreen-light{
   color:#32d1ce;
 }
-.bluegreen{
+.bluegreen, a:link, a:visited{
   color:#108e82;
 }
 .bg-bluegreen, .bg-primary{
@@ -66,6 +72,24 @@ p.presentation, h4.presentation{
 }
 .orange{
   color:#f15a24;
+}
+.acqua{
+  color:#0083AA;
+}
+.border-acqua{
+  border:solid 5px #0083AA;
+  padding:2rem;
+}
+.gold{
+  color:#F7931E;
+}
+.border-gold{
+  border:solid 5px #F7931E;
+  padding:2rem;
+  margin-top:1rem;
+}
+.border-acqua ul li. .border-gold ul li{
+  font-size:2rem;
 }
 h1.bluegreen a:link, h1 a:visited, h1 a{
   color:#108e82;
@@ -93,6 +117,9 @@ cite a{color:#999;}
 }
 .padding-t5{
   padding-top:5rem;
+}
+.padding-t6{
+  padding-top:6rem;
 }
 .padding-r3{
   padding-right:3rem;
