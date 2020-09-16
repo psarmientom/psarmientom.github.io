@@ -262,29 +262,273 @@
                   <li><a href="https://www.gettyimages.com/">Getty Images</a></li>
                   <li><a href="https://www.istockphoto.com/help/licenses">Different Licenses.</a></li>
                   <li><a href="https://www.istockphoto.com/legal/license-agreement#restricted-use">Typical agreement</a></li>
-                  <li>Editorial Imgaes cannot be used to sell o promote a product or business. They can only be used on news-related content. </li>
+                  <li>Editorial Images cannot be used to sell o promote a product or business. They can only be used on news-related content. </li>
                 </ul>
               </div>
-
-          <!-- .end .grid -->
         </div>
        </div>
       </section>
-    <!-- Slide Memes -->
-      <!-- <section class="slide-middle">
-        <div class="wrap size-60">
-        <h2 class="text-serif bluegreen aligncenter">What about Memes?</h2>
 
-        <div class="grid top-align">
-            <div class="column">
-
+        <!-- Slide Image Types -->
+       <section class="slide-top">
+        <div class="wrap size-80 aligncenter">
+          <h2 class="text-serif aligncenter bluegreen">Image Basics</h2>
+          <div class="grid">
+            <div class="column bg-primary">
+              <h4>Raster Images</h4>
+              <ul class="big-text">
+                <li>Made up using a collection of pixels referred to as a bitmap</li>
+                <li>They occupy more space</li>
+                <li>They don't scale up well</li>
+                <li>Formats: jpg, gif, png, tif</li>
+              </ul>
             </div>
-              <div class="column">
-
-              </div>
+            <div class="column">
+              <img src="../static/images/downtown.jpg"/>
+              <br><br>
+              <img src="../static/images/kiwi.svg"/>
+            </div>
+            <div class="column bg-black">
+              <h4>Vector Images</h4>
+              <ul class="big-text">
+                <li>Vector Images use mathematical statements to store information</li>
+                <li>Lines and Shapes</li>
+                <li>Scalable</li>
+                <li>Formats: svg, eps, pdf, ai</li>
+              </ul>
+            </div>
+          </div>
         </div>
-       </div>
+      </section>
+
+      <!-- Section Image types -->
+      <section class="slide-center">
+        <div class="wrap size-80">
+          <h2 class="text-serif aligncenter bluegreen">Vector vs. Raster</h2>
+          <div class="grid">
+            <div class="column">
+              <img src="../static/images/vector-raster.png" alt="vector and raster image zoom" width="700">
+            </div>
+            <div class="column">
+              <ul>
+                <li>Vector images are lighter.</li>
+                <li>Vector images can be scaled without losing sharpness.</li>
+                <li>Raster images can display better range of colors blends.</li>
+                <li>They are compatible with all web browsers.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Slide Images -->
+      <section>
+        <div class="wrap size-80">
+          <h2 class="text-serif aligncenter bluegreen">Web Images</h2>
+          <div class="grid center-align">
+            <div class="column">
+              <i class="fas fa-file-image"></i>
+              <h4>
+                <strong>JPG</strong>
+              </h4>
+              <ul>
+                <li>A compressed image format standardized by the Joint Photographic Experts Group (JPEG).</li>
+                <li>It significantly reduces the file size of images</li>
+                <li>Good for photographs</li>
+                <li>Some information is lost in the process</li>
+              </ul>
+            </div>
+            <div class="column">
+              <i class="far fa-file-image"></i>
+              <h4>
+                <strong>PNG</strong></h4>
+              <ul>
+                <li>Image file stored in the Portable Network Graphic (PNG) format</li>
+                <li>Commonly used to store web graphics, digital photographs.</li>
+                <li>Support Transparency</li>
+                <li>Does not degrade the image quality</li>
+                <li>Bigger image size than jpg</li>
+              </ul>
+            </div>
+            <div class="column">
+              <i class="far fa-image"></i>
+              <h4>
+                <strong>SVG</strong>
+              </h4>
+              <ul>
+                <li>SVG stands for Scalable Vector Graphics</li>
+                <li>Used to define vector-based graphics for the Web</li>
+                <li>Images are scalable</li>
+                <li>Graphics do NOT lose any quality if they are zoomed or resized</li>
+              </ul>
+            </div>
+            <div class="column">
+              <i class="far fa-image"></i>
+              <h4>
+                <strong>GIF</strong>
+              </h4>
+              <ul>
+                <li>GIF Stands for Graphics Interchange Format</li>
+                <li>Does not degrade the image quality</li>
+                <li>Can include a maximum of 256 colors</li>
+                <li>Better suited for buttons and banners that do not require a lot of colors.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide Preparing image for web -->
+      <section class="slide-top">
+        <div class="wrap size-80">
+            <h2 class="text-serif aligncenter bluegreen">Preparing your images for the web.</h2>
+        </div>
+        <div class="grid center-align">
+          <div class="column ">
+            <img src="../static/images/image-funnel.png" alt="web files funneling to a phone" width="600">
+          </div>
+          <div class="column">
+          <ul class="padding-t6">
+            <li>As a general rule of thumb, we like our product photos to be a maximum 80-150 KB.</li>
+            <li>For large homepage hero images to be a maximum of 250-350 KB.</li>
+            <li>Image file size is important for site speed's and performance.</li>
+            <li>Every file that's included on your website counts towards your visitor's data usage.</li>
+            <li>Every hour of online streaming in standard definition consumes 1GB; 3GB in HD.</li>
+          </ul>
+          <h5 class="bluegreen padding-t4">Data Storage Units</h5>
+          <ul>
+            <li>1 B = 1 byte</li>
+            <li>1 kB = 1000 bytes</li>
+            <li>1 MB = 1000 kB</li>
+            <li>1 GB = 1000 MB</li>
+          </ul>
+          <h5 class="bluegreen padding-t4">Image Optimization</h5>
+          <li>Photoshop</li>
+          <li><a href="https://shortpixel.com/online-image-compression">ShortPixel</a></li>
+          <li><a href="https://tinypng.com/">TinyPNG</a></li>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide File Structure -->
+      <section class="slide-top">
+        <div class="wrap size-90">
+            <h2 class="text-serif aligncenter bluegreen">File Structure</h2>
+
+        <div class="grid center-align">
+          <div class="column">
+          <ul class="padding-t6">
+            <img src="../static/images/linking.png" alt="web file structure" width="980">
+          </ul>
+          </div>
+          <div class="column ">
+            <ul class="padding-t6">
+              <li>When working on a website you usually deal with many files.</li>
+              <li>Creating a logical structure is key to working efficiently.</li>
+              <li>Create one folder for each web project.</li>
+              <li>Keep all the files used in one website in the same folder.</li>
+              <li>Create separate sub-folders for the different file types used in your website. (CSS, JS, videos, audio, etc.)</li>
+              <li>The File path is the location of a specific file in the file system.</li>
+            </ul>
+          </div>
+
+        </div>
+        </div>
+      </section>
+
+      <!-- Slide Link Types -->
+      <!-- SLIDE 11 - ABOUT LINKS -->
+      <!-- <section class="slide-top">
+        <div class="wrap size-80 aligncenter">
+          <div class="grid">
+          </div>
+          <div class="grid">
+            <div class="column bg-red">
+              <h4><i class="fas fa-times-circle"> </i> <i class="fas fa-times-circle"> </i> <i class="fas fa-times-circle"> </i> Local Links <i class="fas fa-times-circle"> </i> <i class="fas fa-times-circle"> </i> <i class="fas fa-times-circle"> </i> </h4>
+              <p class="big-text"><b>&lt;a href="/Users/username/Documents/GitHub/username.github.io/myPage.html"&gt;</b></p>
+              <ul class="big-text">
+                <li>This is the location of the file in your computer</li>
+                <li>This will work fine while you are working in your local copy</li>
+                <li>When you upload the project to Github, the link will be broken because other people will not be able to access the file in your computer</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </section> -->
+
+      <!-- Slides Relative Link -->
+      <section class="slide-center">
+        <div class="wrap">
+          <h2 class="text-serif aligncenter bluegreen">Relative links</h2>
+          <div class="grid">
+            <div class="column">
+              <ul class="big-text padding-t6">
+                <li>This is the location of the file relative to the page your're working on.</li>
+                <li>The file belongs to your site.</li>
+                <li>They share the same URL and there is no need to add the full web address.</li>
+              </ul>
+              <p class="med-text padding-t6">Link from index to page 1</p>
+              <p class="med-text"><b>&lt;a href="page1.html"&gt;</b></p>
+              <p class="med-text">Link from index to contact.html</p>
+              <p class="med-text"><b>&lt;a href="contact/contact.html"&gt;</b></p>
+              <p class="med-text">Link from contact.html to index</p>
+              <p class="med-text"><b>&lt;a href="../index.html"&gt;</b></p>
+            </div>
+            <div class="column">
+              <img src="../static/images/relative-links.png" alt="relative link structure">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slides Absolute Link -->
+      <section class="slide-center">
+        <div class="wrap">
+          <h2 class="text-serif aligncenter bluegreen">Absolute links</h2>
+          <div class="grid">
+            <div class="column">
+              <ul class="big-text padding-t6">
+                <li>These are links you make from a file in your website to a file in the internet.</li>
+                <li>The file belongs does not belong to your site.</li>
+                <li>You have to add the full web address.</li>
+              </ul>
+              <p class="med-text padding-t6">Link from index to miami.edu</p>
+              <p class="med-text"><b><a href="https://miami.edu">&lt;a href="https://miami.edu/"&gt;</b></a></p>
+              <p class="med-text">Link from index to Academics in miami.edu</p>
+              <p class="med-text"><b><a href="https://miami.edu/academics/index.html">&lt;a href="https://miami.edu/academics/index.html"&gt;</a></b></p>
+              <p class="med-text">Link from contact.html to Academics in miami.edu</p>
+              <p class="med-text"><b><a href="https://miami.edu/academics/index.html">&lt;a href="https://miami.edu/academics/index.html"&gt;</a></b></p>
+            </div>
+            <div class="column">
+              <img src="../static/images/absolute-links.png" alt="relative link structure">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide File Guidelines -->
+      <section>
+        <div class="wrap">
+          <div class="grid center-align">
+            <div class="column">
+            <h2 class="text-serif bluegreen">Guidelines</h2>
+              <ul class="description">
+                <li>Keep files organized in folders by file type.</li>
+                <li>Use lowercase for HTML tags, files and folders.</li>
+                <li>Use ( - _ ) instead of spaces to name your files and folders.</li>
+                <li>Save images according to their use to keep a small file size.</li>
+                <li>Check the location of your links.</li>
+              </ul>
+            </div>
+            <div class="column">
+              <h2 class="text-serif bluegreen">Why Index?</h2>
+              <p class="med-text">Most servers are configured to display the <b>index.html</b> by default without having to type the name of the file.</p>
+              <p class="med-text">That's why your homepage will always be index.html</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
     </article>
     <!-- end article -->
