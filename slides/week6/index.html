@@ -223,7 +223,7 @@
           <ul class="textLeft med-text">
             <li>It's a way of creating page layouts using rows <b>or</b> columns.</li>
             <li>It aligns and distribute the space between the elements inside a container using a single axis (horizontally or vertically).</li>
-            <li>It is faster and more organized that using floats and positioning elements.</li>
+            <li>It is faster and more organized than using floats and positioning elements.</li>
             <li>It distributes the elements in the available space without manual calculations.</li>
           </ul>
         </div>
@@ -240,9 +240,9 @@
           <div class="wrap size-60">
           <h2 class="text-serif bluegreen">How does Flex Work?</h2>
           <ul class="textLeft med-text">
-            <li>Using the display:flex Property on the parent element, you create a Flexbox.</li>
+            <li>Using the <b>display:flex</b> Property on the parent element, you create a Flexbox.</li>
             <li>The parent element is the Flex Container.</li>
-            <li>The children are the Flex items.</li>
+            <li>The children are the Flex items. These items can be positioned across the selected axis.</li>
             <li>There are specific properties applied to the Flex Container and the Flex items.</li>
           </ul>
         </div>
@@ -256,12 +256,13 @@
       <section class="slide-top padding-t6">
         <div class="grid size-80">
         <div class="column">
+          <h2 class="text-serif acqua">Flex Properties</h2>
           <img src="../static/images/flex-properties.png" alt="flex layout properties" width="600">
         </div>
         <div class="column">
           <div class="border-acqua">
           <h4 class="acqua">The Parent Container</h4>
-          <p>The main properties applied to the parent element are:</p>
+          <p class="med-text">The properties applied to the parent element determine the axis in which the elements are going to be positioned. The two main properties are:</p>
           <ul>
             <li><b>display:</b>flex;</li>
             <li><b>flex-direction:</b> row or column. <br>
@@ -270,11 +271,11 @@
           </div>
           <div class="border-gold">
             <h4 class="gold">The Flex Items</h4>
-            <p>The main properties applied to the flex itmes are:</p>
+            <p class="med-text">The item properties determine how these elements are going to be distributed and the item order.</p>
             <ul>
               <li><b>flex-grow:</b> (number)<br>
               Determines the space each flex item will take in the container. Default is 0 and the item will take the width or height of the content.
-            If the value is 1 for all items, they will be equally distributed. Different values can be assigned to each item.</li>
+            If the value is 1 for all items, they will be of equal size. Different values can be assigned to each item.</li>
             <li><b>order:</b>(number) <br>
             Determines the position of each item. Default display is by the order in the html.
           Different values can be applied to each item to alter the sequence. (e.g: elements positioned 1,2,3,4 can be changed to 3,2,4,1 )</li>
