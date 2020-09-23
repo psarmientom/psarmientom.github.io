@@ -473,12 +473,47 @@
       <section>
         <div class="wrap">
 
-          <div class="vertical-align">
-            <h3><strong>Grid Structure</strong></h3>
+          <div class="">
+            <div class="grid size-90">
             <div class="column">
-
+              <h2 class="text-serif acqua">Grid Structure</h2>
               <img src="../static/images/layout-details.png" alt="">
             </div>
+            <div class="column">
+              <div class="border-acqua">
+              <h4 class="acqua">The Parent Container</h4>
+              <p class="med-text">The parent element determine the the rows and columns</p>
+              <ul>
+                <li><b>display:</b>grid;</li>
+              </ul>
+              <h4>Columns</h4>
+              <ul>
+                <li>grid-template-columns: 300px 300px 300px;</li>
+                <li>grid-template-columns: 25% 25% 25% 25%;</li>
+                <li>grid-template-columns: repeat(3, 1fr);</li>
+                <li>grid-template-columns: 200px repeat(3, 1fr);</li>
+                <li>grid-template-columns: repeat(auto-fill,minmax(25%, 1fr));</li>
+                <li>grid-template-columns: repeat(12, minmax(0, 1fr));</li>
+              </ul>
+              <h4>Rows</h4>
+              <ul>
+                <li>grid-template-rows: 300px 300px;</li>
+                <li>grid-template-rows: repeat(2, 1fr);</li>
+                <li>grid-template-rows: 200px repeat(2, 300px);</li>
+                <li>grid-template-rows: 3fr repeat(2, 1fr);</li>
+                <li>grid-template-rows: repeat(3, minmax(150px, auto));</li>
+              </ul>
+              </div>
+              <div class="border-gold">
+                <h4 class="gold">Children Containers</h4>
+                <p class="med-text">Use them for specific positioning of rows and columns.</p>
+                <ul>
+                  <li><b>grid-column:</b> 1 / 13;  (lines 1 to 13)</li>
+                  <li><b>grid-row:</b>  2 /4;  (starts on second row to the 4th)<br></li>
+                </ul>
+              </div>
+            </div>
+          </div>
           </div>
         </div>
       </section>
