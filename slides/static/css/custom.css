@@ -98,6 +98,11 @@ cite a{color:#999;}
 .underlined{
   text-decoration: underline;
 }
+.column ul li.nobullet{
+  list-style:none;
+  color:#0083AA;
+  list-style-type: none;
+}
 .fakeh1{
   font-size:5.6rem;
   line-height:6.5rem;

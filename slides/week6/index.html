@@ -470,10 +470,8 @@
       </section>
 
       <!-- Slide Grid structure -->
-      <section>
+      <section class="padding-t6">
         <div class="wrap">
-
-          <div class="">
             <div class="grid size-90">
             <div class="column">
               <h2 class="text-serif acqua">Grid Structure</h2>
@@ -489,6 +487,7 @@
               <h4>Columns</h4>
               <ul>
                 <li>grid-template-columns: 300px 300px 300px;</li>
+                <li>grid-template-columns: 300px 300px auto 300px;</li>
                 <li>grid-template-columns: 25% 25% 25% 25%;</li>
                 <li>grid-template-columns: repeat(3, 1fr);</li>
                 <li>grid-template-columns: 200px repeat(3, 1fr);</li>
@@ -498,6 +497,7 @@
               <h4>Rows</h4>
               <ul>
                 <li>grid-template-rows: 300px 300px;</li>
+                <li>grid-template-rows: 300px 200px auto;</li>
                 <li>grid-template-rows: repeat(2, 1fr);</li>
                 <li>grid-template-rows: 200px repeat(2, 300px);</li>
                 <li>grid-template-rows: 3fr repeat(2, 1fr);</li>
@@ -514,14 +514,14 @@
               </div>
             </div>
           </div>
-          </div>
+
         </div>
       </section>
 
       <!-- Slide Parent Grid -->
       <section>
         <div class="wrap">
-          <h3><strong>The Parent Grid Container</strong></h3>
+          <h2 class="text-serif acqua">The Parent Container</h2>
           <div class="grid vertical-align">
 
             <div class="column">
@@ -530,23 +530,29 @@
             </div>
             <div class="column">
             <ul>
-              <li><b>Grid Template Areas:</b> </li>
-              <li>You can name the containers and assign them to the grid however you want.</li>
-              <li>grid-template-areas: <br>
-              "header header header header" <br>
-              "main main . sidebar" <br>
-              "footer footer footer footer";</li>
-              <li>A period . denotes an empty cell</li>
+              <li class="nobullet">You can assign spacing between colums and rows:</li>
               <li><b>grid-column-gap:</b> </li>
               <li><b>grid-row-gap:</b> </li>
               <li><b>grid-gap:</b> is used for column and rows </li>
               <li><b>gap:</b> shorthand for column and rows </li>
+              <li class="nobullet">Align and justify items</li>
               <li><b>align-items:</b> start | end | center | stretch</li>
               <li><b>justify-items:</b> start | end | center | stretch (items have to be smaller than the grid)</li>
+              <li class="nobullet">If you use absolute values on your items, the grid might be larger and you can position the items.</li>
               <li><b>align-content:</b> start | end | center | stretch | space-around | space-between | space-evenly</li>
               <li><b>justify-content:</b> start | end | center | stretch | space-around | space-between | space-evenly (items have to be smaller than the grid)</li>
               <!-- <li><b>place-content:</b> sets both the align-content and justify-content.</li> -->
             </ul>
+
+            <!-- <ul>
+            <li><b>Grid Template Areas:</b></li>
+            <li>You can name the containers and assign them to the grid however you want.</li>
+            <li>grid-template-areas: <br>
+            "header header header header" <br>
+            "main main . sidebar" <br>
+            "footer footer footer footer";</li>
+            <li>A period . denotes an empty cell</li>
+          </ul> -->
             </div>
           </div>
           <!-- .end .grid -->
@@ -566,16 +572,19 @@
             </div>
             <div class="column">
             <ul>
+              <li class="nobullet">Positions the elements inside the columns and span across the selected number of columns</li>
               <li><b>grid-column-start:</b> </li>
               <li><b>grid-column-end:</b> </li>
               <li><b>grid-column:</b> Shorthand for grid-column start and end (2/5)</li>
+              <li class="nobullet">Positions the elements inside the rows and span across the selected number of rows</li>
               <li><b>grid-row-start:</b> </li>
               <li><b>grid-row-end:</b> </li>
               <li><b>grid-row:</b> Shorthand for grid-row start and end</li>
-              <li><b>grid-area:</b>You can name individual areas and position them on the parent container using <b>grid-template-areas</b> </li>
+              <!-- <li><b>grid-area:</b>You can name individual areas and position them on the parent container using <b>grid-template-areas</b> </li> -->
+              <li class="nobullet">Justify and align individual items inside the grid</li>
               <li><b>justify-self:</b> start | end | center | stretch </li>
               <li><b>align-self:</b> start | end | center | stretch</li>
-              <li><b>place-self:</b> Shorthand for justify and align self (not fully suported)</li>
+              <!-- <li><b>place-self:</b> Shorthand for justify and align self (not fully suported)</li> -->
             </ul>
             </div>
           </div>
