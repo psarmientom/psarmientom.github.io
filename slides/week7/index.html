@@ -288,10 +288,10 @@
                 <p class="med-text">&lt;img src="test-image-800w.jpg" alt="This is a test image"></p>
                 <h4>Image Source sets</h4>
                 <p class="med-text">A source set allows you to assign a different image for different viewports.</p>
-                <p class="med-text">&lt;img <b>srcset</b>="test-image-480w.jpg 480w,<br>
-                 test-image-800w.jpg 800w"<br>
-         <b>sizes</b>="(max-width: 600px) 480px,
-                800px"<br>
+                <p class="med-text"><picture><br>
+	  &lt;source media="(min-width:650px)" srcset="img_pink_flowers.jpg"> <br>
+	  &lt;img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;"> <br>
+	&lt;/picture> <br>
          <b>src</b>="test-image-800w.jpg"<br>
          <b>alt</b>="This is a test image"> </p>
             </div>
