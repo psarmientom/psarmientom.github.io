@@ -84,7 +84,7 @@ p.presentation, h4.presentation{
   color:#F7931E;
 }
 .border-gold{
-  border:solid 5px #F7931E; 
+  border:solid 5px #F7931E;
   padding:2rem;
   margin-top:1rem;
 }
@@ -267,4 +267,10 @@ ul li ul{
 /* moth example */
 .moth{
   background-image:url(../static/images/atlas-moth.png);
+}
+a{
+  text-decoration: underline;
+}
+a:hover{
+  color:#108e82;
 }
