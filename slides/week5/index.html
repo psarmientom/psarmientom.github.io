@@ -218,7 +218,35 @@
         </div>
       </section>
 
+      <!-- Crediting Images -->
+      <section class="slide-middle">
+        <div class="wrap size-60">
+        <h2 class="text-serif bluegreen aligncenter">How do I give Credit for the Images?</h2>
 
+        <div class="grid top-align">
+
+            <div class="column">
+              <h5>After you download the image, you need to give credit on your page.</h5>
+              <p>The most appropriate tag for this is the <b>figure/figurecaption</b> combination</p>
+              <div class="padding-t3">
+
+                <pre>
+                 &lt;figure>
+                  &lt;img src="images/myImage.png" alt="image description here">
+                  &lt;figcaption>
+                    &lt;p>I can add a caption if I have one &lt;/p>
+                    &lt;cite>Photo by Patricia Sarmiento &lt;/cite>
+                  &lt;/figcaption>
+                &lt;/figure>
+                </pre>
+
+
+              </div>
+            </div>
+
+        </div>
+       </div>
+      </section>
 
       <!-- The box Model -->
       <section class="slide-middle">
@@ -334,9 +362,22 @@
               </h4>
               <ul>
                 <li>A compressed image format standardized by the Joint Photographic Experts Group (JPEG).</li>
+                <li>Uses Lossy compression, discarding not noticeable information</li>
                 <li>It significantly reduces the file size of images</li>
                 <li>Good for photographs</li>
                 <li>Some information is lost in the process</li>
+              </ul>
+            </div>
+            <div class="column">
+              <i class="far fa-image"></i>
+              <h4>
+                <strong>GIF</strong>
+              </h4>
+              <ul>
+                <li>GIF Stands for Graphics Interchange Format</li>
+                <li>Does not degrade the image quality</li>
+                <li>Can include a maximum of 256 colors</li>
+                <li>Better suited for buttons and banners that do not require a lot of colors.</li>
               </ul>
             </div>
             <div class="column">
@@ -347,10 +388,19 @@
                 <li>Image file stored in the Portable Network Graphic (PNG) format</li>
                 <li>Commonly used to store web graphics, digital photographs.</li>
                 <li>Support Transparency</li>
-                <li>Does not degrade the image quality</li>
+                <li>Uses Lossless compression and does not degrade the image quality</li>
                 <li>Bigger image size than jpg</li>
               </ul>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide Images -->
+      <section>
+        <div class="wrap size-80">
+          <h2 class="text-serif aligncenter bluegreen">Web Images</h2>
+          <div class="grid center-align">
             <div class="column">
               <i class="far fa-image"></i>
               <h4>
@@ -366,16 +416,43 @@
             <div class="column">
               <i class="far fa-image"></i>
               <h4>
-                <strong>GIF</strong>
+                <strong>WebP</strong>
               </h4>
               <ul>
-                <li>GIF Stands for Graphics Interchange Format</li>
-                <li>Does not degrade the image quality</li>
-                <li>Can include a maximum of 256 colors</li>
+                <li>The WebP format was developed by Google to overcome the limitations of JPEG</li>
+                <li>It supports lossless compression and transparency</li>
+                <li>It achieves 15% to 20% better compression than JPG</li>
                 <li>Better suited for buttons and banners that do not require a lot of colors.</li>
               </ul>
             </div>
+            <div class="column">
+              <i class="far fa-image"></i>
+              <h4>
+                <strong>In the works</strong>
+              </h4>
+              <ul>
+                <li>The following formats should <b>not</b> be used in websites yet.</li>
+                <li>HEIF and HEIC: Introduced with iOS 11, offer smaller sizes than JPG.</li>
+                <li>AVIF: Open source image format, stores still and animated images with better compression than JPG.</li>
+                <li>JPEG XL: Offers lossless compression, up to 60% than a regular JPEG with the same quality.</li>
+
+              </ul>
+            </div>
           </div>
+        </div>
+      </section>
+
+      <!-- Slide Images -->
+      <section>
+        <div class="wrap size-80">
+          <h2 class="text-serif aligncenter bluegreen">Why do we have to Optimize our Images?</h2>
+          <div class="grid center-align">
+            <p class="med-text padding-t5">"Images are an important part of any web experience. They let us convey ideas much faster than text, help us tell powerful stories and engage with our users in ways that few other forms of content can."</p>
+            <p class=med-text>“Gorgeous high-quality images have a cost. They first have to be downloaded, requiring a network overhead that can be large and, on slow internet connections (think coffee shops or when you’re on the go), can significantly slow down how quickly web pages load."</p>
+            <p class=med-text>"Users with slow connections deserve a beautiful user experience too.""</p>
+
+          </div>
+          <cite class="padding-t4">Excerpts From: Addy Osmani. “Image Optimization.”</cite>
         </div>
       </section>
 
@@ -392,7 +469,7 @@
           <ul class="padding-t6">
             <li>As a general rule of thumb, we like our product photos to be a maximum 80-150 KB.</li>
             <li>For large homepage hero images to be a maximum of 250-350 KB.</li>
-            <li>Image file size is important for site speed's and performance.</li>
+            <!-- <li>Image file size is important for site speed's and performance.</li> -->
             <li>Every file that's included on your website counts towards your visitor's data usage.</li>
             <li>Every hour of online streaming in standard definition consumes 1GB; 3GB in HD.</li>
           </ul>
@@ -405,6 +482,7 @@
           </ul>
           <h5 class="bluegreen padding-t4">Image Optimization</h5>
           <li>Photoshop</li>
+          <li><a href="https://squoosh.app/">Squoosh</a></li>
           <li><a href="https://shortpixel.com/online-image-compression">ShortPixel</a></li>
           <li><a href="https://tinypng.com/">TinyPNG</a></li>
           </div>

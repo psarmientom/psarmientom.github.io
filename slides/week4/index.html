@@ -667,10 +667,10 @@
             <div class="column">
                 <p class="med-text">There are some factors that determine which style rule wins out:</p>
                 <ul>
-                  <li>Origin &amp; Importance (<b>Most weight</b>)</li>
-                  <li>Selector Specificity</li>
-                  <li>Order of Appearance</li>
                   <li>Initial &amp; Inherited Properties (<b>least weight</b>)</li>
+                  <li>Order of Appearance</li>
+                  <li>Selector Specificity</li>
+                  <li>Origin &amp; Importance (<b>Most weight</b>)</li>
                 </ul>
             </div>
             <!-- .end .column -->
@@ -796,10 +796,14 @@
   <div class="column">
           <p class="med-text">The order of priority is as follows:</p>
           <ul>
-            <li>Type and html selectors will be looked first.</li>
-            <li>Classes will override the type and element ones.</li>
-            <li>Id's will override classes.</li>
-            <li>Inline styles will override previous ones.</li>
+            <li>Type and html selectors will be looked first. <br>
+            <b>a, p, div, section, h2</b></li>
+            <li>Classes will override the type and element ones. <br>
+            <b>a.myClass{} will override a{}</b></a></li>
+            <li>Id's will override classes. <br>
+            <b>p#myId{} will override p.myClass, regardless of order</b></li>
+            <li>Inline styles will override previous ones. <br>
+            <b>The closer the style to the element, the stronger.</b></li>
           </ul>
   </div>
           <!-- .end .column -->
