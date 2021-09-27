@@ -85,8 +85,115 @@
         </div>
       </section>
 
+      <!--  Slide The box Model -->
+      <section class="slide-center wrap size-80">
+        <h2 class="text-serif bluegreen aligncenter">The Box Model</h2>
+
+        <div class="grid top-align">
+
+          <div class="grid">
+
+            <div class="column">
+              <img src="../static/images/box-model.png" alt="The css box model">
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <p class="med-text">Each box has the following components:</p>
+              <ul>
+                <li> <b>Content:</b> The text, image or content inside the box.</li>
+                <li> <b>Padding:</b> The space between the content and the border of the box.</li>
+                <li> <b>Border:</b> The edge of the box</li>
+                <li> <b>Margin:</b> The space between the box and surrounding elements.</li>
+                <li>By default the box will take the dimensions of the content</li>
+                <li>You can specify the dimensions using px, %, or ems.</li>
+              </ul>
+            </div>
+            <div class="column">
+              <h2>Block or Inline</h2>
+              <ul>
+                <li>All HTML boxes are by default block or inline</li>
+                <li> <b>Block:</b> The element will take the full width of the parent container and will start in a new line. (h1, p, div)</li>
+                <li> <b>Inline:</b> The element will only take the space of its content and will not break the flow of content (b, i, span)</li>
+              </ul>
+            </div>
+            <!-- .end .column -->
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <!-- Slide - Box Behavior -->
+      <section class="wrap size-80">
+        <h2 class="text-serif bluegreen aligncenter">Changing Box Behavior - Display Property</h2>
+        <p class="big-text aligncenter">Eack box has a default behavior - block or inline -that can be changed with the display property.
+          </p>
+          <div class="demo-block">This is one block element</div>
+          <div class="demo-block">This is another block element</div>
+          <p class="demo-block-p">This is another block element <span>This is an inline element inside a block element</span> and <span class="span1">this is another inline element</span></p>
+          <div class="demo-inline">
+          <div>This is a block element acting line an inline-block  </div>
+          <div>This is another block element acting line an inline-block  </div>
+          </div>
+        <div class="grid top-align">
+
+          <div class="grid">
+
+            <!-- .end .column -->
+
+          <div class="column">
+            <ul>
+              <li> <b>Block:</b> Displays each element in its own line.</li>
+              <li> <b>Inline:</b> Displays the element beside the previous one. Custom height and width will be lost.</li>
+              <li> <b>inline-block:</b> Makes a box element inline, retaining it's block element properties.</li>
+              <li> display: block; / display: inline; / display: inline-block;</li>
+              <li> We also have display:flex and display:grid for page layouts.</li>
+            </ul>
+          </div>
+
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <!-- Slide - Floats -->
+      <section class="wrap size-80">
+        <h2 class="text-serif bluegreen aligncenter">Floats</h2>
+        <p class="big-text aligncenter">Float is a positioning property that allows one element to wrap around another.
+        <div class="grid top-align">
+
+          <div class="grid">
+
+          <div class="column">
+            <ul>
+              <li>Mostly used to display images inside content.</li>
+              <li>Previously used to make full page layouts.</li>
+              <li>Floated elements remain a part of the flow of the page.</li>
+            </ul>
+
+          </div>
+
+          <div class="column">
+            <ul>
+              <li> <b>Left:</b> Floats element to the left.</li>
+              <li> <b>Right:</b> Floats element to the right.</li>
+              <li> <b>None:</b> It is the element's default.</li>
+              <li>To clear the floats use <b>clear:</b> none, left or right.</li>
+            </ul>
+          </div>
+          <div class="column">
+            <img src="../static/images/floats.png" alt="page layout examples" width="400">
+          </div>
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
       <!-- Slide Layout History -->
-      <section class="padding-t4">
+      <section>
         <div class="wrap size-80">
           <div class="grid vertical-align">
             <div class="column">
@@ -102,156 +209,23 @@
             </div>
             <!-- .end .column -->
             <div class="column">
-              <img src="../static/images/apple-web-1997.png" alt="apple website in 1997" width=600>
-              <cite><a href="https://web.archive.org/web/19980509035420/http://www.apple.com/">Apple website 1997</a></cite>
+              <img src="../static/images/layout-example.jpg" alt="div structure">
+              <cite>https://www.researchgate.net/figure/Example-of-a-main-webpage-layout-in-Blackmon-et-al-2002-2003-2005_fig2_235208267</cite>
             </div>
           </div>
         </div>
       </section>
-
-      <!--  Slide The box Model -->
-      <section class="slide-center wrap size-80">
-        <h2 class="text-serif bluegreen aligncenter">The Box Model (again...)</h2>
-
-        <div class="grid top-align">
-
-          <div class="grid">
-
-
-            <!-- .end .column -->
-            <div class="column">
-              <h2>Block or Inline</h2>
-              <p class="med-text">All HTML elements are by default block or inline</p>
-                <p class="med-text"> <b>Block:</b> The element will take the full width of the parent container and will start in a new line. <br> (All headings, p, ul, div, section, article, header, footer are examples of block elements)</p>
-                  <div class="demo-block">This is one block element</div>
-                <p class="med-text"> <b>Inline:</b> The element will only take the space of its content and will not break the flow of content (a, b/strong, i/em, span, images)</p>
-                  <p class="demo-block-p">This is another block element <span>This is an inline element inside a block element</span> and <span class="span1">this is another inline element</span></p>
-                  <p class="big-text"><b>You can add an inline element inside a block, but not a block inside and inline element.</b></p>
-            </div>
-            <!-- .end .column -->
-            <!-- .end .column -->
-          </div>
-          <!-- .end .grid -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
-
-      <!-- Slide - Box Behavior -->
-      <section class="wrap size-80">
-        <h2 class="text-serif bluegreen aligncenter">Changing Box Behavior - Display Property</h2>
-        <p class="big-text aligncenter">Eack box has a default behavior - block or inline -that can be changed with the display property.
-          </p>
-
-        <div class="grid top-align">
-
-          <div class="grid">
-
-            <!-- .end .column -->
-
-          <div class="column">
-            <ul>
-              <li> <b>Block:</b> Displays each element in its own line.</li>
-              <li> <b>Inline:</b> Displays the element beside the previous one. Custom height and width will be lost.</li>
-              <li> <b>inline-block:</b> Makes a box element inline, retaining it's block element properties.</li>
-              <li><b>none:</b> hides the element.</li>
-              <li> display: block; / display: inline; / display: inline-block; / display:none;</li>
-              <li> <b>flex:</b> uses the flexbox model.</li>
-              <li> <b>grid:</b> uses the Grid model.</li>
-            </ul>
-          </div>
-
-          </div>
-          <!-- .end .grid -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
-
-      <!-- Slide - Floats -->
-      <section class="wrap size-80 padding-t1">
-        <h2 class="text-serif bluegreen aligncenter">Floats</h2>
-        <p class="big-text aligncenter">Float is a positioning property that allows one element to wrap around another.
-        <div class="grid top-align">
-
-          <div class="grid">
-
-          <div class="column">
-            <ul>
-              <li>Previously used to make full page layouts ans a better alternative to inline-block. When floating, Elements need to have an explicit height value, and this would create problems if the content was bigger than the parent size.</li>
-            </ul>
-            <ul class="padding-t1">
-              <li><b>Float Values:</b></li>
-              <li> <b>Left:</b> Floats element to the left.</li>
-              <li> <b>Right:</b> Floats element to the right.</li>
-              <li> <b>None:</b> It is the element's default.</li>
-              <li>To clear the floats use <b>display:flow-root</b> or <b>clear:</b> both, left or right.</li>
-            </ul>
-            <p class="med-text padding-t2">Floats are commmonly used to align text and images on paragraphs.</p>
-
-          </div>
-
-          <!-- <div class="column">
-            <ul>
-              <li> <b>Left:</b> Floats element to the left.</li>
-              <li> <b>Right:</b> Floats element to the right.</li>
-              <li> <b>None:</b> It is the element's default.</li>
-              <li>To clear the floats use <b>clear:</b> none, left or right.</li>
-            </ul>
-          </div> -->
-          <div class="column">
-            <img src="../static/images/floats.png" alt="page layout examples" width="400">
-          </div>
-          </div>
-          <!-- .end .grid -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
-
-
-      <!-- Slide - Floats -->
-      <section class="wrap size-80 padding-t1">
-        <h2 class="text-serif bluegreen aligncenter">Box sizing</h2>
-        <p class="big-text aligncenter">How does the browser calculate the dimensions of a block? <br>
-          Content area + padding size + border size.
-        <div class="grid top-align">
-
-          <div class="grid">
-            <div><img src="../static/images/box-size1.png" alt="" width="250"> <br>
-            <img src="../static/images/box-size2.png" alt="" width="250"></div>
-          <div class="column">
-
-            <ul class="padding-t1">
-              <li>Margins affect the layout, but not the size of the element.</li>
-              <li>The <b>box-sizing</b> property determines wether a padding is included in the size of the box or not</li>
-              <li><b>Content-box</b> sets the width to the content <b>border-box</b> sets the width to everything including the border</li>
-              <li>Margins <b>collapse</b> by default except on the grid.</li>
-            </ul>
-
-          </div>
-
-          <div class="column">
-          <h4 class="bluegreen">Overriding default browser styles</h4>
-          <p class="med-text">All browsers come with default styles that sometimes interfere with your designs.</p>
-          <p><a href="https://browserdefaultstyles.com/">List of browser default styles</a></p>
-          <ul>
-          <li>body {margin: 0; padding:0;}</li>
-          <li>* {box-sizing:border-box;}</li>
-          </ul>
-          </div>
-          </div>
-          <!-- .end .grid -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
-
 
      <!-- Slide CSS Taxonomy -->
-      <!-- <section class="slide-top bg-white">
+      <section class="slide-top bg-white">
         <div class="bg-white wrap frame links aligncenter">
           <img src="../static/images/CSS3-taxonomy.png" alt="CSS3 Taxonomy">
+          <!-- <div class="background" style="background-image:url('../static/images/CSS3-taxonomy.png')"></div> -->
         </div>
-      </section> -->
+        <!-- .end .wrap -->
+      </section>
 
-      <!-- Intro to Flex -->
+      <!-- Slide Flex -->
       <section class="slide-center">
         <div class=" size-90">
 
@@ -269,6 +243,8 @@
         </div>
         </div>
       </section>
+
+      <!-- Slide - How does Flex works -->
       <section class="slide-center">
         <div class=" size-90">
 
