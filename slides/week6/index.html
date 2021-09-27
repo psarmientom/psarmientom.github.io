@@ -137,6 +137,83 @@
         <!-- .end .wrap -->
       </section>
 
+      <!--  Slide The box Model -->
+      <section class="slide-center wrap size-80">
+        <h2 class="text-serif bluegreen aligncenter">Box and Inline Properties</h2>
+
+        <div class="grid top-align">
+
+          <div class="grid">
+
+          <div class="column">
+            <h2>Block</h2>
+            <ul>
+              <li>The width is determined by the parent element. </li>
+              <li>Width is always 100%</li>
+              <li>You can add margin and padding to block elements.</li>
+              <li>Margins on adjacent block elements will collapse.</li>
+            </ul>
+            <ul class="top2">
+              <li>Nesting rules:</li>
+              <li>Block inside Block</li>
+              <li>Inline inside Block</li>
+              <li>Inline inside Inline</li>
+              <li><b>NO</b> Block inside Inline</li>
+            </ul>
+
+          </div>
+          <div class="column">
+            <h2>Inline</h2>
+            <ul>
+              <li>The width is determined by the content, regardless of the withd of the parent container.</li>
+              <li>You cannot modify the width of an inline element.</li>
+              <li>Margin will not affect the element on top and bottom. Only left and right.</li>
+              <li>Padding on an inline element will not modify the height of the parent container and will superimpose on the rest of the content.</li>
+            </ul>
+          </div>
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <!-- Slide - Floats -->
+      <section class="wrap size-80 padding-t1">
+        <h2 class="text-serif bluegreen aligncenter">Box sizing</h2>
+        <p class="big-text aligncenter">How does the browser calculate the dimensions of a block? <br>
+          Content area + padding size + border size.
+        <div class="grid top-align">
+
+          <div class="grid">
+            <div><img src="../static/images/box-size1.png" alt="" width="250"> <br>
+            <img src="../static/images/box-size2.png" alt="" width="250"></div>
+          <div class="column">
+
+            <ul class="padding-t1">
+              <li>Margins affect the layout, but not the size of the element.</li>
+              <li>The <b>box-sizing</b> property determines wether a padding is included in the size of the box or not</li>
+              <li><b>Content-box</b> sets the width to the content <b>border-box</b> sets the width to everything including the border</li>
+              <li>Margins <b>collapse</b> by default except on the grid.</li>
+            </ul>
+
+          </div>
+
+          <div class="column">
+          <h4 class="bluegreen">Overriding default browser styles</h4>
+          <p class="med-text">All browsers come with default styles that sometimes interfere with your designs.</p>
+          <p><a href="https://browserdefaultstyles.com/">List of browser default styles</a></p>
+          <ul>
+          <li>body {margin: 0; padding:0;}</li>
+          <li>* {box-sizing:border-box;}</li>
+          </ul>
+          </div>
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+
       <!-- Slide - Box Behavior -->
       <section class="wrap size-80">
         <h2 class="text-serif bluegreen aligncenter">Changing Box Behavior - Display Property</h2>
@@ -154,7 +231,7 @@
               <li> <b>Block:</b> Displays each element in its own line.</li>
               <li> <b>Inline:</b> Displays the element beside the previous one. Custom height and width will be lost.</li>
               <li> <b>inline-block:</b> Makes a box element inline, retaining it's block element properties.</li>
-              <li><b>none:</b> hides the element.</li>
+              <li> <b>none:</b> hides the element by removing the space from the html flow.</li>
               <li> display: block; / display: inline; / display: inline-block; / display:none;</li>
               <li> <b>flex:</b> uses the flexbox model.</li>
               <li> <b>grid:</b> uses the Grid model.</li>
@@ -166,6 +243,7 @@
         </div>
         <!-- .end .wrap -->
       </section>
+
 
       <!-- Slide - Floats -->
       <section class="wrap size-80 padding-t1">
@@ -207,50 +285,6 @@
         <!-- .end .wrap -->
       </section>
 
-
-      <!-- Slide - Floats -->
-      <section class="wrap size-80 padding-t1">
-        <h2 class="text-serif bluegreen aligncenter">Box sizing</h2>
-        <p class="big-text aligncenter">How does the browser calculate the dimensions of a block? <br>
-          Content area + padding size + border size.
-        <div class="grid top-align">
-
-          <div class="grid">
-            <div><img src="../static/images/box-size1.png" alt="" width="250"> <br>
-            <img src="../static/images/box-size2.png" alt="" width="250"></div>
-          <div class="column">
-
-            <ul class="padding-t1">
-              <li>Margins affect the layout, but not the size of the element.</li>
-              <li>The <b>box-sizing</b> property determines wether a padding is included in the size of the box or not</li>
-              <li><b>Content-box</b> sets the width to the content <b>border-box</b> sets the width to everything including the border</li>
-              <li>Margins <b>collapse</b> by default except on the grid.</li>
-            </ul>
-
-          </div>
-
-          <div class="column">
-          <h4 class="bluegreen">Overriding default browser styles</h4>
-          <p class="med-text">All browsers come with default styles that sometimes interfere with your designs.</p>
-          <p><a href="https://browserdefaultstyles.com/">List of browser default styles</a></p>
-          <ul>
-          <li>body {margin: 0; padding:0;}</li>
-          <li>* {box-sizing:border-box;}</li>
-          </ul>
-          </div>
-          </div>
-          <!-- .end .grid -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
-
-
-     <!-- Slide CSS Taxonomy -->
-      <!-- <section class="slide-top bg-white">
-        <div class="bg-white wrap frame links aligncenter">
-          <img src="../static/images/CSS3-taxonomy.png" alt="CSS3 Taxonomy">
-        </div>
-      </section> -->
 
       <!-- Intro to Flex -->
       <section class="slide-center">
@@ -307,7 +341,7 @@
           </div>
           <div class="border-gold">
             <h4 class="gold">The Flex Items</h4>
-            <p class="med-text">The item properties determine how these elements are going to be distributed and the item order.</p>
+            <!-- <p class="med-text">The item properties determine how these elements are going to be distributed and the item order.</p> -->
             <ul>
               <!-- <li><b>flex-basis:</b> (length or keyword - 50px, 50px auto) <br>
               Is the initiial size of the element.</li> -->
@@ -315,9 +349,9 @@
               <!-- The space each flex item will take in the container. Default is 0 and the item will take the width or height of the content.
             1 for all items, they will be of equal size. Different values can be assigned to each item.</li> -->
             <!-- By default each item takes the width of the content and if they are not justified, there is empty space available. Flex-grow takes that remaining space and divide it by the flex grow values.</li> -->
-            <li><b>order:</b>(number) <br>
-            Determines the position of each item. Default display is by the order in the html.
-          Different values can be applied to each item to alter the sequence. (e.g: elements positioned 1,2,3,4 can be changed to 3,2,4,1 )</li>
+            <!-- <li><b>order:</b>(number) <br> -->
+            <li>
+            The flex items get the general positioning from the parent element, but they can also be modified individually.</li>
             </ul>
           </div>
         </div>
