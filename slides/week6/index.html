@@ -544,9 +544,11 @@
             <div class="column">
 
               <ul>
+                <li>Just like in Flex, most properties are applied to the parent element. All <b>direct children</b> will become a grid element.</li>
                 <li><b>Column and Row</b> count are applied to the <b>parent</b> container to define the structure of the grid.</li>
-                <li>Placement properties are applied to the individual elements inside the grid.</li>
                 <li>The parent container is divided in segments according to the number of selected columns and rows.</li>
+                <li>Placement properties are applied to the <b>children</b> inside the grid.</li>
+
               </ul>
             <hr>
             </div>
@@ -578,7 +580,7 @@
               <h4 class="acqua">Columns</h4>
               <ul>
                 <li><b>grid-template-columns:</b>
-                Determines how many columns you want to have.
+                Determine how many columns you want to have.
                 You can use a combination of fixed, relative fractions or auto,</li>
                 <!-- <li>grid-template-columns: 300px 300px 300px;</li>
                 <li>grid-template-columns: 300px 300px auto 300px;</li>
@@ -590,7 +592,8 @@
               </ul>
               <h4 class="acqua">Rows</h4>
               <ul>
-                <li><b>grid-template-rows:</b></li>
+                <li><b>grid-template-rows:</b>
+                If specified, determine how many rows will be added.</li>
                 <!-- <li>grid-template-rows: 300px 300px;</li>
                 <li>grid-template-rows: 300px 200px auto;</li>
                 <li>grid-template-rows: repeat(2, 1fr);</li>
@@ -707,6 +710,30 @@
         </div>
         <!-- .end .wrap -->
       </section>
+      <!-- Slide Flex vs grid -->
+      <section>
+        <div class="wrap size-70">
+          <h2 class="text-serif aligncenter bluegreen">Words to remember:</h2>
+          <p class="med-text padding-t4 aligncenter">The following is a mini-glossary of some common terms.</p>
+          <div class="grid">
+
+            <div class="column">
+              <ul>
+                <li><b>Fr:</b> A fraction is a unith for lenght. It's a fraction of the available space.</li>
+                <li><b>min-content:</b> Represents the minimun space the content would take. In most cases is the width of the longest single element.</li>
+                <li><b>max-content:</b> Represents the width of the full content.</li>
+                <li><b>auto:</b> It will calculate the available space automatically.</li>
+                <li><b>fit-content():</b> Fits the content within the given amount of space.</li>
+                <li><b>minmax(val1 , val2):</b> Restrics the size of the elemnt within a minimum and maximum value.</li>
+              </ul>
+
+            </div>
+
+
+          </div>
+        </div>
+      </section>
+
 
       <!-- Grid Overlap -->
       <section>
@@ -731,7 +758,7 @@
       </section>
 
       <!-- Slide Grid template areas -->
-      <section>
+      <!-- <section>
         <div class="wrap">
           <h2 class="text-serif acqua">Grid Template Areas</h2>
           <div class="grid top-align">
@@ -764,7 +791,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- Slide Flex vs grid -->
       <section>
@@ -775,13 +802,14 @@
             <div class="column">
               <h3>Flex</h3>
               <ul>
-                <li>It only works in one direction: Horizontally or vertically.</li>
+                <li>It only works in <b>one direction:</b> Horizontally or vertically.</li>
                 <li>Flex is good when you need to align content.</li>
                 <li>It works better with simple layouts that follow a natural flow.</li>
-                <li>Flex works around your content.</li>
+                <li>Starting April 2021, it supports Gap, but it's recommended to use margin for older browser support.</li>
+                <li><b>Flex works around your content.</b></li>
                 <li>Great for use in horizontal navigation.</li>
               </ul>
-              <p class="med-text">You can practice Flex placement with this game:</p>
+              <p class="med-text padding-t2">You can practice Flex placement with this game:</p>
               <ul>
                 <li> <a href="https://flexboxfroggy.com/">Flexbox Froggy</a> </li>
               </ul>
@@ -795,9 +823,10 @@
                 <li>It gives you more control over the layout.</li>
                 <li>It adds a gap between the elements without having to use margins.</li>
                 <li>It lets you overlap elements.</li>
+                <li><b>Grid work with a structure and plays the content inside.</b></li>
                 <li>Use grid when the layout design is more specific.</li>
               </ul>
-              <p class="med-text">You can practice Grid placement with this game:</p>
+              <p class="med-text padding-t2">You can practice Grid placement with this game:</p>
               <ul>
                 <li> <a href="https://cssgridgarden.com/">CSS grid garden</a> </li>
               </ul>
@@ -806,6 +835,27 @@
         </div>
       </section>
 
+      <!-- Slide Flex vs grid -->
+      <section>
+        <div class="wrap size-70">
+          <h2 class="text-serif aligncenter bluegreen">Which one should I use?</h2>
+          <p class="med-text padding-t4 aligncenter">There is no universal answer for this question. Most sites use a combination of both.<br>It all depends on the layout you need to build, but here are some guidelines:</p>
+          <div class="grid">
+
+            <div class="column">
+              <ul>
+                <li>Use <b>Flex</b> when yo want to display elements of different size automatically and there is no fixed structure.</li>
+                <li>Use <b>Grid</b> when you want to control the stucture.</li>
+                <li>If you are assigning custom widths to your elements, it's better to use <b>Grid.</b></li>
+                <li>If you are creating a simple horizontal navigation, use <b>Flex</b></li>
+              </ul>
+
+            </div>
+
+
+          </div>
+        </div>
+      </section>
 
 
 
