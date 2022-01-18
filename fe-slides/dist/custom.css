@@ -1,0 +1,10 @@
+.columns{
+    display: flex;
+    justify-content: space-evenly;
+}
+.columns div{
+    text-align:left;
+}
+/* a:hover, .reveal a:hover{
+    color:chocolate;
+} */

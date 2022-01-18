@@ -1,0 +1,8 @@
+{
+    "editor.parameterHints.enabled": false,
+    "editor.inlayHints.enabled": false,
+    "css.hover.references": false,
+    "html.hover.references": false,
+    "less.hover.references": false,
+    "scss.hover.references": false
+}
