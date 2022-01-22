@@ -6,5 +6,9 @@
 		{
 			"path": "."
 		}
-	]
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "psarmientom.github.io",
+		"editor.bracketPairColorization.enabled": true
+	}
 }

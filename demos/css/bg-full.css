@@ -41,3 +41,8 @@ main{
 footer{
   margin-top:4rem;
 }
+@media (max-width:300px){
+  .body{
+    color:blue;
+  }
+}

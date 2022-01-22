@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>reveal.js – The HTML Presentation Framework</title>
+
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/simple.css" id="theme">
+    <link rel="stylesheet" href="dist/custom.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+
+    <div class="reveal">
+
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+            <!-- Intro -->
+            <section>
+                <h2>Developer Tools</h2>
+                <p>One of the main duties of a Front End Developer is to monitor Web Performance.</p>
+                <p>User expect Fast loading sites at all times regardless of the device used.</p>
+            </section>
+
+            <!-- Class Goals and Objectives  -->
+            <section>
+                <section>
+                    <h2>Web Performance</h2>
+                    <ul>
+                        <li class="fragment">Performance is all about creating the best user experience in the least amount of time.</li>
+                        <li class="fragment">The main goal is to reduce overall load time.</li>
+                        <li class="fragment">Better performance means better rankigns, less hosting expenses, and better user experience.</li>
+                        <li class="fragment">Page load speed should be kept under 3 seconds.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Which factors affect Web Performance?</h2>
+                    <div class="columns">
+                        <div>
+                            <div class="fragment">
+                            <h3>Server Related</h3>
+                            <ul>
+                                <li>Server Age.
+                                    <ul>
+                                        <li>http/1 loads elements in sequence.</li>
+                                        <li>http/2 can load multiple elements at the same time.</li>
+                                    </ul>
+                                </li>
+                                <li>Connection type.</li>
+                                <li>http / https.</li>
+                            </ul>
+                            </div>
+                        </div>
+                        <div class="fragment">
+                            <h3>Page Related</h3>
+                           <ul>
+                               <li>Images.</li>
+                               <li>Javascript.</li>
+                               <li>External Web Fonts.</li>
+                           </ul>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h3>Image Formats for the Web</h3>
+                    <div class="columns">
+                        <div class="fragment">
+                            <h4>JPG</h4>
+                            <ul>
+                                <li>A compressed image format standardized by the Joint Photographic Experts Group (JPEG).</li>
+                                <li>It significantly reduces the file size of images.</li>
+                                <li>Good for photographs.</li>
+                                <li>Some information is lost in the process.</li>
+                            </ul>
+                        </div>
+                        <div class="fragment">
+                            <h4>PNG</h4> 
+                            <ul>
+                                <li>Image file stored in the Portable Network Graphic (PNG) format.</li>
+                                <li>Commonly used to store web graphics.</li>
+                                <li>Bigger image size than jpg.</li>
+                                <li>Use png if you need to support Transparency on an image.</li>
+                            </ul>
+                        </div>
+                        <div class="fragment">
+                            <h4>GIF</h4> 
+                            <ul>
+                                <li>GIF Stands for Graphics Interchange Format.</li>
+                                <li>Does not degrade the image quality.</li>
+                                <li>Better suited for buttons and banners that do not require a lot of colors.</li>
+                                <li>Animated GIFs can take a lot of space because each frame needs to be processed as a single image. Use video instead.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="columns">
+                        <div>
+                            <h4>SVG</h4> 
+                            <ul>
+                                <li>SVG stands for Scalable Vector Graphics.</li>
+                                <li>Images are scalable.</li>
+                                <li>Graphics do NOT lose any quality if they are zoomed or resized.</li>
+                                <li>Elements can be styled with CSS.</li>
+                                <li>Very small file sizes.</li>
+                            </ul>
+                        </div>
+                        <div class="fragment">
+                            <h4>WebP</h4> 
+                            <ul>
+                                <li>The WebP format was developed by Google to overcome the limitations of JPEG.</li>
+                                <li>WebP images are at least 30% smaller than JPGs.</li>
+                                <li>It supports transparency.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <!-- Tools and applications  -->
+            <!-- Understanding Browser differences  -->
+            <section>   
+            <h2>How do we measure Web Performance?</h2>
+            <div class="columns">
+                <div><h4>Browser Tools</h4>
+                <ul>
+                    <li>Chrome
+                    <ul>
+                    <li>Web Inspector</li>
+                    <li>LightHouse</li>
+                    <li>Network Monitor</li>
+                    </ul>
+                    </li>
+                    <li><a href="https://chrispederick.com/work/web-developer/">Web Developer Extension</a></li>
+                </ul>
+                </div>
+                <div>
+                    <h4>Online Tools</h4>
+                    <ul>
+                        <li><a href="https://pagespeed.web.dev/">PageSpeed</a></li>
+                        <li><a href="https://pagespeed.web.dev/">WebPageTest</a></li>
+                    </ul>
+                </div>
+            </div>    
+            </section>
+
+            <!-- Inside a Developer's mind  -->
+            <section>
+                <section>
+                    <h2>Chrome Developer Tools</h2>
+                    <div class="columns">
+                        <div>
+                            <ul>
+                                <li class="fragment">The Front-End Development area is BIG, so you need to <b>love to learn</b>, to keep up with the speed of new technologies.</li>
+                                <li class="fragment">As you learn, accept that <b>it's ok not to know everything</b>.</li>
+                                <li class="fragment"><b>Don't reinvent the wheel</b>. Find out if the problem you need to solve has already been solved by someone else.</li>
+                                <li class="fragment"><b>Google is your friend.</b> Learn how to search by using the technology keyword first (CSS creating variables)</li>
+                                <li class="fragment"><b>Be selective. There is a lot of bad code out there. Review the sources</b></li>
+                                <li class="fragment"><b>You're not alone.</b> Your code will be seen and used by others, so they need to understand why you did things. <b>Document Everything!.</b></li>
+                                <li class="fragment">Things Happen. Code Breaks. <b>Be Patient.</b></li>
+                            </ul>
+                        </div>
+                        <div></div>
+                    </div>
+                </section>
+            </section>
+            <!-- What is web development  -->
+            <section>
+                <section>
+                    <h2>What is Web Development?</h2>
+                    <p class="fragment">Web development refers to the building, creating, and maintaining of websites.</p>
+                    <p class="fragment"> Web development has evolved so much, that the role of a Web developer has split into separate areas. We have 3 distinct areas: UI/UX designers, the Front-End Developer and the Back-End Developer. The boundaries between the 3 sometimes overlap.</p>
+                </section>
+
+                <section>
+                    <h3>Front End Developer duties and responsibilities</h3>
+                    <p>A Front End Developer’s main goal is to combine technology and design to create inviting, easy-to-use websites for consumers. In order to accomplish this goal, they need to be able to handle the following day-to-day duties:</p>
+                    <small>Based on <a href="https://www.indeed.com/hire/job-description/front-end-developer?gclid=EAIaIQobChMIxta5jOSd9QIVlsGGCh0ttAuLEAAYASAAEgL3ffD_BwE&aceid=">Indeed's</a> Front End Developer Job Description</small>
+                </section>
+
+                <section>
+                    <ul>
+                        <li>Working with clients to develop the overall look and design of a website</li>
+                        <li class="fragment">Writing website code with programming languages such as HTML, C++ and Java</li>
+                        <li class="fragment">Producing, maintaining and modifying websites and user interfaces</li>
+                        <li class="fragment">Incorporating applications, graphics, audio and video clips into client websites</li>
+                        <li class="fragment">Creating tools that enhance the user’s website experience</li>
+                        <li class="fragment">Ensuring websites are accessible across many platforms, including laptops and smartphones</li>
+                        <li class="fragment">Routinely testing websites for ease of use, speed and other quality factors</li>
+                        <li class="fragment">Fixing any website issues or bugs that arise</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Front End Developer skills and qualifications</h3>
+                    <p>A Front End Developer should have advanced technical skills and strong interpersonal skills to be effective on the job, including:</p>
+                    <ul>
+                        <li>Proficiency in website programming languages such as HTML, CSS, Javascript, C#, Python, C++</li>
+                        <li class="fragment">Understanding of key website design principles and SEO optimization</li>
+                        <li class="fragment">Ability to test and debug websites</li>
+                        <li class="fragment">Analytical and detail-oriented</li>
+                        <li class="fragment">Excellent verbal and written communication skills</li>
+                        <li class="fragment">Advanced problem-solving skills</li>
+                        <li class="fragment">Observant and able to remain focused on tasks for long periods of time</li>
+                    </ul>
+                </section>
+
+                <section><iframe width="768" height="432" src="https://miro.com/app/live-embed/uXjVOX7qRfk=/?moveToViewport=-612,-334,1223,666" frameBorder="0" scrolling="no" allowFullScreen></iframe></section>
+
+            </section>
+
+           
+         
+
+          
+
+
+        </div>
+
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script>
+        Reveal.initialize(
+            {hash: true}
+        );
+
+        const loadScript = src => {
+            return new Promise((resolve, reject) => {
+                const script = document.createElement('script');
+                script.type = 'text/javascript';
+                script.onload = resolve;
+                script.onerror = reject;
+                script.src = src;
+                document.head.append(script);
+            })
+        }
+
+        loadScript('plugin/highlight/highlight.js').then(() => {
+            Reveal.registerPlugin(RevealHighlight)
+        })
+    </script>
+
+</body>
+
+</html>
