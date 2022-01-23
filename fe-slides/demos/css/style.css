@@ -10,9 +10,9 @@ Primary use:    MultiPurpose One Page Template
 
 @import "font-awesome.min.css";
 @import "simple-line-icons.css";
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,700,800);
-@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:700,400&text=1234567890);
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,700,800&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700,400&text=1234567890&display=swap);
 
 
 /*------------------------------------------------------------------
