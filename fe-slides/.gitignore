@@ -15,3 +15,5 @@ teaching-slides.code-workspace
 demo.html
 index-og.html
 index.html
+package-lock.json
+package.json
