@@ -10,3 +10,8 @@ tmp/**
 node_modules/
 .sass-cache
 dist/*.map
+teaching-slides.code-workspace
+*.md
+demo.html
+index-og.html
+index.html
