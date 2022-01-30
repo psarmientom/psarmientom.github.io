@@ -222,9 +222,50 @@
                     <img src="images/branching.png" alt="Graphic of a master branch and Branches in Github">
                 </section>
                 <section>
-                    <h2>Key Concepts</h2>
+                    <h2>Do I have Git Installed on my computer?</h2>
                     <ul>
-                        <li class="fragment"><b>Master Branch:</b> It's the original version of your project, and the final one when yiou have merged all the branches.</li>
+                        <li class="fragment">If you are on a Mac, it is pre-installed.</li>
+                        <li class="fragment">If you are on a windows computer you need to <a href="https://git-scm.com/download/win">install it.</a> </li>
+                        <li class="fragment">You can check by typing: <code>git --version</code> on the terminal.</li>
+                    </ul>
+                </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2><code>The Command line_</code></h2>
+                        <ul>
+                            <li class="fragment">The Command line is a text-based application for manipulating files on your computer.</li>
+                            <li class="fragment">You can install software, create/delete/move/rename files, and many other things. </li>
+                            <li class="fragment">Other names for the command line are: cmd, CLI, prompt, console or terminal.</li>
+                            <li class="fragment">Most commands are the same for Mac and Windows, but there are differences.</li>
+                            <li class="fragment">To open on Mac search for "Terminal", on windows Run "cmd".</li>
+                            <li class="fragment">When you open the terminal it will place you at the root of your user.</li>
+                            <li class="fragment">Mac: <code>username@Computer0Name ~ %</code>. This is called the prompt.</li>
+                            <li class="fragment">Windows: <code>C:\Users\username</code>.</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Basic Command lines</h2>
+                        <ul>
+                            <li class="fragment"><code>cd dirName</code> Change Directory</li>
+                            <li class="fragment">Mac: <code>pwd</code>  Windows: <code>cd</code> Current Directory or Print Working Directory</li>
+                            <li class="fragment">Mac: <code>ls</code> Windows: <code>dir</code> List Directory</li>
+                            <li class="fragment">Mac: <code>mkdir dirName</code> Create a new directory (folder)</li>
+                            <li class="fragment"><code>cd ..</code> Change directory to the parent.</li>
+                            <li class="fragment">Mac: <code>rm -r dirName</code> Windows: <code>rmdir /S dirName</code> <b style="color:red;">Removes the file permanently.</b></li>
+                            <li class="fragment"><code>mv ~/Downloads/MyFile.txt ~/Documents/Work/MyFile.txt</code> Moves files.</li>
+                            <li class="fragment"><code>cp -R ~/Documents/Expenses /Volumes/Data/Expenses</code> Copy files.</li>
+                        </ul>
+                    </section>
+                </section>
+
+                <!-- Back to Git  -->
+                <section>
+                <section>
+                    <h2>Git Key Concepts</h2>
+                    <ul>
+                        <li class="fragment"><b>Master Branch:</b> It's the original version of your project, and the final one when you have merged all the branches.</li>
                         <li class="fragment"><b>Branch:</b> Is an alternate version of your repo where you can try new features without affecting the original code. You should always create a Branch and work on it.</li>
                         <li class="fragment"><b>Commit:</b> Is a snapshot or checkpoint of your repo at a given time. Commits are done locally</li>
                         <li class="fragment"><b>Commit Message:</b> Every time you commit, you need to supply details on why the change was made.</li>
@@ -234,6 +275,22 @@
                         <li class="fragment"><b>Fork:</b> When you copy a project you don't have permission to make changes to work on it.</li>
                         <!-- <li class="fragment"><b>Fetch:</b> fetch works like pull, except it creates a new branch for the incoming data rather than attempting to merge it immediately.</li> -->
                     </ul>
+                </section>
+                <section>
+                    <h2>Basic Git Commands</h2>
+                    <p><a href="https://training.github.com/downloads/github-git-cheat-sheet/">Git Cheat Sheet.</a> | 
+                    <a href="https://www.freecodecamp.org/news/git-cheat-sheet/">Another Cheat Sheet.</a> | 
+                    <a href="https://git-school.github.io/visualizing-git/">Visualizing Git.</a></p>
+                    <ol>
+                        <li class="fragment"><code>mkdir dirName</code> Creates a directory for your project.</li>
+                        <li class="fragment"><code>git init</code> initialize your Git project.</li>
+                        <li class="fragment"><code>touch filename</code> Creates a file in your directory.</li>
+                        <li class="fragment"><code>git status</code> Tells you whether the file has been added to the working directory.</li>
+                        <li class="fragment"><code>git add</code> Adds the project to the staging area.</li>
+                        <li class="fragment"><code>git status</code> Check the status of the file.</li>
+                        <li class="fragment"><code>git commit</code> Moves the file from the staging area to the current version.</li>
+                        <li class="fragment"><code>git log</code> Gives you information of the status of the commits.</li>
+                    </ol>
                 </section>
             </section>
           

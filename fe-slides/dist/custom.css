@@ -8,3 +8,8 @@
 /* a:hover, .reveal a:hover{
     color:chocolate;
 } */
+code{
+    color:#efefef;
+    background:black;
+    padding:0 1rem;
+}
