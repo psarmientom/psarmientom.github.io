@@ -32,7 +32,7 @@
             <!-- Intro to Advanced CSS-->
             <section>
                 <h2>Advanced CSS</h2>
-                <h3>CSS Units, Advanced Selectors, Variables, Animating changes, Responsive Images, Libraries and Frameworks.</h3>
+                <h3>CSS Units, Responsive Images, Advanced Selectors, Variables, Animating changes, Libraries and Frameworks.</h3>
             </section>
 
             <section>
@@ -45,6 +45,7 @@
                         <li class="fragment">The reset css file fixes some default browser issues to make sure your page displays correctly in all browsers.</li>
                         <li class="fragment"><a href="https://codepen.io/chriscoyier/pen/JpLzjd">Browser reset demo</a></li>
                         <li class="fragment"><a href="https://github.com/jensimmons/cssremedy/blob/master/css/remedy.css">CSS Remedy</a> | <a href="https://github.com/jensimmons/cssremedy">CSS Remedy Repo</a></li>
+                        <li class="fragment"><a href="https://codepen.io/psarmiento/pen/KKyNQxM?editors=1100">Box sizing demo</a></li>
                     </ul>
                     
                 </section>
@@ -62,6 +63,105 @@
                         <li>Ideal number of characters is 60 and 100 characters per line including spacing</li>
                     </ul>
                 </section>
+            </section>
+
+             <!-- Responsive Images-->
+             <section>
+                <section>
+                    <h2>Responsive Images</h2>
+                    <p>We all know that images are the biggest offender for page size. Here are a few techniques to optimize.</p>
+                    <ul>
+                        <li>Size your images closer to the size in which they are going to be displayed.</li>
+                        <li>For full width images use 1920 x 1080, or at least 1920px wide.</li>
+                        <li>Make sure to add the <code>alt=""</code> description.</li>
+                        <li>Add the width and height. <code>width="1920" height="1080"</code></li>
+                        <li>Use lazy loading. <code>loading="lazy"</code> to load images only when entering the viewport.</li>
+                        <li>For bigger images, consider using a smaller version of the same image so the browser can choose which one to use.</li>
+                        <li class="fragment">Use <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images">Responsive Images.</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <pre><code>
+                        <picture>
+                            <source media="(max-width: 799px)" srcset="small-img.webp" type="image/webp">
+                            <source media="(max-width: 799px)" srcset="small-img.jpg" type="image/jpg">
+                            <source media="(min-width: 800px)" srcset="big-img.webp" type="image/webp">
+                            <source media="(min-width: 800px)" srcset="big-img.jpg" type="image/jpeg">
+                            <img src="big-img.webp" alt="Background Image">
+                        </picture>
+                    </code></pre>
+                </section>
+            </section>
+
+
+            <!-- Advanced CSS selectors: -->
+            <section>
+                <section>
+                    <h2>Advanded CSS Selectors</h2>
+                    <p>Applying css styles to html elements, id's and classes is the simplest choice. But there are many other ways we can target specific elements without touching the html.</p>
+                    <ul>
+                        <li class="fragment"><code>*</code> The Universal selector. Applies to every element in the document.</li>
+                        <li class="fragment"><code>></code> Direct Descendant (only parent-child relationship).</li>
+                        <li class="fragment"><code>+</code> Immediate adjacent sibling.</li>
+                        <li class="fragment"><code>~</code> Any sibling. (tilde) When working with siblings the effect applies to any element after the targeted one, not before.</li>
+                        <li class="fragment"><code>[href] [name] [title] a[class] etc.</code> Targets the attribute. <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes">Attribute list.</a></li>
+                        <li class="fragment"><code>[title~="myClass"]</code> Using ~ in combination with the attribute class, looks for any element that contains the give attribute.</li>
+                        <li class="fragment"><code>[title^="my"]</code> Select all the elements that <b>start</b> with the attribute.</li>
+                        <li class="fragment"><code>[title$="Class"]</code> Select all the element that <b>end</b> with the attribute.</li>
+                        <li class="fragment"><code>[title*="Cl"]</code> Selects all the elements that contain the attribute.</li>   
+                    </ul>
+                </section>
+                <section>
+                    <h3>Pseudo Classes</h3>
+                    <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes">Pseudo Classes</a> are keywords that are applied when they match the selected state or context of an element.</p>
+                    <ul>
+                        <li class="fragment"><code>:link, :visited, :focus, :hover, :active</code> Links pseudo classes. They should be added in this irder in order to maintain the cascade.</li>
+                        <li class="fragment"><code>:only-child</code> Selects the only child of that element in relation to the parent.</li>
+                        <li class="fragment"><code>:only-of-type</code> Selects the only child of that element type.</li>
+                        <li class="fragment"><code>:first-child :last-child</code> Selects the first or last child on a group or list.</li>
+                        <li class="fragment"><code>:nth-child(2) :nth-child(odd) :nth-child(3n +1) li:nth-last-child(4n + 2)</code> Selects the specific element on a list of siblings.</li>
+                        <li class="fragment"><code>:target</code> Used with in-page navigation, select the targeted area.</li>
+                        <li class="fragment"><code>:not([attribute]) :not(.class) :not(div)</code> Select the element that do NOT match the selector.</li>
+                        <li class="fragment"><code>img:not([alt]) {border:solid 5px red}</code> Helps you check which images do not have an alt text.</li>
+                    </ul>
+
+                </section>
+                <section>
+                    <ul>
+                        <li class="fragment"><code>:root</code> Selects the root element of the document, similar to the html selector.</li>
+                        <li class="fragment">It is commonly used to set the css variables.</li>
+                        <li class="fragment"><code>:empty</code> When targeting a tag that has no content or white space.</li>
+                        <li class="fragment">Mostly used with scripting languages to style or target dynamic content.</li>
+                    </ul>
+                    <div class="fragment"><h3>Pseudo Elements</h3>
+                        <p>The Pseudo Element is a keyword added to a selector that lets you style a specific part of the selected element.<br>
+                        Note that the pseudo-elements have :: instead of one.</p></div>
+                    <ul>
+                        <li class="fragment"><code>:before :after</code> Add styling before or after an element.</li>
+                        <li class="fragment"><code>::first-line ::first-letter | :first-of-type::first-letter </code> Selects a specific part of the element.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Best Practices</h2>
+                    <ul>
+                        <li>Style the generic element first.</li>
+                        <li>Try to minimize the use of classes and id's on the html.</li>
+                        <li>Try to use descendants and pseudo classes and elements when possible.</li>
+                        <li>Avoid using id's for styling. They are useful for Javascript targetting.</li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- CSS Variables -->
+            <section>
+                    <h3>CSS Variables (Custom Properties)</h3>
+                    <p>Are User defined entities that contain values that can be reused througout the document.</p>
+                    <ul>
+                        <li class="fragment">Variables for the most part are defined in the <code>:root</code> element, and can be accessed anywhere in the document.</li>
+                        <li class="fragment">Variables are preceded by -- <code>--primary-color{color:#efefef;}</code></li>
+                        <li class="fragment">Custom properties are case sensitive.</li>
+                        <li class="fragment">Use the variable by writing <code>color: var(--primary-color);</code></li>
+                    </ul>
             </section>
 
         </div>

@@ -1,0 +1,30 @@
+/* Advanced Selectors demo  */
+*{
+
+}
+html{
+    font-size:62.5%;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size:1.6rem;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Averia Serif Libre', cursive;
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2.5rem;
+}
+main{
+    width:70%;
+    margin:0 auto;
+}
+.material-icons-outlined{
+    font-size:3.8rem;
+}
+article{
+    border:solid 2px #ccc;
+}
