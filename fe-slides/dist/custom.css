@@ -1,3 +1,6 @@
+a:link{
+    text-decoration: underline;;
+}
 .columns{
     display: flex;
     justify-content: space-evenly;
@@ -22,12 +25,12 @@ code{
 .transition{
     -webkit-transform: scale(0.5);
     transform: scale(0.5);
-    transition: 1s ease-out;
+    transition: transform 1s ease-out .2s;
 }
 .transition:hover{
     -webkit-transform: scale(1);
     transform: scale(1);
-    transition: 1s ease-out;
+    /* transition: 1s ease-out; */
 }
 .animation{
     animation: 2s 5 scale-up-center;

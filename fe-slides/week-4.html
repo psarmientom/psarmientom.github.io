@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Front End Fundamentals | Advanced CSS - Frameworks</title>
+
+    <meta name="description" content="Advanced CSS, Responsive Images, Transitions, Frameworks">
+    <meta name="author" content="Patricia Sarmiento">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/92123ffbf2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/simple.css" id="theme">
+    <link rel="stylesheet" href="dist/custom.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+
+    <div class="reveal">
+
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+         
+            <!-- CSS Variables -->
+            <section>
+                    <h2>CSS Variables (Custom Properties)</h2>
+                    <p>Are User defined entities that contain values that can be reused througout the document.</p>
+                    <ul>
+                        <li class="fragment">Variables for the most part are defined in the <code>:root</code> element, and can be accessed anywhere in the document.</li>
+                        <li class="fragment">Variables are preceded by -- <code>--primary-color{color:#efefef;}</code></li>
+                        <li class="fragment">Custom properties are case sensitive.</li>
+                        <li class="fragment">Use the variable by writing <code>color: var(--primary-color);</code></li>
+                    </ul>
+            </section>
+            <section>
+                <section>
+                    <h2>Transitions and Animations</h2>
+                    <p></p>
+                    <div class="columns">
+                        <div>
+                            <h4><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition"></a>Transitions</h4>
+                                <div class="transition"></div>
+                        </div>
+                        <div>
+                            <h4><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations">Animations</a></h4>
+                            <div class="slide-fwd-center animation"></div>
+                        </div>
+                    </div>  
+                </section>
+                <section>
+                    <div class="columns">
+                        <div>
+                            <h3>Transitions</h3>
+                            <ul>
+                                <li>They go from A to B. No intermediate steps</li>
+                                <li>Can only run once.</li>
+                                <li>Require a trigger to run. No Autoplay.</li>
+                                <li>The go back to the original state when the trigger is removed.</li>
+                                <li>Easier to use with Javascript.</li>
+                                <li>Transitions use the transition CSS property.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Animations</h3>
+                            <ul>
+                                <li>Go from A to B but can have steps in between.</li>
+                                <li>Can repeat and loop indefinitely.</li>
+                                <li>Can work with or without a trigger.</li>
+                                <li>Can run in any direction. (Forwards, reverse, alternate).</li>
+                                <li>Harder to use with Javascript.</li>
+                                <li>Animations use the Animation CSS property and keyframes to determine the changes.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="columns">
+                        <div>
+                            <h3>Transitions</h3>
+                            <ul>
+                                <li><code>.class {transition: property-name, duration, easing-function, delay;}</code></li>
+                                <li><b>Easing functions: ease, ease-in, ease-out, ease-in-out, linear;</b></li>
+                            </ul>
+                            
+                        </div>
+                        <div>
+                            <h4>Animations</h4>
+                            <ul>
+                                <li><code>.class {animation: keyframe-duration, easing-function, delay, iteration count, direction, fill-mode, play-state, name;}</code></li>
+                                <li><code>.class {animation: keyframe-name, easing-function, delay, iteration count, name;}</code></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Reset for animation:</p>
+                        <pre>    
+                        @media (prefers-reduced-motion: reduce){
+                        *, *::before, *::after{
+                        animation-duration: 0.01ms !important;
+                        animation-iteration-count: 1 !important;
+                        transition-duration: 0.01ms !important;
+                        scroll-behavior: auto !important;
+                        }
+                        </pre>
+                    </div>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h2>Libraries and Frameworks</h2>
+                    <div><p>Both are pre-written resusable code you can use in your projects.</p></div>
+                    <div class="columns">
+                        <div>
+                            <h3>Libraries</h3>
+                            <ul>
+                                <li class="fragment">A library is a collection of functions or operations that solve a specific problem.</li>
+                                <li class="fragment">You can decide where to use a library in your project and which elements to use.</li>
+                                <li class="fragment">The whole estructure of your site does not depend on the library.</li>
+                                <li class="fragment">Examples of libraries are <a href="https://animate.style/">Animate.css</a>, <a href="https://fontawesome.com/">Font Awesome</a></li>
+                                <li class="fragment"><a href="https://blog.logrocket.com/top-10-css-libraries-to-empower-your-web-design/">Some CSS libraries.</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Frameworks</h3>
+                            <ul>
+                                <li class="fragment">A Framework is a structure in which you base your project.</li>
+                                <li class="fragment">You cannot decide where to use it. It is present all across your project.</li>
+                                <li class="fragment">Your projects depends on the Framework and you have a limited set op options.</li>
+                                <li class="fragment">Examples of Frameworks are: <a href="https://getbootstrap.com/">Bootstrap</a>, <a href="https://tailwindcss.com/">Tailwind</a>, <a href="https://get.foundation/">Foundation.</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2>Font Awesome</h2>
+                    <p>An icon library</p>
+                    <ul>
+                        <li class="fragment">Open a free account at Font Awesome</li>
+                        <li class="fragment">Create a kit</li>
+                        <li class="fragment">Paste the kit on the head document, just like you do with Google fonts.</li>
+                        <li class="fragment">You can use the icons in your text <i class="fa-solid fa-thumbs-up"></i></li>
+                        <li class="fragment"><i class="fa-solid fa-spaghetti-monster-flying"></i> <i class="fa-solid fa-hand-sparkles"></i> <i class="fa-solid fa-shuttle-space fa-2xl"></i> <i class="fa-brands fa-angellist"></i> <i class="fa-regular fa-bell"></i> <i class="fa-regular fa-building"></i> <i class="fa-regular fa-calendar-days"></i> <i class="fa-regular fa-chess-king fa-xl"></i></li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Bootstrap</h2>
+                    <p>A CSS Framework that lets you create websites without writing CSS code.</p>
+                    <ul>
+                        <li class="fragment">It is responsive ready.</li>
+                        <li class="fragment">It resizes the images for you according to the viewport.</li>
+                        <li class="fragment">It has many ready-to-use components (slideshow, accordion, tab).</li>
+                        <li class="fragment">It works well with Javascript and JQuery.</li>
+                        <li class="fragment">It has extensive documentation.</li>
+                        <li class="fragment">It is customizable.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>A no-brainer solution?</h2>
+                    <p>While using a CSS framework can be a way to speed up your workflow, there are a few things that you have to consider.</p>
+                    <ul>
+                        <li class="fragment">Using a CSS Framework is no replacement for learning CSS.</li>
+                        <li class="fragment">Bootstrap is very powerful, but the files can get big because it loads many things you might not need or use in your project.</li>
+                        <li class="fragment">It might not be the best solution for a custom site.</li>
+                        <li class="fragment">Sites can look generic.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>How to use Bootstrap?</h2>
+                    <ul>
+                        <li class="fragment">Go to the <a href="https://getbootstrap.com/docs/5.1/getting-started/introduction/">Bootstrap</a> documentation page.</li>
+                        <li class="fragment">Copy the styles link on the head of your document</li>
+                        <li class="fragment">Copy the javascript CDN link before the closing <code>body</code> tag.</li>
+                        <li class="fragment">You can customize the basic CSS variables on your own css. <a href="https://getbootstrap.com/docs/5.1/customize/css-variables/">BS CSS Variables.</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Some Bootstrap rules</h2>
+                    <div class="columns">
+                        <div>
+                            <ul>
+                                <li class="fragment">The <code>container</code> class gives you a pre-formatted area. They are required when using the grid. </li>
+                                <li class="fragment">BS uses the CSS Flex by default. Grid is optional in custom builds.</li>
+                                <li class="fragment">When using Flex, they have to be included in a <code>row</code> and the column class is <code>col</code>.</li>
+                                <li class="fragment">In Bootstrap <b>left</b> and <b>right</b> become <b>start</b> and <b>end</b>.</li>
+                                <li class="fragment">Use the class <code>img-fluid</code> to generate responsive images. When using <code>picture</code> to add multiple images, add the clas to the image tag.</li>
+                            </ul>
+                        </div>
+                        <div></div>
+                    </div>
+                </section>
+            </section>
+
+        </div>
+
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script>
+        Reveal.initialize(
+            {hash: true}
+        );
+
+        const loadScript = src => {
+            return new Promise((resolve, reject) => {
+                const script = document.createElement('script');
+                script.type = 'text/javascript';
+                script.onload = resolve;
+                script.onerror = reject;
+                script.src = src;
+                document.head.append(script);
+            })
+        }
+
+        loadScript('plugin/highlight/highlight.js').then(() => {
+            Reveal.registerPlugin(RevealHighlight)
+        })
+    </script>
+
+</body>
+
+</html>

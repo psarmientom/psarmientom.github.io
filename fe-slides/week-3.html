@@ -126,15 +126,16 @@
                         <li class="fragment"><code>:only-child</code> Selects the only child of that element in relation to the parent.</li>
                         <li class="fragment"><code>:only-of-type</code> Selects the only child of that element type.</li>
                         <li class="fragment"><code>:first-child :last-child</code> Selects the first or last child on a group or list.</li>
-                        <li class="fragment"><code>:nth-child(2) :nth-child(odd) :nth-child(3n +1) li:nth-last-child(4n + 2)</code> Selects the specific element on a list of siblings.</li>
+                        <li class="fragment"><code>:nth-child(2) :nth-child(odd)</code> Selects the specific element on a list of siblings.</li>
+                        <li class="fragment"><code>:nth-child(3n +2)</code> Selects every 3 elements starting on the second one. <code>li:nth-last-child(3n + 2)</code> Selects from the bottom up.</li>
                         <li class="fragment"><code>:target</code> Used with in-page navigation, select the targeted area.</li>
-                        <li class="fragment"><code>:not([attribute]) :not(.class) :not(div)</code> Select the element that do NOT match the selector.</li>
-                        <li class="fragment"><code>img:not([alt]) {border:solid 5px red}</code> Helps you check which images do not have an alt text.</li>
                     </ul>
 
                 </section>
                 <section>
                     <ul>
+                        <li class="fragment"><code>:not([attribute]) :not(.class) :not(div)</code> Select the element that do NOT match the selector.</li>
+                        <li class="fragment"><code>img:not([alt]) {border:solid 5px red}</code> Helps you check which images do not have an alt text.</li>
                         <li class="fragment"><code>:root</code> Selects the root element of the document, similar to the html selector.</li>
                         <li class="fragment">It is commonly used to set the css variables.</li>
                         <li class="fragment"><code>:empty</code> When targeting a tag that has no content or white space.</li>
@@ -156,60 +157,6 @@
                         <li>Try to use descendants and pseudo classes and elements when possible.</li>
                         <li>Avoid using id's for styling. They are useful for Javascript targetting.</li>
                     </ul>
-                </section>
-            </section>
-
-            <!-- CSS Variables -->
-            <section>
-                    <h2>CSS Variables (Custom Properties)</h2>
-                    <p>Are User defined entities that contain values that can be reused througout the document.</p>
-                    <ul>
-                        <li class="fragment">Variables for the most part are defined in the <code>:root</code> element, and can be accessed anywhere in the document.</li>
-                        <li class="fragment">Variables are preceded by -- <code>--primary-color{color:#efefef;}</code></li>
-                        <li class="fragment">Custom properties are case sensitive.</li>
-                        <li class="fragment">Use the variable by writing <code>color: var(--primary-color);</code></li>
-                    </ul>
-            </section>
-            <section>
-                <section>
-                    <h2>Transitions and Animations</h2>
-                    <p></p>
-                    <div class="columns">
-                        <div>
-                            <h4><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition"></a>Transitions</h4>
-                                <div class="transition"></div>
-                        </div>
-                        <div>
-                            <h4><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations">Animations</a></h4>
-                            <div class="slide-fwd-center animation"></div>
-                        </div>
-                    </div>  
-                </section>
-                <section>
-                    <div class="columns">
-                        <div>
-                            <h3>Transitions</h3>
-                            <ul>
-                                <li>They go from A to B. No intermediate steps</li>
-                                <li>Can only run once.</li>
-                                <li>Require a trigger to run. No Autoplay.</li>
-                                <li>The go back to the original state when the trigger is removed.</li>
-                                <li>Easier to use with Javascript.</li>
-                                <li>Transitions use the transition CSS property.</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3>Animations</h3>
-                            <ul>
-                                <li>Go from A to B but can have steps in between.</li>
-                                <li>Can repeat and loop indefinitely.</li>
-                                <li>Can work with or without a trigger.</li>
-                                <li>Can run in any direction. (Forwards, reverse, alternate).</li>
-                                <li>Harder to use with Javascript.</li>
-                                <li>Animations use the Animation CSS property and keyframes to determine the changes.</li>
-                            </ul>
-                        </div>
-                    </div>
                 </section>
             </section>
 
