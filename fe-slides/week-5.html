@@ -32,12 +32,220 @@
          
             <!--Javascript -->
             <section>
+                <section>
+                    <h2>Javascript</h2>
+                    <img src="images/js.png" alt="javascript logo">
+                </section>
+                <section>
+                    <div class="columns">
+                        <div class="col-3">
+                            <h2>HTML</h2>
+                            <p>We use it to create the structure of the page and add content.</p>
+                            <img src="images/ball-html.gif" alt="structure of a ball">
+                        </div>
+                        <div class="col-3">
+                            <h2>CSS</h2>
+                            <p>We use it to style the content.</p>
+                            <img src="images/ball-css.gif" alt="image of a ball">
+                        </div>
+                        <div class="col-3">
+                            <h3>Javascript</h3>
+                            <p>We use it to add dynamic functionality interactivity.</p>
+                            <img src="images/ball-js.png" alt="image of a ball with a kid">
+                        </div>
+                    </div>
+                </section>
+                <section>
                     <h2>What is Javascript?</h2>
                  <ul>
                      <li class="fragment">Javascript is the programming language of the web.</li>
-                     <li class="fragment">It was created in 1995 to provide some animations and load dynamic content in the browser.</li>
-                     <li class="fragment">Today, Javascript can be used to create full web applications with complex functionality.</li>
+                     <li class="fragment">It is also called Vanilla Javascript.</li>
+                     <li class="fragment">It was created in 1995 to provide some interaction and load dynamic content in the browser.</li>
+                     <li class="fragment">At the beginning, it used to run only in the browser, but it has evolved that now it can run in both the browser and the server.  </li>
+                     <li class="fragment">Today, Javascript can be used to create not only websites, but also full web applications with complex functionality, mobile and smartwatch applications and can be combined with many other languages.</li>
+                     <li class="fragment">Javascript is not related in any way to the Java programming language.</li>
+                     <li class="fragment">Javascript doesn't need to be compiled (translated from human-readable to machine code).</li>
                  </ul>   
+            </section>
+            <section>
+                <h2>What does Javascript do?</h2>
+                <ul>
+                    <li class="fragment">It detects user interaction and provides a response.</li>
+                    <li class="fragment">It lets you create animations and interactive components.</li>
+                    <li class="fragment">Javascript lets you alter the structure of your HTML and CSS using an <b>API</b> called the <b>DOM</b>.</li>
+                </ul>
+                <h3 class="fragment">And what do API and DOM mean?</h3>
+                <ul>
+                    <li class="fragment"><b>API</b> stands for <b>Application Programming Interface</b>. It is sometimes called <b>Web Services</b>.</li>
+                    <li class="fragment">The function of an API is to serve as a link between 2 applications so they can talk to each other.</li>
+                    <li class="fragment">JavaScript when used on the frontend, interacts with browsers through a set of functions collectively known as <a href="https://developer.mozilla.org/en-US/docs/Web/API">Web APIs</a>.</li>
+                    <li class="fragment"><b>DOM</b> stands for <b>Document Object Model and it's a representation of the HTML and CSS.</b></li>
+                    <li class="fragment">On a website, the Javascript can interact with the HTML and CSS through the DOM.</li>
+                </ul>
+            </section>
+            <section>
+                <h3>The DOM (Document object Model)</h3>
+                <div class="columns">
+                    <div><img src="images/dom.png" alt="dom tree representation." width="500"></div>
+                    <div>
+                        <ul>
+                            <li class="fragment">The "View Source" is the HTML before it's processed by the browser.</li>
+                            <li class="fragment">The DOM is the representation of the page after all the css and javascript has been processed.</li>
+                            <li class="fragment">Each HTML tag is an element. And each Element is a DOM node. Then the browser creates the node tree.</li>
+                            <li class="fragment">The HTML does not change, but the DOM does.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3>Adding Javascript to your HTML file.</h3>
+                <ul>
+                    <li class="fragment">Create a js folder on your project to store all your javascript files. Javascript files have the extension <code>.js</code>.</li>
+                    <li class="fragment">In the HTML document, Javascript files can be added to the <code>head</code> tag, or right before the closing <code>body</code> tag, but depending on where you add them, you might have to use <code>defer / async</code>.</li>
+                    <li class="fragment"><code>&lt;script src="js./myjsFile.js"></script></code></li>
+                </ul>
+            </section>
+            <section>
+                <h3>Async, Defer or Nothing</h3>
+                <img src="images/async-defer.png" alt="javascript loading chart using async and defer methods.">
+                <div class="columns">
+                    <div class="col-3"><h4>Simple script tag</h4>
+                    <p>Added at the bottom, waits until all the HTML has been loaded. <br>
+                        Added on the head, it can stop loading the html until the script has been loaded.</p></div>
+                <div class="col-3"><h4>Defer</h4>
+                    <p>Added on the head, waits until the HTML is loaded to execute the script. (preferred option).</p></div>
+                    <div class="col-3">
+                        <h4>Async</h4>
+                        <p>Added on the head, loads and executes scripts simultaneously. Recommended for when the scripts don't need the DOM.</p>
+                    </div>
+                </div>   
+            </section>
+            <section>
+                <h3>Developing in Javascript.</h3>
+                <div class="columns">
+                    <div class="fragment col-2">
+                        <h4>Developing environment</h4>
+                <ul>
+                    <li class="fragment">Since we are using Visual code, we need to install a couple of extensions:</li>
+                    <!-- <li class="fragment">StandardJS (the new version)</li> -->
+                    <li class="fragment">Prettier</li>
+                    <li class="fragment">ESLint</li>
+                    <li class="fragment">JavaScript (ES6) code snippets. Optional.</li>
+                </ul>
+                    </div>
+                    <div class="fragment col-2">
+                        <h4>The Developer Tools Console</h4>   
+                        <ul>
+                            <li class="fragment">In the browser we use the Developer tools Console.</li>
+                            <li class="fragment"><code>cmd + opt + i</code> on a Mac and <code>ctrl + shift + i</code></li>
+                            <li class="fragment">In the console you can write JavaScript and execute it the same way the browser’s JavaScript engine would if it lived in the page.</li>
+                            <li class="fragment">To output something to the console from a script we use the <code>console.log('this is a console log')</code></li>
+                        </ul> 
+                    </div>
+                </div>
+            </section>
+            </section>
+            <section>
+                <section>
+                    <h2>Javascript Syntax</h2>
+                    <ul>
+                        <li class="fragment">Javascript is Case Sensitive. "myScript" is not the same as "MyScript" or "Myscript".</li>
+                        <li class="fragment">For the most part, most build methods use camel case. "querySelector" or "getElementById"</li>
+                        <li class="fragment">The semicolon <code>;</code> indicates the end of a statement. Many people use it, but it's not really neccesary because Javascript will add it automatically through ASI (Automatic Semicolon Insertion).</li>
+                        <li class="fragment">White space, (tabs, spaces, empty lines) do not count in Javascript.</li>
+                        <li class="fragment">Comments: Single Line comments are <code>// this is a single line comment</code></li>
+                        <li class="fragment">Multi line comments start with <code>/* Start and end with this */</code>.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Data Types</h2>
+                    <p>In Javascript there are 7 basic Data types which are different ways in which data is classified to tell the computer how to interpret it. They are also called <b>primitives</b>, because they represent a primitive value, that is not an object and has no methods.</p>
+                    <ul>
+                        <li class="fragment"><b>Strings:</b> They represent text data <code>"I'm a string"</code> and they always go between quotations.
+                        <ul class="fragment"><li>Single or double quotes? It does not matter as long as you are consistent and pair them correctly.</li>
+                        <li class="fragment">And what about apostrophes? If you use double quotes, they don't represent a problem, but with single quotes you have to escape them. <code>'I\'m a string'</code></li>
+                    <li class="fragment">And quotes inside quotes? You have to escape it or use the other type of quote inside. <code>'This is a "quote"'</code> or <code>"This is a \"quote\""</code></li></ul></li>
+                    </ul>
+                </section>
+                <section>
+                    <ul>
+                        <li><b>Numbers:</b> Represent Numeric data. You can make math operations with numbers.
+                        <ul class="fragment"><li><code>+</code> Addition. <code>-</code> Subtraction.</li>
+                        <li class="fragment"><code>*</code> Multiplication. <code>/</code> Division.</li>
+                    <li class="fragment"><code>++</code> Add one to a number. <code>--</code> Subtract one to a number.</li>
+                    <li class="fragment"><code>%</code> Return the remainder after dividing 2 numbers.</li>
+                    <li class="fragment"><code>NaN</code> means "Not-a-Number" and shows up when JS doesw not have a way to interpret that value as a number.</li></ul></li>
+                    <li class="fragment"><b>Boolean:</b> The keywords <code>true</code> or <code>false.</code> Usually used with if statement to make sure a contition is happening.</li>
+                    <li class="fragment"><code>Null</code> represents a Non-Value. <code>Undefined</code> represents anything that has not beed defined by JavaScript or us.</li>
+                    <li class="fragment"><b>Symbols:</b> Introduced in 2015 with ES6, symbols are used to identify object properties.</li>
+                    <li class="fragment"><b>BigInt:</b> Big Integrer and lets you create extremely large numbers that are not supported by the Number Data Type.</li>
+                    </ul>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h2>Variables</h2>
+                    <p>A variable is a container for a value that can be any kind of data (strings, numbers, elements from the DOM, functions).</p>
+                    <ul>
+                        <li class="fragment">We can use variables in all or parts of our script.</li>
+                        <li class="fragment">A variable must be declared before you can use it.</li>
+                    </ul>
+                    <h4 class="fragment">How do I declare a Variable?</h4>
+                    <ul>
+                        <li class="fragment">You declare a variable by assigning a value to it using the =</li>
+                        <li class="fragment">We also declare variables using camel case <code>thisIsMyVariable</code>. They should be one word and you can use - and _, and cannot start with a number.</li>
+                        <li class="fragment">They can use any word except for some <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#keywords">Javascript reserved words.</a></li>
+                        <li class="fragment">There are 2 main ways to declare a variable:
+                            <ul>
+                                <li><code>const a = 0</code></li>
+                                <li><code>let a = 0</code></li>
+                                <li><code>var a = 0</code></li>
+                            </ul>
+                        </li>
+                        <li class="fragment">Variables can only take one value each.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2><code>=</code> and <code>+</code> in Javascript</h2>
+                    <p>In JavaScript these symbols have a slight different meaning depending on how they are used:</p>
+                    <ul>
+                        <li class="fragment"><code>a = 1</code> does not mean that <code>a</code> is equal to <code>1</code>, but that <code>a</code> has been assigned the value of <code>1</code>.</li>
+                        <li class="fragment"><code>a == 1</code> Means that I'm comparing <code>a</code> to <code>1</code> and they are equal.</li>
+                        <li class="fragment"><code>4 + 7</code> I'm adding <code>4</code> plus <code>7</code> because I'm dealing with 2 numbers.</li>
+                        <li class="fragment"><code>"4" + 7</code> does not give the same result because we are dealing with a string and a number. In this case the <code>+</code> is used to <b>concatenate</b> both elements.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>const - let - var</h2>
+                    <p>We see variables declared using these 3 methods. What's the difference?</p>
+                    <div class="columns">
+                        <div class="col-3 fragment">
+                            <h3>var</h3>
+                            <ul>
+                                <li>This is the old way to declare a variable. It is not recommended to be used anymore, but you will still find it in a lot of components coded before 2015.</li>
+                            </ul>
+                        </div>
+                        <div class="col-3 fragment">
+                            <h3>const</h3>
+                            <ul>
+                                <li>Introduced in 2015 with ES6.</li>
+                                <li>Represents a variable whose value cannot be reassigned.</li>
+                                <li>const variables must be initialized at the declaration time.</li>
+                            </ul>
+                        </div>
+                        <div class="col-3 fragment">
+                            <h3>let</h3>
+                            <ul>
+                                <li>Introduced in 2015 with ES6.</li>
+                                <li>let allows you to reassign the value of a variable.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="fragment"><h4>Which one is better?</h4>
+                        <p>Definitely don't use var. It is better to use const over let unless you know you need to reassign the value later.</p>
+                        <p>The more control you have over your code, the lees chances of errors. </p></div>
+                </section>
             </section>
         
 
