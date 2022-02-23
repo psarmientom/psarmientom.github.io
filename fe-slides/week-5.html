@@ -30,7 +30,7 @@
         <!-- Any section element inside of this container is displayed as a slide -->
         <div class="slides">
          
-            <!--Javascript -->
+            <!-- What is Javascript -->
             <section>
                 <section>
                     <h2>Javascript</h2>
@@ -145,6 +145,8 @@
                 </div>
             </section>
             </section>
+
+            <!-- Javascript syntax  -->
             <section>
                 <section>
                     <h2>Javascript Syntax</h2>
@@ -157,6 +159,10 @@
                         <li class="fragment">Multi line comments start with <code>/* Start and end with this */</code>.</li>
                     </ul>
                 </section>
+            </section>
+
+            <!-- Data Types  -->
+            <section>
                 <section>
                     <h2>Data Types</h2>
                     <p>In Javascript there are 7 basic Data types which are different ways in which data is classified to tell the computer how to interpret it. They are also called <b>primitives</b>, because they represent a primitive value, that is not an object and has no methods.</p>
@@ -181,28 +187,64 @@
                     <li class="fragment"><b>BigInt:</b> Big Integrer and lets you create extremely large numbers that are not supported by the Number Data Type.</li>
                     </ul>
                 </section>
+                <section>
+                    <h2>Values</h2>
+                    <ul>
+                        <li class="fragment">The content of a string <code>I'm a string</code> is a value.</li>
+                        <li class="fragment">The content of a number <code>7</code> is a value.</li>
+                        <li class="fragment">The content of a boolean <code>true</code> is a value.</li>
+                        <li class="fragment">The JavaScript language consists of <b>primitive values</b> and <b>objects</b>.</li>
+                        <li class="fragment">Any value that is not of a <b>primitive type</b> <br> (string, number, boolean, null, undefined, etc) is an <code>object.</code></li>
+                        <li class="fragment">In <b>JavaScript</b> almost everything is an object.</li>
+
+                    </ul>
+                </section>
             </section>
+
+            <!-- Object Types  -->
+            <section>
+                <section>
+                    <h2>Object Types</h2>
+                   <ul>
+                       <li>A javaScript object is an entity having state and behavior (properties and method).</li>
+                       <li>An object is a collection of properties and methods. Traits belonging to an object, and functions that the object can perform.</li>
+                       <li>The main object types are:
+                           <ul>
+                               <li class="fragment">Variables</li>
+                               <li class="fragment">Functions</li>
+                               <li class="fragment">Objects</li>
+                               <li class="fragment">Arrays</li>
+                           </ul>
+                       </li>
+                   </ul>
+                </section>
+            </section>
+
+            <!-- Variables  -->
             <section>
                 <section>
                     <h2>Variables</h2>
-                    <p>A variable is a container for a value that can be any kind of data (strings, numbers, elements from the DOM, functions).</p>
                     <ul>
+                        <li class="fragment">A variable is a container for a value.</li>
+                        <li class="fragment">The value can be any kind of data (strings, numbers, elements from the DOM, functions).</li>
                         <li class="fragment">We can use variables in all or parts of our script.</li>
+                        <li class="fragment">Variables can only take one value.</li>
                         <li class="fragment">A variable must be declared before you can use it.</li>
                     </ul>
                     <h4 class="fragment">How do I declare a Variable?</h4>
+                    <code class="fragment">const variableName = 'value'</code>
                     <ul>
-                        <li class="fragment">You declare a variable by assigning a value to it using the =</li>
-                        <li class="fragment">We also declare variables using camel case <code>thisIsMyVariable</code>. They should be one word and you can use - and _, and cannot start with a number.</li>
-                        <li class="fragment">They can use any word except for some <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#keywords">Javascript reserved words.</a></li>
-                        <li class="fragment">There are 2 main ways to declare a variable:
+                        <li class="fragment"><code>variableName</code> or <b>identifier</b> is the name you assign to your variable. It must follow the JavaScript syntax conventions.</li>
+                        <li class="fragment"><code>"value"</code> Is what you want your variable to be. It can be a primitive or an object.</li>
+                        <li class="fragment"><code>=</code> Assigns a value to your variable. (more on this later).</li>
+                        <li class="fragment">You can use any word except for some <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#keywords">Javascript reserved words.</a></li>
+                        <!-- <li class="fragment">There are 2 main ways to declare a variable:
                             <ul>
                                 <li><code>const a = 0</code></li>
                                 <li><code>let a = 0</code></li>
                                 <li><code>var a = 0</code></li>
                             </ul>
-                        </li>
-                        <li class="fragment">Variables can only take one value each.</li>
+                        </li> -->
                     </ul>
                 </section>
                 <section>
@@ -210,44 +252,199 @@
                     <p>In JavaScript these symbols have a slight different meaning depending on how they are used:</p>
                     <ul>
                         <li class="fragment"><code>a = 1</code> does not mean that <code>a</code> is equal to <code>1</code>, but that <code>a</code> has been assigned the value of <code>1</code>.</li>
-                        <li class="fragment"><code>a == 1</code> Means that I'm comparing <code>a</code> to <code>1</code> and they are equal.</li>
+                        <li class="fragment"><code>1 == 1</code> means that I'm comparing <code>1</code> to <code>1</code> and they are equal.</li>
+                        <li class="fragment"><code>a != 1</code> means that a is NOT equal to 1.</li>
                         <li class="fragment"><code>4 + 7</code> I'm adding <code>4</code> plus <code>7</code> because I'm dealing with 2 numbers.</li>
                         <li class="fragment"><code>"4" + 7</code> does not give the same result because we are dealing with a string and a number. In this case the <code>+</code> is used to <b>concatenate</b> both elements.</li>
                     </ul>
                 </section>
                 <section>
-                    <h2>const - let - var</h2>
+                    <code>const variableName = 'value'</code>
+                    <h3>const - let - var</h3>
                     <p>We see variables declared using these 3 methods. What's the difference?</p>
                     <div class="columns">
                         <div class="col-3 fragment">
                             <h3>var</h3>
                             <ul>
-                                <li>This is the old way to declare a variable. It is not recommended to be used anymore, but you will still find it in a lot of components coded before 2015.</li>
-                            </ul>
-                        </div>
-                        <div class="col-3 fragment">
-                            <h3>const</h3>
-                            <ul>
-                                <li>Introduced in 2015 with ES6.</li>
-                                <li>Represents a variable whose value cannot be reassigned.</li>
-                                <li>const variables must be initialized at the declaration time.</li>
+                                <li>This is the old way to declare a variable.</li>
+                                <li>Var can be globally scoped or function scoped.</li>
+                                <li>The can be re-declared and updated.</li>
                             </ul>
                         </div>
                         <div class="col-3 fragment">
                             <h3>let</h3>
                             <ul>
                                 <li>Introduced in 2015 with ES6.</li>
-                                <li>let allows you to reassign the value of a variable.</li>
+                                <li>let allows you to update the value of a variable.</li>
+                                <li>Like const, cannot be re-declared.</li>
+                                <li>They are block scoped.</li>
+                                <li>Can be declared without being initialized.</li>
+                            </ul>
+                        </div>
+                        <div class="col-3 fragment">
+                            <h3>const</h3>
+                            <ul>
+                                <li>Introduced in 2015 with ES6.</li>
+                                <li>Represents a variable whose value cannot be updated.</li>
+                                <li>Cannot be re-declared.</li>
+                                <li>They are block scoped.</li>
+                                <li>const variables must be initialized at the declaration time.</li>
                             </ul>
                         </div>
                     </div>
-                    <hr>
-                    <div class="fragment"><h4>Which one is better?</h4>
-                        <p>Definitely don't use var. It is better to use const over let unless you know you need to reassign the value later.</p>
-                        <p>The more control you have over your code, the lees chances of errors. </p></div>
+                    <p>To <b>initialize</b> a variable is to give it a correct initial value.</p>
+                </section>
+                <section>
+                    <h3>Which one is better?</h3>
+                        <ul>
+                        <li class="fragment"><code>var</code> is too flexible. It can be global, can be re-declared and re-assigned, so it's more prone to errors and leads to harder debugging. </li>
+                        <l1 class="fragment">The more control you have over your code, the lees chances of errors. </l1>
+                        <li class="fragment">You can use either <code>let</code> or <code>const</code>.</li>
+                        <li class="fragment">There are countless <a href="https://overreacted.io/on-let-vs-const/">arguments</a> for either side.</li>
+                        <li class="fragment"><code>let</code> could be easier to use at the beginning, but <code>const</code> is less prone to errors.</li>
+                        </ul>
                 </section>
             </section>
-        
+
+            <!-- Functions  -->
+            <section>
+                <section>
+                    <h2>Functions</h2>
+                    <p>A function is a block of reusable code that performs a task in a specific order.</p>
+                    <p>We can say that an function is an object that can do something, not just a container for a value.</p>
+                    <h4 class="fragment">Declaring a Function</h4>
+                    <ul>
+                        <li class="code fragment"><code>function functionName (optional parameters){ <br>// do something here <br>}</code>
+                        </li>
+                        <li class="fragment"><code>function</code> is the keyword that tells Javascript that you are declaring a function.</li>
+                        <li class="fragment"><code>functionName</code> is the name of the function and should follow JavaScript syntax conventions.</li>
+                        <li class="fragment"><code>(parameters)</code> represent variables that should be created by the function passing a given value.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Invoke, Run, Execute, Call</h3>
+                    <p>Many names to make a function work.</p>
+                    <ul>
+                        <li class="fragment">You need to declare a function before you can use it.</li>
+                        <li class="fragment">In order for the function to work, it needs to be executed somewhere in the document and outside the function.</li>
+                        <li class="code fragment"><code>function functionName (optional parameters){ <br>// do something here <br>} <br> functionName(arguments)</code></li>
+                        <li class="fragment"><code>(arguments)</code> are the values used for each parameter when you call a function.</li>
+                        <li class="fragment">If you use parameters, you have to declare the arguments when you call the function.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>The Return statement</h3>
+                    <ul>
+                        <li class="fragment">The <b>return</b> statement returns a specific value fom the function to the function caller.</li>
+                        <li class="code fragment"><code>function functionName (){ <br>return "something" <br>} <br> functionName()</code></li>
+                        <li class="fragment">It should be used at the end of the function because nothing else will execute after.</li>
+                        <li class="fragment">It can return primitive values and objects.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Function expression</h3>
+                    <p>This is another way of declaring functions.</p>
+                    <ul>
+                        <li class="fragment">You declare a variable, then assign a function without a name.</li>
+                        <li class="fragment code"><code>
+                            const myFunctionExpression = function () { <br>
+                                console.log('This is a function expression!') <br>
+                              }
+                        </code></li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Arrow Functions</h3>
+                    <p>Arrow functions are an alternate way of declaring functions introduced in 2015 with ES6</p>
+                    <div class="columns">
+                        <div class="col-2">
+                            <ul>
+                                <li class="fragment code"><code>
+                                    const myArrowFunction = <span>function</span> (par1, par2) { <br>
+                                        console.log('This is a function expression!') <br>
+                                      }
+                                </code></li>
+                            </ul>
+                        </div>
+                        <div class="col-2">
+                            <ul>
+                                <li class="fragment code"><code>
+                                    const myArrowFunction = (par1, par2) <span>=></span> { <br>
+                                        console.log('This is a function expression!') <br>
+                                      }
+                                </code></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul>
+                        <li class="fragment">Without parameters: <code>const myArrowFunction = () => {}</code></li>
+                        <li class="fragment">Or: <code>const myArrowFunction = _ => {}</code></li>
+                        <li class="fragment">In case you just want a return statement you can skip the <code>{}</code></li>
+                        <li class="fragment"><code>cosnt myArrowFunction = (par1, par2) => par1 + par2</code></li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- Objects  -->
+            <section>
+                <section>
+                    <h2>Objects</h2>
+                    <p>An object is a collection of related data, in the form of "key:value" pairs.</p>
+                    <div class="columns">
+                        <div class="fragment col-2 code">
+                            <code>
+                            const anObject = { <br>
+                                key1: 'value1', <br>
+                                key2: 'value2', <br>
+                                key3: 'value3', <br>
+                                // ...
+                              }</code>
+                        </div>
+                        <div class="fragment col-2 code">
+                            <code>
+                            const myDog = { <br>
+                                name: 'Bernie', <br>
+                                color: 'brown and white', <br>
+                                breed: 'St. Bernard', <br>
+                                // ...
+                              }</code>
+                        </div> 
+                    </div>
+                    <ul>
+                        <li class="fragment">Each <code>key:</code> gives a reference to a <code>value.</code></li>
+                        <li class="fragment">Key names have the same constraint as naming variables. (no spaces, no starting with numbers, etc). </li>
+                        <li class="fragment">If you use a different syntax, then it becomes an Invalid Identifier, and you have to use quotes <code>'dog name'</code>.</li>
+                        <li class="fragment">The <code>value</code> can contain anything that is valid in Javascript (strings, numbers, booleans, functions, arrays, objects.</li>
+                        <li class="fragment">Object keys are called <b>properties.</b></li>
+                        <li class="fragment">name, color, breed, are the properties ob the object myDog.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Getting the value of a property</h3>
+                    <p>You can get to the values of a property 2 ways: the <b>dot notation</b> or the <b>bracket notation</b>.</p>
+                    <ul>
+                        <li class="fragment code">
+                            <pre>
+                            const myDog = { <br>
+                                name: 'Bernie', <br>
+                                color: 'brown and white', <br>
+                                breed: 'St. Bernard', <br>
+                                weigth: '150lb' <br>
+                              }</pre>
+                        </li> 
+                        <li class="fragment"><b>Dot Notation:</b> <code>const dogName = myDog.name</code></li>
+                        <li class="fragment"><b>Bracket Notation:</b> <code>const dogName = myDog['name']</code></li>
+                        <li class="fragment">Use <b>dot notation</b> all the time, unless you are using an <b>Invalid Identifier</b>, then you use <b>Bracket Notation.</b></li>
+                        <li class="fragment">In order to avoid using Bracket Notation, try to name your properties correctly, using proper Javascript syntax.</li>
+                    </ul>
+                    
+                    <div class="columns">
+                        <div class="fragment">
+
+                        </div>
+                    </div>
+                </section>
+            </section>
 
         </div>
 

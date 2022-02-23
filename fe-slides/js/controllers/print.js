@@ -162,7 +162,7 @@ export default class Print {
 					// Each fragment 'group' is an array containing one or more
 					// fragments. Multiple fragments that appear at the same time
 					// are part of the same group.
-					const fragmentGroups = this.Reveal.fragments.sort( page.querySelectorAll( '.fragment' ), true );
+					const fragmentGroups = this.Reveal.fragments.sort( page.querySelectorAll( '.fragment' ), false );
 
 					let previousFragmentStep;
 
@@ -181,7 +181,7 @@ export default class Print {
 						}, this );
 
 						// Create a separate page for the current fragment state
-						const clonedPage = page.cloneNode( true );
+						const clonedPage = page.cloneNode( false );
 						pages.push( clonedPage );
 
 						previousFragmentStep = fragments;

@@ -17,10 +17,17 @@ a:link {
 /* a:hover, .reveal a:hover{
     color:chocolate;
 } */
-code {
+code,
+.code {
   color: #efefef;
   background: black;
   padding: 0 1rem;
+}
+.code span {
+  color: tomato;
+}
+.reveal pre {
+  width: 100%;
 }
 /* Animations  */
 .animation,
@@ -78,5 +85,15 @@ transition {
   100% {
     -webkit-transform: scale(1);
     transform: scale(1);
+  }
+}
+@media print {
+  html.print-pdf {
+    width: 90%;
+    margin: 5% auto;
+  }
+  .reveal .slides section .fragment {
+    opacity: 1;
+    visibility: visible;
   }
 }
