@@ -3,22 +3,25 @@ console.log("this is a log")
 
 console.log('b' + 'a' + +('a') + 'a')
 
+
 // =================
 const car = "Ferrari",
     color = "yellow",
     model = "2022"
+
 
 // ================
 const year="2021"
 console.log(year + " " + typeof year)
 
 // ================
-let sum = 0
-console.log(sum) // 0
+// let sum = 0
+// console.log(sum) // 0
 
 let num1 = 300
 let num2 = 50
-sum = num1 + num2
+num2 = 40
+const sum = num1 + num2
 console.log(sum) // 350
 
 // ================

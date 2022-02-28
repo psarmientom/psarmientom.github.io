@@ -35,7 +35,98 @@
     <div class="reveal">
       <!-- Any section element inside of this container is displayed as a slide -->
       <div class="slides">
-        <!-- Conditionals -->
+        <section>
+          <section>
+            <!-- Conditionals If/else -->
+        <h3>Conditional if/else statements</h3>
+        <p>
+          Conditional statements determine when and where you execute code,
+          based on specific conditions.
+        </p>
+        <ul>
+          <li class="fragment code">
+            <code
+              >if (condition) { <br />
+              // We do something if the condition is true <br />
+              } else { <br />
+              // The condition is not true and we do something else
+              <br />}</code>
+          </li>
+          <li class="fragment">In order to evalueate if a condition is true or false, JavaScript relies on the following:</li>
+          <li class="fragment">Comparison Operators.</li>
+          <li class="fragment">Truthy and falsey values.</li>
+          </li>
+        </ul>
+          </section>
+          <section>
+            <h3>Comparison Operators</h3>
+            <p>Comparison Operators always return a boolean. <code>true</code> or <code>false</code></p>
+            <ul>
+              <li class="fragment"><code>></code> greater than.</li>
+              <li class="fragment"><code>>=</code> greater or equal to.</li>
+              <li class="fragment"><code><</code> less than.</li>
+              <li class="fragment"><code><=</code> less or equal to.</li>
+              <li class="fragment"><code>==</code> equal <code>===</code> strictly equal.</li>
+              <li class="fragment"><code>!=</code>unequal <code>!==</code> strictly unequal.</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Equal or Strictly Equal</h3>
+            <div class="columns">
+              <div class="col-2">
+                <code>==</code>
+                <ul>
+                  <li>Looks for value equality only.</li>
+                  <li>In that case a string and a number with the same output would be considered equal</li>
+                  <li><code>"24" == 24</code> That would be true.</li>
+                </ul>
+              </div>
+              <div class="col-2">
+                <code>===</code>
+                <ul>
+                  <li>Makes sure that the elements compared are the same type and have the same value.</li>
+                  <li><code>"24" === 24</code> That would be false.</li>
+                  <li><code>24 === 24</code> That would be true.</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h3>Truthy and Falsey</h3>
+            <p>A truthy value is everything that evaluates to true in a conditional. Javascript coerces very value that would be a true  or false statement into a boolean. </p>
+            <div class="columns">
+              <div class="col-2 fragment">
+                <h4>Falsey Values</h4>
+                <ul>
+                  <li>false</li>
+                  <li>null</li>
+                  <li>undefined</li>
+                  <li>0 (the number 0)</li>
+                  <li>NaN</li>
+                  <li>empty string</li>
+                </ul>
+              </div>
+              <div class="col-2 fragment">
+                <h4>Truthy Values</h4>
+                <ul>
+                  <li>"0" (a string with the number 0)</li>
+                  <li>"false" (a string with the word false)</li>
+                  <li>[] (an empty array)</li>
+                  <li>{} (and empty object)</li>
+                  <li>function(){} (an empty function)</li>
+                </ul>
+              </div>
+            </div>
+            <ul>
+              <li class="fragment">Using them you can reduce the amount of code you write.</li>
+              <li class="fragment">Instead of writing <code>if (myVar === null || myVar === undefined){}</code> you can write <code>if (myVar) {}</code></li>
+              <li class="fragment">Javascript will get all the options and will give you a true or false response.</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Null and Undefined</h3>
+          </section>
+        </section>
       </div>
     </div>
 
