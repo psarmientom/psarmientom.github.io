@@ -35,9 +35,10 @@
     <div class="reveal">
       <!-- Any section element inside of this container is displayed as a slide -->
       <div class="slides">
+
+         <!-- Conditionals If/else -->
         <section>
           <section>
-            <!-- Conditionals If/else -->
         <h3>Conditional if/else statements</h3>
         <p>
           Conditional statements determine when and where you execute code,
@@ -144,6 +145,138 @@
                 </ul>
               </div>
             </div>
+          </section>
+        </section>
+        <!-- The DOM and BOM  -->
+        <section>
+          <section>
+            <h3>BOM and DOM</h3>
+            <div class="columns">
+              <div class="col-2">
+                <h3>BOM</h3>
+                <ul>
+                  and refers to all the properties and methods available for JavaScript to interact with the web browser.</li>
+                  <li>Unlike the DOM there is no standard definition and it's implemented differently depending on the browser.</li>
+                  <li>The BOM main task is to manage the browser window.</li>
+                  <li>Each time you load a page on the browser, it becomes a <code>Document object</code>.</li>
+                  <li>DOM is a subset of BOM.</li>
+                </ul>
+              </div>
+              <div class="col-2">
+                <h3>DOM</h3>
+                <ul>
+                  <li>The DOM stands for the <b>Document Object Model</b>.</li>
+                  <li>DOM is an interface for representing an interacting with the HTML.</li>
+                  <li>In the DOM tree structure, every element is defined as an <code>object</code>, whith properties and methods.</li>
+                  <li>We can interact with the DOM with any programming language, but it's typically used with Javascript.</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h3>DOM Objects</h3>
+            <p>The DOM's purpose is to provide Javascript with a map of all the elements in the page, and provide us a set of methods to access those elements.</p>
+            <ul>
+              <li><b>window:</b> Represents the open window that contains the DOM document. It contains all the Javascript functions and methods. <code>document.head / body</code></li>
+              <li><b>document:</b> Represents the HTML document in the window. <code>console.log(document)</code></li>
+              <li><b>history:</b> Previous URL's visited by the client. Useful for using back and forward methods. <code>window.history.back()</code></li>
+              <li><b>location:</b> Information about the current URL</li>
+              <li><b>navigator:</b> Information about the client. (Browser)</li>
+            </ul>
+          </section>
+        </section>
+        <!-- querySelector -->
+        <section>
+          <section>
+            <h3>Selecting an element with Javascript</h3>
+            <p>The document object has a method called <code>querySelector</code>. This returns the <b>first Element</b> within the document that matches the specified selector, or group of selectors. If no matches are found, null is returned.</p>
+            <p><code>const selectElement = document.<span>querySelector</span>('selector')</code></p>
+            <ul>
+              <li class="fragment"><code>selector</code> is the class, id, html tag or attribute we are targeting.</li>
+              <li class="fragment">You use the same notation you use in CSS to refer to those elements:
+                <ul>
+                  <li class="fragment"><b>id:</b> <code>#</code></li>
+                  <li class="fragment"><b>class:</b> <code>.</code></li>
+                  <li class="fragment"><b>tag:</b> <code>p</code></li>
+                  <li class="fragment"><b>attribute:</b> <code>[data-type="type"]</code></li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h3>ID, class, attributes or tags.</h3>
+            <ul>
+              <li class="fragment"><code>#</code> Id's are good when you want to target one specific element in the page.</li>
+              <li class="fragment"><code>.</code> Classes are good when you want to select more than one element. You can target single elements too, but run the risk to have the class added to another element.</li>
+              <li class="fragment"><code>[]</code> Attributes are an additional method to store information and pass it to Javascript. They are also used when you want to target more than one element that share the same data type, but it can be also used for single elements.</li>
+              <li class="fragment"><code>p</code> It is too generic, and unless you want to target all instances of that particular element, it is better to use the other options.</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Options to querySelector</h3>
+            <ul>
+              <li class="fragment">The <code>querySelector</code> lets you select an element from the DOM using its CSS selector.</li>
+              <li class="fragment"><code>getElementById</code> Works the same but its limited to selecting id's only.</li>
+              <li class="fragment"><code>getElementsByClassName</code> Allows you to target elements using CSS classes only.</li>
+              <li class="fragment"><code>getElementsByTagName</code> lets you select HTML tags.</li>
+              <li class="fragment">Try to choose <code>querySelector</code>. It is newer and more flexible, but if you choose the other options, be consistent.</li>
+              <li class="fragment">querySelector lets you target data-types, tags or you need to use complex selectors. <code>document.querySelector('div#idName')</code></li>
+              <li class="fragment"><code>querySelectorAll</code> lets you access all elements of that particular type. This will return an Array.</li>
+            </ul>
+          </section>
+        </section>
+        <!-- Arrays  -->
+        <section>
+          <section>
+            <h2>Arrays</h2>
+            <p>Arrays are a little like variables, they hold content. The difference is that a variable holds one element, an Array holds a list of elements.</p>
+            <ul>
+              <li class="fragment">An array is created by using <code>[]</code> and separating the elements with commas.</li>
+              <li class="fragment"><code>const myArray = [item1, item2, item2]</code></li>
+              <li class="fragment">Arrays can contain any type of data: strings, numbers, objects, functions and even other arrays.</li>
+              <li class="fragment">If the array is short, it can be on one line, if it gets too long it can go in different lines.</li>
+              <li class="fragment">Javascript arrays are <b>zero-based indexes</b> because the count starts at 0.</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Array Methods</h3>
+            <p>Arrays are great to give us list of things. But in order to interact with them we need to know its position in the array. We also need to be able to add/delete elements to the array.</p>
+            <ul>
+              <li class="fragment"><code>indexOf</code> gets you the position of an element in the array. I can only be used with primitives.</li>
+              <li class="fragment"><code>findIndex</code> works the same as indexOf but for abjects, arrays or functions. It works differently than indexOf because it executes a function for every array element.</li>
+              <li class="fragment"><code>unshift</code> adds elements to the beginning of the array.</li>
+              <li class="fragment"><code>push</code> adds elements to the end of the array.</li>
+              <li class="fragment"><code>shift</code> lets you remove an element from the start.</li>
+              <li class="fragment"><code>pop</code> lets you remove an item from the end.</li>
+              <li class="fragment"><code>splice</code> lets you add/remove elements anywhere in the array and you can do it more than one item at a time.</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Splice</h3>
+            <p><code>const deletedItems = array.splice(index, deleteCount, itemsToAdd)</code></p>
+            <ul>
+              <li class="fragment"><code>index</code> is the position of the element where you want to start.</li>
+              <li class="fragment"><code>deleteCount</code> is the number of items you want to delete. It can be 0 if you jusr want to add.</li>
+              <li class="fragment"><code>itemsToAdd</code> items you want to add.</li>
+              <li class="fragment">You can use splice to add or delete elements at the start or end, but it's easier to use unshift and push.</li>
+              <li class="fragment"><code>slice</code> Not to be confused with <code>splice</code> lets you create a copy of an array.</li>
+            </ul>
+          </section>
+        </section>
+        <!-- Loops  -->
+        <section>
+          <section>
+            <h2>For Loops</h2>
+            <p>A for loop runs a block of code a number of specified times. </p>
+            <ul>
+              <li class="fragment code"><code>for (initialExpression; condition; incrementExpression) { <br>
+                statement <br>
+              }</code></li>
+              <li class="fragment">The initialExpression is the initial condition. In most cases is called i and is equal to 0. <code>let i = 0</code></li>
+              <li class="fragment">The incrementExpression increments the value until the condition is met.</li>
+              <li class="fragment">The condition is determines the maximum amount of times the statement has to run.</li>
+              <li class="fragment">The statement is the code you want to run multiple times.</li>
+            </ul>
           </section>
         </section>
       </div>
