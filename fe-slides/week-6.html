@@ -266,7 +266,24 @@
         <!-- Loops  -->
         <section>
           <section>
-            <h2>For Loops</h2>
+            <h2>Loops</h2>
+            <p>JavaScript loops are used to create repetitive tasks.</p>
+            <ul>
+              <li>Loops validate a particular value against a test condition and execute a statement for a set amount of times.</li>
+              <li class="fragment">There are different loop types in Javascript:
+                <ul class="fragment">
+                  <li>For Loops</li>
+                  <li>While loops</li>
+                  <li>Do-while loops</li>
+                  <li>For-in loops</li>
+                  <li>Break statements</li>
+                  <li>Continue statement</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h3>For Loops</h3>
             <p>A for loop runs a block of code a number of specified times. </p>
             <ul>
               <li class="fragment code"><code>for (initialExpression; condition; incrementExpression) { <br>
@@ -275,9 +292,130 @@
               <li class="fragment">The initialExpression is the initial condition. In most cases is called i and is equal to 0. <code>let i = 0</code></li>
               <li class="fragment">The incrementExpression increments the value until the condition is met.</li>
               <li class="fragment">The condition is determines the maximum amount of times the statement has to run.</li>
-              <li class="fragment">The statement is the code you want to run multiple times.</li>
+              <li class="fragment">The statement is the code you want to run multiple times <b>if the condition is true.</b></li>
+              <li class="fragment">If the condition is <b>false</b> the loop is skipped.</li>
+              <li class="fragment"><code>for (let i = 0; i < 10; i++)</code></li>
             </ul>
           </section>
+          <section>
+            <h3>Infinite loops</h3>
+            <ul>
+              <l1>There are some occasions in which the condition of the loop will always evaluate as true.</l1>
+              <li class="fragment code">
+                <code>for (let i = 0; i < 1; i--) { <br>
+                  console.log('I'll run forever') <br>
+                }
+                </code>
+              </li>
+              <li class="fragment">To end an infinite loop you have to close the browser. There is no way to stop it.</li>
+            </ul>
+           
+          </section>
+          <section>
+            <h3>Using Conditionals in loops</h3>
+            <p>Most of the time you will be writing loops to get elements inside an array. You can use any form of conditionals inside a loop.</p>
+            <ul>
+              <li class="fragment code">
+                <code>
+                  const dollarBills = [1, 5, 20, 50, 100, 500, 1000, 2000]; <br>
+                for (let i = 0; i < dollarBillsbr.length; i++) { <br>
+                  const num = dollarBills[i] <br>
+                  if (num < 101) { <br>
+                    console.log(num + ' is a valid dollar bill!') <br>
+                  } <br>
+                } <br>
+                </code>
+
+              </li>
+            </ul>
+          </section>
+         <section>
+           <h3>The for-of loop</h3>
+           <p>This is a loop introduced with ES6. It is better than a for loop because it is easier to read and maintain.</p>
+           <ul class="">
+             <li class="fragment code">
+               <code>
+                for (let bill of dollarBills) { <br>
+                  if (bill < 101) {<br>
+                    console.log(bill + ' is a valid dollar bill!')<br>
+                  }<br>
+                  else{<br>
+                    console.log(bill + ' is NOT a valid dollar bill!')<br>
+                  }<br>
+                }<br>
+               </code>
+             </li>
+           </ul>
+         </section>
+         <section>
+           <h3>The foreach loop</h3>
+           <p>All arrays contain a forEach method that helps you loop through every item.</p>
+           <ul>
+             <li class="fragment code">
+               <code>
+                dollarBills.forEach(function(bill){ <br>
+                  if (bill < 101) { <br>
+                    console.log(bill + ' is a valid dollar bill!') <br>
+                  } <br>
+                  else{ <br>
+                    console.log(bill + ' is NOT a valid dollar bill!') <br>
+                  } <br>
+                }) <br>
+               </code>
+             </li>
+             <li class="fragment"><code>for of</code> and <code>foreach</code> are better to use than the regular for loop.</li>
+           </ul>
+         </section>
+        </section>
+        <!-- Changing CSS  -->
+        <section>
+          <section>
+            <h2>Javascript and CSS</h2>
+          <p>You can change any css property on an element with Javascript. There are different ways to do it.</p>
+          <h4 class="fragment">The style property</h4>
+          <ul>
+            <li class="fragment">You can change any value with the following statement:</li>
+            <li class="fragment"><code>Element.style.cssProperty = propertyValue</code></li>
+            <li class="fragment">You can use any css property but it it has to words, it needs to be written in CamelCase.</li>
+            <li class="fragment"><code>
+              element.style.fontSize = "2rem"
+            </code></li>
+          </ul>
+          </section>
+          <section>
+            <h4>the setProperty</h4>
+            <p class="fragment">This method takes 2 values. The property and the value, and it can be used to create custom properties (--myColor)</p>
+            <ul>
+              <li class="fragment code">
+                <code>element.style.setProperty('color', 'red')
+                </code>
+              </li>
+            </ul>
+            <br>
+            <h4 class="fragment">The setAttribute</h4>
+            <p class="fragment">You can also add data-attributes to html element with Javascript.</p>
+            <ul>
+              <li class="fragment code">
+                <code>Element.setAttribute('name-of-attribute', 'value to set')</code>
+              </li>
+            </ul>
+          </section>
+        </section>
+
+        <!-- Event Listeners  -->
+        <section>
+          <h2>Events</h2>
+          <p>When a user clicks on a button, that's an event. We need to register when these events happen. We do it with Event listeners. You can add them to any element in the DOM.</p>
+          <ul>
+            <li class="fragment code">
+              <code>Element.addEventListener('event-name', function () { <br>
+
+              })</code>
+            </li>
+            <li class="fragment">the <code>"event-name"</code> is the name of the event you want to listen to. (click, scroll, etc) <a href="https://developer.mozilla.org/en-US/docs/Web/Events">Ecent Reference List.</a></li>
+            <li class="fragment">The function is the code you want to execute when the event happens.</li>
+            <li class="fragment">You can check if an event exists by looking at the inspector. It should have an "event" label in Firefox and it displays the function on Chrome when clicked (Use $0 on the console).</li>
+          </ul>
         </section>
       </div>
     </div>
