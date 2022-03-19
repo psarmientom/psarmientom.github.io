@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Front End Fundamentals | Javascript Libraries and Frameworks</title>
+
+    <meta
+      name="description"
+      content="Advanced CSS, Responsive Images, Transitions, Frameworks"
+    />
+    <meta name="author" content="Patricia Sarmiento" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/92123ffbf2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/simple.css" id="theme" />
+    <link rel="stylesheet" href="dist/custom.css" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+
+  <body>
+    <div class="reveal">
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <!-- Libraries and Frameworks -->
+        <section>
+          <section>
+            <h2>Libraries and Frameworks</h2>
+            <div>
+              <p>
+                Both are pre-written resusable code you can use in your
+                projects.
+              </p>
+            </div>
+            <div class="columns">
+              <div>
+                <h3>Libraries</h3>
+                <ul>
+                  <li class="fragment">
+                    A library is a collection of functions or operations that
+                    solve a specific problem.
+                  </li>
+                  <li class="fragment">
+                    You can decide where to use a library in your project and
+                    which elements to use.
+                  </li>
+                  <li class="fragment">
+                    The whole estructure of your site does not depend on the
+                    library.
+                  </li>
+                  <li class="fragment">
+                    You can use libraries with frameworks.
+                  </li>
+                  <li class="fragment">
+                    Examples of javascript libraries are
+                    <ul>
+                      <li><a href="https://jquery.com/">JQuery</a></li>
+                      <li class="fragment">
+                        <a href="https://reactjs.org/">React.</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3>Frameworks</h3>
+                <ul>
+                  <li class="fragment">
+                    A Framework is a structure in which you base your project.
+                  </li>
+                  <li class="fragment">
+                    You cannot decide where to use it. It is present all across
+                    your project.
+                  </li>
+                  <li class="fragment">
+                    Your projects depends on the Framework and you have a
+                    limited set op options.
+                  </li>
+                  <li class="fragment">
+                    Examples of javascript Frameworks are:
+                    <ul>
+                      <li><a href="https://angularjs.org/">Angular JS</a></li>
+                      <li><a href="https://emberjs.com/">Ember JS</a></li>
+                      <li><a href="https://vuejs.org/">Vue JS</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h3>Should I use a library or a Framework?</h3>
+            <ul>
+              <li class="fragment">
+                Both libraries and frameworks require an understanding of
+                Javascript.
+              </li>
+              <li class="fragment">
+                Frameworks require a deeper understanding of Javascript.
+              </li>
+              <li class="fragment">
+                Start with a library first. When you're comfortable with it you
+                can move to a framework.
+              </li>
+            </ul>
+          </section>
+        </section>
+
+        <!-- JQuery -->
+        <section>
+          <section>
+            <h3>Jquery (Write less, do more.)</h3>
+            <img src="images/legos.jpg" alt="Images of legos" />
+          </section>
+        </section>
+
+        <!-- querySelector -->
+
+        <!-- Arrays  -->
+        <section>
+          <section>
+            <h2>Arrays</h2>
+            <p>
+              Arrays are a little like variables, they hold content. The
+              difference is that a variable holds one element, an Array holds a
+              list of elements.
+            </p>
+            <ul>
+              <li class="fragment">
+                An array is created by using <code>[]</code> and separating the
+                elements with commas.
+              </li>
+              <li class="fragment">
+                <code>const myArray = [item1, item2, item2]</code>
+              </li>
+              <li class="fragment">
+                Arrays can contain any type of data: strings, numbers, objects,
+                functions and even other arrays.
+              </li>
+              <li class="fragment">
+                If the array is short, it can be on one line, if it gets too
+                long it can go in different lines.
+              </li>
+              <li class="fragment">
+                Javascript arrays are <b>zero-based indexes</b> because the
+                count starts at 0.
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h3>Array Methods</h3>
+            <p>
+              Arrays are great to give us list of things. But in order to
+              interact with them we need to know its position in the array. We
+              also need to be able to add/delete elements to the array.
+            </p>
+            <ul>
+              <li class="fragment">
+                <code>indexOf</code> gets you the position of an element in the
+                array. I can only be used with primitives.
+              </li>
+              <li class="fragment">
+                <code>findIndex</code> works the same as indexOf but for
+                abjects, arrays or functions. It works differently than indexOf
+                because it executes a function for every array element.
+              </li>
+              <li class="fragment">
+                <code>unshift</code> adds elements to the beginning of the
+                array.
+              </li>
+              <li class="fragment">
+                <code>push</code> adds elements to the end of the array.
+              </li>
+              <li class="fragment">
+                <code>shift</code> lets you remove an element from the start.
+              </li>
+              <li class="fragment">
+                <code>pop</code> lets you remove an item from the end.
+              </li>
+              <li class="fragment">
+                <code>splice</code> lets you add/remove elements anywhere in the
+                array and you can do it more than one item at a time.
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h3>Splice</h3>
+            <p>
+              <code
+                >const deletedItems = array.splice(index, deleteCount,
+                itemsToAdd)</code
+              >
+            </p>
+            <ul>
+              <li class="fragment">
+                <code>index</code> is the position of the element where you want
+                to start.
+              </li>
+              <li class="fragment">
+                <code>deleteCount</code> is the number of items you want to
+                delete. It can be 0 if you jusr want to add.
+              </li>
+              <li class="fragment">
+                <code>itemsToAdd</code> items you want to add.
+              </li>
+              <li class="fragment">
+                You can use splice to add or delete elements at the start or
+                end, but it's easier to use unshift and push.
+              </li>
+              <li class="fragment">
+                <code>slice</code> Not to be confused with
+                <code>splice</code> lets you create a copy of an array.
+              </li>
+            </ul>
+          </section>
+        </section>
+        <!-- Loops  -->
+        <section>
+          <section>
+            <h2>Loops</h2>
+            <p>JavaScript loops are used to create repetitive tasks.</p>
+            <ul>
+              <li>
+                Loops validate a particular value against a test condition and
+                execute a statement for a set amount of times.
+              </li>
+              <li class="fragment">
+                There are different loop types in Javascript:
+                <ul class="fragment">
+                  <li>For Loops</li>
+                  <li>While loops</li>
+                  <li>Do-while loops</li>
+                  <li>For-in loops</li>
+                  <li>Break statements</li>
+                  <li>Continue statement</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h3>For Loops</h3>
+            <p>A for loop runs a block of code a number of specified times.</p>
+            <ul>
+              <li class="fragment code">
+                <code
+                  >for (initialExpression; condition; incrementExpression) {
+                  <br />
+                  statement <br />
+                  }</code
+                >
+              </li>
+              <li class="fragment">
+                The initialExpression is the initial condition. In most cases is
+                called i and is equal to 0. <code>let i = 0</code>
+              </li>
+              <li class="fragment">
+                The incrementExpression increments the value until the condition
+                is met.
+              </li>
+              <li class="fragment">
+                The condition is determines the maximum amount of times the
+                statement has to run.
+              </li>
+              <li class="fragment">
+                The statement is the code you want to run multiple times
+                <b>if the condition is true.</b>
+              </li>
+              <li class="fragment">
+                If the condition is <b>false</b> the loop is skipped.
+              </li>
+              <li class="fragment">
+                <code>for (let i = 0; i < 10; i++)</code>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h3>Infinite loops</h3>
+            <ul>
+              <l1
+                >There are some occasions in which the condition of the loop
+                will always evaluate as true.</l1
+              >
+              <li class="fragment code">
+                <code
+                  >for (let i = 0; i < 1; i--) { <br />
+                  console.log('I'll run forever') <br />
+                  }
+                </code>
+              </li>
+              <li class="fragment">
+                To end an infinite loop you have to close the browser. There is
+                no way to stop it.
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h3>Using Conditionals in loops</h3>
+            <p>
+              Most of the time you will be writing loops to get elements inside
+              an array. You can use any form of conditionals inside a loop.
+            </p>
+            <ul>
+              <li class="fragment code">
+                <code>
+                  const dollarBills = [1, 5, 20, 50, 100, 500, 1000, 2000];
+                  <br />
+                  for (let i = 0; i < dollarBillsbr.length; i++) { <br />
+                  const num = dollarBills[i] <br />
+                  if (num < 101) { <br />
+                  console.log(num + ' is a valid dollar bill!') <br />
+                  } <br />
+                  } <br />
+                </code>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h3>The for-of loop</h3>
+            <p>
+              This is a loop introduced with ES6. It is better than a for loop
+              because it is easier to read and maintain.
+            </p>
+            <ul class="">
+              <li class="fragment code">
+                <code>
+                  for (let bill of dollarBills) { <br />
+                  if (bill < 101) {<br />
+                  console.log(bill + ' is a valid dollar bill!')<br />
+                  }<br />
+                  else{<br />
+                  console.log(bill + ' is NOT a valid dollar bill!')<br />
+                  }<br />
+                  }<br />
+                </code>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h3>The foreach loop</h3>
+            <p>
+              All arrays contain a forEach method that helps you loop through
+              every item.
+            </p>
+            <ul>
+              <li class="fragment code">
+                <code>
+                  dollarBills.forEach(function(bill){ <br />
+                  if (bill < 101) { <br />
+                  console.log(bill + ' is a valid dollar bill!') <br />
+                  } <br />
+                  else{ <br />
+                  console.log(bill + ' is NOT a valid dollar bill!') <br />
+                  } <br />
+                  }) <br />
+                </code>
+              </li>
+              <li class="fragment">
+                <code>for of</code> and <code>foreach</code> are better to use
+                than the regular for loop.
+              </li>
+            </ul>
+          </section>
+        </section>
+        <!-- Changing CSS  -->
+        <section>
+          <section>
+            <h2>Javascript and CSS</h2>
+            <p>
+              You can change any css property on an element with Javascript.
+              There are different ways to do it.
+            </p>
+            <h4 class="fragment">The style property</h4>
+            <ul>
+              <li class="fragment">
+                You can change any value with the following statement:
+              </li>
+              <li class="fragment">
+                <code>Element.style.cssProperty = propertyValue</code>
+              </li>
+              <li class="fragment">
+                You can use any css property but it it has to words, it needs to
+                be written in CamelCase.
+              </li>
+              <li class="fragment">
+                <code> element.style.fontSize = "2rem" </code>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h4>the setProperty</h4>
+            <p class="fragment">
+              This method takes 2 values. The property and the value, and it can
+              be used to create custom properties (--myColor)
+            </p>
+            <ul>
+              <li class="fragment code">
+                <code>element.style.setProperty('color', 'red') </code>
+              </li>
+            </ul>
+            <br />
+            <h4 class="fragment">The setAttribute</h4>
+            <p class="fragment">
+              You can also add data-attributes to html element with Javascript.
+            </p>
+            <ul>
+              <li class="fragment code">
+                <code
+                  >Element.setAttribute('name-of-attribute', 'value to
+                  set')</code
+                >
+              </li>
+            </ul>
+          </section>
+        </section>
+
+        <!-- Event Listeners  -->
+        <section>
+          <h2>Events</h2>
+          <p>
+            When a user clicks on a button, that's an event. We need to register
+            when these events happen. We do it with Event listeners. You can add
+            them to any element in the DOM.
+          </p>
+          <ul>
+            <li class="fragment code">
+              <code
+                >Element.addEventListener('event-name', function () { <br />
+
+                })</code
+              >
+            </li>
+            <li class="fragment">
+              the <code>"event-name"</code> is the name of the event you want to
+              listen to. (click, scroll, etc)
+              <a href="https://developer.mozilla.org/en-US/docs/Web/Events"
+                >Ecent Reference List.</a
+              >
+            </li>
+            <li class="fragment">
+              The function is the code you want to execute when the event
+              happens.
+            </li>
+            <li class="fragment">
+              You can check if an event exists by looking at the inspector. It
+              should have an "event" label in Firefox and it displays the
+              function on Chrome when clicked (Use $0 on the console).
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script>
+      Reveal.initialize({ hash: true });
+
+      const loadScript = (src) => {
+        return new Promise((resolve, reject) => {
+          const script = document.createElement("script");
+          script.type = "text/javascript";
+          script.onload = resolve;
+          script.onerror = reject;
+          script.src = src;
+          document.head.append(script);
+        });
+      };
+
+      loadScript("plugin/highlight/highlight.js").then(() => {
+        Reveal.registerPlugin(RevealHighlight);
+      });
+    </script>
+  </body>
+</html>

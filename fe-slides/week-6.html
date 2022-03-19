@@ -29,6 +29,7 @@
 
     <!-- Theme used for syntax highlighting of code -->
     <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+    <script src="js/slides.js" defer></script>
   </head>
 
   <body>
@@ -404,19 +405,68 @@
 
         <!-- Event Listeners  -->
         <section>
-          <h2>Events</h2>
-          <p>When a user clicks on a button, that's an event. We need to register when these events happen. We do it with Event listeners. You can add them to any element in the DOM.</p>
-          <ul>
-            <li class="fragment code">
-              <code>Element.addEventListener('event-name', function () { <br>
-
-              })</code>
-            </li>
-            <li class="fragment">the <code>"event-name"</code> is the name of the event you want to listen to. (click, scroll, etc) <a href="https://developer.mozilla.org/en-US/docs/Web/Events">Ecent Reference List.</a></li>
-            <li class="fragment">The function is the code you want to execute when the event happens.</li>
-            <li class="fragment">You can check if an event exists by looking at the inspector. It should have an "event" label in Firefox and it displays the function on Chrome when clicked (Use $0 on the console).</li>
-          </ul>
+          <section>
+            <h2>Events</h2>
+            <p>When a user clicks on a button, that's an event. We need to register when these events happen. We do it with Event listeners. You can add them to any element in the DOM.</p>
+            <ul>
+              <li class="fragment code">
+                <code>Element.addEventListener('event-name', function () { <br>
+  
+                })</code>
+              </li>
+              <li class="fragment">the <code>"event-name"</code> is the name of the event you want to listen to. (click, scroll, etc) <a href="https://developer.mozilla.org/en-US/docs/Web/Events">Ecent Reference List.</a></li>
+              <li class="fragment">The function is the code you want to execute when the event happens.</li>
+              <li class="fragment">You can check if an event exists by looking at the inspector. It should have an "event" label in Firefox and it displays the function on Chrome when clicked (Use $0 on the console).</li>
+            </ul>
+          </section>
+          <section>
+            <!-- Slide Panel  -->
+            <div class="offsite-container">
+              <nav class="nav">
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Work</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+        
+            <div class="site-container">
+              <h2>Javascript Exercises</h2>
+            <h3>Slide Panel</h3>
+              <!-- <h4>Open the sidebar!</h4> -->
+              <button>
+                <span>Open the sidebar</span>
+              </button>
+            </div>
+        
+            <!-- End Slide Panel -->
+          </section>
+          <section>
+            <h3>Modal</h3>
+            <button class="button jsModalButton">Click me!</button>
+            <div class="modal-overlay jsModalOverlay">
+              <div class="modal">
+                <div class="modal__content">
+                  <h2>This is a modal</h2>
+                  <p>I can hold any kind of content</p>
+                  <button class="modal__close-button jsModalClose">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+        
+          </section>
+          <section class="colorWrapper">
+            <div class="">
+              <h3>Random colors</h3>
+              <button class="changeColor">I'm bored of white :(</button>    
+            </div>
+          </section>
         </section>
+
       </div>
     </div>
 
