@@ -307,7 +307,7 @@
           <section>
             <h3>JQuery Events</h3>
             <div class="columns">
-              <div class="col-3 margin-r fragment">
+              <div class="col-2 margin-r fragment">
                 <h4 class="acqua">.click()</h4>
                 <p>Performs an action when clicked.</p>
                 <div class="code">
@@ -316,7 +316,7 @@
                 </div>
                 <p>Looks for the id on the html and add the interaction.</p>
               </div>
-              <div class="col-3 margin-r fragment">
+              <div class="col-2 margin-r fragment">
                 <h4 class="acqua">.dblclick()</h4>
                 <p>Performs an action when double clicked.</p>
                 <div class="code">
@@ -325,7 +325,9 @@
                     });</code>
                 </div>
               </div>
-              <div class="col-3 fragment">
+              </div>
+              <div class="columns">
+              <div class="col-2 fragment margin-r">
                 <h4 class="acqua">.mouseenter()</h4>
                 <p>Performs an action when The mouse enters the area of the selector.</p>
                 <div class="code">
@@ -335,9 +337,18 @@
                 </div>
                 <p>Looks for the id on the html and add the interaction.</p>
               </div>
+              <div class="col-2 fragment">
+                <h4 class="acqua">.mouseleave()</h4>
+                <p>Performs an action when The mouse enters the area of the selector.</p>
+                <div class="code">
+                <code>$("#target").mouseleave(function() <br>{
+                    $("p").show();
+                    });</code>
+                </div>
+              </div>
             </div>
           </section>
-          <section>
+          <!-- <section>
             <div class="columns">
               <div class="col-2 margin-r">
                 <h4 class="acqua">.mouseleave()</h4>
@@ -362,7 +373,7 @@
                 </div>
               </div>
             </div>
-          </section>
+          </section> -->
           <section>
             <h3>The on() method</h3>
             <p>Allows you to attach more than one event handler to an element.
