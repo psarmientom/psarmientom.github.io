@@ -14,6 +14,9 @@ a:link {
 .col-2 {
   width: 50%;
 }
+h4.acqua {
+  color: rgb(4, 118, 138);
+}
 /* a:hover, .reveal a:hover{
     color:chocolate;
 } */
@@ -22,6 +25,9 @@ code,
   color: #efefef;
   background: black;
   padding: 0 1rem;
+}
+.margin-r {
+  margin-right: 1rem;
 }
 .code span {
   color: tomato;

@@ -124,341 +124,330 @@
           <section>
             <h3>Jquery (Write less, do more.)</h3>
             <img src="images/legos.jpg" alt="Images of legos" />
-          </section>
-        </section>
-
-        <!-- querySelector -->
-
-        <!-- Arrays  -->
-        <section>
-          <section>
-            <h2>Arrays</h2>
-            <p>
-              Arrays are a little like variables, they hold content. The
-              difference is that a variable holds one element, an Array holds a
-              list of elements.
-            </p>
             <ul>
               <li class="fragment">
-                An array is created by using <code>[]</code> and separating the
-                elements with commas.
+                JQuery is a Javascript Library based on the JavaScript language.
               </li>
               <li class="fragment">
-                <code>const myArray = [item1, item2, item2]</code>
+                It was the first widely used JavaScriot library.
               </li>
               <li class="fragment">
-                Arrays can contain any type of data: strings, numbers, objects,
-                functions and even other arrays.
-              </li>
-              <li class="fragment">
-                If the array is short, it can be on one line, if it gets too
-                long it can go in different lines.
-              </li>
-              <li class="fragment">
-                Javascript arrays are <b>zero-based indexes</b> because the
-                count starts at 0.
+                Even though it's losing popularity, there are still many
+                websites and applications that depend on JQuery.
               </li>
             </ul>
           </section>
           <section>
-            <h3>Array Methods</h3>
-            <p>
-              Arrays are great to give us list of things. But in order to
-              interact with them we need to know its position in the array. We
-              also need to be able to add/delete elements to the array.
-            </p>
-            <ul>
-              <li class="fragment">
-                <code>indexOf</code> gets you the position of an element in the
-                array. I can only be used with primitives.
-              </li>
-              <li class="fragment">
-                <code>findIndex</code> works the same as indexOf but for
-                abjects, arrays or functions. It works differently than indexOf
-                because it executes a function for every array element.
-              </li>
-              <li class="fragment">
-                <code>unshift</code> adds elements to the beginning of the
-                array.
-              </li>
-              <li class="fragment">
-                <code>push</code> adds elements to the end of the array.
-              </li>
-              <li class="fragment">
-                <code>shift</code> lets you remove an element from the start.
-              </li>
-              <li class="fragment">
-                <code>pop</code> lets you remove an item from the end.
-              </li>
-              <li class="fragment">
-                <code>splice</code> lets you add/remove elements anywhere in the
-                array and you can do it more than one item at a time.
-              </li>
-            </ul>
-          </section>
-          <section>
-            <h3>Splice</h3>
-            <p>
-              <code
-                >const deletedItems = array.splice(index, deleteCount,
-                itemsToAdd)</code
-              >
-            </p>
-            <ul>
-              <li class="fragment">
-                <code>index</code> is the position of the element where you want
-                to start.
-              </li>
-              <li class="fragment">
-                <code>deleteCount</code> is the number of items you want to
-                delete. It can be 0 if you jusr want to add.
-              </li>
-              <li class="fragment">
-                <code>itemsToAdd</code> items you want to add.
-              </li>
-              <li class="fragment">
-                You can use splice to add or delete elements at the start or
-                end, but it's easier to use unshift and push.
-              </li>
-              <li class="fragment">
-                <code>slice</code> Not to be confused with
-                <code>splice</code> lets you create a copy of an array.
-              </li>
-            </ul>
-          </section>
-        </section>
-        <!-- Loops  -->
-        <section>
-          <section>
-            <h2>Loops</h2>
-            <p>JavaScript loops are used to create repetitive tasks.</p>
-            <ul>
-              <li>
-                Loops validate a particular value against a test condition and
-                execute a statement for a set amount of times.
-              </li>
-              <li class="fragment">
-                There are different loop types in Javascript:
-                <ul class="fragment">
-                  <li>For Loops</li>
-                  <li>While loops</li>
-                  <li>Do-while loops</li>
-                  <li>For-in loops</li>
-                  <li>Break statements</li>
-                  <li>Continue statement</li>
+            <h3>Why do we use JQuery?</h3>
+            <div class="columns">
+              <div class="col-2">
+                <ul>
+                  <li class="fragment">
+                    JQuery has been around since 2006 (JS was released in 1995).
+                  </li>
+                  <li class="fragment">
+                    It was created to solve a browser compatibility problem with
+                    JavaScript.
+                  </li>
+                  <li class="fragment">
+                    It made it a lot easier to interact with the DOM.
+                  </li>
+                  <li class="fragment">
+                    It let you add complex functionality to your website without
+                    having to write full javascript.
+                  </li>
+                  <li class="fragment">
+                    It's open source, so anyone can add to it.
+                  </li>
+                  <li class="fragment">It has an extensive plug-in library.</li>
                 </ul>
-              </li>
-            </ul>
+              </div>
+              <div class="col-2">
+                <p class="fragment">The jQuery library contains the following features:</p>
+                <ul class="fragment">
+                  <li>HTML/DOM manipulation.</li>
+                  <li>CSS manipulation.</li>
+                  <li>HTML event methods.</li>
+                  <li>Effects and animations.</li>
+                  <li>AJAX (Asynchronous JavaScript And XML).</li>
+                  <li>Utilities.</li>
+                  <li>Lots of Plugins.</li>
+                </li>
+                </ul>
+              </div>
+            </div>
           </section>
           <section>
-            <h3>For Loops</h3>
-            <p>A for loop runs a block of code a number of specified times.</p>
-            <ul>
-              <li class="fragment code">
-                <code
-                  >for (initialExpression; condition; incrementExpression) {
-                  <br />
-                  statement <br />
-                  }</code
-                >
-              </li>
-              <li class="fragment">
-                The initialExpression is the initial condition. In most cases is
-                called i and is equal to 0. <code>let i = 0</code>
-              </li>
-              <li class="fragment">
-                The incrementExpression increments the value until the condition
-                is met.
-              </li>
-              <li class="fragment">
-                The condition is determines the maximum amount of times the
-                statement has to run.
-              </li>
-              <li class="fragment">
-                The statement is the code you want to run multiple times
-                <b>if the condition is true.</b>
-              </li>
-              <li class="fragment">
-                If the condition is <b>false</b> the loop is skipped.
-              </li>
-              <li class="fragment">
-                <code>for (let i = 0; i < 10; i++)</code>
-              </li>
-            </ul>
+            <h3>How do I add JQuery to my website?</h3>
+            <div class="columns">
+              <div class="col-2 fragment">
+                <h4>Local Installation</h4>
+                <p><a href="https://jquery.com/download/">Download</a> the JQuery file and add it to the js folder in your project.</p>
+                <img src="images/js-folder.png" alt="javascript folder structure">
+              </div>
+              <div class="col-2 fragment">
+                <h4>CDN based version</h4>
+                <p>nclude a link to the file in their Content Delivery Network (CDN).</p>
+                <img src="images/jquery-cdn.png" alt="html structure with jquery link">
+              </div>
+            </div>
           </section>
           <section>
-            <h3>Infinite loops</h3>
-            <ul>
-              <l1
-                >There are some occasions in which the condition of the loop
-                will always evaluate as true.</l1
-              >
-              <li class="fragment code">
-                <code
-                  >for (let i = 0; i < 1; i--) { <br />
-                  console.log('I'll run forever') <br />
-                  }
-                </code>
-              </li>
-              <li class="fragment">
-                To end an infinite loop you have to close the browser. There is
-                no way to stop it.
-              </li>
-            </ul>
-          </section>
-          <section>
-            <h3>Using Conditionals in loops</h3>
-            <p>
-              Most of the time you will be writing loops to get elements inside
-              an array. You can use any form of conditionals inside a loop.
-            </p>
-            <ul>
-              <li class="fragment code">
+            <h3>Parts of a JQuery script</h3>
+            <div class="columns">
+              <div class="col-2 code fragment">
                 <code>
-                  const dollarBills = [1, 5, 20, 50, 100, 500, 1000, 2000];
-                  <br />
-                  for (let i = 0; i < dollarBillsbr.length; i++) { <br />
-                  const num = dollarBills[i] <br />
-                  if (num < 101) { <br />
-                  console.log(num + ' is a valid dollar bill!') <br />
-                  } <br />
-                  } <br />
-                </code>
-              </li>
-            </ul>
+                  <br>
+                  &lt;script> <br>
+                  $(document).ready(function(){ <br>
+                  $(".myClass").html("This is a JQuery text"); <br>
+                  }); <br>
+                  &lt;/script>
+                  </code>
+              </div>
+              <div class="col-2 fragment">
+                <ul>
+                  <li><code>&lt;script></code> (Opening Tag)</li>
+                  <li><code>$(document).ready(function(){</code> (Tells the script not to run until the document has finished loading).</li>
+                  <li><code>document</code> targets the current document.</li>
+                  <li><code>$</code> to access JQuery.</li>
+                  <li><code>(selector)</code> Finds and selects the element in the HTML.</li>
+                  <li><code>.action()</code> the type of action we want to perform (Here we add what's being changed).</li>
+                </ul>
+              </div>
+            </div>
           </section>
           <section>
-            <h3>The for-of loop</h3>
-            <p>
-              This is a loop introduced with ES6. It is better than a for loop
-              because it is easier to read and maintain.
-            </p>
-            <ul class="">
-              <li class="fragment code">
-                <code>
-                  for (let bill of dollarBills) { <br />
-                  if (bill < 101) {<br />
-                  console.log(bill + ' is a valid dollar bill!')<br />
-                  }<br />
-                  else{<br />
-                  console.log(bill + ' is NOT a valid dollar bill!')<br />
-                  }<br />
-                  }<br />
-                </code>
-              </li>
-            </ul>
+            <h3>Basic JQuery Functions</h3>
+            <div class="columns">
+              <div class="col-3 margin-r fragment">
+                <h4 class="acqua">.css();</h4>
+                <p>Add a CSS property.</p>
+                <div class="code">
+                  <code>$(".box").css <br>("background-color", "blue"); <br>
+                    .css({"color":"blue", <br> "font-size":"30px"}); </code>
+                </div>
+                <p>Looks for the class .box on the html and adds a background color.</p>
+              </div>
+              <div class="col-3 margin-r fragment">
+                <h4 class="acqua">.addClass();</h4>
+                <p>Add a CSS class.</p>
+                <div class="code">
+                  <code>$("#myId").addClass( "yourClass" ); <br>
+                    $("#myId").addClass( "yourClass anotherClass" );</code>
+                </div>
+                <p>Looks for the id myId on the html and adds the css class.</p>
+              </div>
+              <div class="col-3 fragment">
+                <h4 class="acqua">.removeClass();</h4>
+                <p>Remove a CSS class.</p>
+                <div class="code">
+                  <code>$("#myId").removeClass ("yourClass"); <br>
+                    $("#myId").removeClass ("yourClass anotherClass"); </code>
+                </div>
+                <p>Looks for the id myId on the html and removes the css class.</p>
+              </div>
+            </div>
           </section>
           <section>
-            <h3>The foreach loop</h3>
-            <p>
-              All arrays contain a forEach method that helps you loop through
-              every item.
-            </p>
-            <ul>
-              <li class="fragment code">
-                <code>
-                  dollarBills.forEach(function(bill){ <br />
-                  if (bill < 101) { <br />
-                  console.log(bill + ' is a valid dollar bill!') <br />
-                  } <br />
-                  else{ <br />
-                  console.log(bill + ' is NOT a valid dollar bill!') <br />
-                  } <br />
-                  }) <br />
-                </code>
-              </li>
-              <li class="fragment">
-                <code>for of</code> and <code>foreach</code> are better to use
-                than the regular for loop.
-              </li>
-            </ul>
+            <div class="columns">
+              <div class="col-3 margin-r">
+                <h4 class="acqua">.html();</h4>
+                <p>Replaces the HTML Content.</p>
+                <div class="code">
+                  <code>$("#myId").html <br>("
+                    More information");</code>
+                </div>
+                <p>Looks for the id myId on the html and replaces the content.</p>
+              </div>
+              <div class="col-3 margin-r fragment">
+                <h4 class="acqua">Add Content</h4>
+                <p>Adds content at the beginning or end of an element.</p>
+                <div class="code">
+                  <code>$("p").prepend("This will go at the beginning"); <br>
+                    $("p").append("This will go at the end");</code>
+                </div>
+                <p>Adds content at the before or after an element.</p>
+                <div class="code">
+                  <code>$("p").before("This will go before"); <br>
+                    $("p").before("This will go after");</code>
+                </div>
+              </div>
+              <div class="col-3 fragment">
+                <h4 class="acqua">Remove Content</h4>
+                <p>Removes the element.</p>
+                <div class="code">
+                  <code>$(".element").remove();</code>
+                </div>
+                <p>Empties the content of the element without removing it.</p>
+                <div class="code">
+                  <code>$(".element").empty();</code>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="columns">
+              <div class="col-2 margin-r">
+                <h4 class="acqua">.width()</h4>
+                <p>Alters the width of an element.</p>
+                <div class="code">
+                  <code>$("#myDiv").width("100px");</code>
+                </div>
+              </div>
+              <div class="col-2 fragment">
+                <h4 class="acqua">.height()</h4>
+                <p>Alters the height of an element.</p>
+                <div class="code">
+                  <code>$("#myDiv").height("100px");</code>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h3>JQuery Events</h3>
+            <div class="columns">
+              <div class="col-3 margin-r fragment">
+                <h4 class="acqua">.click()</h4>
+                <p>Performs an action when clicked.</p>
+                <div class="code">
+                  <code>$( "#target" ).click(function() {
+                    $("p").hide(); });</code>
+                </div>
+                <p>Looks for the id on the html and add the interaction.</p>
+              </div>
+              <div class="col-3 margin-r fragment">
+                <h4 class="acqua">.dblclick()</h4>
+                <p>Performs an action when double clicked.</p>
+                <div class="code">
+                  <code>$("#target").dblclick (function(){ <br>
+                    $("p").hide();
+                    });</code>
+                </div>
+              </div>
+              <div class="col-3 fragment">
+                <h4 class="acqua">.mouseenter()</h4>
+                <p>Performs an action when The mouse enters the area of the selector.</p>
+                <div class="code">
+                  <code>$("#target").mouseenter (function(){
+                    $("p").hide();
+                    });</code>
+                </div>
+                <p>Looks for the id on the html and add the interaction.</p>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="columns">
+              <div class="col-2 margin-r">
+                <h4 class="acqua">.mouseleave()</h4>
+                <p>Performs an action when The mouse enters the area of the selector.</p>
+                <div class="code">
+                <code>$("#target").mouseleave(function() <br>{
+                    $("p").show();
+                    });</code>
+                </div>
+              </div>
+              <div class="col-2 fragment">
+                <h4 class="acqua">.hover()</h4>
+                <p>Performs an action when The mouse hovers over the area of the selector.</p>
+                <div class="code">
+                  <code>$("#target").hover(function(){
+                    $(this).css("color","red");
+                    },
+                    function(){
+                    $(this).css("color","black");
+                    });
+                    });</code>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h3>The on() method</h3>
+            <p>Allows you to attach more than one event handler to an element.
+              Specially usefull when you need to restore the element to a previous state after the event is over.</p>
+              <div class="code">
+                <code>$("p").on({
+                  mouseenter: function(){ <br>
+                  $(this).css("background-color", "lightgray");<br>
+                  },<br>
+                  mouseleave: function(){<br>
+                  $(this).css("background-color", "lightblue");<br>
+                  },<br>
+                  click: function(){<br>
+                  $(this).css("background-color", "yellow");<br>
+                  }<br>
+                  }); </code>
+              </div>
+          </section>
+          <section>
+            <h3>Basic Jquery Effects</h3>
+            <div class="columns">
+            <div class="col-3 margin-r fragment">
+              <h4 class="acqua">.show() .hide()</h4>
+              <p>Shows/Hides an element.</p>
+              <div class="code">
+                <code>$("#clickBox").show(); <br>
+                  $("#clickBox").hide();</code>
+              </div>
+              <p>Looks for the id myId on the html and shows or hides the element.</p>
+            </div>
+            <div class="col-3 margin-r fragment">
+              <h4 class="acqua">Slide</h4>
+              <p>Slides an element Up and Down.</p>
+              <div class="code">
+                <code>$( "#target" ).slideUp(speed, callback); <br>
+                  $( "#target" ).slideDown(speed, callback); <br>
+                  $( "#target" ).slideToggle(speed, callback);</code>
+              </div>
+              <p>Looks for the id myId on the html and shows or hides the element.</p>
+            </div>
+            <div class="col-3 fragment">
+              <h4 class="acqua">.fadeout() .fadein()</h4>
+              <p>Fades an element.</p>
+              <div class="code">
+                <code>$("#myDiv").fadeOut(1000); <br>
+                  $("#myDiv").fadeIn(1000); </code>
+              </div>
+              <p>Looks for the id myId on the html and fades it.</p>
+            </div>
+          </div>
+          </section>
+          <section>
+            <div class="columns">
+              <div class="col-2 margin-r">
+                <h4 class="acqua">.toggle()</h4>
+              <p>Toggles the action on the element.</p>
+              <div class="code">
+                <code>$("#toggleBox").toggle(1000); </code>
+              </div>
+              <p>Looks for the id myId on the html and toggles the element.</p>
+              </div>
+              <div class="col-2 fragment">
+                <h4 class="acqua">.animate()</h4>
+                <p>Allows you to create custom animations based on most css properties.</p>
+                <div class="code">
+                  <code>$("button").click(function(){ <br>
+                    $("div").animate({left: '250px', opacity: '0.5'}); <br>
+                    }); </code>
+                </div>
+                <p>For positioning animation, the element needs to have a position attribute. <br>
+                  When animating 2 word properties (padding-left) remove the hyphen and use camelCase instead: paddingLeft. </p>
+              </div>
+            </div>
           </section>
         </section>
-        <!-- Changing CSS  -->
+        <!-- More Libraries -->
         <section>
           <section>
-            <h2>Javascript and CSS</h2>
-            <p>
-              You can change any css property on an element with Javascript.
-              There are different ways to do it.
-            </p>
-            <h4 class="fragment">The style property</h4>
+            <h4>More Libraries</h4>
             <ul>
-              <li class="fragment">
-                You can change any value with the following statement:
-              </li>
-              <li class="fragment">
-                <code>Element.style.cssProperty = propertyValue</code>
-              </li>
-              <li class="fragment">
-                You can use any css property but it it has to words, it needs to
-                be written in CamelCase.
-              </li>
-              <li class="fragment">
-                <code> element.style.fontSize = "2rem" </code>
-              </li>
+              <li class="fragment"><a href="https://apexcharts.com/docs/installation/">Apexcharts</a> Data Visualization in Maps and  Charts.</li>
+              <li class="fragment"><a href="https://leafletjs.com/">Leaflet</a> Maps.</li>
+              <li class="fragment"><a href="https://reactjs.org/">React</a> For creating web applications and interfaces.</li>
             </ul>
           </section>
-          <section>
-            <h4>the setProperty</h4>
-            <p class="fragment">
-              This method takes 2 values. The property and the value, and it can
-              be used to create custom properties (--myColor)
-            </p>
-            <ul>
-              <li class="fragment code">
-                <code>element.style.setProperty('color', 'red') </code>
-              </li>
-            </ul>
-            <br />
-            <h4 class="fragment">The setAttribute</h4>
-            <p class="fragment">
-              You can also add data-attributes to html element with Javascript.
-            </p>
-            <ul>
-              <li class="fragment code">
-                <code
-                  >Element.setAttribute('name-of-attribute', 'value to
-                  set')</code
-                >
-              </li>
-            </ul>
-          </section>
-        </section>
-
-        <!-- Event Listeners  -->
-        <section>
-          <h2>Events</h2>
-          <p>
-            When a user clicks on a button, that's an event. We need to register
-            when these events happen. We do it with Event listeners. You can add
-            them to any element in the DOM.
-          </p>
-          <ul>
-            <li class="fragment code">
-              <code
-                >Element.addEventListener('event-name', function () { <br />
-
-                })</code
-              >
-            </li>
-            <li class="fragment">
-              the <code>"event-name"</code> is the name of the event you want to
-              listen to. (click, scroll, etc)
-              <a href="https://developer.mozilla.org/en-US/docs/Web/Events"
-                >Ecent Reference List.</a
-              >
-            </li>
-            <li class="fragment">
-              The function is the code you want to execute when the event
-              happens.
-            </li>
-            <li class="fragment">
-              You can check if an event exists by looking at the inspector. It
-              should have an "event" label in Firefox and it displays the
-              function on Chrome when clicked (Use $0 on the console).
-            </li>
-          </ul>
         </section>
       </div>
     </div>
