@@ -395,7 +395,7 @@
           <section>
             <h3>Basic Jquery Effects</h3>
             <div class="columns">
-            <div class="col-3 margin-r fragment">
+            <div class="col-2 margin-r fragment">
               <h4 class="acqua">.show() .hide()</h4>
               <p>Shows/Hides an element.</p>
               <div class="code">
@@ -404,7 +404,15 @@
               </div>
               <p>Looks for the id myId on the html and shows or hides the element.</p>
             </div>
-            <div class="col-3 margin-r fragment">
+            <!-- <div class="col-2 fragment">
+              <h4 class="acqua">.toggle()</h4>
+            <p>Toggles the action on the element.</p>
+            <div class="code">
+              <code>$("#toggleBox").toggle(1000); </code>
+            </div>
+            <p>Looks for the id myId on the html and toggles the element.</p>
+            </div> -->
+            <!-- <div class="col-3 margin-r fragment">
               <h4 class="acqua">Slide</h4>
               <p>Slides an element Up and Down.</p>
               <div class="code">
@@ -422,31 +430,8 @@
                   $("#myDiv").fadeIn(1000); </code>
               </div>
               <p>Looks for the id myId on the html and fades it.</p>
-            </div>
+            </div> -->
           </div>
-          </section>
-          <section>
-            <div class="columns">
-              <div class="col-2 margin-r">
-                <h4 class="acqua">.toggle()</h4>
-              <p>Toggles the action on the element.</p>
-              <div class="code">
-                <code>$("#toggleBox").toggle(1000); </code>
-              </div>
-              <p>Looks for the id myId on the html and toggles the element.</p>
-              </div>
-              <div class="col-2 fragment">
-                <h4 class="acqua">.animate()</h4>
-                <p>Allows you to create custom animations based on most css properties.</p>
-                <div class="code">
-                  <code>$("button").click(function(){ <br>
-                    $("div").animate({left: '250px', opacity: '0.5'}); <br>
-                    }); </code>
-                </div>
-                <p>For positioning animation, the element needs to have a position attribute. <br>
-                  When animating 2 word properties (padding-left) remove the hyphen and use camelCase instead: paddingLeft. </p>
-              </div>
-            </div>
           </section>
         </section>
         <!-- More Libraries -->
