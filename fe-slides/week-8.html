@@ -51,8 +51,8 @@
                     A site made up of HTML, CSS and JavaScript.
                   </li>
                   <li class="fragment">
-                    Each page content is created for that particular page, and
-                    it's part of the page structure.
+                    Each page is created and stored in the server and displays
+                    the content as is.
                   </li>
                 </ul>
               </div>
@@ -65,10 +65,29 @@
                   </li>
                   <li class="fragment">
                     The content is stored separately from the layout, and the
-                    page is dynamically created when requested.
+                    page is dynamically created upon requested.
                   </li>
                 </ul>
               </div>
+            </div>
+          </section>
+          <section>
+            <div>
+              <img
+                src="images/static-dynamic-sites.webp"
+                alt="static vs dynamic sites"
+              />
+            </div>
+          </section>
+          <section>
+            <div>
+              <img
+                src="images/stat-dynamic_1.jpg"
+                alt="static vs dynamic sites"
+              />
+              <cite
+                >https://chandulanethmal.github.io/programming/web/Static-Dynamic-Websites/</cite
+              >
             </div>
           </section>
           <section>
@@ -127,8 +146,27 @@
                 Because static site generators create webpages in advance,
                 webpages load slightly faster in users' browsers.
               </li>
+              <li class="fragment">
+                In other words, the static site generator takes content and
+                turns it into flat HTML files ready to de displayed.
+              </li>
               <li class="fragment">They are very lightweight.</li>
+              <li class="fragment">
+                SSG are a step between static and dynamic sites.
+              </li>
             </ul>
+          </section>
+          <section>
+            <div>
+              <img
+                src="images/ssg-host-flow.png"
+                alt="static site generator process"
+                width="900"
+              />
+              <cite
+                >https://www.netlify.com/blog/2020/04/14/what-is-a-static-site-generator-and-3-ways-to-find-the-best-one/</cite
+              >
+            </div>
           </section>
           <section>
             <h3>Jekyll</h3>
@@ -137,7 +175,201 @@
                 Jekyll is a static site generator created in the Ruby language
                 and distributed by Github.
               </li>
+              <li class="fragment">It was created as a blogging platform.</li>
+              <li class="fragment">
+                It integrates with Github Pages which provides a free hosting
+                option. (for a personal or a project site. Not a commercial
+                one).
+              </li>
+              <li class="fragment">
+                You can install Jekyll locally or directly on GitHub.
+              </li>
+              <li class="fragment">
+                If Installing locally, you need to install / update Ruby.
+              </li>
             </ul>
+          </section>
+          <section>
+            <h3>Working with Jekyll</h3>
+            <div class="columns">
+              <div class="col-2">
+                <h4>Things you need to know:</h4>
+                <ul>
+                  <li class="fragment">
+                    You can use <b>HTML</b> to create your content.
+                  </li>
+                  <li class="fragment">
+                    You can also use <b>Markdown</b>, which is a light markdown
+                    language used in plaintext files.
+                  </li>
+                  <li class="fragment">
+                    Markdown files will be converted to <b>HTML</b>.
+                  </li>
+                  <li class="fragment">
+                    The template language is <b>Liquid</b>.
+                  </li>
+                  <li class="fragment">
+                    <b>Front Matter</b> is metadata you add on top of the page
+                    that tells Jekyll how to parse the page.
+                  </li>
+                </ul>
+              </div>
+              <div class="col-2">
+                <h4>Setting up your first site</h4>
+                <ol>
+                  <li class="fragment">Create a New repository on Github.</li>
+                  <li class="fragment">Add a <b>Readme.md</b> file</li>
+                  <li class="fragment">Go to <b>Settings/Pages</b></li>
+                  <li class="fragment">
+                    On the <b>Theme Chooser</b> Select a theme.
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h3>What is Markdown?</h3>
+            <ul>
+              <li class="fragment">
+                Created in 2004, MD is a lightweight markup language to format
+                elements in plain text documents.
+              </li>
+              <li class="fragment">
+                Markdown can be used for anything. Websites, documents, email
+                messages etc.
+              </li>
+              <li class="fragment">
+                Is portable. Markdown files can be opened using any application.
+              </li>
+              <li class="fragment">
+                MD is platform independent, so it runs in any Operating system.
+              </li>
+              <li class="fragment">
+                MD is used by many applications. Reddit and Github support it.
+              </li>
+              <li class="fragment">
+                Markdown files have an extension <code>.md</code> or
+                <code>.markdown</code>
+              </li>
+              <li class="fragment">
+                Text written in MD is converted into HTML that is capable of
+                "parse" or process the md file.
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h3>Using Markdown</h3>
+            <div class="columns">
+              <div class="col-2">
+                <h4 class="fragment">Headings</h4>
+                <ul>
+                  <li class="fragment"><code># This is an h1</code></li>
+                  <li class="fragment"><code>###### This is an h6</code></li>
+                </ul>
+                <h4 class="fragment">Text Styles</h4>
+                <ul>
+                  <li class="fragment">
+                    <code>*Italics*</code> and <code>_italics_</code>
+                  </li>
+                  <li class="fragment">
+                    <code>**bold**</code> and <code>__bold__</code>
+                  </li>
+                  <li class="fragment">
+                    <code>***bold and italic***</code> and
+                    <code>**_bold and italic_**</code> and
+                    <code>*_bod and italic_*</code>
+                  </li>
+                  <li class="fragment"><code>~~strikethrough~~</code></li>
+                </ul>
+              </div>
+              <div class="col-2">
+                <h4 class="fragment">Paragraphs</h4>
+                <ul>
+                  <li class="fragment">
+                    Use one or multiple blank lines to create a new paragraph.
+                  </li>
+                </ul>
+                <h4 class="fragment">Blockquotes</h4>
+                <ul>
+                  <li class="fragment">
+                    <code>> This is a blockquote</code>
+                  </li>
+                </ul>
+                <h4 class="fragment">Lists</h4>
+                <ul>
+                  <li class="fragment">
+                    <code>* Item 1</code> <br />
+                    <code>* Item 2</code> You can also use <code>+</code> or
+                    <code>-</code>
+                  </li>
+                  <li class="fragment">
+                    <code>1. Item 1</code> <br />
+                    <code>2. Item 2</code>
+                  </li>
+                </ul>
+                <h4 class="fragment">Horizontal Lines</h4>
+                <ul>
+                  <li class="fragment"><code>***</code> or <code>---</code></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h3>Jekyll File Structure</h3>
+            <div>
+              <img src="images/jekyll-structure.png" alt="" />
+            </div>
+          </section>
+          <section>
+            <div class="columns">
+              <div class="col-2">
+                <h4>_config.yml</h4>
+                <ul class="fragment">
+                  <li>This is the configuration file.</li>
+                  <li>Used to set variables used on the site.</li>
+                </ul>
+                <h4 class="fragment">_posts</h4>
+                <ul class="fragment">
+                  <li>
+                    Where you create the blog posts if you are creating a blog
+                    site.
+                  </li>
+                </ul>
+                <h4 class="fragment">_includes</h4>
+                <ul class="fragment">
+                  <li>
+                    Used to store reusable snippets of code that can be
+                    displayed anywhere on the site.
+                  </li>
+                  <li>Jekyll refers to these files as partials.</li>
+                </ul>
+                <h4 class="fragment">_site</h4>
+                <ul class="fragment">
+                  <li>Holds the generated HTML files of the site.</li>
+                  <li>In Github local projects it might not be present.</li>
+                </ul>
+              </div>
+              <div class="col-2">
+                <h4 class="fragment">_layouts</h4>
+                <ul class="fragment">
+                  This is where you store the template layouts or override an
+                  external layout.
+                </ul>
+                <h4 class="fragment">_sass</h4>
+                <ul class="fragment">
+                  <li>
+                    This is where you will store all the syle files. Sass and
+                    css.
+                  </li>
+                </ul>
+                <h4 class="fragment">Jekyll Pages</h4>
+                <ul class="fragment">
+                  <li></li>
+                </ul>
+              </div>
+            </div>
           </section>
         </section>
       </div>

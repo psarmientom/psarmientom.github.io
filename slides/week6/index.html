@@ -1,11 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- CLEAN MARKUP = GOOD KARMA.
+    <!-- CLEAN MARKUP = GOOD KARMA.
       Hi source code lover,
 
       you're a curious person and a fast learner ;)
@@ -16,259 +15,406 @@
       @jlantunez.
     -->
 
-  <!-- SEO -->
-  <title>CSS Layout</title>
-  <meta name="description" content="Introduction to HTML concepts">
+    <!-- SEO -->
+    <title>CSS Layout</title>
+    <meta name="description" content="Introduction to HTML concepts" />
 
-  <!-- URL CANONICAL -->
-  <!-- <link rel="canonical" href="http://your-url.com/"> -->
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/"> -->
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/92123ffbf2.js" crossorigin="anonymous"></script>
-  <!-- CSS WebSlides -->
-  <link rel="stylesheet" type='text/css' media='all' href="../static/css/webslides.css">
-  <link rel="stylesheet" type='text/css' media='all' href="../static/css/custom.css">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/92123ffbf2.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS WebSlides -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="../static/css/webslides.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="../static/css/custom.css"
+    />
 
-  <!-- Optional - CSS SVG Icons (Font Awesome) -->
-  <link rel="stylesheet" type='text/css' media='all' href="../static/css/svg-icons.css">
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="../static/css/svg-icons.css"
+    />
 
-  <!-- SOCIAL CARDS (ADD YOUR INFO) -->
+    <!-- SOCIAL CARDS (ADD YOUR INFO) -->
 
+    <!-- FAVICONS -->
+    <link
+      rel="shortcut icon"
+      sizes="16x16"
+      href="../static/images/favicons/favicon.png"
+    />
+    <link
+      rel="shortcut icon"
+      sizes="32x32"
+      href="../static/images/favicons/favicon-32.png"
+    />
+    <link
+      rel="apple-touch-icon icon"
+      sizes="76x76"
+      href="../static/images/favicons/favicon-76.png"
+    />
+    <link
+      rel="apple-touch-icon icon"
+      sizes="120x120"
+      href="../static/images/favicons/favicon-120.png"
+    />
+    <link
+      rel="apple-touch-icon icon"
+      sizes="152x152"
+      href="../static/images/favicons/favicon-152.png"
+    />
+    <link
+      rel="apple-touch-icon icon"
+      sizes="180x180"
+      href="../static/images/favicons/favicon-180.png"
+    />
+    <link
+      rel="apple-touch-icon icon"
+      sizes="192x192"
+      href="../static/images/favicons/favicon-192.png"
+    />
 
-  <!-- FAVICONS -->
-  <link rel="shortcut icon" sizes="16x16" href="../static/images/favicons/favicon.png">
-  <link rel="shortcut icon" sizes="32x32" href="../static/images/favicons/favicon-32.png">
-  <link rel="apple-touch-icon icon" sizes="76x76" href="../static/images/favicons/favicon-76.png">
-  <link rel="apple-touch-icon icon" sizes="120x120" href="../static/images/favicons/favicon-120.png">
-  <link rel="apple-touch-icon icon" sizes="152x152" href="../static/images/favicons/favicon-152.png">
-  <link rel="apple-touch-icon icon" sizes="180x180" href="../static/images/favicons/favicon-180.png">
-  <link rel="apple-touch-icon icon" sizes="192x192" href="../static/images/favicons/favicon-192.png">
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#333333" />
+  </head>
 
-  <!-- Android -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="theme-color" content="#333333">
-
-</head>
-
-<body>
-
-  <main role="main">
-    <article id="webslides" class="horizontal">
-      <!-- Quick Guide
+  <body>
+    <main role="main">
+      <article id="webslides" class="horizontal">
+        <!-- Quick Guide
           - Each parent <section> in the <article id="webslides"> element is an individual slide.
           - Vertical sliding = <article id="webslides" class="vertical">
           - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
         -->
-      <!-- SLIDE 1 INTRO -->
+        <!-- SLIDE 1 INTRO -->
 
-      <section class="aligncenter">
-        <div class="wrap size-90">
+        <section class="aligncenter">
+          <div class="wrap size-90">
+            <img
+              src="../static/images/layout.png"
+              alt="html icon"
+              width="500"
+            />
 
-            <img src="../static/images/layout.png" alt="html icon" width="500"/>
+            <h2 class="text-landing">Website Layout</h2>
+            <p class="text-intro">Using Cascading Style Sheets</p>
+          </div>
+        </section>
 
-          <h2 class="text-landing">Website Layout</h2>
-          <p class="text-intro">Using Cascading Style Sheets</p>
+        <!-- Slide web layouts -->
+        <section class="aligncenter">
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap size-90">
+            <h2 class="text-serif bluegreen aligncenter">
+              Wireframes examples
+            </h2>
+            <img
+              src="../static/images/web-layout.png"
+              alt="html icon"
+              width="1500"
+            />
+          </div>
+        </section>
 
-        </div>
-      </section>
-
-      <!-- Slide web layouts -->
-      <section class="aligncenter">
-        <!--.wrap = container (width: 90%) -->
-        <div class="wrap size-90">
-              <h2 class="text-serif bluegreen aligncenter">Wireframes examples</h2>
-            <img src="../static/images/web-layout.png" alt="html icon" width="1500"/>
-
-
-        </div>
-      </section>
-
-      <!-- Slide Layout History -->
-      <section class="padding-t4">
-        <div class="wrap size-80">
-          <div class="grid vertical-align">
-            <div class="column">
-              <h2 class="text-serif bluegreen">A little bit of Layout History..</h2>
-              <ul>
-                <li>Normal <b>HTML</b> Flow.</li>
-                <li><b>Tables</b>.</li>
-                <li>Positioning - <b>Floats</b>.</li>
-                <li><b>Flexbox</b>. Aligns elements in a single axis, either rows or columns (2015).</li>
-                <li><b>Grid</b>. Works in two dimensios. Rows and columns at the same time. (2017)</li>
-                <li>Multicolumn (working draft as of 10/2019).</li>
-              </ul>
-              <p class="small-text"><a href="https://www.webdesignmuseum.org/">Web Design Museum</a></p>
+        <!-- Slide Layout History -->
+        <section class="padding-t4">
+          <div class="wrap size-80">
+            <div class="grid vertical-align">
+              <div class="column">
+                <h2 class="text-serif bluegreen">
+                  A little bit of Layout History..
+                </h2>
+                <ul>
+                  <li>Normal <b>HTML</b> Flow.</li>
+                  <li><b>Tables</b>.</li>
+                  <li>Positioning - <b>Floats</b>.</li>
+                  <li>
+                    <b>Flexbox</b>. Aligns elements in a single axis, either
+                    rows or columns (2015).
+                  </li>
+                  <li>
+                    <b>Grid</b>. Works in two dimensios. Rows and columns at the
+                    same time. (2017)
+                  </li>
+                  <li>Multicolumn (working draft as of 10/2019).</li>
+                </ul>
+                <p class="small-text">
+                  <a href="https://www.webdesignmuseum.org/"
+                    >Web Design Museum</a
+                  >
+                </p>
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <img
+                  src="../static/images/apple-web-1997.png"
+                  alt="apple website in 1997"
+                  width="600"
+                />
+                <cite
+                  ><a
+                    href="https://web.archive.org/web/19980509035420/http://www.apple.com/"
+                    >Apple website 1997</a
+                  ></cite
+                >
+              </div>
             </div>
-            <!-- .end .column -->
-            <div class="column">
-              <img src="../static/images/apple-web-1997.png" alt="apple website in 1997" width=600>
-              <cite><a href="https://web.archive.org/web/19980509035420/http://www.apple.com/">Apple website 1997</a></cite>
+          </div>
+        </section>
+
+        <!--  Slide The box Model -->
+        <section class="slide-center wrap size-80">
+          <h2 class="text-serif bluegreen aligncenter">
+            The Box Model (again...)
+          </h2>
+
+          <div class="grid top-align">
+            <div class="grid">
+              <!-- .end .column -->
+              <div class="column">
+                <h2>Block or Inline</h2>
+                <p class="med-text">
+                  All HTML elements are by default block or inline
+                </p>
+                <p class="med-text">
+                  <b>Block:</b> The element will take the full width of the
+                  parent container and will start in a new line. <br />
+                  (All headings, p, ul, div, section, article, header, footer
+                  are examples of block elements)
+                </p>
+                <div class="demo-block">This is one block element</div>
+                <p class="med-text">
+                  <b>Inline:</b> The element will only take the space of its
+                  content and will not break the flow of content (a, b/strong,
+                  i/em, span, images)
+                </p>
+                <p class="demo-block-p">
+                  This is another block element
+                  <span>This is an inline element inside a block element</span>
+                  and <span class="span1">this is another inline element</span>
+                </p>
+                <p class="big-text">
+                  <b
+                    >You can add an inline element inside a block, but not a
+                    block inside and inline element.</b
+                  >
+                </p>
+              </div>
+              <!-- .end .column -->
+              <!-- .end .column -->
             </div>
+            <!-- .end .grid -->
           </div>
-        </div>
-      </section>
+          <!-- .end .wrap -->
+        </section>
 
-      <!--  Slide The box Model -->
-      <section class="slide-center wrap size-80">
-        <h2 class="text-serif bluegreen aligncenter">The Box Model (again...)</h2>
+        <!--  Slide The box Model -->
+        <section class="slide-center wrap size-80">
+          <h2 class="text-serif bluegreen aligncenter">
+            Box and Inline Properties
+          </h2>
 
-        <div class="grid top-align">
-
-          <div class="grid">
-
-
-            <!-- .end .column -->
-            <div class="column">
-              <h2>Block or Inline</h2>
-              <p class="med-text">All HTML elements are by default block or inline</p>
-                <p class="med-text"> <b>Block:</b> The element will take the full width of the parent container and will start in a new line. <br> (All headings, p, ul, div, section, article, header, footer are examples of block elements)</p>
-                  <div class="demo-block">This is one block element</div>
-                <p class="med-text"> <b>Inline:</b> The element will only take the space of its content and will not break the flow of content (a, b/strong, i/em, span, images)</p>
-                  <p class="demo-block-p">This is another block element <span>This is an inline element inside a block element</span> and <span class="span1">this is another inline element</span></p>
-                  <p class="big-text"><b>You can add an inline element inside a block, but not a block inside and inline element.</b></p>
+          <div class="grid top-align">
+            <div class="grid">
+              <div class="column">
+                <h2>Block</h2>
+                <ul>
+                  <li>The width is determined by the parent element.</li>
+                  <li>Width is always 100%</li>
+                  <li>You can add margin and padding to block elements.</li>
+                  <li>Margins on adjacent block elements will collapse.</li>
+                </ul>
+                <ul class="top2">
+                  <li>Nesting rules:</li>
+                  <li>Block inside Block</li>
+                  <li>Inline inside Block</li>
+                  <li>Inline inside Inline</li>
+                  <li><b>NO</b> Block inside Inline</li>
+                </ul>
+              </div>
+              <div class="column">
+                <h2>Inline</h2>
+                <ul>
+                  <li>
+                    The width is determined by the content, regardless of the
+                    withd of the parent container.
+                  </li>
+                  <li>You cannot modify the width of an inline element.</li>
+                  <li>
+                    Margin will not affect the element on top and bottom. Only
+                    left and right.
+                  </li>
+                  <li>
+                    Padding on an inline element will not modify the height of
+                    the parent container and will superimpose on the rest of the
+                    content.
+                  </li>
+                </ul>
+              </div>
             </div>
-            <!-- .end .column -->
-            <!-- .end .column -->
+            <!-- .end .grid -->
           </div>
-          <!-- .end .grid -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
+          <!-- .end .wrap -->
+        </section>
 
-      <!--  Slide The box Model -->
-      <section class="slide-center wrap size-80">
-        <h2 class="text-serif bluegreen aligncenter">Box and Inline Properties</h2>
-
-        <div class="grid top-align">
-
-          <div class="grid">
-
-          <div class="column">
-            <h2>Block</h2>
-            <ul>
-              <li>The width is determined by the parent element. </li>
-              <li>Width is always 100%</li>
-              <li>You can add margin and padding to block elements.</li>
-              <li>Margins on adjacent block elements will collapse.</li>
-            </ul>
-            <ul class="top2">
-              <li>Nesting rules:</li>
-              <li>Block inside Block</li>
-              <li>Inline inside Block</li>
-              <li>Inline inside Inline</li>
-              <li><b>NO</b> Block inside Inline</li>
-            </ul>
-
-          </div>
-          <div class="column">
-            <h2>Inline</h2>
-            <ul>
-              <li>The width is determined by the content, regardless of the withd of the parent container.</li>
-              <li>You cannot modify the width of an inline element.</li>
-              <li>Margin will not affect the element on top and bottom. Only left and right.</li>
-              <li>Padding on an inline element will not modify the height of the parent container and will superimpose on the rest of the content.</li>
-            </ul>
-          </div>
-          </div>
-          <!-- .end .grid -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
-
-      <!-- Slide - Floats -->
-      <section class="wrap size-80 padding-t1">
-        <h2 class="text-serif bluegreen aligncenter">Box sizing</h2>
-        <p class="big-text aligncenter">How does the browser calculate the dimensions of a block? <br>
-          Content area + padding size + border size.
-        <div class="grid top-align">
-
-          <div class="grid">
-            <div><img src="../static/images/box-size1.png" alt="" width="250"> <br>
-            <img src="../static/images/box-size2.png" alt="" width="250"></div>
-          <div class="column">
-
-            <ul class="padding-t1">
-              <li>Margins affect the layout, but not the size of the element.</li>
-              <li>The <b>box-sizing</b> property determines wether a padding is included in the size of the box or not</li>
-              <li><b>Content-box</b> sets the width to the content <b>border-box</b> sets the width to everything including the border</li>
-              <li>Margins <b>collapse</b> by default except on the grid.</li>
-            </ul>
-
-          </div>
-
-          <div class="column">
-          <h4 class="bluegreen">Overriding default browser styles</h4>
-          <p class="med-text">All browsers come with default styles that sometimes interfere with your designs.</p>
-          <p><a href="https://browserdefaultstyles.com/">List of browser default styles</a></p>
-          <ul>
-          <li>body {margin: 0; padding:0;}</li>
-          <li>* {box-sizing:border-box;}</li>
-          </ul>
-          </div>
-          </div>
-          <!-- .end .grid -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
-
-
-      <!-- Slide - Box Behavior -->
-      <section class="wrap size-80">
-        <h2 class="text-serif bluegreen aligncenter">Changing Box Behavior - Display Property</h2>
-        <p class="big-text aligncenter">Eack box has a default behavior - block or inline -that can be changed with the display property.
+        <!-- Slide - Floats -->
+        <section class="wrap size-80 padding-t1">
+          <h2 class="text-serif bluegreen aligncenter">Box sizing</h2>
+          <p class="big-text aligncenter">
+            How does the browser calculate the dimensions of a block? <br />
+            Content area + padding size + border size.
           </p>
 
-        <div class="grid top-align">
+          <div class="grid top-align">
+            <div class="grid">
+              <div>
+                <img src="../static/images/box-size1.png" alt="" width="250" />
+                <br />
+                <img src="../static/images/box-size2.png" alt="" width="250" />
+              </div>
+              <div class="column">
+                <ul class="padding-t1">
+                  <li>
+                    Margins affect the layout, but not the size of the element.
+                  </li>
+                  <li>
+                    The <b>box-sizing</b> property determines wether a padding
+                    is included in the size of the box or not
+                  </li>
+                  <li>
+                    <b>Content-box</b> sets the width to the content
+                    <b>border-box</b> sets the width to everything including the
+                    border
+                  </li>
+                  <li>
+                    Margins <b>collapse</b> by default except on the grid.
+                  </li>
+                </ul>
+              </div>
 
-          <div class="grid">
-
-            <!-- .end .column -->
-
-          <div class="column">
-            <ul>
-              <li> <b>Block:</b> Displays each element in its own line.</li>
-              <li> <b>Inline:</b> Displays the element beside the previous one. Custom height and width will be lost.</li>
-              <li> <b>inline-block:</b> Makes a box element inline, retaining it's block element properties.</li>
-              <li> <b>none:</b> hides the element by removing the space from the html flow.</li>
-              <li> display: block; / display: inline; / display: inline-block; / display:none;</li>
-              <li> <b>flex:</b> uses the flexbox model.</li>
-              <li> <b>grid:</b> uses the Grid model.</li>
-            </ul>
+              <div class="column">
+                <h4 class="bluegreen">Overriding default browser styles</h4>
+                <p class="med-text">
+                  All browsers come with default styles that sometimes interfere
+                  with your designs.
+                </p>
+                <p>
+                  <a href="https://browserdefaultstyles.com/"
+                    >List of browser default styles</a
+                  >
+                </p>
+                <ul>
+                  <li>body {margin: 0; padding:0;}</li>
+                  <li>* {box-sizing:border-box;}</li>
+                </ul>
+              </div>
+            </div>
+            <!-- .end .grid -->
           </div>
+          <!-- .end .wrap -->
+        </section>
 
+        <!-- Slide - Box Behavior -->
+        <section class="wrap size-80">
+          <h2 class="text-serif bluegreen aligncenter">
+            Changing Box Behavior - Display Property
+          </h2>
+          <p class="big-text aligncenter">
+            Eack box has a default behavior - block or inline -that can be
+            changed with the display property.
+          </p>
+
+          <div class="grid top-align">
+            <div class="grid">
+              <!-- .end .column -->
+
+              <div class="column">
+                <ul>
+                  <li><b>Block:</b> Displays each element in its own line.</li>
+                  <li>
+                    <b>Inline:</b> Displays the element beside the previous one.
+                    Custom height and width will be lost.
+                  </li>
+                  <li>
+                    <b>inline-block:</b> Makes a box element inline, retaining
+                    it's block element properties.
+                  </li>
+                  <li>
+                    <b>none:</b> hides the element by removing the space from
+                    the html flow.
+                  </li>
+                  <li>
+                    display: block; / display: inline; / display: inline-block;
+                    / display:none;
+                  </li>
+                  <li><b>flex:</b> uses the flexbox model.</li>
+                  <li><b>grid:</b> uses the Grid model.</li>
+                </ul>
+              </div>
+            </div>
+            <!-- .end .grid -->
           </div>
-          <!-- .end .grid -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
+          <!-- .end .wrap -->
+        </section>
 
+        <!-- Slide - Floats -->
+        <section class="wrap size-80 padding-t1">
+          <h2 class="text-serif bluegreen aligncenter">Floats</h2>
+          <p class="big-text aligncenter">
+            Float is a positioning property that allows one element to wrap
+            around another.
+          </p>
+          <div class="grid top-align">
+            <div class="grid">
+              <div class="column">
+                <ul>
+                  <li>
+                    Previously used to make full page layouts ans a better
+                    alternative to inline-block. When floating, Elements need to
+                    have an explicit height value, and this would create
+                    problems if the content was bigger than the parent size.
+                  </li>
+                </ul>
+                <ul class="padding-t1">
+                  <li><b>Float Values:</b></li>
+                  <li><b>Left:</b> Floats element to the left.</li>
+                  <li><b>Right:</b> Floats element to the right.</li>
+                  <li><b>None:</b> It is the element's default.</li>
+                  <li>
+                    To clear the floats use <b>display:flow-root</b> or
+                    <b>clear:</b> both, left or right.
+                  </li>
+                </ul>
+                <p class="med-text padding-t2">
+                  Floats are commmonly used to align text and images on
+                  paragraphs.
+                </p>
+              </div>
 
-      <!-- Slide - Floats -->
-      <section class="wrap size-80 padding-t1">
-        <h2 class="text-serif bluegreen aligncenter">Floats</h2>
-        <p class="big-text aligncenter">Float is a positioning property that allows one element to wrap around another.
-        <div class="grid top-align">
-
-          <div class="grid">
-
-          <div class="column">
-            <ul>
-              <li>Previously used to make full page layouts ans a better alternative to inline-block. When floating, Elements need to have an explicit height value, and this would create problems if the content was bigger than the parent size.</li>
-            </ul>
-            <ul class="padding-t1">
-              <li><b>Float Values:</b></li>
-              <li> <b>Left:</b> Floats element to the left.</li>
-              <li> <b>Right:</b> Floats element to the right.</li>
-              <li> <b>None:</b> It is the element's default.</li>
-              <li>To clear the floats use <b>display:flow-root</b> or <b>clear:</b> both, left or right.</li>
-            </ul>
-            <p class="med-text padding-t2">Floats are commmonly used to align text and images on paragraphs.</p>
-
-          </div>
-
-          <!-- <div class="column">
+              <!-- <div class="column">
             <ul>
               <li> <b>Left:</b> Floats element to the left.</li>
               <li> <b>Right:</b> Floats element to the right.</li>
@@ -276,373 +422,505 @@
               <li>To clear the floats use <b>clear:</b> none, left or right.</li>
             </ul>
           </div> -->
-          <div class="column">
-            <img src="../static/images/floats.png" alt="page layout examples" width="400">
+              <div class="column">
+                <img
+                  src="../static/images/floats.png"
+                  alt="page layout examples"
+                  width="400"
+                />
+              </div>
+            </div>
+            <!-- .end .grid -->
           </div>
-          </div>
-          <!-- .end .grid -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
+          <!-- .end .wrap -->
+        </section>
 
-
-      <!-- Intro to Flex -->
-      <section class="slide-center">
-        <div class=" size-90">
-
-          <div class="wrap size-60">
-          <h2 class="text-serif bluegreen">Flex - The Flexible Grid</h2>
-          <ul class="textLeft med-text">
-            <li>It's a way of creating page layouts using rows <b>or</b> columns.</li>
-            <li>It aligns and distribute the space between the elements inside a container using a single axis (horizontally or vertically).</li>
-            <li>It is faster and more organized than using floats and positioning elements.</li>
-            <li>It distributes the elements in the available space without manual calculations.</li>
-          </ul>
-        </div>
-        <div class="aligncenter">
-          <img src="../static/images/flex-layout.png" alt="web grid" width="990" />
-        </div>
-        </div>
-      </section>
-      <section class="slide-center">
-        <div class=" size-90">
-
-          <div class="wrap size-60">
-          <h2 class="text-serif bluegreen">How does Flex Work?</h2>
-          <ul class="textLeft med-text">
-            <li>Using the <b>display:flex</b> Property on the parent element, you create a Flexbox.</li>
-            <li>The parent element is the Flex Container.</li>
-            <li>The children are the Flex items. These items can be positioned across the selected axis.</li>
-            <li>There are specific properties applied to the Flex Container and the Flex items.</li>
-          </ul>
-        </div>
-        <div class="aligncenter">
-          <img src="../static/images/flex-container.png" alt="web grid" width="990" />
-        </div>
-        </div>
-      </section>
-
-      <!-- Slide - Flex Properties -->
-      <section class="slide-top padding-t6">
-        <div class="grid size-80">
-        <div class="column">
-          <h2 class="text-serif acqua">Flex Properties</h2>
-          <img src="../static/images/flex-properties.png" alt="flex layout properties" width="600">
-        </div>
-        <div class="column">
-          <div class="border-acqua">
-          <h4 class="acqua">The Parent Container</h4>
-          <p class="med-text">The properties applied to the parent element determine the axis in which the elements are going to be positioned. The two main properties are:</p>
-          <ul>
-            <li><b>display:</b>flex;</li>
-            <li><b>flex-direction:</b> row or column. <br>
-            To reverse the order use row-reverse or column-reverse.</li>
-          </ul>
-          </div>
-          <div class="border-gold">
-            <h4 class="gold">The Flex Items</h4>
-            <!-- <p class="med-text">The item properties determine how these elements are going to be distributed and the item order.</p> -->
-            <ul>
-              <!-- <li><b>flex-basis:</b> (length or keyword - 50px, 50px auto) <br>
-              Is the initiial size of the element.</li> -->
-              <!-- <li><b>flex-grow:</b> (number)<br> -->
-              <!-- The space each flex item will take in the container. Default is 0 and the item will take the width or height of the content.
-            1 for all items, they will be of equal size. Different values can be assigned to each item.</li> -->
-            <!-- By default each item takes the width of the content and if they are not justified, there is empty space available. Flex-grow takes that remaining space and divide it by the flex grow values.</li> -->
-            <!-- <li><b>order:</b>(number) <br> -->
-            <li>
-            The flex items get the general positioning from the parent element, but they can also be modified individually.</li>
-            </ul>
-          </div>
-        </div>
-        </div>
-      </section>
-
-      <!-- Flex align -->
-      <section class="slide-top">
-        <div class="wrap">
-          <h2 class="text-serif bluegreen aligncenter">Flex Alignment</h2>
-          <p class="med-text aligncenter"><b>Applied to the parent</b>, distributes the flex items inside the container.</p>
-          <div class="grid">
-
-            <div class="column">
-              <h4 class="aligncenter">Justify</h4>
-              <img src="../static/images/flex-justify.png" alt="justify grid">
-              <ul>
-                <li><b>justify-content:</b></li>
-                <li>flex-start - center - flex-end</li>
-                <li>space-between - space-around - space-evenly</li>
+        <!-- Intro to Flex -->
+        <section class="slide-center">
+          <div class="size-90">
+            <div class="wrap size-60">
+              <h2 class="text-serif bluegreen">Flex - The Flexible Grid</h2>
+              <ul class="textLeft med-text">
+                <li>
+                  It's a way of creating page layouts using rows
+                  <b>or</b> columns.
+                </li>
+                <li>
+                  It aligns and distribute the space between the elements inside
+                  a container using a single axis (horizontally or vertically).
+                </li>
+                <li>
+                  It is faster and more organized than using floats and
+                  positioning elements.
+                </li>
+                <li>
+                  It distributes the elements in the available space without
+                  manual calculations.
+                </li>
               </ul>
             </div>
-            <div class="column">
-              <h4 class="aligncenter">Align</h4>
-            <img src="../static/images/flex-align.png" alt="align grid">
-            <ul>
-              <li><b>align-items:</b></li>
-              <li>flex-start - center - flex-end</li>
-              <li>strech - baseline</li>
-            </ul>
+            <div class="aligncenter">
+              <img
+                src="../static/images/flex-layout.png"
+                alt="web grid"
+                width="990"
+              />
             </div>
           </div>
-          <!-- .end .grid -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
-
-      <!-- Flex Wrap -->
-      <section class="slide-top">
-        <div class="wrap">
-          <h2 class="text-serif bluegreen aligncenter">Flex Wrap</h2>
-          <p class="med-text aligncenter"><b>Applied to the parent</b>, distributes the flex items in multiple lines as needed.</p>
-          <div class="grid">
-
-            <div class="column">
-              <h4 class="aligncenter">Wrap</h4>
-              <img src="../static/images/flex-wrap.png" alt="justify grid">
-              <ul>
-                <li><b>flex-wrap:</b></li>
-                <li>no-wrap - wrap - wrap-reverse</li>
+        </section>
+        <section class="slide-center">
+          <div class="size-90">
+            <div class="wrap size-60">
+              <h2 class="text-serif bluegreen">How does Flex Work?</h2>
+              <ul class="textLeft med-text">
+                <li>
+                  Using the <b>display:flex</b> Property on the parent element,
+                  you create a Flexbox.
+                </li>
+                <li>The parent element is the Flex Container.</li>
+                <li>
+                  The children are the Flex items. These items can be positioned
+                  across the selected axis.
+                </li>
+                <li>
+                  There are specific properties applied to the Flex Container
+                  and the Flex items.
+                </li>
               </ul>
             </div>
-            <div class="column">
-              <h4 class="aligncenter">Align (for wrapped items)</h4>
-            <img src="../static/images/flex-align-content.png" alt="align grid">
-            <ul>
-              <li><b>align-content:</b></li>
-              <li>flex-start - center - flex-end</li>
-              <li>strech - baseline</li>
-            </ul>
+            <div class="aligncenter">
+              <img
+                src="../static/images/flex-container.png"
+                alt="web grid"
+                width="990"
+              />
             </div>
           </div>
-          <!-- .end .grid -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
+        </section>
 
-      <!-- Flex Wrap -->
-      <section class="slide-top">
-        <div class="wrap">
-          <h2 class="text-serif bluegreen aligncenter">Gap</h2>
-          <p class="med-text aligncenter"><b>Applied to the parent</b>, adds a space between the elements.</p>
-          <div class="grid">
-
+        <!-- Slide - Flex Properties -->
+        <section class="slide-top padding-t6">
+          <div class="grid size-80">
             <div class="column">
-              <img src="../static/images/gap.png" alt="justify grid">
-            </div>
-            <div class="column">
-
-            <ul>
-              <li><b>Gap:</b></li>
-              <li>gap: 10px; (adds gap to the rows and columns)</li>
-            <li>gap: 10px 20px; (First value adds gap to rows, second to columns)</li>
-            <li>row-gap: 10px;</li>
-            <li>column-gap: 20px;</li>
-
-            </ul>
-            </div>
-          </div>
-          <!-- .end .grid -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
-
-
-      <!-- Flex Aligning Items -->
-      <section class="slide-center">
-        <div class="wrap size-80">
-          <h2 class="text-serif bluegreen aligncenter">Aligning Flex Items</h2>
-          <p class="med-text aligncenter"><b>Applied to individual flex items</b>, lets you to override current properties.</p>
-          <div class="grid">
-
-            <div class="column">
-
-              <img class="" src="../static/images/flex-align-self.png" alt="flex grid" width="500">
-              <br>
-              <ul>
-                <li><b>align-self:</b> allows you to position individual elements</li>
-                <li>flex-start - center - flex-end </li>
-                <li>auto - baseline - stretch</li>
-              </ul>
-            </div>
-            <div class="column">
-              <img class="" src="../static/images/basis.png" alt="flex grid" width="500">
-              <br>
-              <ul>
-                <li><b>flex-basis:</b> allows you to give custom width to individual elements</li>
-                <li>uses a value (rem, , px, %). Default is auto which sizes all the elements equally unless given a width.</li>
-              </ul>
-            </div>
-          </div>
-          <!-- .end .grid -->
-          <p class="med-text padding-t5"><a href="https://flexboxfroggy.com/">Practice flexbox alignment at Flexboxfroggy</a></p>
-        </div>
-        <!-- .end .wrap -->
-      </section>
-
-      <!-- ====================== Units and Introduction to responsive ================= -->
-      <!-- Slide Relative Units -->
-    <section>
-
-        <div class="wrap">
-        <h2 class="text-serif bluegreen aligncenter">Units for web</h2>
-          <div class="grid vertical-align bg-white shadow">
-
-          <div class="column">
-            <h4>Absolute Units</h4>
-            <ul>
-              <li><b>px</b> These sizes will stay the same regardless of the screen size.</li>
-            </ul>
-            <h4>Relative Units</h4>
-            <ul>
-              <li><b>%</b> a percentage of the parent element.</li>
-              <li><b>em</b> Ems are a relative unit based on the base font size (usually 16px) 1em = 16px</li>
-              <li><a href="http://pxtoem.com/"><u>Convert pixels to ems</u></a> </li>
-              <li><b>vw</b> % relative to the screen width (viewport)</li>
-              <li><b>vh</b> % relative to the screen height (viewport)</li>
-            </ul>
-          </div>
-          <div class="column">
-            <img src="../static/images/ems.png" alt="typography units">
-          </div>
-
-          </div>
-
-        </div>
-
-      </section>
-
-
-<!-- ================================================================== -->
-      <!-- Slide Grid -->
-      <section class="slide-center">
-        <!--.wrap = container (width: 90%) -->
-        <div class="grid size-90">
-          <div class="column ms">
-            <img src="../static/images/layout-grid.png" alt="web grid" width="800" />
-          </div>
-          <div class="column sm">
-          <h2 class="text-serif bluegreen">The Grid</h2>
-          <ul>
-            <li>It's the latest and most powerful CSS layout system available.</li>
-            <li>With the grid you can control the size and position of the "boxes" and their contents in the page.</li>
-            <li>You can alter the visual display of the elements without affecting the semantic markup.</li>
-            <li>You can specify the number of rows and columns.</li>
-            <li>It's fast to develop.</li>
-            <li>reduced code size</li>
-            <li>Most common grid size is 12 because is easily divided by 2, 3, 4, 6</li>
-          </ul>
-        </div>
-        </div>
-      </section>
-
-      <!-- Slide Grid works -->
-      <section>
-        <div class="wrap">
-          <h2 class="text-serif bluegreen">How does the grid work?</h2>
-          <div class="grid vertical-align">
-
-            <div class="column">
-
-              <ul>
-                <li>Just like in Flex, most properties are applied to the parent element. All <b>direct children</b> will become a grid element.</li>
-                <li><b>Column and Row</b> count are applied to the <b>parent</b> container to define the structure of the grid.</li>
-                <li>The parent container is divided in segments according to the number of selected columns and rows.</li>
-                <li>Placement properties are applied to the <b>children</b> inside the grid.</li>
-
-              </ul>
-            <hr>
-            </div>
-            <!-- .end .column -->
-            <div class="column">
-              <img src="../static/images/layout-position.png" alt="">
-            </div>
-            <!-- .end .column -->
-          </div>
-          <!-- .end .grid -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
-
-      <!-- Slide Grid structure -->
-      <section class="padding-t6">
-        <div class="wrap">
-            <div class="grid size-90">
-            <div class="column">
-              <h2 class="text-serif acqua">Grid Structure</h2>
-              <img src="../static/images/layout-details.png" alt="">
+              <h2 class="text-serif acqua">Flex Properties</h2>
+              <img
+                src="../static/images/flex-properties.png"
+                alt="flex layout properties"
+                width="600"
+              />
             </div>
             <div class="column">
               <div class="border-acqua">
-              <h4 class="acqua">The Parent Container</h4>
-              <p class="med-text">The parent element determine the the rows and columns <br>
-                <b>display:</b>grid;</p>
+                <h4 class="acqua">The Parent Container</h4>
+                <p class="med-text">
+                  The properties applied to the parent element determine the
+                  axis in which the elements are going to be positioned. The two
+                  main properties are:
+                </p>
+                <ul>
+                  <li><b>display:</b>flex;</li>
+                  <li>
+                    <b>flex-direction:</b> row or column. <br />
+                    To reverse the order use row-reverse or column-reverse.
+                  </li>
+                </ul>
+              </div>
+              <div class="border-gold">
+                <h4 class="gold">The Flex Items</h4>
+                <!-- <p class="med-text">The item properties determine how these elements are going to be distributed and the item order.</p> -->
+                <ul>
+                  <!-- <li><b>flex-basis:</b> (length or keyword - 50px, 50px auto) <br>
+              Is the initiial size of the element.</li> -->
+                  <!-- <li><b>flex-grow:</b> (number)<br> -->
+                  <!-- The space each flex item will take in the container. Default is 0 and the item will take the width or height of the content.
+            1 for all items, they will be of equal size. Different values can be assigned to each item.</li> -->
+                  <!-- By default each item takes the width of the content and if they are not justified, there is empty space available. Flex-grow takes that remaining space and divide it by the flex grow values.</li> -->
+                  <!-- <li><b>order:</b>(number) <br> -->
+                  <li>
+                    The flex items get the general positioning from the parent
+                    element, but they can also be modified individually.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
 
-              <h4 class="acqua">Columns</h4>
+        <!-- Flex align -->
+        <section class="slide-top">
+          <div class="wrap">
+            <h2 class="text-serif bluegreen aligncenter">Flex Alignment</h2>
+            <p class="med-text aligncenter">
+              <b>Applied to the parent</b>, distributes the flex items inside
+              the container.
+            </p>
+            <div class="grid">
+              <div class="column">
+                <h4 class="aligncenter">Justify</h4>
+                <img
+                  src="../static/images/flex-justify.png"
+                  alt="justify grid"
+                />
+                <ul>
+                  <li><b>justify-content:</b></li>
+                  <li>flex-start - center - flex-end</li>
+                  <li>space-between - space-around - space-evenly</li>
+                </ul>
+              </div>
+              <div class="column">
+                <h4 class="aligncenter">Align</h4>
+                <img src="../static/images/flex-align.png" alt="align grid" />
+                <ul>
+                  <li><b>align-items:</b></li>
+                  <li>flex-start - center - flex-end</li>
+                  <li>strech - baseline</li>
+                </ul>
+              </div>
+            </div>
+            <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <!-- Flex Wrap -->
+        <section class="slide-top">
+          <div class="wrap">
+            <h2 class="text-serif bluegreen aligncenter">Flex Wrap</h2>
+            <p class="med-text aligncenter">
+              <b>Applied to the parent</b>, distributes the flex items in
+              multiple lines as needed.
+            </p>
+            <div class="grid">
+              <div class="column">
+                <h4 class="aligncenter">Wrap</h4>
+                <img src="../static/images/flex-wrap.png" alt="justify grid" />
+                <ul>
+                  <li><b>flex-wrap:</b></li>
+                  <li>no-wrap - wrap - wrap-reverse</li>
+                </ul>
+              </div>
+              <div class="column">
+                <h4 class="aligncenter">Align (for wrapped items)</h4>
+                <img
+                  src="../static/images/flex-align-content.png"
+                  alt="align grid"
+                />
+                <ul>
+                  <li><b>align-content:</b></li>
+                  <li>flex-start - center - flex-end</li>
+                  <li>strech - baseline</li>
+                </ul>
+              </div>
+            </div>
+            <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <!-- Flex Wrap -->
+        <section class="slide-top">
+          <div class="wrap">
+            <h2 class="text-serif bluegreen aligncenter">Gap</h2>
+            <p class="med-text aligncenter">
+              <b>Applied to the parent</b>, adds a space between the elements.
+            </p>
+            <div class="grid">
+              <div class="column">
+                <img src="../static/images/gap.png" alt="justify grid" />
+              </div>
+              <div class="column">
+                <ul>
+                  <li><b>Gap:</b></li>
+                  <li>gap: 10px; (adds gap to the rows and columns)</li>
+                  <li>
+                    gap: 10px 20px; (First value adds gap to rows, second to
+                    columns)
+                  </li>
+                  <li>row-gap: 10px;</li>
+                  <li>column-gap: 20px;</li>
+                </ul>
+              </div>
+            </div>
+            <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <!-- Flex Aligning Items -->
+        <section class="slide-center">
+          <div class="wrap size-80">
+            <h2 class="text-serif bluegreen aligncenter">
+              Aligning Flex Items
+            </h2>
+            <p class="med-text aligncenter">
+              <b>Applied to individual flex items</b>, lets you to override
+              current properties.
+            </p>
+            <div class="grid">
+              <div class="column">
+                <img
+                  class=""
+                  src="../static/images/flex-align-self.png"
+                  alt="flex grid"
+                  width="500"
+                />
+                <br />
+                <ul>
+                  <li>
+                    <b>align-self:</b> allows you to position individual
+                    elements
+                  </li>
+                  <li>flex-start - center - flex-end</li>
+                  <li>auto - baseline - stretch</li>
+                </ul>
+              </div>
+              <div class="column">
+                <img
+                  class=""
+                  src="../static/images/basis.png"
+                  alt="flex grid"
+                  width="500"
+                />
+                <br />
+                <ul>
+                  <li>
+                    <b>flex-basis:</b> allows you to give custom width to
+                    individual elements
+                  </li>
+                  <li>
+                    uses a value (rem, , px, %). Default is auto which sizes all
+                    the elements equally unless given a width.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- .end .grid -->
+            <p class="med-text padding-t5">
+              <a href="https://flexboxfroggy.com/"
+                >Practice flexbox alignment at Flexboxfroggy</a
+              >
+            </p>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <!-- ====================== Units and Introduction to responsive ================= -->
+        <!-- Slide Relative Units -->
+        <section>
+          <div class="wrap">
+            <h2 class="text-serif bluegreen aligncenter">Units for web</h2>
+            <div class="grid vertical-align bg-white shadow">
+              <div class="column">
+                <h4>Absolute Units</h4>
+                <ul>
+                  <li>
+                    <b>px</b> These sizes will stay the same regardless of the
+                    screen size.
+                  </li>
+                </ul>
+                <h4>Relative Units</h4>
+                <ul>
+                  <li><b>%</b> a percentage of the parent element.</li>
+                  <li>
+                    <b>em</b> Ems are a relative unit based on the base font
+                    size (usually 16px) 1em = 16px
+                  </li>
+                  <li>
+                    <a href="http://pxtoem.com/"
+                      ><u>Convert pixels to ems</u></a
+                    >
+                  </li>
+                  <li><b>vw</b> % relative to the screen width (viewport)</li>
+                  <li><b>vh</b> % relative to the screen height (viewport)</li>
+                </ul>
+              </div>
+              <div class="column">
+                <img src="../static/images/ems.png" alt="typography units" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================================================================== -->
+        <!-- Slide Grid -->
+        <section class="slide-center">
+          <!--.wrap = container (width: 90%) -->
+          <div class="grid size-90">
+            <div class="column ms">
+              <img
+                src="../static/images/layout-grid.png"
+                alt="web grid"
+                width="800"
+              />
+            </div>
+            <div class="column sm">
+              <h2 class="text-serif bluegreen">The Grid</h2>
               <ul>
-                <li><b>grid-template-columns:</b>
-                Determine how many columns you want to have.
-                You can use a combination of fixed, relative fractions or auto,</li>
-                <!-- <li>grid-template-columns: 300px 300px 300px;</li>
+                <li>
+                  It's the latest and most powerful CSS layout system available.
+                </li>
+                <li>
+                  With the grid you can control the size and position of the
+                  "boxes" and their contents in the page.
+                </li>
+                <li>
+                  You can alter the visual display of the elements without
+                  affecting the semantic markup.
+                </li>
+                <li>You can specify the number of rows and columns.</li>
+                <li>It's fast to develop.</li>
+                <li>reduced code size</li>
+                <li>
+                  Most common grid size is 12 because is easily divided by 2, 3,
+                  4, 6
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide Grid works -->
+        <section>
+          <div class="wrap">
+            <h2 class="text-serif bluegreen">How does the grid work?</h2>
+            <div class="grid vertical-align">
+              <div class="column">
+                <ul>
+                  <li>
+                    Just like in Flex, most properties are applied to the parent
+                    element. All <b>direct children</b> will become a grid
+                    element.
+                  </li>
+                  <li>
+                    <b>Column and Row</b> count are applied to the
+                    <b>parent</b> container to define the structure of the grid.
+                  </li>
+                  <li>
+                    The parent container is divided in segments according to the
+                    number of selected columns and rows.
+                  </li>
+                  <li>
+                    Placement properties are applied to the
+                    <b>children</b> inside the grid.
+                  </li>
+                </ul>
+                <hr />
+              </div>
+              <!-- .end .column -->
+              <div class="column">
+                <img src="../static/images/layout-position.png" alt="" />
+              </div>
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <!-- Slide Grid structure -->
+        <section class="padding-t6">
+          <div class="wrap">
+            <div class="grid size-90">
+              <div class="column">
+                <h2 class="text-serif acqua">Grid Structure</h2>
+                <img src="../static/images/layout-details.png" alt="" />
+              </div>
+              <div class="column">
+                <div class="border-acqua">
+                  <h4 class="acqua">The Parent Container</h4>
+                  <p class="med-text">
+                    The parent element determine the the rows and columns <br />
+                    <b>display:</b>grid;
+                  </p>
+
+                  <h4 class="acqua">Columns</h4>
+                  <ul>
+                    <li>
+                      <b>grid-template-columns:</b> Determine how many columns
+                      you want to have. You can use a combination of fixed,
+                      relative fractions or auto,
+                    </li>
+                    <!-- <li>grid-template-columns: 300px 300px 300px;</li>
                 <li>grid-template-columns: 300px 300px auto 300px;</li>
                 <li>grid-template-columns: 25% 25% 25% 25%;</li>
                 <li>grid-template-columns: repeat(3, 1fr);</li>
                 <li>grid-template-columns: 200px repeat(3, 1fr);</li>
                 <li>grid-template-columns: repeat(auto-fill,minmax(25%, 1fr));</li>
                 <li>grid-template-columns: repeat(12, minmax(0, 1fr));</li> -->
-              </ul>
-              <h4 class="acqua">Rows</h4>
-              <ul>
-                <li><b>grid-template-rows:</b>
-                If specified, determine how many rows will be added.</li>
-                <!-- <li>grid-template-rows: 300px 300px;</li>
+                  </ul>
+                  <h4 class="acqua">Rows</h4>
+                  <ul>
+                    <li>
+                      <b>grid-template-rows:</b> If specified, determine how
+                      many rows will be added.
+                    </li>
+                    <!-- <li>grid-template-rows: 300px 300px;</li>
                 <li>grid-template-rows: 300px 200px auto;</li>
                 <li>grid-template-rows: repeat(2, 1fr);</li>
                 <li>grid-template-rows: 200px repeat(2, 300px);</li>
                 <li>grid-template-rows: 3fr repeat(2, 1fr);</li>
                 <li>grid-template-rows: repeat(3, minmax(150px, auto));</li> -->
-              </ul>
-              </div>
-              <div class="border-gold">
-                <h4 class="gold">Children Containers</h4>
-                <p class="med-text">Use them for specific positioning of rows and columns.</p>
-                <ul>
-                  <li><b>grid-column:</b> 1 / 13;  (lines 1 to 13)</li>
-                  <li><b>grid-row:</b>  2 /4;  (starts on second row to the 4th)<br></li>
-                </ul>
+                  </ul>
+                </div>
+                <div class="border-gold">
+                  <h4 class="gold">Children Containers</h4>
+                  <p class="med-text">
+                    Use them for specific positioning of rows and columns.
+                  </p>
+                  <ul>
+                    <li><b>grid-column:</b> 1 / 13; (lines 1 to 13)</li>
+                    <li>
+                      <b>grid-row:</b> 2 /4; (starts on second row to the
+                      4th)<br />
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
+        </section>
 
-        </div>
-      </section>
+        <!-- Slide Parent Grid -->
+        <section>
+          <div class="wrap">
+            <h2 class="text-serif acqua">The Parent Container</h2>
+            <div class="grid vertical-align">
+              <div class="column">
+                <img src="../static/images/outer-container.png" alt="" />
+              </div>
+              <div class="column">
+                <ul>
+                  <li class="nobullet">
+                    You can assign spacing between colums and rows:
+                  </li>
+                  <li><b>grid-column-gap:</b></li>
+                  <li><b>grid-row-gap:</b></li>
+                  <li><b>grid-gap:</b> is used for column and rows</li>
+                  <li><b>gap:</b> shorthand for column and rows</li>
+                  <li class="nobullet">Align and justify items</li>
+                  <li><b>align-items:</b> start | end | center | stretch</li>
+                  <li>
+                    <b>justify-items:</b> start | end | center | stretch (items
+                    have to be smaller than the grid)
+                  </li>
+                  <li class="nobullet">
+                    If you use absolute dimensions on your items, the grid might
+                    be larger than the content and you can position the items
+                    using justify and align.
+                  </li>
+                  <li>
+                    <b>align-content:</b> start | end | center | stretch |
+                    space-around | space-between | space-evenly
+                  </li>
+                  <li>
+                    <b>justify-content:</b> start | end | center | stretch |
+                    space-around | space-between | space-evenly (items have to
+                    be smaller than the grid)
+                  </li>
+                  <!-- <li><b>place-content:</b> sets both the align-content and justify-content.</li> -->
+                </ul>
 
-      <!-- Slide Parent Grid -->
-      <section>
-        <div class="wrap">
-          <h2 class="text-serif acqua">The Parent Container</h2>
-          <div class="grid vertical-align">
-
-            <div class="column">
-
-              <img src="../static/images/outer-container.png" alt="">
-            </div>
-            <div class="column">
-            <ul>
-              <li class="nobullet">You can assign spacing between colums and rows:</li>
-              <li><b>grid-column-gap:</b> </li>
-              <li><b>grid-row-gap:</b> </li>
-              <li><b>grid-gap:</b> is used for column and rows </li>
-              <li><b>gap:</b> shorthand for column and rows </li>
-              <li class="nobullet">Align and justify items</li>
-              <li><b>align-items:</b> start | end | center | stretch</li>
-              <li><b>justify-items:</b> start | end | center | stretch (items have to be smaller than the grid)</li>
-              <li class="nobullet">If you use absolute values on your items, the grid might be larger and you can position the items.</li>
-              <li><b>align-content:</b> start | end | center | stretch | space-around | space-between | space-evenly</li>
-              <li><b>justify-content:</b> start | end | center | stretch | space-around | space-between | space-evenly (items have to be smaller than the grid)</li>
-              <!-- <li><b>place-content:</b> sets both the align-content and justify-content.</li> -->
-            </ul>
-
-            <!-- <ul>
+                <!-- <ul>
             <li><b>Grid Template Areas:</b></li>
             <li>You can name the containers and assign them to the grid however you want.</li>
             <li>grid-template-areas: <br>
@@ -651,114 +929,152 @@
             "footer footer footer footer";</li>
             <li>A period . denotes an empty cell</li>
           </ul> -->
+              </div>
+            </div>
+            <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <!-- Slide Grid Children -->
+        <section>
+          <div class="wrap">
+            <h2 class="text-serif acqua">The Children Grid Containers</h2>
+            <div class="grid vertical-align">
+              <div class="column">
+                <img src="../static/images/inner-container.png" alt="" />
+              </div>
+              <div class="column">
+                <ul>
+                  <li class="nobullet">
+                    Positions the elements inside the columns and span across
+                    the selected number of columns
+                  </li>
+                  <li><b>grid-column-start:</b></li>
+                  <li><b>grid-column-end:</b></li>
+                  <li>
+                    <b>grid-column:</b> Shorthand for grid-column start and end
+                    (2/5)
+                  </li>
+                  <li class="nobullet">
+                    Positions the elements inside the rows and span across the
+                    selected number of rows
+                  </li>
+                  <li><b>grid-row-start:</b></li>
+                  <li><b>grid-row-end:</b></li>
+                  <li><b>grid-row:</b> Shorthand for grid-row start and end</li>
+                  <!-- <li><b>grid-area:</b>You can name individual areas and position them on the parent container using <b>grid-template-areas</b> </li> -->
+                  <li class="nobullet">
+                    Justify and align individual items inside the grid
+                  </li>
+                  <li><b>justify-self:</b> start | end | center | stretch</li>
+                  <li><b>align-self:</b> start | end | center | stretch</li>
+                  <!-- <li><b>place-self:</b> Shorthand for justify and align self (not fully suported)</li> -->
+                </ul>
+              </div>
+            </div>
+            <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <!-- Slide Grid Alignment -->
+        <section>
+          <div class="wrap">
+            <h2 class="text-serif bluegreen">Grid Alignment</h2>
+            <div class="grid top-align">
+              <div class="column">
+                <h2>Justify</h2>
+                <img src="../static/images/justify.png" alt="justify grid" />
+              </div>
+              <div class="column">
+                <h2>Align</h2>
+                <img src="../static/images/align.png" alt="align grid" />
+              </div>
+            </div>
+            <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <!-- Slide Flex vs grid -->
+        <section>
+          <div class="wrap size-70">
+            <h2 class="text-serif aligncenter bluegreen">Words to remember:</h2>
+            <p class="med-text padding-t4 aligncenter">
+              The following is a mini-glossary of some common terms.
+            </p>
+            <div class="grid">
+              <div class="column">
+                <ul>
+                  <li>
+                    <b>Fr:</b> A fraction is a unith for lenght. It's a fraction
+                    of the available space.
+                  </li>
+                  <li>
+                    <b>min-content:</b> Represents the minimun space the content
+                    would take. In most cases is the width of the longest single
+                    element.
+                  </li>
+                  <li>
+                    <b>max-content:</b> Represents the width of the full
+                    content.
+                  </li>
+                  <li>
+                    <b>auto:</b> It will calculate the available space
+                    automatically.
+                  </li>
+                  <li>
+                    <b>fit-content():</b> Fits the content within the given
+                    amount of space.
+                  </li>
+                  <li>
+                    <b>minmax(val1 , val2):</b> Restrics the size of the elemnt
+                    within a minimum and maximum value.
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-          <!-- .end .grid -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
+        </section>
 
-      <!-- Slide Grid Children -->
-      <section>
-        <div class="wrap">
-          <h2 class="text-serif acqua">The Children Grid Containers</h2>
-          <div class="grid vertical-align">
-
-            <div class="column">
-
-              <img src="../static/images/inner-container.png" alt="">
+        <!-- Grid Overlap -->
+        <section>
+          <div class="wrap">
+            <h2 class="text-serif acqua">Grid Overlap</h2>
+            <div class="grid top-align">
+              <div class="column">
+                <img
+                  src="../static/images/grid-overlap.png"
+                  alt="justify grid"
+                />
+              </div>
+              <div class="column">
+                <ul>
+                  <li class="nobullet">
+                    One of the best things of Grid is that elements can overlap.
+                  </li>
+                  <br />
+                  <li>Give each element a class</li>
+                  <br />
+                  <li>
+                    Use grid-row and the line numbers to determine the column
+                    span.
+                  </li>
+                  <br />
+                  <li>
+                    Use grid-column and line numbers to determine the vertical
+                    starting position of the element.
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="column">
-            <ul>
-              <li class="nobullet">Positions the elements inside the columns and span across the selected number of columns</li>
-              <li><b>grid-column-start:</b> </li>
-              <li><b>grid-column-end:</b> </li>
-              <li><b>grid-column:</b> Shorthand for grid-column start and end (2/5)</li>
-              <li class="nobullet">Positions the elements inside the rows and span across the selected number of rows</li>
-              <li><b>grid-row-start:</b> </li>
-              <li><b>grid-row-end:</b> </li>
-              <li><b>grid-row:</b> Shorthand for grid-row start and end</li>
-              <!-- <li><b>grid-area:</b>You can name individual areas and position them on the parent container using <b>grid-template-areas</b> </li> -->
-              <li class="nobullet">Justify and align individual items inside the grid</li>
-              <li><b>justify-self:</b> start | end | center | stretch </li>
-              <li><b>align-self:</b> start | end | center | stretch</li>
-              <!-- <li><b>place-self:</b> Shorthand for justify and align self (not fully suported)</li> -->
-            </ul>
-            </div>
+            <!-- .end .grid -->
           </div>
-          <!-- .end .grid -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
+          <!-- .end .wrap -->
+        </section>
 
-      <!-- Slide Grid Alignment -->
-      <section>
-        <div class="wrap">
-          <h2 class="text-serif bluegreen">Grid Alignment</h2>
-          <div class="grid top-align">
-
-            <div class="column">
-              <h2>Justify</h2>
-              <img src="../static/images/justify.png" alt="justify grid">
-            </div>
-            <div class="column">
-              <h2>Align</h2>
-            <img src="../static/images/align.png" alt="align grid">
-            </div>
-          </div>
-          <!-- .end .grid -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
-      <!-- Slide Flex vs grid -->
-      <section>
-        <div class="wrap size-70">
-          <h2 class="text-serif aligncenter bluegreen">Words to remember:</h2>
-          <p class="med-text padding-t4 aligncenter">The following is a mini-glossary of some common terms.</p>
-          <div class="grid">
-
-            <div class="column">
-              <ul>
-                <li><b>Fr:</b> A fraction is a unith for lenght. It's a fraction of the available space.</li>
-                <li><b>min-content:</b> Represents the minimun space the content would take. In most cases is the width of the longest single element.</li>
-                <li><b>max-content:</b> Represents the width of the full content.</li>
-                <li><b>auto:</b> It will calculate the available space automatically.</li>
-                <li><b>fit-content():</b> Fits the content within the given amount of space.</li>
-                <li><b>minmax(val1 , val2):</b> Restrics the size of the elemnt within a minimum and maximum value.</li>
-              </ul>
-
-            </div>
-
-
-          </div>
-        </div>
-      </section>
-
-
-      <!-- Grid Overlap -->
-      <section>
-        <div class="wrap">
-          <h2 class="text-serif acqua">Grid Overlap</h2>
-          <div class="grid top-align">
-            <div class="column">
-              <img src="../static/images/grid-overlap.png" alt="justify grid">
-            </div>
-            <div class="column">
-              <ul>
-                <li class="nobullet">One of the best things of Grid is that elements can overlap.</li><br>
-                <li>Give each element a class</li><br>
-                <li>Use grid-row and the line numbers to determine the column span.</li><br>
-                <li>Use grid-column and line numbers to determine the vertical starting position of the element.</li>
-              </ul>
-            </div>
-          </div>
-          <!-- .end .grid -->
-        </div>
-        <!-- .end .wrap -->
-      </section>
-
-      <!-- Slide Grid template areas -->
-      <!-- <section>
+        <!-- Slide Grid template areas -->
+        <!-- <section>
         <div class="wrap">
           <h2 class="text-serif acqua">Grid Template Areas</h2>
           <div class="grid top-align">
@@ -793,90 +1109,129 @@
         </div>
       </section> -->
 
-      <!-- Slide Flex vs grid -->
-      <section>
-        <div class="wrap">
-          <h2 class="text-serif aligncenter bluegreen">What's the difference between Flex vs Grid?</h2>
-          <div class="grid">
+        <!-- Slide Flex vs grid -->
+        <section>
+          <div class="wrap">
+            <h2 class="text-serif aligncenter bluegreen">
+              What's the difference between Flex vs Grid?
+            </h2>
+            <div class="grid">
+              <div class="column">
+                <h3>Flex</h3>
+                <ul>
+                  <li>
+                    It only works in <b>one direction:</b> Horizontally or
+                    vertically.
+                  </li>
+                  <li>Flex is good when you need to align content.</li>
+                  <li>
+                    It works better with simple layouts that follow a natural
+                    flow.
+                  </li>
+                  <li>
+                    Starting April 2021, it supports Gap, but it's recommended
+                    to use margin for older browser support.
+                  </li>
+                  <li><b>Flex works around your content.</b></li>
+                  <li>Great for use in horizontal navigation.</li>
+                </ul>
+                <p class="med-text padding-t2">
+                  You can practice Flex placement with this game:
+                </p>
+                <ul>
+                  <li>
+                    <a href="https://flexboxfroggy.com/">Flexbox Froggy</a>
+                  </li>
+                </ul>
+              </div>
 
-            <div class="column">
-              <h3>Flex</h3>
-              <ul>
-                <li>It only works in <b>one direction:</b> Horizontally or vertically.</li>
-                <li>Flex is good when you need to align content.</li>
-                <li>It works better with simple layouts that follow a natural flow.</li>
-                <li>Starting April 2021, it supports Gap, but it's recommended to use margin for older browser support.</li>
-                <li><b>Flex works around your content.</b></li>
-                <li>Great for use in horizontal navigation.</li>
-              </ul>
-              <p class="med-text padding-t2">You can practice Flex placement with this game:</p>
-              <ul>
-                <li> <a href="https://flexboxfroggy.com/">Flexbox Froggy</a> </li>
-              </ul>
-
-            </div>
-
-            <div class="column">
-              <h3>Grid</h3>
-              <ul>
-                <li>You can set both directions at the same time in one container.</li>
-                <li>It gives you more control over the layout.</li>
-                <li>It adds a gap between the elements without having to use margins.</li>
-                <li>It lets you overlap elements.</li>
-                <li><b>Grid work with a structure and plays the content inside.</b></li>
-                <li>Use grid when the layout design is more specific.</li>
-              </ul>
-              <p class="med-text padding-t2">You can practice Grid placement with this game:</p>
-              <ul>
-                <li> <a href="https://cssgridgarden.com/">CSS grid garden</a> </li>
-              </ul>
+              <div class="column">
+                <h3>Grid</h3>
+                <ul>
+                  <li>
+                    You can set both directions at the same time in one
+                    container.
+                  </li>
+                  <li>It gives you more control over the layout.</li>
+                  <li>
+                    It adds a gap between the elements without having to use
+                    margins.
+                  </li>
+                  <li>It lets you overlap elements.</li>
+                  <li>
+                    <b
+                      >Grid work with a structure and plays the content
+                      inside.</b
+                    >
+                  </li>
+                  <li>Use grid when the layout design is more specific.</li>
+                </ul>
+                <p class="med-text padding-t2">
+                  You can practice Grid placement with this game:
+                </p>
+                <ul>
+                  <li>
+                    <a href="https://cssgridgarden.com/">CSS grid garden</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Slide Flex vs grid -->
-      <section>
-        <div class="wrap size-70">
-          <h2 class="text-serif aligncenter bluegreen">Which one should I use?</h2>
-          <p class="med-text padding-t4 aligncenter">There is no universal answer for this question. Most sites use a combination of both.<br>It all depends on the layout you need to build, but here are some guidelines:</p>
-          <div class="grid">
-
-            <div class="column">
-              <ul>
-                <li>Use <b>Flex</b> when yo want to display elements of different size automatically and there is no fixed structure.</li>
-                <li>Use <b>Grid</b> when you want to control the stucture.</li>
-                <li>If you are assigning custom widths to your elements, it's better to use <b>Grid.</b></li>
-                <li>If you are creating a simple horizontal navigation, use <b>Flex</b></li>
-              </ul>
-
+        <!-- Slide Flex vs grid -->
+        <section>
+          <div class="wrap size-70">
+            <h2 class="text-serif aligncenter bluegreen">
+              Which one should I use?
+            </h2>
+            <p class="med-text padding-t4 aligncenter">
+              There is no universal answer for this question. Most sites use a
+              combination of both.<br />It all depends on the layout you need to
+              build, but here are some guidelines:
+            </p>
+            <div class="grid">
+              <div class="column">
+                <ul>
+                  <li>
+                    Use <b>Flex</b> when yo want to display elements of
+                    different size automatically and there is no fixed
+                    structure.
+                  </li>
+                  <li>
+                    Use <b>Grid</b> when you want to control the stucture.
+                  </li>
+                  <li>
+                    If you are assigning custom widths to your elements, it's
+                    better to use <b>Grid.</b>
+                  </li>
+                  <li>
+                    If you are creating a simple horizontal navigation, use
+                    <b>Flex</b>
+                  </li>
+                </ul>
+              </div>
             </div>
-
-
           </div>
-        </div>
-      </section>
+        </section>
+      </article>
+      <!-- end article -->
+    </main>
 
+    <div class="references hide">
+      <a href="https://www.freepik.com/free-photos-vectors/design"
+        >Design vector created by freepik - www.freepik.com</a
+      >
+    </div>
+    <!-- end main -->
 
+    <!-- Required -->
+    <script src="../static/js/webslides.js"></script>
+    <script>
+      window.ws = new WebSlides();
+    </script>
 
-</article>
-    <!-- end article -->
-  </main>
-
-  <div class="references hide">
-<a href="https://www.freepik.com/free-photos-vectors/design">Design vector created by freepik - www.freepik.com</a>
-  </div>
-  <!-- end main -->
-
-  <!-- Required -->
-  <script src="../static/js/webslides.js"></script>
-  <script>
-    window.ws = new WebSlides();
-  </script>
-
-  <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
-  <script defer src="../static/js/svg-icons.js"></script>
-
-</body>
-
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="../static/js/svg-icons.js"></script>
+  </body>
 </html>
