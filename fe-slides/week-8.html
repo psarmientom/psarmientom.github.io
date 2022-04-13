@@ -672,6 +672,21 @@
             <p class="fragment">Files can be included in templates or pages using the following code: <br>
                <code>{% include file.html %}</code></p>
           </section>
+          <!-- Creating Variables  -->
+          <section>
+            <h3>Creating Liquid Variables</h3>
+            <p>Before we can use conditionals on the templates, we need to create variables</p>
+            <h4>Assign</h4>
+            <p>Creates a new named variable</p>
+            <div class="code">
+              <p class="code">
+                {% assign my_variable = false %} <br>
+                {% if my_variable != true %} <br>
+                    This statement is valid. <br>
+                {% endif %}
+              </p>
+            </div>
+          </section>
           <!-- Loops and Conditionals -->
           <section>
             <h3>Loops and Conditionals</h3>
