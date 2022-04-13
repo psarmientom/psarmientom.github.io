@@ -680,9 +680,9 @@
             <p>Creates a new named variable</p>
             <div class="code">
               <p class="code">
-                {% assign my_variable = false %} <br>
-                {% if my_variable != true %} <br>
-                    This statement is valid. <br>
+                {% assign my_variable = 10 %} <br>
+                {% if my_variable <= 10 %} <br>
+                    The number is lower than 10. <br>
                 {% endif %}
               </p>
             </div>
