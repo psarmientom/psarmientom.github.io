@@ -699,10 +699,10 @@
             </p>
             <h4 class="fragment">Conditionals</h4>
             <p class="code fragment">
-              <code>{% if user.name == 'tobi' %} <br>
-                Hello tobi <br>
-              {% elsif user.name == 'bob' %} <br>
-                Hello bob <br>
+              <code>{% if page.name == 'about' %} <br>
+                {% include soamething here %} <br>
+              {% elsif page.name == 'contact' %} <br>
+                {% include something else %}
               {% endif %}</code>
             </p>
           </section>
@@ -710,7 +710,8 @@
            <section>
             <h3>Filters</h3>
             <p>Filters modify the result of the output statement. You can invoke filters by following the output statement's main expression with a <code>|</code></p>
-            <p class="fragment"><code>Hello {{ 'tobi' | upcase }}</code></p>
+            <p class="fragment"><code>Hello {{ 'pat' | upcase }}</code></p>
+            <p class="fragment"><code>Hello Pat {{ append: "How are you?" }}</code></p>
             <p class="fragment">Common filters are:</p>            
                 <ul class="fragment">
                   <li>append</li>
@@ -718,24 +719,76 @@
                   <li>downcase</li>
                   <li>prepend</li>
                 </ul>
-                <p class="fragment">A list of filters is available <a href="https://jekyllrb.com/docs/liquid/filters/">here.</a></p>      
+                <p class="fragment">A list of filters is available <a href="https://jekyllrb.com/docs/liquid/filters/">here</a> and <a href="https://shopify.github.io/liquid/filters/first/">here.</a></p>      
           </section>
         </section>
         <!-- Themes, Includes Filters, etc  -->
         <section>
+          <!-- Adding Data  -->
+          <h2>Data Files</h2>
+          <p>In addition to the built-in variables available from Jekyll, you can specify your own custom data that can be accessed via the Liquid templating system.</p>
+          <ul>
+            <li class="fragment">This powerful feature allows you to avoid repetition in your templates and to set site specific options without changing _config.yml.</li>
+            <li class="fragment">Using data is very useful when you have a repeated module with the same layout and different content.</li>
+            <li class="fragment">Data files go in the <code>_data</code> folder and can have different extensions:
+              <ul><li>.yml</li>
+              <li>.json</li>
+              <li>.csv</li>
+              </ul></li>
+              <li class="fragment">The data file is available sitewide using the site.data variable.</li>
+          </ul>
+          </section>
+          <section>
+            <h3>How to word with Data files.</h3>
+          <div class="columns">
+            <div class="col-2 margin-r">
+              <ol>
+                <li class="fragment">
+                  Create <code>_data folder</code>
+                </li>
+                <li class="fragment">Create the data file in .yml format <code>myData.yml</code></li>
+                <li class="fragment">The data will consist of repeated blocks, you will add the name at the top and then add the repeated blocks.
+                </li>
+              </ol>
+              <hr>
+              <ul class="fragment">
+                <li>Use each element inside the template <code>block.name</code></li>
+              </ul>
+            </div>
+            <div class="col-2">
+                <div class="fragment code">
+                  myblock: <br>
+                  - name: James <br>
+                    lastName: Brown <br>
+                    title: Godfather of Soul <br>
+                    <br>
+                  - name: Chuck <br>
+                    lastName: Berry <br>
+                    title: Father of Rock & Roll
+                </div>
+            </div>
+          </div>
+          </section>
           <!-- Themes  -->
           <section>
             <h3>Themes</h3>
             <p>Jekyll themes set default data, layouts, includes, and stylesheets. However, you can override any of the theme defaults with your own site content.</p>
-            <p class="fragment">Not all themes are compatible with Github pages, so make sure to select a <b>non gem-based</b> theme</p>
+            <p class="fragment">Not all themes are compatible with Github pages, so make sure to select a <b>non gem-based</b> theme, and read the installation instructions to see if it's <b>Github Pages compatible.</b></p>
             <p class="fragment">Jekyll will look first to your site’s content before looking to the theme’s defaults for any requested file in the following folders:</p>
             <ul class="fragment">
               <li><code>/assets</code></li>
               <li><code>/_data</code></li>
               <li><code>/_layouts</code></li>
               <li><code>/_includes</code></li>
-              <li><code>/_sass</code></li>
-              
+              <li><code>/_sass</code></li>   
+            </ul>
+          </section>
+          <section>
+            <h3>Where to get Jekyll Templates</h3>
+            <ul>
+              <li><a href="https://github.com/topics/jekyll-theme">Github themes</a></li>
+              <li><a href="https://jamstackthemes.dev/ssg/jekyll/">Jamstack Themes</a></li>
+              <li><a href="http://jekyllthemes.org/">Jekyll Themes.</a></li>
             </ul>
           </section>
         </section>
