@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Front End Fundamentals | Javascript Libraries: React</title>
+
+    <meta
+      name="description"
+      content="Static Site Generators, Jekyll, Markdown."
+    />
+    <meta name="author" content="Patricia Sarmiento" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/92123ffbf2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/simple.css" id="theme" />
+    <link rel="stylesheet" href="dist/custom.css" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+
+  <body>
+    <div class="reveal">
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <!-- === REACT ===  -->
+        <section>
+          <section>
+            <h2>React</h2>
+            <p>
+              React is a Javascript library created by Facebook in 2013 to
+              accomodate fo a scalable and ever changing interface.
+            </p>
+            <p class="fragment">
+              React forces you to think in terms of component, and modular
+              elements.
+            </p>
+            <p class="fragment">
+              React's goal is to simplify the development of user interfaces.
+            </p>
+            <p class="fragment">
+              React is the most popular Javascript library used today.
+            </p>
+          </section>
+          <!-- what do I need?  -->
+          <section>
+            <h3>What do I need to start with React?</h3>
+            <p class="fragment">In order to work with React you need an understanding of:
+                <ul>
+                    <li class="fragment">HTML</li>
+                    <li class="fragment">CSS</li>
+                    <li class="fragment">JavaScript
+                        <ul class="fragment">
+                            <li>Variables</li>
+                            <li>Arrow Functions</li>
+                            <li>Objects and Arrays</li>
+                        </ul>
+                    </li>
+                </ul>
+            </p>
+          </section>
+          <!-- Get React  -->
+          <section>
+              <h3>How do I install React?</h3>
+              <p>The best way to install React is by using the <code>reate-react-app</code> on the command line.</p>
+              <p class="fragment">We have to check a few things first:</p>
+              <ul>
+              <li class="fragment">You need to have <b>node</b> and <b>npm</b> installed</li>
+              </ul>
+          </section>
+          <!-- Node.js -->
+          <section>
+            <h3>Why Node.js?</h3>
+              <ul>
+                <li class="fragment">Node.js is a runtime environment for JavaScript that runs on the server.</li>
+                <li class="fragment">A runtime environment is an environment in which a program or application can be executed.</li>
+                <li class="fragment">Traditionally, Javascript run in the browser, for client-side scripting using the <code>Script</code> tag.</li>
+                <li class="fragment">Node is <b>not a programming language</b> nor a framework. It's an environment for back-end javascript applications.</li>
+                <li class="fragment">Check if you have node installed by typing <code>node -v</code> on the terminal.</li>
+                <li class="fragment">Download Node.js and follow installation instructions.</li>
+              </ul>
+          </section>
+          <!-- Install React  -->
+          <section>
+            <h3>Installing React</h3>
+            <ol>
+              <li class="fragment">Once you check you have node installed, navigate to the folder where you want to create your application by typing <code>cd yourFolder</code> on the terminal prompt.</li>
+              <li class="fragment">Once in the folder, type <code>npx create-react-app my-app-name</code>.</li>
+              <li class="fragment">Once the application is created, open the folder on Visual Studio Code and open a terminal panel. This terminal will be located inside the recently created application. </li>
+              <li class="fragment">Then run the application by typing <code>npm start</code> on the terminal.</li>
+              <li class="fragment">A new browser window will open at <code>http://localhost:3000/</code>. React will open a temporsry server to run the app on your computer.</li>
+            </ol>
+          </section>
+          <!-- React Basic Concepts  -->
+          <section>
+              <h3>Basic React Concepts</h3>
+              <ul>
+                  <li class="fragment"><b>Components:</b></li>
+                  <li class="fragment"><b>JSX:</b></li>
+                  <li class="fragment"><b>State:</b></li>
+                  <li class="fragment"><b>Props:</b></li>
+              </ul>
+          </section>
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script>
+      Reveal.initialize({ hash: true });
+
+      const loadScript = (src) => {
+        return new Promise((resolve, reject) => {
+          const script = document.createElement("script");
+          script.type = "text/javascript";
+          script.onload = resolve;
+          script.onerror = reject;
+          script.src = src;
+          document.head.append(script);
+        });
+      };
+
+      loadScript("plugin/highlight/highlight.js").then(() => {
+        Reveal.registerPlugin(RevealHighlight);
+      });
+    </script>
+  </body>
+</html>
