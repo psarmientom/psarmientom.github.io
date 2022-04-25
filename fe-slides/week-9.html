@@ -113,6 +113,70 @@
                   <li class="fragment"><b>Props:</b> Props are arguments passed into React components.</li>
               </ul>
           </section>
+          <section>
+            <h3>More on JSX</h3>
+            <p>JSX was introduced by React. You don't need to use JSX to work in react, but it's a lot easier if you do.</p>
+            <p class="fragment">There are a few rules: When an attribute has a <code>-</code> it will be automatically converted into camelCase.</p>
+            <p class="fragment">When using CSS, <code>class</code> is a reserved word for JavaScript, so we use <code>className</code> instead.</p>
+            <p class="fragment">The same goes for the html <code>for</code> like in <code>label for=</code> where we have to use <code>htmlFor</code> instead.</p>
+            <p class="fragment">In JSX, all tags need to be closed <code>&lt;br></code> needs to be <code>&lt;br /></code></p>
+          </section>
+          <section>
+            <h3>Javascript vs. JSX</h3>
+              <div>
+                <h4>Javascript</h4>
+                <ul>
+                  <li class="code">
+                  const target = document.getElementById("target"); <br>
+                  const wrapper = document.createElement("div"); <br>
+                  const headline = document.createElement("h1"); <br>
+
+                  wrapper.innerHTML = "welcome"; <br>
+                  headline.innerHTML = "Hello World"; <br>
+                  target.prepend(headline);
+                  target.append(wrapper); <br>
+                  <br>
+                  </li>
+                </ul>
+              </div>
+          </section>
+          <section>
+            <div>
+              <h4>JSX</h4>
+              <ul>
+                <li class="code">
+                  function () { <br>
+                    return ( <br>
+                      &lt;div> <br>
+                        &lt;h1>Welcome &lt;/h1> <br>
+                        &lt;p>Hello World &lt;/p> <br>
+                        &lt;/div> <br>
+                    )
+                  }
+                </li>
+              </ul>
+            <!-- </div> -->
+          </div>
+          </section>
+        </section>
+        <!-- Navigating the React app structure  -->
+        <section>
+          <section>
+            <h3>Navigating the React folder structure</h3>
+            <p>When you install React, you have 3 main folders: node_modules, public and src.</p>
+            <div class="columns">
+              <div class="col-2">
+                <img src="images/react-tree.png" alt="React app folder structure.">
+              </div>
+              <div class="col2">
+                <ul>
+                  <li class="fragment"><b>node_modules:</b> When you install React using <code>create-react-app</code> it loads many modules you can import into your projects.</li>
+                  <li class="fragment"><b>public:</b> This folder contains the html file, and it can also contain other assets. Files inside the Public folder will not be processed by webpack. (a module bundler for javascript). These files will be untouched on the build process. You can rename/delete all the files in this folder except for the index.html.</li>
+                  <li class="fragment"><b>src:</b> This is where all the files will be processed by webpack. Files outside this folder will not be included in the build process. All Javascript and CSS need to live in this folder. You can rename all the files except for the <code>index.js</code></li>
+                </ul>
+              </div>
+            </div>
+          </section>
         </section>
       </div>
     </div>
