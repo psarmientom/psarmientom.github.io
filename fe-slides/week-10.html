@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Front End Fundamentals | React App</title>
+
+    <meta
+      name="description"
+      content="Static Site Generators, Jekyll, Markdown."
+    />
+    <meta name="author" content="Patricia Sarmiento" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/92123ffbf2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/simple.css" id="theme" />
+    <link rel="stylesheet" href="dist/custom.css" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+
+  <body>
+    <div class="reveal">
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <!-- === REACT APP ===  -->
+        <section>
+          <section>
+            <h3>Single Page React App</h3>
+            <ol>
+              <li>Open the Terminal.</li>
+              <li>
+                Navigate to the directory where you have your class projects
+                using <code>cd</code>. In my case I have them on my Github
+                floder located inside the Documents folder. <br />
+                <code>cd Documents/Github</code>
+              </li>
+              <li>
+                Once in the folder, create the app by typing
+                <code>npx create-react-app react-app</code> <br />(Where
+                <b>react-app</b> is the name I assigned to the app. You can use
+                a different one).
+              </li>
+              <li>
+                After you get the "Happy Hacking!" message, the app is
+                installed.
+              </li>
+              <li>Close the terminal.</li>
+            </ol>
+          </section>
+          <section>
+            <h3>Create the Github Repository</h3>
+            <ol>
+              <li>Open Visual Studio Code.</li>
+              <li>
+                Select New window and open the folder with the recently created
+                app.
+              </li>
+              <li>
+                Select the Source Control Icon and click on "Publish Branch".
+                This will create a repository with the same name on Github.
+              </li>
+              <li>
+                Login to your Github account and make sure the repository has
+                been created.
+              </li>
+              <li>If the repository is there, you can close Github for now.</li>
+            </ol>
+          </section>
+          <section>
+            <h3>Starting the React App</h3>
+            <ol>
+              <li>Go back to Visual Studio</li>
+              <li>Open the Visual Studio Terminal.</li>
+              <li>
+                Since you are already inside the folder, you don;t have to use
+                CD. Type <code>npm start</code> <br />
+                A new browser window will open with the React logo.
+              </li>
+            </ol>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h3>Configuring an External Template</h3>
+            <ol>
+              <li>
+                <a href="files/bs-basic.zip">Download the bs-basic zip file</a>
+                with the Bootstrap template.
+              </li>
+              <li>
+                You can store and unzip the file in the same directory as your
+                app, but <b>not inside the app folder</b>.
+              </li>
+              <li>
+                Open an new window in Visual Studio and open the bs-basic
+                folder. You need to have both projects open in different Visual
+                Studio windows.
+              </li>
+              <li>
+                On the <b>bs-basic template</b>, locate the
+                <b>index.html</b> file and copy <b>all the content</b> from that
+                file and paste it into the react app <b>index.html</b> on the
+                public folder. All the content on the react
+                <b>index.html</b> will be replaced.
+              </li>
+              <li>
+                Check your react app in the browser and you should see the
+                contents of the template instead of the React logo page.
+              </li>
+            </ol>
+          </section>
+          <section>
+            <h3>Preparing the Components</h3>
+            <ol>
+              <li>
+                On the <code>src</code> folder, create a
+                <code>components</code> folder. Here is where qwe are going to
+                store all our content.
+              </li>
+              <li>
+                Create the following pages inside the components folder:
+                <ul>
+                  <li>About.js</li>
+                  <li>Contact.js</li>
+                  <li>Footer.js</li>
+                  <li>Home.js</li>
+                  <li>Nav.js</li>
+                  <li>Teams.js</li>
+                </ul>
+              </li>
+            </ol>
+          </section>
+          <section>
+            <h3>Preparing the Pages</h3>
+            <p>
+              Type this into every of the 4 pages you just created, replacing
+              the <b>Home</b> for the name of the corresponding page. Note that
+              the function name has to be Uppercase.
+            </p>
+            <div class="code" style="text-align: left; padding: 1rem">
+              <p class="code">import React from "react"</p>
+              <p class="code">function <span>Home</span> () {</p>
+              <p class="code">return(</p>
+              <p class="code">&lt;></p>
+              <p class="code">&lt;/></p>
+              <p class="code">)</p>
+              <p class="cdde">}</p>
+              <p class="code">export default <span>Home</span></p>
+            </div>
+          </section>
+          <section>
+            <h3>Replacing the Content</h3>
+            <ol>
+              <li>
+                On the <b>index.html</b> file on the public folder, select the
+                <code>nav</code> div, and paste the content inside the React
+                Fragments <code>&lt;> &lt;/></code> on the Nav.js file.
+              </li>
+              <li>
+                Go gack to the index.html file and select the remaining
+                <code>section</code> tag and paste the content inside the
+                <code>&lt;> &lt;/></code> section of the Home.js file.
+              </li>
+              <li>
+                Go to the index.html file again and right After the
+                <code>body</code> tag and before the <code>script</code> tag,
+                create an empty div with the id of "root". <br />
+                <code>&lt;div id="root">&lt;/div></code><br />
+                This is where React is going to add all the content for your
+                app. Your index.html file should only contain that empty div,
+                inside the <code>body</code>
+              </li>
+              <li>
+                Go to the template files on the bs-basic folder and copy the
+                contents of the about.html, contact.html and Teams.html files
+                into their corresponding .js files on your app.
+              </li>
+              <b>Do not copy the Nav</b
+              >. Only copy any div with a "container" class.
+            </ol>
+          </section>
+          <section>
+            <h3>Adding the CSS to the navbar</h3>
+            <ol>
+              <li>On the components folder, create a css folder.</li>
+              <li>Inside this folder, create the Nav.css file.</li>
+              <li>
+                Go to the bs-basic folder and copy the contents of the
+                styles.css file and paste them into the Nav.css file. All these
+                styles belong to the nav.
+              </li>
+              <li>
+                Go to the Nav.js file and import the Nav.css at the top of the
+                page, below the React import. <br />
+                <code>import "./css/Nav.css"</code> <br />
+                The CSS should be applied now.
+              </li>
+            </ol>
+          </section>
+          <section>
+            <h3>Preparing HTML content for React</h3>
+            <p>
+              There are a few things you need to change in the html in order to
+              make it compatible with React. These are some of the things you
+              need to look for:
+            </p>
+            <ul>
+              <li>
+                <b>css classes:</b> Since class is a reserved javascript word,
+                you need to replace all instances of <b>class</b> for
+                <code>className</code> in all your the .js files you created.
+              </li>
+              <li>
+                <b>inline styles</b>: If you find inline styles on the html
+                template and you cannot move them to a regular CSS file, you
+                need to format it to work with <b>React</b>. If you have: <br />
+                <code>style="height:50px"</code> you need to change it into
+                <code>style={{height:"50px"}}</code>. For multiple properties,
+                separate the properties with a comma. <br />
+                <code>style={{height:"1rem" , width:"1rem"}}</code>
+              </li>
+              <li>
+                <b>Hyphenated Words:</b> You need to change them into camelCase
+                words. <code>file-size</code> becomes <code>fileSize</code>. If
+                the hypens are part of a regular css in "", you don't need to
+                change them. <br />
+                <code> class="home-content"</code> is correct because in between
+                quotes.
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h3>Other HTML errors</h3>
+            <p>While working on the app, keep your eye on the <b>Problems</b> panel on Visual code and look for any HTML error. While your app will work locally with those errors, it will not deploy correctly until you fix them.</p>
+            <p>One important error to consider is the image alt tags. If you're using a decorative image just add and empty tag, but the tag must be present</p>
+            <p class="code">alt=""</p>
+          </section>
+          <section>
+            <h3>Adding the footer</h3>
+            <p>
+              The footer is not on the original template, but it's a good
+              addition to any site.
+            </p>
+            <p>
+              On the footer file, add this between the React fragment tags:
+              <code>&lt;> &lt;/></code>
+            </p>
+            <div class="code">
+              <p class="code">
+                &lt;footer className="container-full bg-warning text-center">
+              </p>
+              <p class="code">
+                &lt;p>Copyright © {new Date().getFullYear()} - P.
+                Sarmiento&lt;/p>
+              </p>
+              <p class="code">&lt;/footer></p>
+            </div>
+            <p>
+              We are adding some plain Javascript to keep the year updated
+              automatically. <br />
+              <code>{new Date().getFullYear()}</code>
+            </p>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h3>Integrating the files</h3>
+            <p>
+              Now it's time to integrate the content into react and see how it
+              works together.
+            </p>
+            <p>
+              All the content is going to be called from the <b>App.js</b> file,
+              which is called from the <b>index.js</b> file and displays the
+              content on the <b>index.html</b> file.
+            </p>
+            <p>
+              We need to import all the files we are going to use into the
+              app.js file.
+            </p>
+          </section>
+          <section>
+            <h3>The App.js file</h3>
+            <ol>
+              <li>
+                We can delete everything betwee the return ()on the file. Also,
+                delete the <code>import logo from './logo.svg';</code> at the
+                top which we are not using.
+              </li>
+              <li>
+                Import all the js files created. <br />
+                <code>import Nav from './components/Nav'</code> Add one line for
+                each file and replace Nav for the corresponding name.
+              </li>
+              <li>
+                On the function return, add all the components to test. All
+                content should be on the page.
+              </li>
+            </ol>
+            <div class="code" style="text-align: left">
+              <p class="code">return (</p>
+              <p class="code" style="margin: 0.1rem">&lt;></p>
+              <p class="code" style="margin: 0.1rem">&lt;Nav /></p>
+              <p class="code" style="margin: 0.1rem">&lt;Home /></p>
+              <p class="code" style="margin: 0.1rem">&lt;Teams /></p>
+              <p class="code" style="margin: 0.1rem">&lt;About /></p>
+              <p class="code" style="margin: 0.1rem">&lt;Contact /></p>
+              <p class="code" style="margin: 0.1rem">&lt;Footer /></p>
+              <p class="code" style="margin: 0.1rem">&lt;>&lt;/></p>
+              <p class="code">)</p>
+            </div>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h3>The Navbar</h3>
+            <p>
+              Now that we have all the content, we need to fix the link, to show
+              only one content at a time and replace the main content with the
+              one associated with the current link.
+            </p>
+            <p>
+              In order to do that, we need to install the
+              <b>react-router-dom</b> which is a React library used to implement
+              dynamic routing.
+            </p>
+            <ol>
+              <li>
+                Stop the server, by going to the Visual Studio terminal and type
+                <code>Control C</code> After this, you should not be able to see
+                your page anymore in the browser.
+              </li>
+              <li>
+                Go back to the VS terminal and type <br />
+                <code>npm install react-router-dom</code>
+              </li>
+              <li>
+                Restart your React app by typing <code>npm start</code>. You
+                should be able to see your app on the browser again.
+              </li>
+            </ol>
+          </section>
+          <section>
+            <h3>Customizing the Nav.js</h3>
+            <p>
+              Since we are using the React Router, we need to replace the &lt;a>
+              and the href, so it can work correctly.
+            </p>
+            <ol>
+              <li>
+                Go to the Nav.js file and import the Link from the react router
+                at the top of the page, below the React import. <br />
+                <code>import {Link} from "react-router-dom"</code>
+              </li>
+              <li>
+                replace all <code>&lt;a</code> for <code>&lt;Link</code> and
+                <code>&lt;/a></code> for <code>&lt;/Link></code>
+              </li>
+              <li>Replace all <code>href=</code> for <code>to=</code></li>
+              <li>
+                Replace the <code>to="#"</code> on line 11 to
+                <code>to="/"</code>
+              </li>
+              <li>
+                Replace the links to the .html files with links to the React
+                apps.
+                <ul>
+                  <li>index.html to /</li>
+                  <li>team.html to /teams</li>
+                  <li>about.html to /about</li>
+                  <li>contact.html to /contact</li>
+                </ul>
+              </li>
+            </ol>
+            <p>
+              <b
+                >At this point your app is not going to work, because we have to
+                import the react router into the app.js as well.</b
+              >
+            </p>
+          </section>
+          <section>
+            <h3>Routing on the App.js</h3>
+            <p>
+              To be able to route the url correctly, we need to import a few
+              Routing Functions
+            </p>
+            <ol>
+              <li>
+                Add
+                <code
+                  >import { HashRouter, Routes, Route} from
+                  "react-router-dom"</code
+                >
+                after all your imports at the top of the page.
+              </li>
+              <li>
+                We need to indicate that we are routing, inside the function, so
+                we replace the React fragments.
+                <ul>
+                  <li class="code">&lt;> for &lt;HashRouter></li>
+                  <li class="code">&lt;/> for &lt;/HashRouter></li>
+                </ul>
+                At this point your app should be back in the browser.
+              </li>
+              <li>
+                Now we need to set the content that needs to be routed. The Nav
+                and the footer are static and should remain in all pages, but
+                the <b>Home, Teams, About and Contact</b> need to be re-routed.
+              </li>
+            </ol>
+          </section>
+          <section>
+            <h3>Routing</h3>
+            <ol>
+              <li>We need to wrap the 4 pages in a <code>Routes</code> tag</li>
+              <li>
+                Then we need to add the path and the element it should load.
+                Your return code in the App.js should look like this:
+              </li>
+            </ol>
+            <div class="code left">
+              <ul class="code">
+                <li>&lt;HashRouter></li>
+                <li>&lt;Nav /></li>
+                <li>&lt;Routes></li>
+                <li>&lt;Route path={"/"} element={&lt;Home />}</li>
+                <li>&lt;Route path={"/teams"} element={&lt;Teams />}</li>
+                <li>&lt;Route path={"/about"} element={&lt;About />}</li>
+                <li>&lt;Route path={"/contact"} element={&lt;Contact />}</li>
+                <li>&lt;/Routes</li>
+                <li>&lt;Footer /></li>
+                <li>&lt;/HashRouter></li>
+              </ul>
+            </div>
+            <p>Your app should work locally now.</p>
+          </section>
+        </section>
+        <section>
+         <section>
+          <h3>Publishing to Github</h3>
+          <p>You have your app working locally, but you need to publish it online. Depending on the server, the steps are different, but for Github this is what you need. 
+            <ol>
+              <li>Open the <code>package.json</code> file. and add below the name line: <br>
+              <code>"homepage": "https://username.github.io/test-app",</code> replace the <b>username</b> with your Github userna,e and <b>test-app</b> with the name of your repo.</li>
+              <li>On the same file, scroll down to the <b>Scripts</b> section and in the line <b>eject</b> add a comma at the end and on a new line add:
+              <ul class="code left">
+                <li>"predeploy": "npm run build",</li>
+                <li>"deploy": "gh-pages -d build"</li>
+              </ul></li>
+            </ol>
+          </p>
+         </section>
+         <section>
+           <h3>Preparing to Build</h3>
+           <p>So far, we have our application ready on our local environment, but we need to make it production ready. For Github we need to install one more thing.</p>
+           <ol>
+             <li>
+               Open Visual Studio Terminal and stop the server by typing <code>Control C</code>
+             </li>
+             <li>Then type <code>npm install gh-pages --save-dev</code></li>
+             <li>Start the server again by typing <code>npm start</code> and make sure your app is running locally.</li>
+           </ol>
+         </section>
+         <section>
+           <h3>Preparing Github</h3>
+           <p>Now that everything is ready locally, we need to publish the repo to Github pages before we upload our files.</p>
+           <ol><li>Go to your repo and select <b>Settings > Pages</b></li>
+          <li>On the Right panel, select <b>master</b> and Save. The message for "Your site is ready to be published at..." will display. </li></ol>
+         </section>
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script>
+      Reveal.initialize({ hash: true })
+
+      const loadScript = (src) => {
+        return new Promise((resolve, reject) => {
+          const script = document.createElement("script")
+          script.type = "text/javascript"
+          script.onload = resolve
+          script.onerror = reject
+          script.src = src
+          document.head.append(script)
+        })
+      }
+
+      loadScript("plugin/highlight/highlight.js").then(() => {
+        Reveal.registerPlugin(RevealHighlight)
+      })
+    </script>
+  </body>
+</html>
