@@ -244,8 +244,17 @@
           </section>
           <section>
             <h3>Other HTML errors</h3>
-            <p>While working on the app, keep your eye on the <b>Problems</b> panel on Visual code and look for any HTML error. While your app will work locally with those errors, it will not deploy correctly until you fix them.</p>
-            <p>One important error to consider is the image alt tags. If you're using a decorative image just add and empty tag, but the tag must be present</p>
+            <p>
+              While working on the app, keep your eye on the
+              <b>Problems</b> panel on Visual code and look for any HTML error.
+              While your app will work locally with those errors, it will not
+              deploy correctly until you fix them.
+            </p>
+            <p>
+              One important error to consider is the image alt tags. If you're
+              using a decorative image just add and empty tag, but the tag must
+              be present
+            </p>
             <p class="code">alt=""</p>
           </section>
           <section>
@@ -450,37 +459,85 @@
           </section>
         </section>
         <section>
-         <section>
-          <h3>Publishing to Github</h3>
-          <p>You have your app working locally, but you need to publish it online. Depending on the server, the steps are different, but for Github this is what you need. 
+          <section>
+            <h3>Publishing to Github</h3>
+            <p>
+              You have your app working locally, but you need to publish it
+              online. Depending on the server, the steps are different, but for
+              Github this is what you need.
+            </p>
             <ol>
-              <li>Open the <code>package.json</code> file. and add below the name line: <br>
-              <code>"homepage": "https://username.github.io/test-app",</code> replace the <b>username</b> with your Github userna,e and <b>test-app</b> with the name of your repo.</li>
-              <li>On the same file, scroll down to the <b>Scripts</b> section and in the line <b>eject</b> add a comma at the end and on a new line add:
-              <ul class="code left">
-                <li>"predeploy": "npm run build",</li>
-                <li>"deploy": "gh-pages -d build"</li>
-              </ul></li>
+              <li>Go to your repo and select <b>Settings > Pages</b></li>
+              <li>
+                On the Right panel, select <b>master</b> and Save. The message
+                for "Your site is ready to be published at "your page URL" will
+                display.
+              </li>
+              <li>
+                Take note of the URL because you are going to use it on the next
+                step.
+              </li>
             </ol>
-          </p>
-         </section>
-         <section>
-           <h3>Preparing to Build</h3>
-           <p>So far, we have our application ready on our local environment, but we need to make it production ready. For Github we need to install one more thing.</p>
-           <ol>
-             <li>
-               Open Visual Studio Terminal and stop the server by typing <code>Control C</code>
-             </li>
-             <li>Then type <code>npm install gh-pages --save-dev</code></li>
-             <li>Start the server again by typing <code>npm start</code> and make sure your app is running locally.</li>
-           </ol>
-         </section>
-         <section>
-           <h3>Preparing Github</h3>
-           <p>Now that everything is ready locally, we need to publish the repo to Github pages before we upload our files.</p>
-           <ol><li>Go to your repo and select <b>Settings > Pages</b></li>
-          <li>On the Right panel, select <b>master</b> and Save. The message for "Your site is ready to be published at..." will display. </li></ol>
-         </section>
+          </section>
+          <section>
+            <h3>Preparing to Build</h3>
+            <p>
+              So far, we have our application ready on our local environment,
+              but we need to make it production ready. For Github we need to
+              install one more thing.
+            </p>
+            <ol>
+              <li>
+                Open the <code>package.json</code> file. and add below the name
+                line: <br />
+                <code>"homepage": "https://username.github.io/test-app",</code>
+                replace the <b>username</b> with your Github username and
+                <b>test-app</b> with the name of your repo.
+              </li>
+              <li>
+                On the same file, scroll down to the <b>Scripts</b> section and
+                in the line <b>eject</b>, add a comma at the end and on a new
+                line add:
+                <ul class="code left">
+                  <li>"predeploy": "npm run build",</li>
+                  <li>"deploy": "gh-pages -d build"</li>
+                </ul>
+              </li>
+            </ol>
+          </section>
+          <section>
+            <h3>Deploying to Github Pages</h3>
+            <ol>
+              <li>
+                Open Visual Studio Terminal and stop the server by typing
+                <code>Control C</code>
+              </li>
+              <li>Type <code>npm install gh-pages --save-dev</code></li>
+              <li>
+                Then type <code>npm run build</code>. Your files will be copied
+                to the gh-pages branch on Github.
+              </li>
+            </ol>
+          </section>
+          <section>
+            <h3>Publishing on Github.</h3>
+            <p>
+              When you publish a react app on Github it will be run from the
+              gh-pages branch which will be created when you deploy your React
+              app.
+            </p>
+            <ol>
+              <li>Go to the repository and select <b>Settings > Pages</b></li>
+              <li>
+                On the Right panel you should have <b>master</b> on the
+                <b>Source</b> dropdown.
+              </li>
+              <li>
+                Click and select the <code>gh-pages</code> branch and save. Your
+                app will be published.
+              </li>
+            </ol>
+          </section>
         </section>
       </div>
     </div>
