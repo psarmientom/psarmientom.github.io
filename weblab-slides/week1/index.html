@@ -52,7 +52,7 @@
           - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
         -->
       <!-- SLIDE 1 INTRO -->
-      <section class="slide-top bg-white">
+      <section class="slide-top bg-white padding-t4">
         <div class="wrap">
           <img class="aligncenter" src="../static/images/cim-intro.png" alt="internet image" width="900" />
           <h1 class="text-serif bluegreen aligncenter">CIM103 | WebLab</h1>
@@ -73,7 +73,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="padding-t3">
         <div class="wrap">
           <h1 class="text-serif bluegreen aligncenter">Phone Rules</h1>
           <img class="aligncenter" src="../static/images/phone-browsing.png" alt="students browsing phones in class"
@@ -162,7 +162,7 @@
         </div>
       </section>
       <!-- CodeSandBox and Webflow  -->
-      <section>
+      <section class="padding-t6">
         <div class="wrap">
           <div class="grid">
             <div class="column">
@@ -195,7 +195,7 @@
         </div>
       </section>
       <!-- SLIDE 2 WHAT IS HTML -->
-      <section class="bg-white slide-top">
+      <section class="bg-white slide-top padding-t6">
         <!--.wrap = container (width: 90%) -->
         <div class="wrap size-90">
           <h2 class="text-serif aligncenter bluegreen">How does the internet work?</h2>
@@ -204,7 +204,7 @@
         </div>
       </section>
       <!--- SLIDE 3 MARKUP - PROGRAMMING----->
-      <section class="bg-white slide-top">
+      <section class="bg-white slide-top padding-t6">
         <!--.wrap = container (width: 90%) -->
         <div class="wrap size-90">
           <h2 class="text-serif aligncenter bluegreen">How do Networks communicate?</h2>
@@ -215,7 +215,7 @@
         </div>
       </section>
       <!-- SLIDE 4 -->
-      <section class="bg-white slide-top">
+      <section class="bg-white slide-top padding-t6">
         <!--.wrap = container (width: 90%) -->
         <div class="wrap size-90">
           <h2 class="text-serif aligncenter bluegreen">How is the information transmitted?</h2>
@@ -251,7 +251,7 @@
         </div>
       </section>
       <!-- SLIDE 4 HTML TAG STRUCTURE -->
-      <section class="slide-top">
+      <section class="slide-top padding-t4">
         <div class="wrap">
           <h2 class="text-serif aligncenter bluegreen">Internet vs. WWW</h2>
           <p class="big-text aligncenter">The internet is is a global system of interconnected computer networks. The
@@ -277,7 +277,7 @@
         </div>
       </section>
       <!-- SLIDE 5 THE HTML PAGE -->
-      <section class="slide-top">
+      <section class="slide-top padding-t3">
         <div class="wrap">
           <h2 class="text-serif aligncenter bluegreen">What is ISP?</h2>
           <p class="big-text aligncenter">An Internet service provider (ISP) is a service that allows you to connect to
@@ -377,7 +377,7 @@
         </div>
       </section>
       <!-- COOKIES  -->
-      <section>
+      <section class="padding-t5">
         <div class="wrap aligncenter">
           <h2 class="text-serif aligncenter bluegreen">Cookies</h2>
           <p class="med-text">Web cookies are small blocks of data created by a web server while a user is browsing a
@@ -388,13 +388,29 @@
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
-          <p><a
+          <p class="med-text"><a
               href="https://theconversation.com/private-browsing-what-it-does-and-doesnt-do-to-shield-you-from-prying-eyes-on-the-web-142445">Some
               information about private browsing.</a></p>
+          <p class="med-text"><a href="https://www.cookielaw.org/the-cookie-law/">Cookies and the Privacy Policy.</a>
+        </div>
+      </section>
+      <!-- Browser Cache  -->
+      <section class="size-70 aligncenter">
+        <div class="wrap aligncenter">
+          <h1 class="text-serif bluegreen">Browser Cache ("cash")</h1>
+          <p class="med-text">In addition to the cookies, your browser temporarily stores website data to make them load
+            faster when you re-visit the page for a second time.</p>
+          <p class="med-text">This saves the browser from downloading all the information again and reduces the
+            bandwidth used.</p>
+          <p class="med-text">How long are the files stored? The answer depends on many factors. How much you browse,
+            the internal caching policies of the page, and the cache storage space.</p>
+          <p class="med-text"><a href="https://www.computerhope.com/issues/ch002125.htm">How to clear the cache in the 4
+              leading browsers</a>.</p>
+          </p>
         </div>
       </section>
       <!-- SLIDE 10 - LINKING -->
-      <section class="slide-top bg-white">
+      <section class="slide-top bg-white padding-t5">
         <div class="wrap">
           <h2 class="text-serif aligncenter bluegreen">What is a URL?</h2>
           <p class="big-text aligncenter">Universal Resource Locator.</p>
@@ -419,18 +435,20 @@
           </div>
         </div>
       </section>
-      <!-- DOAMIN NAME  -->
-      <section>
+      <!-- DOAMAIN NAME  -->
+      <section class="padding-t5">
         <div class="wrap">
           <div class="grid">
             <div class="column">
               <h1 class="text-serif aligncenter bluegreen">What is a Domain?</h1>
               <p class="med-text"><b>DNS - Domain Name System</b> A domain name and its matching IP is called a DNS
-                Record. </p>
+                Record. (think of the relationship between a name and a phone number on a phone book).</p>
               <p class="med-text">When you type in a web address, the browser looks in its DNS cache for a matching
                 record. If no record is found, a message goes through the network to resolving nameservers, run by your
-                ISP. If no record is found there, then it looks for root nameservers, which are designated servers
-                around the world dedicated to storing DNS Data. </p>
+                ISP. If no record is found there, then it looks for root <b>nameservers</b>, which are designated
+                servers around the world dedicated to storing DNS Data. </p>
+              <p class="med-text"><b>Nameserver:</b> Is a special type of server that stores DNS Records. These are
+                maintained by the domain name provider or the Hosting provider.</p>
             </div>
             <div class="column">
               <a
@@ -441,7 +459,7 @@
         </div>
       </section>
       <!-- SLIDE 11 - ABOUT LINKS -->
-      <section class="slide-top">
+      <section class="slide-top padding-t5">
         <div class="wrap">
           <h2 class="text-serif aligncenter bluegreen">Top Level Domains</h2>
           <ul class="flexblock features">
@@ -512,8 +530,9 @@
       <!-- ICANN  -->
       <section>
         <div class="wrap">
-          <h1 class="text-serif aligncenter bluegreen">Who decides over the Domains?</h1>
-          <h4 class="aligncenter">ICANN - (nternet Corporation for Assigned Names and Numbers)</h4>
+          <h1 class="text-serif aligncenter bluegreen">Who decides who gets a Domain?</h1>
+          <h4 class="aligncenter">ICANN - (<b>I</b>nternet <b>C</b>orporation for <b>A</b>ssigned <b>N</b>ames and
+            <b>N</b>umbers)</h4>
           <ul class="med-text">
             <li>American multi stakeholder group and nonprofit organization responsible for coordinating the maintenance
               and procedures of several databases related to the namespaces and numerical spaces of the Internet,
@@ -526,13 +545,18 @@
       <!-- SLIDE 12 RASTER VS VECTOR -->
       <section class="slide-center bg-white">
         <div class="wrap size-60">
-          <h1 class="text-serif aligncenter bluegreen">What do I need to have a website?</h1>
+          <h2 class="text-serif aligncenter bluegreen">What do I need to have a website?</h2>
           <div class="grid center-align">
             <div class="column">
-              <ol class="big-text">
-                <li>A Domain name <br> (www.mywebsite.com)</li>
-                <li class="padding-t3">A hosting service</li>
-                <li class="padding-t3">Website files<br> (html, css, images, js, etc)</li>
+              <ol class="med-text">
+                <li>A Domain name. <br> (mywebsite.com) <ul>
+                    <li><a href="https://domains.com">Domains.com</a></li>
+                    <li><a href="https://namecheap.com">Namecheap.com</a></li>
+                    <li><a href="https://domains.google/v2/">Google Domains</a></li>
+                  </ul>
+                </li>
+                <li class="padding-t3">Website files and content.<br> (html, css, images, js, etc)</li>
+                <li class="padding-t3">A hosting service. <br> (A place to put your website)</li>
               </ol>
             </div>
             <div class="column">
@@ -543,21 +567,79 @@
           </div>
         </div>
       </section>
+      <!-- About Hosting  -->
+      <section class="padding-t3 size-80 aligncenter">
+        <div class="grid">
+          <div class="column textLeft">
+            <h1 class="text-serif bluegreen">Web Hosting</h1>
+            <p class="med-text">Web hosting is a service that store your website and makes it available on the internet.
+            </p>
+            <ol class="med-text">
+              <li><b>Traditional Hosting. </b>Files are stored on a Server managed by a Hosting Company. <ul>
+                  <li>Shared Hosting</li>
+                  <li>VPS (Virtual Private Server)</li>
+                  <li>Dedicated Hosting</li>
+                </ul> Files are uploaded using FTP.
+                <hr>
+              </li>
+              <li><b>Cloud Hosting.</b></li>
+              <hr>
+              <li><b>No-code or Template Based Website Builders</b>. <br> One-Stop services that offer hosting, domain
+                registration and template based websites with or without e-commerce.</li>
+            </ol>
+          </div>
+          <div class="column">
+            <img src=https://www.inmotionhosting.com/images/infographics/where_does_your_website_live.png width=400
+              height=1487 border=0 alt="Where Does Your Website Live?">
+            <div>InMotion Hosting - <a href=https://www.inmotionhosting.com />Types of Web Hosting Plans</a></div>
+            <!-- <img src="../static/images/hosting-info.png" alt="Hosting services infographic" width="400"> -->
+            <!-- <cite>https://www.inmotionhosting.com/web-hosting-infographics</cite> -->
+          </div>
+        </div>
+      </section>
+      <!-- The Cloud  -->
+      <section class="aligncenter padding-t5">
+        <div class="grid">
+          <div class="column">
+            <h2 class="text-serif bluegreen">The Cloud</h2>
+            <iframe class="aligncenter" width="560" height="315" src="https://www.youtube.com/embed/vqlQr7eufx8"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+            <hr>
+            <p class="med-text textLeft">Cloud computing is the on-demand availability of computer system resources,
+              especially data storage (cloud storage) and computing power, without direct active management by the user.
+            </p>
+            <cite>https://en.wikipedia.org/wiki/Cloud_computing</cite><br>
+          </div>
+          <div class="column">
+            <h2 class="text-serif bluegreen">Cloud Hosting</h2>
+            <p class="med-text textLeft">Cloud Hosting is a Hosting service that takes advantage of the Cloud to run
+              your website.</p>
+            <p class="med-text textLeft">Instead of being hosted in one server, it is stored in multiple servers.</p>
+            <p class="med-text textLeft">It is highly scalable and has better performance. Resources can be quickly
+              allocated as needed.</p>
+            <p class="med-text textLeft">Offers better security and since it's managed by multiple servers in multiple
+              locations, if one fails, another takes over.</p>
+            <p class="med-text textLeft">It is more cost effective that a Dedicated Hosting.</p>
+          </div>
+        </div>
+      </section>
       <!-- SLIDE 12 RASTER VS VECTOR -->
-      <section class="slide-top bg-white">
+      <section class="slide-top bg-white padding-t5">
         <div class="wrap size-60">
           <h1 class="text-serif aligncenter bluegreen">Front End Development</h1>
-          <p class="big-text aligncenter">Is the term used to describe the combination of HTML, CSS, and javascript to
+          <p class="med-text aligncenter">Is the term used to describe the combination of HTML, CSS, and javascript to
             create multimedia experiences, apps and websites.</p>
           <div class="grid center-align">
             <div class="aligncenter">
-              <img src="../static/images/developer.png" alt="web developer illustration" width="800" />
+              <img src="../static/images/developer.png" alt="web developer illustration" width="700" />
             </div>
           </div>
         </div>
       </section>
       <!-- SLIDE 12 - WEB IMAGES -->
-      <section class="slide-top">
+      <section class="slide-top padding-t4">
         <div class="wrap size-90">
           <h1 class="text-serif aligncenter bluegreen">What makes a Webpage?</h1>
           <div class="grid top-align">
@@ -593,7 +675,7 @@
         </div>
       </section>
       <!-- SLIDE 13 - SEMANTIC MARKUP -->
-      <section class="bg-white slide-top">
+      <section class="bg-white slide-top padding-t5">
         <!--.wrap = container (width: 90%) -->
         <div class="wrap size-80 frame">
           <h1 class="text-serif bluegreen aligncenter">Separation of content and presentation</h1>
@@ -612,7 +694,7 @@
         </div>
       </section>
       <!-- SLIDE 14 - GUIDELINES -->
-      <section class="bg-white slide-top">
+      <section class="bg-white slide-top padding-t5">
         <!--.wrap = container (width: 90%) -->
         <div class="wrap size-90">
           <h1 class="text-serif bluegreen aligncenter">Same Content, Multiple Devices</h1>
@@ -624,7 +706,7 @@
         </div>
       </section>
       <!-- SLIDE 15 - RESOURCES -->
-      <section class="bg-white slide-top">
+      <section class="bg-white slide-top padding-t6">
         <!--.wrap = container (width: 90%) -->
         <div class="wrap size-90">
           <h1 class="text-serif bluegreen aligncenter">Careers</h1>
@@ -635,7 +717,7 @@
         </div>
       </section>
       <!-- SLIDE UX -->
-      <section class="bg-white slide-top">
+      <section class="bg-white slide-top padding-t5">
         <!--.wrap = container (width: 90%) -->
         <div class="wrap size-90">
           <h1 class="text-serif bluegreen aligncenter">User Experience Design (UX Design)</h1>
@@ -655,7 +737,7 @@
           </div>
       </section>
       <!-- SLIDE UX -->
-      <section class="bg-white slide-top">
+      <section class="bg-white slide-top padding-t5">
         <!--.wrap = container (width: 90%) -->
         <div class="wrap size-90">
           <h1 class="text-serif bluegreen aligncenter">What is bad UX?</h1>
@@ -669,12 +751,15 @@
               <ul>
                 <li>Autoplay videos</li>
                 <li>Hidden navigation</li>
-                <li>Difficult navigation (<a href="https://www.art.yale.edu/">YSA</a>)</li>
+                <li>Difficult navigation</li>
+                <li>Broken Links</li>
                 <li>Dark UX</li>
                 <li>Discoverability (hard to find features)</li>
                 <li>Performance (more than 3 seconds)</li>
               </ul>
-              <p class="padding-t4 med-text bluegreen">Some web UX facts</p>
+              <p class="med-text bluegreen"><a href="https://blog.hubspot.com/website/bad-vs-good-design">Some examples
+                  of bad design.</a></p>
+              <p class="med-text bluegreen">Some web UX facts</p>
               <ul>
                 <li>48% users will leave a non-mobile website.</li>
                 <li>88% of consumers will not return to a site with bad UX.</li>
@@ -686,7 +771,7 @@
           </div>
       </section>
       <!-- SLIDE UI -->
-      <section class="bg-white slide-top">
+      <section class="bg-white slide-top padding-t5">
         <!--.wrap = container (width: 90%) -->
         <div class="wrap size-90">
           <h1 class="text-serif bluegreen aligncenter">User Interface Design (UI Design)</h1>
@@ -706,11 +791,10 @@
         <div class="wrap size-90">
           <h1 class="text-serif bluegreen aligncenter">Front End Developer</h1>
           <p class="big-text aligncenter">Makes it happen.</p>
-
           <div class="grid">
-              <img class="aligncenter" src="../static/images/ui-developer.png" alt="graphic of html and css structure" width="700"/>
+            <img class="aligncenter" src="../static/images/ui-developer.png" alt="graphic of html and css structure"
+              width="700" />
           </div>
-
         </div>
       </section> -->
       <!-- SLIDE digital teams -->
@@ -718,11 +802,11 @@
         <div class="wrap size-90">
           <h1 class="text-serif bluegreen aligncenter">Visual Design vs. Interactive Design</h1>
           <div class="grid">
-              <img class="aligncenter" src="../static/images/digital-team.png" alt="graphic of html and css structure" width="980"/>
+            <img class="aligncenter" src="../static/images/digital-team.png" alt="graphic of html and css structure"
+              width="980" />
           </div>
-            <cite><a href="https://uxdict.io/the-differences-interaction-design-vs-visual-design-dae7b454be77
-">https://uxdict.io/the-differences-interaction-design-vs-visual-design-dae7b454be77
-</a></cite>
+          <cite><a href="https://uxdict.io/the-differences-interaction-design-vs-visual-design-dae7b454be77
+">https://uxdict.io/the-differences-interaction-design-vs-visual-design-dae7b454be77 </a></cite>
         </div>
       </section> -->
       <!-- SLIDE digital teams -->
