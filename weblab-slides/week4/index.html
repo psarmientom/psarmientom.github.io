@@ -873,6 +873,185 @@
           </ul>
         </div>
       </section>
+      <!-- Styling Tables  -->
+      <section>
+        <div class="wrap">
+          <h2 class="text-serif bluegreen aligncenter">Styling Tables</h2>
+          <p class="med-text aligncenter"><b>When to use tables?</b> If you would usually add this information in a
+            spreasheet, then it's a table. <br> If you just want to making things look organized on a page, <strong>use
+              CSS</strong>.</p>
+          <div class="grid">
+            <div class="column">
+              <h4>On the HTML</h4>
+              <ul class="sm-text">
+                <li>Use colspan to merge columns:<ul>
+                    <li>&lt;th colspan="2"&gt; </li>
+                  </ul>
+                </li>
+                <li>Use rowspan to merge rows:<ul>
+                    <li>&lt;th rowspan="2"&gt; </li>
+                  </ul>
+                </li>
+                <li>You can use header, body and footer in tables. <ul>
+                    <li>&lt;thead&gt;</li>
+                    <li>&lt;tbody&gt;</li>
+                    <li>&lt;tfoot&gt;</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="column">
+              <style>
+                /* Reset Styles that override default browser styles for browsers */
+                .tableDemo table,
+                .tableDemo caption,
+                .tableDemo tbody,
+                .tableDemo tfoot,
+                .tableDemo thead,
+                .tableDemo tr,
+                .tableDemo th,
+                .tableDemo td {
+                  /* margin: 0;
+                  padding: 0;
+                  border: 0; */
+                  font-size: 100%;
+                  font: inherit;
+                }
+
+                /* Styles for the Tables */
+                .tableDemo table {
+                  border-collapse: collapse;
+                  border-spacing: 0;
+                  width: 90%;
+                }
+
+                .tableDemo thead,
+                .tableDemo tfoot {
+                  background: #23babc;
+                  color: white;
+                }
+
+                .tableDemo tfoot th {
+                  padding: 10px;
+                }
+
+                .tableDemo td,
+                .tableDemo th {
+                  border: solid 5px #ccc;
+                  padding: 10px;
+                }
+
+                .tableDemo tbody tr:nth-child(even),
+                .tableDemo tr:nth-child(even) {
+                  background: rgba(35, 186, 188, .05);
+                }
+
+                .tableDemo tbody tr:hover {
+                  background: #efefef;
+                }
+
+                .tableDemo .vText {
+                  /* writing-mode: vertical-rl; */
+                  /* text-orientation: upright; */
+                  /*     text-orientation: mixed; */
+                  /*   compatibility table */
+                  /*     rotate:180deg; */
+                  /*   transform: rotate(180deg); */
+                  /*   font-size:3.5em; */
+                  /*   font-weight:bold; */
+                }
+              </style>
+              <table class="tableDemo">
+                <thead>
+                  <tr>
+                    <th colspan="3">This is the Table Heading</th>
+                    <th colspan="2">heading</hd>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Cell 1</td>
+                    <td>Cell 2</td>
+                    <td>Cell 3</td>
+                    <!--         <td>Cell 3</td> -->
+                    <td class="vText" rowspan="3">Cell 4</td>
+                    <td>Cell 5</td>
+                  </tr>
+                  <tr>
+                    <td>Cell 1</td>
+                    <td>Cell 2</td>
+                    <td>Cell 3</td>
+                    <!--                 <td>Cell 4</td> -->
+                    <td>Cell 5</td>
+                  </tr>
+                  <tr>
+                    <td>Cell 1</td>
+                    <td>Cell 2</td>
+                    <td>Cell 3</td>
+                    <td>Cell 4</td>
+                    <!--         <td>Cell 5</td> -->
+                  </tr>
+                  <tr>
+                    <td>Cell 1</td>
+                    <td>Cell 2</td>
+                    <td>Cell 3</td>
+                    <td>Cell 4</td>
+                    <td>Cell 5</td>
+                  </tr>
+                  <tr>
+                    <td>Cell 1</td>
+                    <td>Cell 2</td>
+                    <td>Cell 3</td>
+                    <td>Cell 4</td>
+                    <td>Cell 5</td>
+                  </tr>
+                  <tr>
+                    <td>Cell 1</td>
+                    <td>Cell 2</td>
+                    <td>Cell 3</td>
+                    <td>Cell 4</td>
+                    <td>Cell 5</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th colspan="5">This is the Table Footer</th>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+            <div class="column">
+              <h4>On the CSS</h4>
+              <ul class="sm-text">
+                <li>Add to the table to avoid double borders: <ul>
+                    <li> border-collapse: collapse; </li>
+                    <li> border-spacing: 0; </li>
+                  </ul>
+                </li>
+                <li>Add borders and paddings to the th and td. <ul>
+                    <li>th, td { border : solid 1px #000000; }</li>
+                  </ul>
+                </li>
+                <li> To change the background of every other row use: <ul>
+                    <li>tr:nth-child(even){ background: #ccc; } </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Margin and Padding  -->
+      <section>
+        <div class="wrap">
+          <h2 class="text-serif.bluegreen.aligncenter">Page Paddings and Margins</h2>
+          <div class="grid">
+            <div class="column">
+            </div>
+            <div class="column"></div>
+          </div>
+        </div>
+      </section>
       <!-- Browsers  -->
       <section>
         <!--.wrap = container (width: 90%) -->
@@ -882,8 +1061,13 @@
             <div class="column">
               <ul>
                 <li>Each browser has its own rendering engine.</li>
-                <li>They all interpret and render web pages slightly different.</li>
-                <li>They also have their own styles for default values.</li>
+                <li>They all interpret and render web pages slightly different. <ul></ul>
+                <li><a
+                    href="https://admissions.miami.edu/undergraduate/application-process/admission-requirements/freshman/index.html">Check
+                    this page in different browsers an note the bold text.</a></li>
+              </ul>
+              </li>
+              <li>They also have their own styles for default values.</li>
               </ul>
             </div>
             <!-- .end .column -->
