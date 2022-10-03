@@ -1044,11 +1044,70 @@
       <!-- Margin and Padding  -->
       <section>
         <div class="wrap">
-          <h2 class="text-serif.bluegreen.aligncenter">Page Paddings and Margins</h2>
+          <h2 class="text-serif bluegreen aligncenter">Page Paddings and Margins</h2>
           <div class="grid">
             <div class="column">
+              <p class="sm-text">Paddings and margins have 4 values: <b>top, right, bottom, left.</b> You can assign the
+                values individually by using padding-top:, padding-right, etc. Values are applied clockwise.</p>
+              <h4 class="bluegreen">Overriding default browser styles</h4>
+              <ul>
+                <li> The <b>body</b> has a default margin of 8px. </li>
+                <li><b>p</b> tags have a 1em margin on top and bottom.</li>
+                <li><b>box-sizing</b>determines if the padding will be applied inside the element, or outside. The
+                  default is <b>content-box</b> which adds the size of the padding to the element's size. Changing it to
+                  <b>border-box</b> adds the space withing the elements's available space.</li>
+                <li class="sm-text"><a href="https://browserdefaultstyles.com/">Default Browser Styles</a></li>
+              </ul>
             </div>
-            <div class="column"></div>
+            <div class="column">
+              <img src="../static/images/margin-paddin.png" alt="margins and paddings graphic">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Centering Content  -->
+      <section>
+        <div class="wrap">
+          <h2 class="text-serif bluegreen aligncenter">Centering content</h2>
+          <hr>
+          <div class="grid">
+            <div class="colum" style="margin-right:4rem;">
+              <h4>Centering Text:</h4>
+              <ul>
+                <li>use text-align:center;</li>
+              </ul>
+              <h4>Centering content</h4>
+              <ul>
+                <li>Place the content you want to center in a container (div, section, etc)</li>
+                <li>Add a width to the div (px, em, %)</li>
+                <li>Add <b>auto</b> margin to the left and right, and let css calculate the distance. <b>margin: 0
+                    auto;</b></li>
+              </ul>
+            </div>
+            <div class="colums">
+              <style>
+                .outer {
+                  background: #23babc;
+                  padding: 10%;
+                  width: 30vw;
+                }
+
+                .center-div {
+                  background-color: #efefef;
+                  width: 90%;
+                  margin: 0 auto;
+                  padding: 5%
+                }
+              </style>
+              <div class="outer">
+                <div class="center-div">
+                  <h5>This is the content</h5>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam earum recusandae eaque dignissimos
+                    id quas architecto blanditiis adipisci quo nihil doloribus saepe accusamus laboriosam laborum,
+                    labore iure voluptatum sapiente consectetur.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
