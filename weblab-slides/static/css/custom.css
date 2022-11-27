@@ -4,6 +4,7 @@
 }
 .med-text{
   font-size:2.5rem;
+  line-height: 1.5;
 }
 ul.med-text li{
   line-height: 3.5rem;
