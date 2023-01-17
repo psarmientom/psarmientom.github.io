@@ -328,6 +328,7 @@ dollarBills.forEach(bill => {
 
 // Using the foreach loop to add a class to all the elements on an array
 // The paragraphs array was declared on line 194 using querySelectorAll 
+//const paragraphs = document.querySelectorAll( "p" ) 
 paragraphs.forEach(paragraph => paragraph.classList.add("blue"))
 // or using for of
 // for (paragraph of paragraphs) {
