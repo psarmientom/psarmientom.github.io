@@ -112,20 +112,12 @@
                 <li>CSS 3 is the latest standard for CSS </li>
                 <li>CSS is evolving constantly and there are always new features coming up</li>
               </ul>
+              <ul>
+                <li><a href="https://web.archive.org/">Visit the Web Archive and explore how sites looked through the
+                    years.</a></li>
+              </ul>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- Taxonomy -->
-      <section>
-        <div class="wrap">
-          <h2 class="text-serif aligncenter bluegreen">Is this supported?</h2>
-          <p class="med-text aligncenter">Modern browsers support many aspects of CSS3 but is a good idea to check
-            support at <a href="https://caniuse.com/">caniuse.com</a></p>
-          <div class="grid padding-t5">
-            <img class="aligncenter" src="../static/images/CSS3-taxonomy.png" alt="CSS3 Taxonomy" width="900" />
-          </div>
-          <!--end .grid -->
         </div>
       </section>
       <section>
@@ -172,7 +164,7 @@
               <ul>
                 <li>Imagine there is an invisible box around every HTML element</li>
                 <li>You assign an id or a class and apply the style on the css file</li>
-                <li>All web pages are made of invisible boxes</li>
+                <li><b>All web pages are made of invisible boxes</b></li>
               </ul>
             </div>
             <!-- .end .column -->
@@ -286,9 +278,10 @@
                 <ul>
                   <li>All HTML boxes are by default block or inline</li>
                   <li> <b>Block:</b> The element will take the full width of the parent container and will start in a
-                    new line. (h1, p, div)</li>
+                    new line. (h1, p, div). </li>
                   <li> <b>Inline:</b> The element will only take the space of its content and will not break the flow of
-                    content (b, i, span)</li>
+                    content by creating a new line (b, i, span)</li>
+                  <li>Images are a special case. They are by default inline, but have many properties of a block.</li>
                 </ul>
               </div>
             </div>
@@ -325,15 +318,16 @@
           </div>
         </div>
       </section>
+      <!-- The display property  -->
       <section>
         <div class="wrap size-80">
           <h2 class="text-serif aligncenter bluegreen">The Display Property: Changing Box Behavior</h2>
-          <p class="med-text aligncenter">Eack box has a default behavior that can be changed with the display property.
+          <p class="med-text aligncenter">Each box has a default behavior that can be changed with the display property.
             <br> By default every element is <b>block</b> or <b>inline</b>.</p>
-          <div class="demo-block">This is one block element</div>
-          <div class="demo-block">This is another block element</div>
-          <p class="demo-block-p">This is another block element <span>This is an inline element inside a block
-              element</span> and <span class="span1">this is another inline element</span></p>
+          <div class="demo-block">This is one div block element</div>
+          <div class="demo-block">This is another div block element</div>
+          <p class="demo-block-p">This is a p block element <span>This is an inline element inside a paragraph
+              tag</span> and <span class="span1">this is another inline element</span></p>
           <div class="demo-inline">
             <div>This is a block element acting line an inline-block </div>
             <div>This is another block element acting line an inline-block </div>
@@ -350,11 +344,76 @@
                   <li> display: block; / display: inline; / display: inline-block;</li>
                 </ul>
               </div>
+              <div class="column">
+                <ul>
+                  <li><b>none:</b> removes the element from view.</li>
+                  <li><b>Flex:</b> used to implement the Flexible Box Layout</li>
+                  <li><b>Grid:</b> used to implement the Grid Box Layout</li>
+                </ul>
+              </div>
             </div>
             <!-- .end .grid -->
           </div>
         </div>
       </section>
+      <!-- Display Property rules  -->
+      <section>
+        <div class="wrap size-60">
+          <h2 class="text-serif aligncenter bluegreen"> Block vs. Inline vs. Inline-Block </h2>
+          <p class="med-text aligncenter">Each Display property has specific rules for css styling.</p>
+          <table>
+            <tr>
+              <th>Property</th>
+              <th>Inline</th>
+              <th>Inline-block</th>
+              <th>Block</th>
+            </tr>
+            <tr>
+              <td>Break Line</td>
+              <td>No</td>
+              <td>No</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Padding</td>
+              <td>Left and Right only</td>
+              <td>All four sides</td>
+              <td>All four sides</td>
+            </tr>
+            <tr>
+              <td>Margin</td>
+              <td>Left and Right only</td>
+              <td>All four sides</td>
+              <td>All four sides</td>
+            </tr>
+            <tr>
+              <td>Width</td>
+              <td>Not Allowed</td>
+              <td>Allowed</td>
+              <td>Allowed</td>
+            </tr>
+            <tr>
+              <td>Height</td>
+              <td>Not Allowed</td>
+              <td>Allowed</td>
+              <td>Allowed</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <!-- Is this supported? -->
+      <section>
+        <div class="wrap">
+          <h2 class="text-serif aligncenter bluegreen">Is this supported?</h2>
+          <p class="med-text aligncenter">Modern browsers support many aspects of CSS3 but is a good idea to check
+            support at <a href="https://caniuse.com/">caniuse.com</a></p>
+          <div class="grid padding-t5">
+            <img class="aligncenter" src="../static/images/CSS3-taxonomy.png" alt="CSS3 Taxonomy" width="900" />
+          </div>
+          <!--end .grid -->
+        </div>
+      </section>
+      <!-- CSS Color  -->
       <section class="slide-med">
         <div class="wrap size-90">
           <h2 class="text-serif aligncenter bluegreen">CSS Color</h2>

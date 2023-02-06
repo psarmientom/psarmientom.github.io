@@ -217,18 +217,19 @@ ul li ul{
   height:40px;
   background: #cccccc;
   padding:10px;
-  margin:10px;
+  margin-bottom:10px;
 }
 .demo-block-p{
-  background: #cccccc;
+  /* background: #cccccc; */
   padding: 10px;
   margin-top:10px;
+  border:solid 1px #ccc;
 }
 .demo-block-p span{
   background: #000000;
   color:#ffffff;
 }
-.demo-block-p .span1{
+.demo-block .span1{
   background: #666666;
   color:#ffffff;
 }
