@@ -697,12 +697,13 @@
       <section>
         <!--.wrap = container (width: 90%) -->
         <div class="wrap size-90">
+          <h2 class="text-serif bluegreen">CSS: Cascading Style Sheets</h2>
           <div class="grid vertical-align">
             <div class="column">
-              <h2 class="text-serif bluegreen">What does Cascading mean?</h2>
+              <h3 class="bluegreen">What does Cascading mean?</h3>
               <ul>
                 <li>The Cascade is the way the browser decided which style applies to an element</li>
-                <li>The principle of the “cascade” is applied when style rules are in conflict</li>
+                <li><b>The principle of the “cascade” is applied when style rules are in conflict</b></li>
                 <li>We can think of css rules as having weight or a point system to determine which rule wins</li>
                 <li><a href="https://specificity.keegan.st/">Specificity Calculator</a></li>
                 </li>
@@ -711,12 +712,12 @@
             <!-- .end .column -->
             <div class="column">
               <p class="med-text">There are some factors that determine which style rule wins out:</p>
-              <ul>
+              <ol>
                 <li>Initial &amp; Inherited Properties (<b>least weight</b>)</li>
                 <li>Order of Appearance</li>
                 <li>Selector Specificity</li>
                 <li>Origin &amp; Importance (<b>Most weight</b>)</li>
-              </ul>
+              </ol>
             </div>
             <!-- .end .column -->
           </div>
@@ -734,6 +735,7 @@
               <ul>
                 <li>This is the first stop in the Cascade</li>
                 <li><b>Initial</b> applies the default values when there are no styles applied to the element.</li>
+                <li>These are the default browser styles</li>
                 <li>It is not really part of the cascade but it still counts as it applies styles to the html.</li>
               </ul>
             </div>
@@ -808,6 +810,7 @@
             <div class="column">
               <ul>
                 <li>Here the browser looks at all CSS selectors used in the file.</li>
+                <li>Think of it as layers. The top layer is the visible one.</li>
                 <li>Looks at the external, local and inline styles</li>
                 <li>When two selectors have the same attributes and specificity, the one that comes last in the code
                   wins.</li>
