@@ -1,0 +1,728 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CLEAN MARKUP = GOOD KARMA.
+      Hi source code lover,
+
+      you're a curious person and a fast learner ;)
+      Let's make something beautiful together. Contribute on Github:
+      https://github.com/webslides/webslides
+
+      Thanks,
+      @jlantunez.
+    -->
+
+  <!-- SEO -->
+  <title>Javascript</title>
+  <meta name="description" content="Introduction to HTML concepts">
+
+  <!-- URL CANONICAL -->
+  <!-- <link rel="canonical" href="http://your-url.com/"> -->
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/92123ffbf2.js" crossorigin="anonymous"></script>
+  <!-- CSS WebSlides -->
+  <link rel="stylesheet" type='text/css' media='all' href="../static/css/webslides.css">
+  <link rel="stylesheet" type='text/css' media='all' href="../static/css/custom.css">
+
+  <!-- Optional - CSS SVG Icons (Font Awesome) -->
+  <link rel="stylesheet" type='text/css' media='all' href="../static/css/svg-icons.css">
+
+  <!-- SOCIAL CARDS (ADD YOUR INFO) -->
+
+
+  <!-- FAVICONS -->
+  <link rel="shortcut icon" sizes="16x16" href="../static/images/favicons/favicon.png">
+  <link rel="shortcut icon" sizes="32x32" href="../static/images/favicons/favicon-32.png">
+  <link rel="apple-touch-icon icon" sizes="76x76" href="../static/images/favicons/favicon-76.png">
+  <link rel="apple-touch-icon icon" sizes="120x120" href="../static/images/favicons/favicon-120.png">
+  <link rel="apple-touch-icon icon" sizes="152x152" href="../static/images/favicons/favicon-152.png">
+  <link rel="apple-touch-icon icon" sizes="180x180" href="../static/images/favicons/favicon-180.png">
+  <link rel="apple-touch-icon icon" sizes="192x192" href="../static/images/favicons/favicon-192.png">
+
+  <!-- Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#333333">
+
+</head>
+
+<body>
+
+  <main role="main">
+    <article id="webslides" class="horizontal">
+      <!-- Quick Guide
+          - Each parent <section> in the <article id="webslides"> element is an individual slide.
+          - Vertical sliding = <article id="webslides" class="vertical">
+          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
+        -->
+      <!-- SLIDE 1 INTRO -->
+
+      <section class="aligncenter">
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap size-90">
+
+          <img src="../static/images/js.png" alt="html icon" width="500" />
+          <img src="../static/images/jquery.png" alt="html icon" width="500" />
+
+          <h2 class="text-landing">Javascript / Jquery</h2>
+          <!-- <p class="text-intro">Using Cascading Style Sheets</p> -->
+
+        </div>
+      </section>
+
+      <!-- slide what is Javascript -->
+      <section class="slide-top">
+        <div class="wrap size-80">
+        <h2 class="text-serif bluegreen">What is Javascript?</h2>
+
+        <div class="grid top-align">
+        <p class="med-text">Javascript is a scripting language that allows you to add interactivity to web pages.</p><br>
+        <p class="med-text">There are 3 main components in web pages:</p>
+          <div class="grid">
+
+            <div class="column">
+              <h2>HTML</h2>
+              <p class="med-text">We use it to create the structure of the page.</p>
+              <img src="../static/images/ball-html.gif" alt="structure of a ball" width="300" />
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <h2>CSS</h2>
+              <p class="med-text">We use it to style the elements.</p>
+                <img src="../static/images/ball-css.gif" alt="Basketball" width="300" />
+            </div>
+            <div class="column">
+              <h2>Javascript</h2>
+              <p class="med-text">We use it to add dynamic functionality interactivity.</p>
+                <img src="../static/images/ball-js.png" alt="kid playing with a ball" width="300" />
+            </div>
+            <!-- .end .column -->
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <cite><a href="https://www.freepik.com/free-photos-vectors/sport">Sport vector created by brgfx - www.freepik.com</a></cite>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap size-80">
+        <h2 class="text-serif bluegreen">Is Javascript a programming language?</h2>
+
+        <div class="grid top-align">
+
+          <div class="grid">
+
+            <!-- .end .column -->
+
+            <div class="column">
+              <ul>
+                <li>Javascript is the default scripting language in HTML and is used by all modern browsers.</li>
+                <li>Scripting languages are what can be called a sub-category of programming languages.</li>
+                <li>A Programming language is in simple terms a list of instructions to be performed by the browser or application.</li>
+                <li>Programming Languages: C, C#, C++, Java</li>
+                <li>Scripting Languages: Javascript, PHP, Phyton</li>
+                <li>The difference between the two is the way they are processed.</li>
+              </ul>
+            </div>
+            <!-- .end .column -->
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+      </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap size-80">
+          <div class="grid vertical-align">
+            <div class="column">
+              <h2 class="text-serif bluegreen">A little bit of History..</h2>
+              <ul>
+                <li>Javascript was created by Netscape in 1995, but it was originally named Mocha.</li>
+                <li>It has nothiing to do with the Java Language, but it was marketed to be used with it.
+                  The only common traits are some syntax similarities.</li>
+                  <li>In its origin it was viewed as a lesser language.</li>
+                <li>In the early 2000s many big companies like Facebook and Google started using Javascript on their websites and applications</li>
+                <li>Javascript was not widely used until 2008, when it started it's journey to become one of the most popular programming languages.</li>
+                <li>Used by at least 95% of websites.</li>
+              </ul>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+            <h3 class="text-serif bluegreen">Advantages of Javascript</h3>
+            <ul>
+              <li>Easy to learn</li>
+              <li>Allows you to implement interactivity quickly</li>
+              <li>It's fast.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </section>
+
+      <section>
+
+          <div class="wrap size-80">
+            <h2 class="text-serif bluegreen">What can I do with Javascript?</h2>
+            <div class="grid">
+
+              <div class="column">
+                  <ul>
+                    <li>Add interactivity to websites: Interactive menus, form validation, slideshows, calculations, etc.</li>
+                    <li>Web Applications: Google maps, YouTube</li>
+                    <li>Presentations</li>
+                    <li>Games</li>
+                    <li>Art</li>
+                    <li>Some mobile and smartwatch apps</li>
+                    <li><a href="https://skillcrush.com/blog/projects-you-can-do-with-javascript/">Projects you can do with JS</a></li>
+                    <li><a href="https://www.w3schools.com/js/js_examples.asp">Javascript syntax</a></li>
+                  </ul>
+              </div>
+
+              <div class="column">
+                    <p class="med-text">Javascript allows you to do these 3 basic things:</p>
+                    <ul>
+                      <li>Detects user interaction and reacts according to the instructions in the code.</li>
+                      <li>It can alter the structure of your html and css by adding content or classes on the fly.</li>
+                      <li>Allows you to create animations.</li>
+                  </ul>
+              </div>
+              <!-- .end .column -->
+              <!-- .end .column -->
+            </div>
+            <!-- .end .grid -->
+          </div>
+          <!-- .end .wrap -->
+      </section>
+
+      <section class="slide-top bg-white">
+        <div class="wrap">
+          <h1><strong>Using Javascript on your website.</strong></h1>
+          <p class="med-text"><b>External File</b> </p>
+          <div class="grid ms">
+
+            <div class="column">
+              <img src="../static/images/js-placement.png" alt="html code with javascript" width="900">
+              <p style="font-size:60px;margin-top:30px;"><b>&lt;script src="js/file.js"&gt;&lt;/script&gt;</b> </p>
+            </div>
+            <div class="column">
+
+            </div>
+          </div>
+
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section class="slide-top bg-white">
+        <div class="wrap">
+          <p class="big-text"><b>In-Page Script</b></p>
+          <div class="grid ms">
+
+            <div class="column">
+              <img src="../static/images/js-placement1.png" alt="html code with javascript" width="900">
+              <p style="font-size:50px;margin-top:30px;"><b>&lt;script&gt;<span class="bluegreen">Place script here</span>&lt;/script&gt;</b> </p>
+            </div>
+            <div class="column">
+
+            </div>
+          </div>
+
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+
+      <section class="slide-top bg-white">
+        <div class="wrap">
+          <h1><strong>Jquery (Write less, do more.)</strong></h1>
+          <div class="grid ms">
+            <div class="column">
+                <img src="../static/images/legos.jpg" alt="html code with javascript" width="1200">
+                <br><br>
+                <p class="med-text">JQuery is a Javascript Library, not a language.</p>
+                <p class="med-text">Libraries are collections of pre-written code you can plug to your webpage without writing full javacript functionality.</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section class="slide-top bg-white">
+        <div class="wrap">
+          <h1><strong>Why do we use JQuery?</strong></h1>
+          <div class="grid">
+            <div class="column">
+              <p class="med-text">It's compatible with all browsers.</p>
+              <p class="med-text">It's lightweight and fast.</p>
+              <p class="med-text">It lets you add complex functionality to your website without having to write full javascript.</p>
+              <p class="med-text">It's open source, so anyone can add to it.</p>
+              <p class="med-text">It has an extensive plug-in library.</p>
+            </div>
+            <div class="column">
+              <p class="med-text">The jQuery library contains the following features:</p>
+              <ul>
+                <li>HTML/DOM manipulation</li>
+                <li>CSS manipulation</li>
+                <li>HTML event methods</li>
+                <li>Effects and animations</li>
+                <li>AJAX (Asynchronous JavaScript And XML)</li>
+                <li>Utilities</li>
+                <li>Lots of Plugins</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section class="slide-top bg-white">
+        <div class="wrap">
+          <h1><strong>How do I add Jquery to my website?</strong></h1>
+          <div class="grid">
+            <div class="column">
+              <p class="big-text"><b>Local Installation</b> </p>
+              <p class="med-text"><a href="https://jquery.com/download/">Download</a> the JQuery file and add it to the js folder in your project.</p>
+                <img src="../static/images/js-folder.png" alt="tree hierarchy" width="400">
+            </div>
+            <div class="column">
+              <p class="big-text"><b>CDN Based Version</b> </p>
+              <p class="med-text">Include a link to the file in their Content Delivery Network (CDN).</p>
+                <img src="../static/images/jquery-cdn.png" alt="html code" width="600">
+
+            </div>
+          </div>
+
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section class="slide-top bg-white">
+        <div class="wrap">
+          <h1><strong>Jquery Resources</strong></h1>
+          <div class="grid">
+            <div class="column">
+
+              <p class="med-text"><a href="https://speckyboy.com/free-jquery-plugins/">JQuery Plugins</a>.</p>
+              <p class="med-text"><a href="http://www.unheap.com/?badge=jquery ">More JQuery Plugins</a>.</p>
+              <p class="med-text"><a href="https://www.creativebloq.com/jquery/top-jquery-plugins-6133175 ">JQuery Plugins List</a>.</p>
+                <p class="med-text"><a href="https://www.jquery.com ">JQuery Official site</a>.</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section class="bg-white">
+        <div class="wrap">
+          <h1><strong>Javascript / JQuery Glossary</strong></h1>
+          <div class="grid">
+            <div class="column">
+
+              <p class="med-text"><b>DOM - Document Object Model</b> . The DOM is how the website structure is broken up in a tree hierarchy.</p>
+              <!-- <p class="med-text">HTML: Is the ancestor of all the other elements</p>
+              <p class="med-text">HEAd and BODY are children an descendants of html</p>
+              <p class="med-text">All the other Elements are children of BODY and descendants of HTML</p> -->
+              <p class="med-text"><b>Why it is important to understand the DOM?</b></p>
+              <p class="med-text">Javascript access the DOM and modifies it to create the interaction.</p>
+              <p class="med-text">Most of the time it looks just like the html, except on the following cases:
+              <ul>
+                <li>It has been modified by a client-side script</li>
+                <li>It has automatically fixed errors in the html</li>
+                <li>There are errors in the source code</li>
+              </ul>
+              </p>
+            </div>
+            <div class="column">
+              <img src="../static/images/dom.png" alt="web tree hierarchy" width="900"/>
+            </div>
+          </div>
+
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
+      <section class="bg-white">
+        <div class="wrap">
+          <div class="grid">
+            <div class="column">
+                <h3>Parts of a Jquery script</h3>
+              <ul>
+                <li><b>&lt;script&gt;</b> (Opening Tag)</li>
+                <li><b>$(document).ready(function(){</b> (Tells the script not to run until the document has finished loading).</li>
+                <li><b>document</b> </li>
+                <li><b>$</b> to access JQuery.</li>
+                <li><b>(selector)</b> Finds and selects the element in the HTML.</li>
+                <li><b>.action()</b> the type of action we want to perform (Here we add what's being changed).</li>
+              </ul>
+            </div>
+            <div class="column">
+
+              <p class="med-text"><b>&lt;script&gt;</b></p>
+              <p class="med-text"><b>$(document).ready(function(){</b></p>
+              <p class="med-text">$(".myClass").html("This is a JQuery text");</p>
+              <p class="med-text"><b>});</b></p>
+              <p class="med-text"><b>&lt;/script&gt;</b></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide-top">
+        <div class="wrap">
+          <h2>Basic Jquery Functions</h2>
+          <ul class="flexblock features">
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  .css();
+                </h2>
+                <p>Add a css property</p>
+                <p><b>$(".box").css("background-color", "blue");</b> </p>
+                <p><b>.css({"color":"blue","font-size":"30px"});</b> </p>
+                <br>
+                <p>Looks for the class .box on the html and adds a background color.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  .addClass();
+                </h2>
+                <p>Adds a css Class</p>
+                <p><b>$("#myId").addClass( "yourClass" );</b> </p>
+                <p><b>$("#myId").addClass( "yourClass anotherClass" );</b> </p>
+                <br>
+                <p>Looks for the id myId on the html and adds the css class.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  .removeClass();
+                </h2>
+                <p>Removes a css Class</p>
+                <p><b>$("#myId").removeClass( "yourClass" );</b> </p>
+                <p><b>$("#myId").removeClass( "yourClass anotherClass" );</b> </p>
+                <br>
+                <p>Looks for the id myId on the html and removes the css class.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  .html();
+                </h2>
+                <p>Replaces the HTML Content</p>
+                <p><b>$("#myId").html("<p>More information</p>");</b> </p>
+                <br>
+                <p>Looks for the id myId on the html and replaces the content.</p>
+              </div>
+            </li>
+
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  Add
+                </h2>
+                <p>Adds content at the beginning or end of an element</p>
+                <p><b>$("p").prepend("This will go at the beginning");</b></p>
+                <p><b>$("p").append("This will go at the end");</b></p>
+                <br>
+                <p>Adds content at the before or after an element</p>
+                <p><b>$("p").before("This will go before");</b></p>
+                <p><b>$("p").before("This will go after");</b></p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  Remove
+                </h2>
+                <p>Removes the element.</p>
+                <p><b>$(".element").remove();</b></p>
+                <p>Empties the content of the element without removing it.</p>
+                  <p><b>$(".element").empty();</b></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="slide-top">
+        <div class="wrap">
+          <h2>Basic Jquery Functions</h2>
+          <ul class="flexblock features">
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  .width();
+                </h2>
+                <p>Alters the width of an element.</p>
+                <p><b>$("#myDiv").width("100px");</b> </p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  .height();
+                </h2>
+                <p>Alters the height of an element.</p>
+                  <p><b>$("#myDiv").height("100px");</b> </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="slide-top">
+        <div class="wrap">
+          <h2>Basic Jquery Events</h2>
+          <p class="med-text">In order for these effects to take place, we need an Event Method to trigger them. <br>
+          The most common types of events are: <b>Mouse</b>, <b>Keyboard</b>, <b>Form</b> and <b>Document/Window</b> Events.</p>
+          <h3>Mouse Events</h3>
+          <ul class="flexblock features">
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  click();
+                </h2>
+                <p>Performs an action when clicked</p>
+                <p><b>$( "#target" ).click(function() { <br>
+                  $("p").hide();
+                  });</b> </p>
+                <br>
+                <p>Looks for the id on the html and add the interaction.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  .dblclick()
+                </h2>
+                <p>Performs an action when double clicked</p>
+                <p><b>$("#target").dblclick(function(){ <br>
+                      $("p").hide(); <br>
+                });</b> </p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  .mouseenter()
+                </h2>
+                <p>Performs an action when The mouse enters the area of the selector</p>
+                <p><b>$("#target").mouseenter(function(){ <br>
+                      $("p").hide(); <br>
+                });</b> </p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  .mouseleave()
+                </h2>
+                <p>Performs an action when The mouse leaves the area of the selector</p>
+                <p><b>$("#target").mouseenter(function(){ <br>
+                      $("p").hide(); <br>
+                });</b> </p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  .hover()
+                </h2>
+                <p>Performs an action when The mouse hovers over the area of the selector. </p>
+                <p><b>$("#target").hover(function(){ <br>
+                      $(this).css("color","red");<br>
+                    },<br>
+                      function(){<br>
+                     $(this).css("color","black");<br>
+                   });<br>
+                });</b> </p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+      <!-- <section class="slide-top">
+        <div class="wrap">
+          <h2>Basic Jquery Events</h2>
+          <h3>Keyboard Events</h3>
+          <ul class="flexblock features">
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  .keydown();
+                </h2>
+                <p>Performs an action when the keyboard is pressed down.</p>
+                <p><b>$( "#target" ).keydown(function() { <br>
+                  $("p").hide();
+                  });</b> </p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  .keyup()
+                </h2>
+                <p><p>Performs an action when the key is released.</p></p>
+                <p><b>$("#target").keyup(function(){ <br>
+                      $("p").show(); <br>
+                });</b> </p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  .keypress()
+                </h2>
+                <p>Performs an action when you initiate the act of pressing a key.
+                  Similar to keydown, but this one does not work with control and function keys (ALT, CTRL, SHIFT, ESC)</p>
+                <p><b>$("#target").keypress(function(){ <br>
+                      $("p").hide(); <br>
+                });</b> </p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </section> -->
+
+      <section class="slide-top">
+        <div class="wrap">
+          <h2>Basic Jquery Events</h2>
+          <ul class="flexblock features">
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  The on() Method
+                </h2>
+                <p class="med-text">Allows you to attach more than one event handler to an element. <br>
+                  Specially usefull when you need to restore the element to a previous state after the event is over.</p> <br>
+                <p><b>$("p").on({ <br>
+                      mouseenter: function(){ <br>
+                      $(this).css("background-color", "lightgray"); <br>
+                        }, <br>
+                      mouseleave: function(){ <br>
+                        $(this).css("background-color", "lightblue"); <br>
+                      }, <br>
+                      click: function(){ <br>
+                        $(this).css("background-color", "yellow"); <br>
+                      } <br>
+                      }); </b> </p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+      <section class="slide-top">
+        <div class="wrap">
+          <h2>Basic Jquery Effects</h2>
+          <ul class="flexblock features">
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  .show() .hide();
+                </h2>
+                <p>Shows/Hides an element</p>
+                <p><b>$("#clickBox").show(); <br>
+                  $("#clickBox").hide();</b> </p>
+                <br>
+                <p>Looks for the id myId on the html and shows or hides the element.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  Slide
+                </h2>
+                <p>Slides an element Up and Down</p>
+                <p><b>$( "#target" ).slideUp(speed, callback);</b></p>
+                <p><b>$( "#target" ).slideDown(speed, callback);</b></p>
+                <p><b>$( "#target" ).slideToggle(speed, callback);</b></p>
+                <br>
+                <p>You need an event to trigger the effect.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  .fadeOut() & .fadeIn()
+                </h2>
+                <p>Adds a css Class</p>
+                <p><b>$("#myDiv").fadeOut(1000);</b> </p>
+                <p><b>$("#myDiv").fadeIn(1000);</b> </p>
+                <br>
+                <p>Looks for the id myId on the html and fades it.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  .toggle();
+                </h2>
+                <p>Toggles the action on the element</p>
+                <p><b>$("#toggleBox").toggle(1000);</b></p>
+                <br>
+                <p>Looks for the id myId on the html and toggles the element.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="secondary-color">
+                  .animate();
+                </h2>
+                <p>Allows you to create custom animations based on most css properties.</p>
+                <p><b>$("button").click(function(){ <br>
+                $("div").animate({left: '250px', opacity: '0.5'}); <br>
+                });</b></p>
+                <br>
+                <p>For positioning animation, the element needs to have a position attribute.</p>
+                <p>When animating 2 word properties (padding-left) remove the hyphen and use camelCase instead:
+                  paddingLeft.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+    </article>
+    <!-- end article -->
+  </main>
+
+  <div class="references hide">
+<a href="https://www.freepik.com/free-photos-vectors/design">Design vector created by freepik - www.freepik.com</a>
+  </div>
+  <!-- end main -->
+
+  <!-- Required -->
+  <script src="../static/js/webslides.js"></script>
+  <script>
+    window.ws = new WebSlides();
+  </script>
+
+  <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+  <script defer src="../static/js/svg-icons.js"></script>
+
+</body>
+
+</html>
