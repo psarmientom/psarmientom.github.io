@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Structure Game</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+  <!-- CSS  -->
+  <link rel="stylesheet" href="../static/css/games.css">
+</head>
+<body>
+    <header>
+      <h1>Drag <span>and</span> Drop <br>HTML Structure Game</h1>
+    </header>
+    <main>
+      <h2>Welcome to the HTML Structure Game!</h2>
+      <p>Each section represents a main part of an HTML document, and your goal is to place the correct tags in their respective containers.</p>
+      <p>Drag elements from the list and drop them into the Head, Body, or Footer sections on the game board.</p>
+      <p>You'll receive instant feedback - a green message for correct placement and a red message for incorrect ones. Have fun learning HTML structure!</p>
+  
+      <section class="game-board">
+        <section class="game-structure">
+          <h2 class="game-heading">HTML PAGE</h2>
+          <div class="dropzone" id="headDropzone">
+            <h3>Head</h3>
+          </div>
+          <div class="dropzone" id="bodyDropzone">
+            <h3>Body</h3>
+        </section>
+        <section class="game-elements" id="wrapper">
+          <!-- Add new draggable elements for nav, h2, img, and table -->
+          <div class="draggable" id="nav" draggable="true">&lt;nav&gt;</div>
+          <div class="draggable" id="h2" draggable="true">&lt;h2&gt;</div>
+          <div class="draggable" id="img" draggable="true">&lt;img&gt;</div>
+          <div class="draggable" id="table" draggable="true">&lt;table&gt;</div>
+          <div class="draggable" id="authorMeta" draggable="true">&lt;meta author&gt;</div>
+          <div class="draggable" id="tr" draggable="true">&lt;tr&gt;</div>
+          <div class="draggable" id="td" draggable="true">&lt;td&gt;</div>
+          <!-- Update the existing draggable elements -->
+          <div class="draggable" id="header" draggable="true">&lt;header&gt;</div>
+          <div class="draggable" id="descriptionMeta" draggable="true">&lt;meta description&gt;</div>
+          <div class="draggable" id="main" draggable="true">&lt;main&gt;</div>
+          <div class="draggable" id="footer" draggable="true">&lt;footer&gt;</div>
+          <div class="draggable" id="h1" draggable="true">&lt;h1&gt;</div>
+          <div class="draggable" id="p" draggable="true">&lt;p&gt;</div>
+          <div class="draggable" id="section" draggable="true">&lt;section&gt;</div>
+          <div class="draggable" id="article" draggable="true">&lt;article&gt;</div>
+          <div class="draggable" id="title" draggable="true">&lt;title&gt;</div>
+          <div class="draggable" id="address" draggable="true">&lt;address&gt;</div>
+        </section>
+      </section>
+      <section class="game-elements">
+  
+      </section>
+    </main>
+    <script src="../static/js/games.js"></script>
+  </body>
+</html>

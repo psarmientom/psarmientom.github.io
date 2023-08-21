@@ -1,0 +1,107 @@
+body {
+  font-family: Montserrat, sans-serif;
+  flex-direction: column;
+  align-items: center;
+  background-color: #00a1a1;
+  color: #ffffff;
+}
+header,
+main {
+  margin: 1rem auto;
+  width: 70%;
+}
+h1 {
+  font-size: 4rem;
+  font-family: "Luckiest Guy", cursive;
+  letter-spacing: 0.2rem;
+  color: #ffbf46;
+  text-shadow: 0.5 0.5 6px #576490;
+}
+h2.game-heading {
+  color: #ffbf46;
+  text-align: center;
+}
+h3 {
+  font-size: 1.5rem;
+}
+p {
+  font-size: 1.25rem;
+}
+.game-board {
+  display: flex;
+  gap: 2rem;
+}
+.game-structure {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 2rem;
+  color: #576490;
+  border: solid 4px #ffbf46;
+  padding: 1rem;
+}
+.dropped {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.dropzone {
+  background-color: #f1f1f1;
+  border: 2px dashed #ccc;
+  padding: 2rem;
+  text-align: center;
+  flex: 1;
+  min-width: 250px;
+  min-height: 300px;
+  position: relative;
+}
+#headDropzone {
+  background-color: rgba(241, 241, 241, 0.5);
+  max-height: 15%;
+}
+.draggable {
+  background-color: #576490;
+  color: #ffbf46;
+  font-weight: bold;
+  font-size: 1.25rem;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  cursor: grab;
+  border-radius: 5px;
+  user-select: none;
+  text-align: center;
+}
+.dropped {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #576490;
+  background-color: #ffbf46;
+}
+.draggable.dragging {
+  cursor: grabbing;
+}
+
+.dropzone.hover {
+  background-color: #ccc;
+}
+
+.error,
+.success {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  color: #fff;
+  z-index: 10;
+}
+
+.error {
+  background-color: #f44336;
+}
+
+.success {
+  background-color: #4caf50;
+}
