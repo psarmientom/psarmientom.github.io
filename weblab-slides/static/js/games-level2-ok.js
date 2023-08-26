@@ -3,9 +3,13 @@ const message = document.createElement("div");
 
 let score = 0;
 
+// Let's capture the initial state so we can refresh when changing levels 
+const originalStage = document.querySelector("#wrapper").innerHTML;
+rebindDraggableEvents();
+
 // Reset the stage when changing levels 
 function resetStage() {
-  document.querySelector(".screen").innerHTML = originalStage;
+  document.querySelector("#wrapper").innerHTML = originalStage;
 }
 
 // Load only tags from level 1
@@ -80,6 +84,22 @@ function rebindDraggableEvents() {
         dropzone.addEventListener("drop", handleDrop);
   });
 }
+
+
+/* For each draggable element, set the draggable attribute to true,
+   and add event listeners for dragstart and dragend events */
+// draggables.forEach((draggable) => {
+//   draggable.setAttribute('draggable', 'true');
+//   draggable.addEventListener("dragstart", handleDragStart);
+//   draggable.addEventListener("dragend", handleDragEnd);
+// });
+// // Add drag and drop event listeners to dropzones
+// dropzones.forEach((dropzone) => {
+//   dropzone.addEventListener("dragover", handleDragOver);
+//   dropzone.addEventListener("dragenter", handleDragEnter);
+//   dropzone.addEventListener("dragleave", handleDragLeave);
+//   dropzone.addEventListener("drop", handleDrop);
+// });
 
 // On Drag Start ==================
 let draggedId;
@@ -219,7 +239,7 @@ function isDropValid(dropzone, draggable) {
     "table",
     "img",
     "section",
-    "address", "p", "ul", "video", "audio", "figure", "br", "div", "a"
+    "address", "p", "ul", "video", "audio", "figure", "figcaption", "br", "div", "a"
   ];
   const ContentTags = ["header",
   "nav",
@@ -286,7 +306,7 @@ function displayMessage(type, text, parent) {
 }
 
 
-// Select existing wrapper div to randomize the position of the tags
+// Select existing wrapper div
 const wrapper = document.querySelector("#wrapper");
 
 function shuffleDivs(className) {
@@ -297,7 +317,3 @@ function shuffleDivs(className) {
 }
 
 shuffleDivs("draggable");
-
-// Let's capture the initial state so we can refresh when changing levels 
-const originalStage = document.querySelector(".screen").innerHTML;
-rebindDraggableEvents();

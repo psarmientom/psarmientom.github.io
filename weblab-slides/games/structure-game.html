@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Structure Game - Level 1</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+  <!-- CSS  -->
+  <!-- Game designed by Patricia Sarmiento  -->
+  <link rel="stylesheet" href="../static/css/games.css">
+</head>
+<body class="level1">
+    <header>
+      <div class="logo">
+        <div>
+          <h1>Drag</h1> <p>and</p> <h1 class="drop">Drop</h1>
+        </div> 
+        <div class="levels"><h2>Place the Tags</h2>
+        <button type="button" id="lev1">Level 1</button>
+        <button type="button" id="lev2">Level 2</button></div>
+      </div>
+          
+      
+    </header>
+    <main>
+      <section class="game-board">
+        <section class="game-structure">
+         <div class="screen"> 
+          <h2 class="game-heading">HTML PAGE</h2>
+          <div class="dropzone" id="headDropzone">
+            <h3>Head</h3>
+          </div>
+          <div class="dropzone" id="bodyDropzone">
+            <h3>Body</h3></div>
+          </div>
+            <div class="computer-bottom">
+              <div id="scoreDisplay">Score: 0</div>
+              <div id="messageContainer"></div>
+            </div>
+            <div class="computer-stand"></div>
+            <div class="computer-stand-bottom"></div>
+        </section>
+        <section class="game-elements" id="wrapper">     
+          <div class="draggable level1" id="h2" draggable="true">&lt;h2&gt;</div>
+          <div class="draggable level1" id="img" draggable="true">&lt;img&gt;</div>
+          <div class="draggable level1" id="table" draggable="true">&lt;table&gt;</div>
+          <div class="draggable level1" id="authorMeta" draggable="true">&lt;meta author&gt;</div>
+          <div class="draggable level1" id="tr" draggable="true">&lt;tr&gt;</div>
+          <div class="draggable level1" id="td" draggable="true">&lt;td&gt;</div>    
+          <div class="draggable level1" id="descriptionMeta" draggable="true">&lt;meta description&gt;</div>         
+          <div class="draggable level1" id="h1" draggable="true">&lt;h1&gt;</div>
+          <div class="draggable level1" id="p" draggable="true">&lt;p&gt;</div>
+          <div class="draggable level1" id="title" draggable="true">&lt;title&gt;</div>
+          <div class="draggable level1" id="address" draggable="true">&lt;address&gt;</div>
+          <div class="draggable level1" id="ul" draggable="true">&lt;ul&gt;</div>
+          <div class="draggable level1" id="li" draggable="true">&lt;li&gt;</div>
+          <div class="draggable level1" id="link" draggable="true">&lt;link&gt;</div>
+          <div class="draggable level1" id="br" draggable="true">&lt;br&gt;</div>
+          <div class="draggable level1" id="figure" draggable="true">&lt;figure&gt;</div>
+          <div class="draggable level1" id="figcaption" draggable="true">&lt;figcaption&gt;</div>
+          <div class="draggable level1" id="video" draggable="true">&lt;video&gt;</div>
+          <div class="draggable level1" id="audio" draggable="true">&lt;audio&gt;</div>
+          <div class="draggable level1" id="b" draggable="true">&lt;b&gt;</div>
+          <div class="draggable level1" id="strong" draggable="true">&lt;strong&gt;</div>
+          <div class="draggable level1" id="i" draggable="true">&lt;i&gt;</div>
+          <div class="draggable level1" id="em" draggable="true">&lt;em&gt;</div>
+          <div class="draggable level1" id="a" draggable="true">&lt;a&gt;</div>
+          <!-- Level 2  -->
+          <div class="draggable level2" id="nav" draggable="true">&lt;nav&gt;</div>
+          <div class="draggable level2" id="header" draggable="true">&lt;header&gt;</div>
+          <div class="draggable level2" id="main" draggable="true">&lt;main&gt;</div> 
+          <div class="draggable level2" id="footer" draggable="true">&lt;footer&gt;</div>
+          <div class="draggable level2" id="section" draggable="true">&lt;section&gt;</div>
+          <div class="draggable level2" id="article" draggable="true">&lt;article&gt;</div>
+          <div class="draggable level2" id="div" draggable="true">&lt;div&gt;</div>
+        </section>
+       
+      </section>
+      <p>Each section represents a main part of an HTML document, and your goal is to place the correct tags in their respective containers.</p>
+      <p>Drag elements from the list and drop them into the Head or Body sections on the computer screen. <span>If the element changes color, you can drop other tags inside.</span></p>
+      <p>You'll receive instant feedback - a green message for correct placement and a red message for incorrect ones. <br>Have fun learning HTML structure!</p>
+    </main>
+    <script src="../static/js/games.js"></script>
+  </body>
+</html>

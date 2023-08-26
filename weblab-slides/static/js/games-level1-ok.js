@@ -1,30 +1,17 @@
-
+const draggables = document.querySelectorAll(".draggable");
+const dropzones = document.querySelectorAll(".dropzone");
 const message = document.createElement("div");
 
-let score = 0;
-
-// Reset the stage when changing levels 
-function resetStage() {
-  document.querySelector(".screen").innerHTML = originalStage;
-}
-
-// Load only tags from level 1
 document.querySelector('#lev1').classList.add('active');
 const level1Button = document.querySelector('#lev1');
 const level2Button = document.querySelector('#lev2');
-// Add event listeners to see when the level buttons have been clicked
+
 level1Button.addEventListener('click', showLevel1);
 level2Button.addEventListener('click', showLevel2);
 
 function showLevel1() {
-  resetStage();
-
-  // Reset Score 
-  score = 0;
-  document.getElementById("scoreDisplay").innerText = `Score: ${score}`;
-  
   const level2Tags = document.querySelectorAll('.level2');
-  // When in level 1, hide all level 2 tags 
+
   level2Tags.forEach(tag => {
     tag.style.display = 'none';
   });
@@ -33,53 +20,37 @@ function showLevel1() {
   level2Button.classList.remove('active');
 
   shuffleDivs("draggable");
-  rebindDraggableEvents();
 }
 function showLevel2() {
-  resetStage();
-
-  // Reset Score 
-  score = 0;
-  document.getElementById("scoreDisplay").innerText = `Score: ${score}`;
-
   const level2Tags = document.querySelectorAll('.level2');
 
   level2Tags.forEach(tag => {
     tag.style.display = 'block';
   });
 
-  level2Button.classList.add('active');
-  level1Button.classList.remove('active');
+  level2Button.classList.add('active-level');
+  level1Button.classList.remove('active-level');
 
   shuffleDivs("draggable");
-  rebindDraggableEvents();
 }
 
-function rebindDraggableEvents() {
-  const draggables = document.querySelectorAll(".draggable");
-  const dropzones = document.querySelectorAll(".dropzone");
-  
-  draggables.forEach((draggable) => {
-      draggable.setAttribute('draggable', 'true');
-      draggable.removeEventListener("dragstart", handleDragStart);
-      draggable.removeEventListener("dragend", handleDragEnd);
-        
-        draggable.addEventListener("dragstart", handleDragStart);
-        draggable.addEventListener("dragend", handleDragEnd);
-  });
-  
-  dropzones.forEach((dropzone) => {
-      dropzone.removeEventListener("dragover", handleDragOver);
-        dropzone.removeEventListener("dragenter", handleDragEnter);
-        dropzone.removeEventListener("dragleave", handleDragLeave);
-        dropzone.removeEventListener("drop", handleDrop);
-        
-        dropzone.addEventListener("dragover", handleDragOver);
-        dropzone.addEventListener("dragenter", handleDragEnter);
-        dropzone.addEventListener("dragleave", handleDragLeave);
-        dropzone.addEventListener("drop", handleDrop);
-  });
-}
+
+let score = 0;
+
+/* For each draggable element, set the draggable attribute to true,
+   and add event listeners for dragstart and dragend events */
+draggables.forEach((draggable) => {
+  draggable.setAttribute('draggable', 'true');
+  draggable.addEventListener("dragstart", handleDragStart);
+  draggable.addEventListener("dragend", handleDragEnd);
+});
+// Add drag and drop event listeners to dropzones
+dropzones.forEach((dropzone) => {
+  dropzone.addEventListener("dragover", handleDragOver);
+  dropzone.addEventListener("dragenter", handleDragEnter);
+  dropzone.addEventListener("dragleave", handleDragLeave);
+  dropzone.addEventListener("drop", handleDrop);
+});
 
 // On Drag Start ==================
 let draggedId;
@@ -219,7 +190,7 @@ function isDropValid(dropzone, draggable) {
     "table",
     "img",
     "section",
-    "address", "p", "ul", "video", "audio", "figure", "br", "div", "a"
+    "address", "p", "ul", "video", "audio", "figure", "figcaption", "br", "div", "a"
   ];
   const ContentTags = ["header",
   "nav",
@@ -286,7 +257,7 @@ function displayMessage(type, text, parent) {
 }
 
 
-// Select existing wrapper div to randomize the position of the tags
+// Select existing wrapper div
 const wrapper = document.querySelector("#wrapper");
 
 function shuffleDivs(className) {
@@ -297,7 +268,3 @@ function shuffleDivs(className) {
 }
 
 shuffleDivs("draggable");
-
-// Let's capture the initial state so we can refresh when changing levels 
-const originalStage = document.querySelector(".screen").innerHTML;
-rebindDraggableEvents();
