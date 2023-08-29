@@ -8,6 +8,7 @@ body {
 .logo, .logo > div{
   display:flex;
   justify-content:space-between;
+  flex-wrap: wrap;
 }
 .logo{
   width: 90%;
@@ -253,5 +254,29 @@ background: linear-gradient(180deg, rgba(166,185,194,1) 0%, rgba(191,191,191,1) 
   }
   100% {
     transform: scale(1, 1);
+  }
+}
+/* Media Queries */
+@media (max-width:1500px){
+  header, main{
+    width: 95%;
+  }
+  .logo, .levels{
+    width: 100%;
+  }
+  .draggable{
+    padding:.5rem;
+  }
+}
+@media (max-width:1180px){
+  header h2{
+    margin:0;
+  }
+  .game-board{
+    flex-direction: column;
+  }
+  .game-elements{
+    width: 100%;
+    height: auto;
   }
 }
