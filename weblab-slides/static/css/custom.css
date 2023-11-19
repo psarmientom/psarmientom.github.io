@@ -189,6 +189,9 @@ cite a {
 .margin-r2 {
   margin-right: 2rem !important;
 }
+.width-80{
+  max-width: 80%;
+}
 
 .flexblock.features .headings h1,
 .flexblock.features .headings h2,
