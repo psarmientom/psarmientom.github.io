@@ -68,8 +68,8 @@
             <p class="big-text">You will learn how to produce websites using the latest web practices and techniques.
             </p>
             <p class="big-text">Throughout each unit of the course, you will learn the skills to plan, layout, and build
-              a websites using HTML, and CSS.</p>
-            <p class="big-text">You will also learn how to optimize and market your websites. </p>
+              websites using HTML, and CSS fundamentals.</p>
+              <p class="big-text">You will also learn how to create sites using a no-code tool, and how to optimize and market your websites. </p>
           </div>
         </div>
       </section>
@@ -119,6 +119,13 @@
                   <a href="https://webflow.com/">Webflow</a>
                 </li>
               </ul>
+              <hr>
+              <h3 class="text-serif bluegreen">Optional Tools</h3>
+              <ul>
+                <li>
+                  <a href="https://figma.com/">Figma</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -153,7 +160,7 @@
               <hr>
               <h3 class="text-serif bluegreen">Other</h3>
               <ul>
-                <li>Class Participation and Attendance (5%)</li>
+                <li>Class Assignments, Participation and Attendance (5%)</li>
               </ul>
             </div>
           </div>
@@ -202,8 +209,7 @@
         </div>
       </section>
       <!--- SLIDE 3 MARKUP - PROGRAMMING----->
-      <section class="bg-white slide-top padding-t6">
-        <!--.wrap = container (width: 90%) -->
+      <!-- <section class="bg-white slide-top padding-t6">
         <div class="wrap size-90">
           <h2 class="text-serif aligncenter bluegreen">How do Networks communicate?</h2>
           <h5 class="aligncenter">The 2 main types of Network Connections are: Circuit (requires Dedicated Channel) and
@@ -211,35 +217,21 @@
           <img class="aligncenter" src="../static/images/circuit-packet.png"
             alt="circuit switched and packet switched communication" width="80%" />
         </div>
-      </section>
+      </section> -->
       <!-- SLIDE 4 -->
       <section class="bg-white slide-top padding-t6">
         <!--.wrap = container (width: 90%) -->
         <div class="wrap size-90">
-          <h2 class="text-serif aligncenter bluegreen">How is the information transmitted?</h2>
+          <h2 class="text-serif aligncenter bluegreen">How do Networks communicate?</h2>
+          <!-- <h3 class="text-serif aligncenter bluegreen">How is the information transmitted?</h3> -->
           <img class="aligncenter" src="../static/images/packet-switched.png" alt="packet switched transmition"
             width="80%" />
+            <div><p class="aligncenter med-text">Each packet is assigned source and destination addresses, to allow identifying where the information goes and where it's coming from. Once the packets arrive at their destination, they are reassembled in the correct order to reconstruct the original data.</p></div>
+
         </div>
-      </section>
-      <section class="slide-top bg-white">
-        <div class="wrap">
-          <h2 class="text-serif aligncenter bluegreen">What about speed?</h2>
-          <div class="grid center-align">
-            <div class="column">
-              <img class="aligncenter" src="../static/images/pipes.png" alt="pipes illustration" width="80%" />
-            </div>
-            <div class="column">
-              <h3>Bandwidth</h3>
-              <ul>
-                <li>Bandwidth is the amount of data that can be transmitted over your internet connection.</li>
-                <li>The amount of transmitted data affects the connection speed.</li>
-                <li>Data can be expressed in many units: bytes, kilobytes, megabytes, gigabits, etc</li>
-              </ul>
-            </div>
-          </div>
-          <!--end .grid -->
-        </div>
-      </section>
+        
+        </section>
+     
       <!--.wrap = container (width: 90%) -->
       <section class="bg-white">
         <!--.wrap = container (width: 90%) -->
@@ -253,7 +245,7 @@
         <div class="wrap">
           <h2 class="text-serif aligncenter bluegreen">Internet vs. WWW</h2>
           <p class="big-text aligncenter">The internet is is a global system of interconnected computer networks. The
-            www is a collection of all the documents that live on the interet. The www lives in the internet.</p>
+            www is a specific system or service that operates on top of the internet, providing a user-friendly way to access and interact with information in the form of web pages and resources.</p>
           <div class="grid center-align">
             <div class="column">
               <h3 class="orange">Accessing the Internet</h3>
@@ -279,7 +271,7 @@
         <div class="wrap">
           <h2 class="text-serif aligncenter bluegreen">What is ISP?</h2>
           <p class="big-text aligncenter">An Internet service provider (ISP) is a service that allows you to connect to
-            the internet and have access to the WWW. ATT, Comcast are examples of ISPs. Many organizations can have
+            the internet and have access to the WWW. AT&T and Comcast are examples of ISPs. Many organizations can have
             their private Internet providers.</p>
           <div class="grid center-align">
             <div class="column">
@@ -302,6 +294,58 @@
           </div>
         </div>
       </section>
+         <!-- Bandwidth  -->
+         <section class="slide-top bg-white">
+          <div class="wrap">
+            <h2 class="text-serif aligncenter bluegreen">What about speed?</h2>
+            <div class="grid center-align">
+              <div class="column">
+                <img class="aligncenter" src="../static/images/hoses.png" alt="pipes illustration" width="80%" />
+              </div>
+              <div class="column">
+                <h3>Bandwidth</h3>
+                <ul>
+                  <li>Bandwidth is the amount of data that can be transmitted over your internet connection.</li>
+                  <li>The amount of transmitted data affects the connection speed.</li>
+                  <li><b>Higher Bandwidth = Faster Speed</b></li>
+                  <li>A higher bandwidth connection can handle more simultaneous activities without a significant drop in speed.</li>
+                </ul>
+              </div>
+            </div>
+            <!--end .grid -->
+          </div>
+        </section>
+        <!-- Gigabytes and Gigabits -->
+        <section class="slide-top bg-white">
+          <div class="wrap">
+            <h2 class="text-serif aligncenter bluegreen">Gigabytes or Gigabits?</h2>
+            <div class="grid center-align">
+              <div class="column">
+                <img class="aligncenter" src="../static/images/gigabytes.png" alt="pipes illustration" width="80%" />
+              </div>
+              <div class="column">
+                
+                <ul>
+                  <li><b>Gigabytes</b> are used to Used to measure the size of files, data storage, and memory capacity</li>
+                  <li>Data Storage can be expressed in many units: 
+                    <ul>
+                      <li>1 byte (8 bits)</li>
+                      <li>1 kilobyte or K (1024 bytes)</li>
+                      <li>1 megabyte or MB (1024 Kilobytes)</li>
+                      <li>1 gigabyte or GB (1024 Megabytes), etc</li>
+                    </ul></li>
+                  <li><b>Gigabits</b> Used to measure data transfer rates, such as internet speed or network bandwidth. It is the speed at wich data can be transfered over the network.</li>
+                  <li>It is measured in bits per second.</li>
+                  <li><a href="https://www.att.com/cfd/internet">Sample bandwidth offers.</a></li>
+                  <li>1GB of data takes 8 seconds to transmit over a 1Gigabit connection. <br>
+                  The same 1GB would take approximately 26.67 seconds over a 300Megabit connection.</li>
+                  
+                </ul>
+              </div>
+            </div>
+            <!--end .grid -->
+          </div>
+        </section>
       <!-- SLIDE 6 - HTML TAGS 1 -->
       <section class="slide-top">
         <div class="wrap">
@@ -310,14 +354,15 @@
           <div class="grid center-align">
             <div class="column">
               <ul>
-                <li>HTTP is the foundation of data communication for the World Wide Web.</li>
-                <li>Hypertext documents include hyperlinks to other resources that the user can easily access.</li>
-                <li>Hypertext is structured text that uses logical links (hyperlinks) between nodes containing text.
+                <li>HTTP is the foundation of data communication for the World Wide Web, enabling web browsers to request web pages and other resources from web servers.</li>
+                <!-- <li>Hypertext documents include hyperlinks to other resources that the user can easily access.</li> -->
+                <li>HTTP is a text-based protocol, meaning that the data sent between the client and server is in human-readable text format.</li>
+                <!-- <li>Hypertext is structured text that uses logical links (hyperlinks) between nodes containing text. -->
                 </li>
-                <li>HTTP is the protocol to exchange or transfer hypertext.</li>
-                <li>HTTPS is a secure encrypted version of HTTP.</li>
+                <!-- <li>HTTP is the protocol to exchange or transfer hypertext.</li> -->
+                <li><b>HTTPS</b> is a secure encrypted version of <b>HTTP</b>.</li>
                 <li>The difference between http and https is that the HTTP uses plain text to send information and HTPPS
-                  uses SSl so is far more secure.</li>
+                  uses SSL (Secure Sockets Layer) and the text is encrypted, making it far more secure.</li>
               </ul>
             </div>
             <div class="column aligncenter">
@@ -363,9 +408,9 @@
               </ul>
               <hr>
               <ul>
-                <li>When you are set up with direct access to the Internet, your computer is provided with a copy of the
+                <!-- <li>When you are set up with direct access to the Internet, your computer is provided with a copy of the
                   TCP/IP program just as every other computer that you may send messages to or get information from also
-                  has a copy of TCP/IP. </li>
+                  has a copy of TCP/IP. </li> -->
               </ul>
             </div>
             <!-- <div class="column aligncenter">
@@ -439,14 +484,17 @@
           <div class="grid">
             <div class="column">
               <h1 class="text-serif aligncenter bluegreen">What is a Domain?</h1>
-              <p class="med-text"><b>DNS - Domain Name System</b> A domain name and its matching IP is called a DNS
-                Record. (think of the relationship between a name and a phone number on a phone book).</p>
+              <p class="med-text">A domain is a human-readable address used to identify a specific location on the internet.</p>
+              <!-- <p class="med-text"><b>DNS - Domain Name System</b> A domain name and its matching IP is called a DNS
+                Record. (think of the relationship between a name and a phone number on a phone book).</p> -->
+                <p class="med-text"><b>DNS - Domain Name System</b> is a technology that translates human-friendly domain names into numerical IP (Internet Protocol) addresses.</p>
               <p class="med-text">When you type in a web address, the browser looks in its DNS cache for a matching
                 record. If no record is found, a message goes through the network to resolving nameservers, run by your
                 ISP. If no record is found there, then it looks for root <b>nameservers</b>, which are designated
                 servers around the world dedicated to storing DNS Data. </p>
-              <p class="med-text"><b>Nameserver:</b> Is a special type of server that stores DNS Records. These are
-                maintained by the domain name provider or the Hosting provider.</p>
+              <!-- <p class="med-text"><b>Nameserver:</b> Is a special type of server that stores DNS Records. These are
+                maintained by the domain name provider or the Hosting provider.</p> -->
+                <p class="med-text"><b>IP address</b> or Internet Protocol address, is a numerical label assigned to each device connected to a computer network, and every website that uses the Internet Protocol for communication.</p>
             </div>
             <div class="column">
               <a
@@ -683,7 +731,9 @@
                 <li>Separation of content and presentation (or separation of content and style) is a design principle
                   under which visual and design aspects (presentation and style) are separated from the core material
                   and structure (content) of a document.</li>
-              </ul>
+                  <li>This allows content to be easily updated, organized, and reused without changing the look of the website.</li>
+                  <li>It also allows you to change how the website looks (its design and layout) without altering the underlying information.</li>
+                </ul>
             </div>
             <div class="column">
               <img src="../static/images/separation-of-content.jpg" alt="graphic of html structure" width="500" />
@@ -719,18 +769,35 @@
         <!--.wrap = container (width: 90%) -->
         <div class="wrap size-90">
           <h1 class="text-serif bluegreen aligncenter">User Experience Design (UX Design)</h1>
-          <p class="big-text aligncenter">Oversees the total user experience.</p>
-          <p class="med-text aligncenter">UX design should be invisible to its users.</p>
+          <p class="med-text aligncenter">Oversees the total user experience when interacting with a product, service, or system.
+          <br>UX design should be invisible to its users.</p>
           <div class="grid">
             <div class="column">
-              <img class="aligncenter" src="../static/images/ux.png" alt="graphic of ux competences" width="700" />
+              <h3 class="bluegreen">Key aspects of UX</h3>
+              <ul>
+                <li><b>Usability:</b> Ensuring that a website is easy to use and navigate</li>
+                <li><b>Accessibility: </b>Making products accessible to as many people as possible, including those with disabilities.</li>
+                <li><b>Information Architecture: </b>Structuring and organizing information in a logical and understandable way.</li>
+                <li><b>User Research: </b>Understanding the needs, behaviors, and preferences of users. </li>
+                <li><b>User Testing: </b>Testing with real users to identify usability issues.</li>
+              </ul>
+              <!-- <img class="aligncenter" src="../static/images/ux.png" alt="graphic of ux competences" width="700" />
               <cite><a
-                  href="https://designmodo.com/wp-content/uploads/2012/06/923.jpg">https://designmodo.com/wp-content/uploads/2012/06/923.jpg</a></cite>
+                  href="https://designmodo.com/wp-content/uploads/2012/06/923.jpg">https://designmodo.com/wp-content/uploads/2012/06/923.jpg</a></cite> -->
             </div>
             <div class="column">
-              <img class="aligncenter" src="../static/images/ux1.png" alt="graphic of ux" width="700" />
+              <h3 class="bluegreen">UX Designer Role</h3>
+              <ul>
+                <li>Conduct research to understand user behaviors and goals.</li>
+                <li>Organize and structure content and information to create an intuitive and logical user journey.</li>
+                <li>Define how users interact with a product, including the layout of elements, navigation, and user flows.</li>
+                <li>Ensure that the product is accessible to users with disabilities and complies with accessibility standards.</li>
+                <li>Work closely with other team members, including developers, product managers, and clients, to align design decisions with project goals.</li>
+                <li>Continuously iterate on designs based on feedback and data to improve the user experience.</li>
+              </ul>
+              <!-- <img class="aligncenter" src="../static/images/ux1.png" alt="graphic of ux" width="700" />
               <cite><a
-                  href="https://designmodo.com/wp-content/uploads/2012/06/923.jpg">https://designmodo.com/wp-content/uploads/2012/06/923.jpg</a></cite>
+                  href="https://designmodo.com/wp-content/uploads/2012/06/923.jpg">https://designmodo.com/wp-content/uploads/2012/06/923.jpg</a></cite> -->
             </div>
           </div>
       </section>
@@ -741,22 +808,28 @@
           <h1 class="text-serif bluegreen aligncenter">What is bad UX?</h1>
           <div class="grid">
             <div class="column">
-              <img class="aligncenter" src="../static/images/bad-ux.jpg" alt="accesible ramp with stairs" width="700" />
-              <cite><a
-                  href="https://www.smallbusinesswebdesigns.net.au/ux-web-design.html">https://www.smallbusinesswebdesigns.net.au/ux-web-design.html</a></cite>
-            </div>
-            <div class="column">
               <ul>
+                <li>Poor Navigation</li>
+                <li>Slow loading time (more than 3 seconds)</li>
+                <li>Non Responsive Web layout</li>
                 <li>Autoplay videos</li>
-                <li>Hidden navigation</li>
-                <li>Difficult navigation</li>
+                <li>Unreadable Fonts</li>
+                <li>Cluttered or disorganized page layout</li>
                 <li>Broken Links</li>
+                <li>Lack of Clear Call to Action</li>
                 <li>Dark UX</li>
                 <li>Discoverability (hard to find features)</li>
-                <li>Performance (more than 3 seconds)</li>
+                <li>Ignoring Accesibility</li>
               </ul>
-              <p class="med-text bluegreen"><a href="https://blog.hubspot.com/website/bad-vs-good-design">Some examples
-                  of bad design.</a></p>
+              <p class="med-text bluegreen"><a href="https://www.hostinger.com/tutorials/bad-website-examples">Some examples
+                of bad design.</a></p>
+              <!-- <img class="aligncenter" src="../static/images/bad-ux.jpg" alt="accesible ramp with stairs" width="700" />
+              <cite><a
+                  href="https://www.smallbusinesswebdesigns.net.au/ux-web-design.html">https://www.smallbusinesswebdesigns.net.au/ux-web-design.html</a></cite> -->
+            </div>
+            <div class="column">
+              
+              
               <p class="med-text bluegreen">Some web UX facts</p>
               <ul>
                 <li>48% users will leave a non-mobile website.</li>
@@ -831,7 +904,8 @@
                 <a href="https://www.awwwards.com/">awwwards</a>
               </li>
               <li>
-                <a href="https://envato.com/blog/web-design-trends/">Web Design Trends</a>
+                <!-- <a href="https://envato.com/blog/web-design-trends/">Web Design Trends</a> -->
+                <a href="https://www.wix.com/studio/blog/web-design-trends?utm_source=google&utm_medium=cpc&utm_campaign=20415922065^153298709486^search%20-%20us&experiment_id=^^682623789503^&gclid=EAIaIQobChMI8JWZz9fMgwMVo5xaBR1IEARGEAAYAiAAEgL66_D_BwE">Web Design Trends</a>
               </li>
             </ul>
           </div>

@@ -146,9 +146,9 @@
               <p class="emoji">&#129326;</p>
               <h4> Inline </h4>
               <ul>
-                <li>Not recommended</li>
+                <li>Not recommended in most cases.</li>
                 <li>Hard to maintain</li>
-                <li>Only acceptable on HTML emails</li>
+                <li>Acceptable on HTML emails</li>
               </ul>
             </div>
           </div>
@@ -273,24 +273,13 @@
                   <li>You can specify the dimensions using px, %, or ems.</li>
                 </ul>
               </div>
-              <div class="column">
-                <h2>Block or Inline</h2>
-                <ul>
-                  <li>All HTML boxes are by default block or inline</li>
-                  <li> <b>Block:</b> The element will take the full width of the parent container and will start in a
-                    new line. (h1, p, div). </li>
-                  <li> <b>Inline:</b> The element will only take the space of its content and will not break the flow of
-                    content by creating a new line (b, i, span)</li>
-                  <li>Images are a special case. They are by default inline, but have many properties of a block.</li>
-                </ul>
-              </div>
             </div>
             <!-- .end .grid -->
           </div>
         </div>
       </section>
-      <!-- Margin or Padding -->
-      <section>
+       <!-- Margin or Padding -->
+       <section>
         <div class="wrap">
           <h2 class="text-serif aligncenter bluegreen">Margin or Padding?</h2>
           <div class="grid">
@@ -306,15 +295,91 @@
           </div>
         </div>
       </section>
+      <!-- Block or inline  -->
+      <section class="slide-med">
+        <div class="wrap size-90">
+          <h2 class="text-serif aligncenter bluegreen">Block or Inline</h2>
+          <p class="med-text aligncenter">In CSS, elements have one of two main display properties by default: block or inline.</p>
+          <div class="grid top-align">
+            <div class="grid">
+              <div class="column">
+                <img src="../static/images/block-inline.png" alt="The css box model">
+              </div>
+              <div class="column">
+                
+                <ul>
+                  <li> <b>Block:</b> The element will take the full width of the parent container and will start in a
+                    new line. (h1, p, div). Block Elements stack on top of each other vertically. </li>
+                    <li>You can apply properties like <b>width, height, margin, padding and border</b>,  to block-level elements.</li>
+                  <li> <b>Inline:</b> The element will only take the space of its content and will not break the flow of
+                    content by creating a new line (b, i, span)</li>
+                    <li>Properties like <b>width and height will have no effect</b>. Margin and padding will only work horizontally.</li>
+                  <!-- <li>Images are a special case. They are by default inline, but have many properties of a block.</li> -->
+                </ul>
+              </div>
+            </div>
+            <!-- .end .grid -->
+          </div>
+        </div>
+      </section>
+      <!-- Inline-Block  -->
+      <section class="slide-med">
+        <div class="wrap size-90">
+          <h2 class="text-serif aligncenter bluegreen">Inline-Block</h2>
+          <p class="med-text aligncenter">Inline-Block makes block elements behave like inline elements, but with the properties of a block element.</p>
+          <div class="grid top-align">
+            <div class="grid">
+              <div class="column">
+                <img src="../static/images/inline-block.png" alt="The css box model">
+              </div>
+              <div class="column">
+                
+                <ul>
+                    <li>You can apply properties like <b>width, height, margin, padding and border</b>,  to inline-block elements.</li>
+                  <li>The element will only take the space of its content and will not break the flow of
+                    content by creating a new line.</li>
+                    <li>Use inline-block when you want elements to flow horizontally, while keeping block level styling properties.</li>
+                  <!-- <li>Images are a special case. They are by default inline, but have many properties of a block.</li> -->
+                </ul>
+              </div>
+            </div>
+            <!-- .end .grid -->
+          </div>
+        </div>
+      </section>
+       <!-- Image Display  -->
+       <section class="slide-med">
+        <div class="wrap size-90">
+          <h2 class="text-serif aligncenter bluegreen">What about Images?</h2>
+          <p class="med-text aligncenter">mages in HTML can behave as either block-level elements or inline-level elements depending on how they are used within the HTML structure.</p>
+          <!-- <div class="grid top-align"> -->
+            <div class="grid">
+              <div class="column">
+                <img src="../static/images/inline-block.png" alt="The css box model">
+              </div>
+              <div class="column">  
+                <ul>
+                    <li>If you place an image inside a block-level container (div, p, etc), it will behave like a block element.</li>
+                  <li>If you place it inside an inline element (span, a), it will be inline.
+                  </li>
+                    <li>If you don't include it </li>
+                  <!-- <li>Images are a special case. They are by default inline, but have many properties of a block.</li> -->
+                </ul>
+              </div>
+            </div>
+            <!-- .end .grid -->
+          <!-- </div> -->
+        </div>
+      </section>
       <!-- Developer Tools -->
       <section>
         <div class="wrap">
           <h2 class="text-serif aligncenter bluegreen">Developer Tools</h2>
-          <p class="med-text aligncenter">Every Browser has a tool to inspect the content of a website. It's an
-            important tool for web developers.</p>
-          <div class="grid padding-t5">
+          <p class="aligncenter">Every Browser has a tool to inspect the content of a website. It's an
+            important tool for web developers. <br>The Inspector allows you to inspect and explore the structure of a web page's HTML and CSS. You can select and highlight elements on the page to view their styles, properties, and the box model. It's useful for identifying layout issues and understanding how a page is constructed.</p>
+          <div class="grid">
             <img class="aligncenter" src="../static/images/dev-tools.png" alt="Developer Tools screenshot"
-              width="900" />
+              width="800" />
           </div>
         </div>
       </section>
