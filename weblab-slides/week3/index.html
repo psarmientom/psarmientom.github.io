@@ -82,7 +82,7 @@
               <ul>
                 <li>Search Engines do not see the webpage styles, they go by the content</li>
                 <li>Establishes a clear hierarchy</li>
-                <li>It is easier to understand for people who use screen readers (Accessibility)</li>
+                <li>It is easier to understand for people who use assistive technologies like screen readers. (Accessibility)</li>
               </ul>
             </div>
             <div class="column">
@@ -174,7 +174,7 @@
       <section class="slide-top">
         <div class="wrap">
           <h2 class="text-serif aligncenter bluegreen">Inline HTML Tags</h2>
-          <p class="med-text aligncenter">Tags that are used inside other tags to change the apperance or meaning</p>
+          <p class="med-text aligncenter">Tags that are used inside other tags to change the apperance or meaning. They can be used by themselves or inisde other elements.</p>
           <p class="med-text aligncenter">For more information, check <a href="https://caninclude.glitch.me/">Can I
               include?</a> </p>
           <ul class="flexblock features">
@@ -207,19 +207,18 @@
             </li>
             <li>
               <div>
-                <h2 class="secondary-color"> Cite </h2>
-                <p>When you need to reference a published work. It can be a book, movie, etc</p>
-                <p><b>&lt;cite&gt;The David, by Michelangelo&lt;/cite&gt;</b></p>
-                <p><cite>The David, by Michelangelo </cite>is in Florence, Italy</p>
+                <h2 class="secondary-color"> Mark </h2>
+                <p>When you need to highlight or mark specific portions of text.</p>
+                <p>This store will be <mark>closed for 15 minutes</mark> after 6pm.</p>
               </div>
             </li>
             <li>
-              <h2 class="secondary-color"> Subscript and Superscript </h2>
+              <h2 class="secondary-color"> Abbreviation </h2>
               <div class="headings">
-                <p class="sm-text">Mostly used for formulas a math equations</p>
+                <p class="sm-text">Is used for abbreviations or acronyms. It can be used to provide a tooltip or additional information about the abbreviation by adding the title tag.</p>
                 <br>
-                <p>&lt;sub&gt; Water is <b>H<sub>2</sub>O</b><br> &lt;sup&gt; E = mc<b><sup>2</sup></b><br>
-                </p>
+                <p>The &lt;abbr title="World Wide Web"&gt; WWW&lt;/abbr&gt;</b><br></p>
+                <p>the <abbr title="World Wide Web">WWW</abbr> is everywhere.</p>
               </div>
             </li>
             <li>
@@ -234,6 +233,16 @@
           </ul>
         </div>
       </section>
+       <!-- Boxes  -->
+       <section class="slide-top">
+        <div class="wrap aligncenter">
+          <h2 class="text-serif bluegreen aligncenter">Boxes with a purpose</h2>
+          <p class="med-text aligncenter">Everything element in HTML creates an "invisible" box. It is important to use each one for its intended purpose.</p>
+         
+             <img class="padding-t6" src="../static/images/boxes.png" alt="display of cardboard boxes">
+          <p class="padding-t6 med-text"><b>Make sure you use the right box for your content.</b></p>
+        </div>
+      </section>
       <!-- SLIDE 7 - HMTL TAGS 2 -->
       <section class="slide-top">
         <h2 class="text-serif aligncenter bluegreen">Grouping HTML Tags</h2>
@@ -244,8 +253,15 @@
               <div>
                 <h2 class="secondary-color"> Quotations - blockquote </h2>
                 <p class="sm-text">Used to indicate quotations.</p>
-                <p><b>&lt;blockquote&gt; Quam diu etiam furor iste tuus nos eludet?&lt;/blockquote&gt;</b> </p> <br>
-                <blockquote> Quam diu etiam furor iste tuus nos eludet? </blockquote>
+                <p><b>&lt;blockquote&gt; <br>
+
+                   &lt;p&gt;Quam diu etiam furor iste tuus nos eludet?&lt;/p&gt;<br>
+                   &lt;img src="../static/images/beach-sm.jpg" alt="empty chair on a beach" width="500" /&gt;
+                  &lt;/blockquote&gt;</b> </p> <br>
+                <blockquote> 
+                  <img src="../static/images/beach-sm.jpg" alt="empty chair on a beach" width="500" />
+                  <p>Quam diu etiam furor iste tuus nos eludet? </p>
+                  </blockquote>
               </div>
             </li>
             <li>
@@ -307,16 +323,6 @@
           <ul class="flexblock features">
             <li>
               <div>
-                <h2 class="secondary-color"> Section </h2>
-                <p><b>&lt;section&gt; &lt;/section&gt;</b> </p>
-                <p>• Similar to divs but its used to group related content</p>
-                <p>• Can group articles (e.g. sports section, news section).</p>
-                <p>• Can define parts of an article.</p>
-                <p>• Think of chapters on a book.</p>
-              </div>
-            </li>
-            <li>
-              <div>
                 <h2 class="secondary-color"> Header </h2>
                 <p><b>&lt;header&gt; &lt;/header&gt;</b> </p>
                 <p>• <strong>Not to be confused with the &lt;head> tag</strong> </p>
@@ -353,6 +359,7 @@
                 <p>• Mostly used for Sidebars, but sidebar does not refers to position.</p>
                 <p>• Ads related to the content can be placed here</p>
                 <p>If the content can be removed without affecting the meaning, it can be an aside.</p>
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside">The aside element</a></p>
               </div>
             </li>
             <li>
@@ -360,26 +367,52 @@
                 <h2 class="secondary-color"> Article </h2>
                 <p><b>&lt;article&gt; &lt;/article&gt;</b> </p>
                 <ul>
-                  <li>• Represents a complete, or self-contained composition in a page</li>
-                  <li>• Can be independently distributed or reused</li>
+                  <li>• Represents a complete, or self-contained content on a page that can be reused and distributed independently.</li>
                   <li>• Think of a magazine article</li>
-                  <li>• Common examples of articles are: Blog post, News story, Comment, Review.</li>
+                  <li>• Common examples of articles are: Blog posts, News stories, Comments, Reviews.</li>
                 </ul>
               </div>
+              <li>
+                <div>
+                  <h2 class="secondary-color"> Section </h2>
+                  <p><b>&lt;section&gt; &lt;/section&gt;</b> </p>
+                  <p>• It's a more general-purpose container like the <b>div</b>, but used to group related content.</p>
+                  <p>• Can group articles (e.g. sports section, arts section).</p>
+                  <p>• Can define parts of an article.</p>
+                  <p>• Think of chapters on a book.</p>
+                </div>
+              </li>
             </li>
           </ul>
         </div>
       </section>
-      <!-- Boxes  -->
-      <section class="slide-top">
-        <div class="wrap aligncenter">
-          <h2 class="text-serif bluegreen aligncenter">Boxes with a purpose</h2>
-          <p class="med-text aligncenter">Everything element in HTML creates an "invisible" box. It is important to use each one for its intended purpose.</p>
-         
-             <img class="padding-t6" src="../static/images/boxes.png" alt="display of cardboard boxes">
-          <p class="padding-t6 med-text"><b>Make sure you use the right box for your content.</b></p>
-        </div>
-      </section>
+        <!-- Article or section -->
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <h2 class="text-serif bluegreen aligncenter">Section or Article?</h2>
+            <p class="med-text aligncenter">When to use them.</p>
+            <!-- <div class="vertical-align aligncenter"> -->
+            <!-- .end .column -->
+            <p class="aligncenter">Sections can contain articles. <br> Articles can be shared independently as a unit.</p>
+            <img class="aligncenter" src="../static/images/articles-sections.gif" alt="div structure" width="1200">
+            <!-- </div> -->
+          </div>
+        </section>
+        <!-- Main Tags  here -->
+        <section class="slide-top">
+          <div class="wrap">
+            <h2 class="text-serif bluegreen aligncenter">The Main tag</h2>
+            <ul class="flexblock features">
+              <li>
+                <p class="med-text"> The "main" HTML element represents the dominant content of the "body" of a document.
+                  The main content area consists of content that is directly related to or expands upon the central topic
+                  of a document, or the central functionality of an application. </p>
+              </li>
+              <li><img style="width:500px;" src="../static/images/main-tag.gif" alt="main tag illustration"></li>
+            </ul>
+          </div>
+        </section>
       <!-- SLIDE 11 - divs -->
       <section>
         <!--.wrap = container (width: 90%) -->
@@ -395,34 +428,8 @@
           </div>
         </div>
       </section>
-      <!-- Main Tags  here -->
-      <section class="slide-top">
-        <div class="wrap">
-          <h2 class="text-serif bluegreen aligncenter">The Main tag</h2>
-          <ul class="flexblock features">
-            <li>
-              <p class="med-text"> The "main" HTML element represents the dominant content of the "body" of a document.
-                The main content area consists of content that is directly related to or expands upon the central topic
-                of a document, or the central functionality of an application. </p>
-            </li>
-            <li><img style="width:500px;" src="../static/images/main-tag.gif" alt="main tag illustration"></li>
-          </ul>
-        </div>
-      </section>
+    
       <!-- SLIDE 12 RASTER VS VECTOR -->
-      <!-- Article or section -->
-      <section>
-        <!--.wrap = container (width: 90%) -->
-        <div class="wrap">
-          <h2 class="text-serif bluegreen aligncenter">Section or Article?</h2>
-          <p class="med-text aligncenter">When to use them.</p>
-          <!-- <div class="vertical-align aligncenter"> -->
-          <!-- .end .column -->
-          <p class="aligncenter">Sections can contain articles. <br> Articles can be shared independently as a unit.</p>
-          <img class="aligncenter" src="../static/images/articles-sections.gif" alt="div structure" width="1200">
-          <!-- </div> -->
-        </div>
-      </section>
       <!-- Note on closing tags -->
       <section>
         <!--.wrap = container (width: 90%) -->

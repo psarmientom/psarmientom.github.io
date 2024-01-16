@@ -94,10 +94,10 @@
             <div class="column">
               <h2 class="text-serif bluegreen">Before CSS..</h2>
               <ul>
-                <li>Pages were styled with some HTML tags and attributes.</li>
-                <li>&lt;center&gt;, &lt;align&gt;</li>
-                <li>&lt;font&gt;, &lt;text&gt;</li>
-                <li>&lt;background&gt;, &lt;bgcolor&gt; etc</li>
+                <li>Pages were styled with some HTML tags and attributes. <a href="http://info.cern.ch/hypertext/WWW/TheProject.html">First webpage</a></li>
+                <li><b>&lt;center&gt;, &lt;align&gt;</b></li>
+                <li><b>&lt;font&gt;, &lt;text&gt;</b></li>
+                <li><b>&lt;background&gt;, &lt;bgcolor&gt;</b> etc</li>
               </ul>
               <ul>
                 <li>the W3C recommended CSS1 in 1996</li>
@@ -125,7 +125,7 @@
           <h2 class="text-serif aligncenter bluegreen">How do we use CSS?</h2>
           <div class="grid center-align">
             <div class="column">
-              <p class="emoji">&#128512;</p>
+              <p class="emoji">&#129321;</p>
               <h4>External File</h4>
               <ul>
                 <li>Better for maintainig multiple files</li>
@@ -135,7 +135,7 @@
               </ul>
             </div>
             <div class="column">
-              <p class="emoji">&#128578;</p>
+              <p class="emoji">&#128528;</p>
               <h4>On the Head tag</h4>
               <ul>
                 <li>It is always recommended to use external styles</li>
@@ -143,7 +143,7 @@
               </ul>
             </div>
             <div class="column">
-              <p class="emoji">&#129326;</p>
+              <p class="emoji">&#128545;</p>
               <h4> Inline </h4>
               <ul>
                 <li>Not recommended in most cases.</li>
@@ -153,6 +153,15 @@
             </div>
           </div>
           <!--end .grid -->
+        </div>
+      </section>
+      <!-- CSS graphic -->
+      <section>
+        <div class="wrap">
+          <h2 class="text-serif aligncenter bluegreen">How do we use CSS?</h2>
+          <div class="grid center-align">
+            <img src="../static/images/css-files.png" alt="graphic explaining how css styles are shared between multiple pages.">
+            </div>
         </div>
       </section>
       <section>
@@ -210,6 +219,9 @@
               </ul>
             </div>
           </div>
+          <hr>
+
+          <p class="big-text">As a general rule, it is better to use element selectors first, then classes, and last id's. Using the less specific selectors first, allows for more flexibility later on.</p>
           <!-- .end .bg-white shadow -->
         </div>
         <!-- .end .wrap -->
@@ -351,18 +363,23 @@
        <section class="slide-med">
         <div class="wrap size-90">
           <h2 class="text-serif aligncenter bluegreen">What about Images?</h2>
-          <p class="med-text aligncenter">mages in HTML can behave as either block-level elements or inline-level elements depending on how they are used within the HTML structure.</p>
+          <p class="med-text aligncenter">Images in HTML can behave as either block-level elements or inline-level elements depending on how they are used within the HTML structure.</p>
           <!-- <div class="grid top-align"> -->
             <div class="grid">
               <div class="column">
-                <img src="../static/images/inline-block.png" alt="The css box model">
+                <img src="../static/images/atlas-moth.png" alt="An Atlas Moth" width="200"> <img src="../static/images/atlas-moth.png" alt="An Atlas Moth" width="200">
+                <p class="med-text">Inside a div.</p>
               </div>
+             <div class="column">
+              <p><img src="../static/images/atlas-moth.png" alt="An Atlas Moth" width="200"> <img src="../static/images/atlas-moth.png" alt="An Atlas Moth" width="200"></p>
+              <p class="med-text">Inside a p tag.</p>
+             </div>
               <div class="column">  
                 <ul>
                     <li>If you place an image inside a block-level container (div, p, etc), it will behave like a block element.</li>
-                  <li>If you place it inside an inline element (span, a), it will be inline.
+                  <li>If you place it inside an inline element (span, a), <img src="../static/images/atlas-moth.png" alt="An Atlas Moth" width="80"> it will be inline.
                   </li>
-                    <li>If you don't include it </li>
+                    <li>If you don't include it any other tag, it will be inline. </li>
                   <!-- <li>Images are a special case. They are by default inline, but have many properties of a block.</li> -->
                 </ul>
               </div>
@@ -389,14 +406,14 @@
           <h2 class="text-serif aligncenter bluegreen">The Display Property: Changing Box Behavior</h2>
           <p class="med-text aligncenter">Each box has a default behavior that can be changed with the display property.
             <br> By default every element is <b>block</b> or <b>inline</b>.</p>
-          <div class="demo-block">This is one div block element</div>
+          <!-- <div class="demo-block">This is one div block element</div>
           <div class="demo-block">This is another div block element</div>
           <p class="demo-block-p">This is a p block element <span>This is an inline element inside a paragraph
               tag</span> and <span class="span1">this is another inline element</span></p>
           <div class="demo-inline">
             <div>This is a block element acting line an inline-block </div>
             <div>This is another block element acting line an inline-block </div>
-          </div>
+          </div> -->
           <div class="grid top-align">
             <div class="grid">
               <!-- .end .column -->
@@ -406,7 +423,7 @@
                   <li> <b>Inline:</b> Displays the element beside the previous one. Custom height and width will be
                     lost.</li>
                   <li> <b>inline-block:</b> Makes a box element inline, retaining it's block element properties.</li>
-                  <li> display: block; / display: inline; / display: inline-block;</li>
+                  <!-- <li> display: block; / display: inline; / display: inline-block;</li> -->
                 </ul>
               </div>
               <div class="column">
@@ -486,8 +503,23 @@
           <p class="med-text aligncenter"> <a href="https://htmlcolorcodes.com/">HTML Color Codes</a></p>
           <div class="grid top-align">
             <div class="grid">
+              <style>
+                .hex, .rgb, .hsl {
+                  text-align: center;
+                  color: #ffffff;
+                }
+                .hex {
+                  background-color: #108e82;
+                }
+                .rgb {
+                  background-color: rgb(16, 142, 130);
+                }
+                .hsl {
+                  background-color: hsl(174, 80%, 31%);
+                }
+              </style>
               <div class="column">
-                <h2>Hex Values</h2>
+                <h2 class="hex">Hex Values</h2>
                 <ul>
                   <li>Hexadecimal is a number system that uses 16 unique symbols to reopresent a value</li>
                   <li>0-9 and A-F make up those unique symbols.</li>
@@ -501,7 +533,7 @@
               </div>
               <!-- .end .column -->
               <div class="column">
-                <h2>RGB</h2>
+                <h2 class="rgb">RGB</h2>
                 <ul>
                   <li>It's the combination of Red, Green and Blue values</li>
                   <li>It is the standard color system for computer screens and displays</li>
@@ -514,10 +546,13 @@
                 </ul>
               </div>
               <div class="column">
-                <h2>HSL</h2>
+                <h2 class="hsl">HSL</h2>
                 <ul>
                   <li>It's the combination of Hue, Saturation and Lightness or Luminosity</li>
-                  <li>It is used in the same way as the rgba values.</li>
+                  <li>hsl(0, 100%, 50%) <a href="https://www.w3schools.com/colors/colors_hsl.asp">HSL</a></li>
+                  <li>The first value represents the hue (0 and 360 are red)</li>
+                  <li>The second value represents the saturation (0% is gray, 100% is full color)</li>
+                  <li>The third value represents how light or dark the color is (default is 50%).</li>
                 </ul>
                 <h2>Named Colors</h2>
                 <ul>
@@ -767,17 +802,16 @@
             <div class="column">
               <h3 class="bluegreen">What does Cascading mean?</h3>
               <ul>
-                <li>The Cascade is the way the browser decided which style applies to an element</li>
-                <li><b>The principle of the “cascade” is applied when style rules are in conflict</b></li>
+                <li>The Cascade is the way the browser decided which style applies to an element when style rules are in conflict.</li>
+                <li>It goes from the least specific styles to the more specific ones.</li>
                 <li>We can think of css rules as having weight or a point system to determine which rule wins</li>
                 <li><a href="https://specificity.keegan.st/">Specificity Calculator</a></li>
-                </li>
               </ul>
             </div>
             <!-- .end .column -->
             <div class="column">
               <p class="med-text">There are some factors that determine which style rule wins out:</p>
-              <ol>
+              <ol class="med-text">
                 <li>Initial &amp; Inherited Properties (<b>least weight</b>)</li>
                 <li>Order of Appearance</li>
                 <li>Selector Specificity</li>
@@ -823,10 +857,54 @@
       <section class="slide-med">
         <div class="wrap size-90">
           <h2 class="text-serif aligncenter bluegreen">Inherited Tags</h2>
-          <p class="med-text aligncenter">Some tags take the properties of the parent element and others are applied to
-            the selected element.</p>
-          <ul class="flexblock listing padding-t5">
-            <li>border-collapse</li>
+          <p class="med-text aligncenter">Some tags inherit the properties of the parent element and others are applied to
+            the selected element only.</p>
+          <div class="grid">
+            <div class="column">
+              <h3>Text Properties</h3>
+              <ul class="">
+                <li>Font-family</li>
+                <li>Font-size</li>
+                <li>Font-style</li>
+                <li>Line-height</li>
+                <li>color</li>
+                <li>Text-decoration</li>
+                <li>Text-alignment</li>
+                <li>Text-transform</li>
+                </ul>
+                <h3>List Properties:</h3>
+                <ul>
+                  <li>List-style-type</li>
+                  <li>List-style-image</li>
+                  <li>List-style-position</li>
+                </ul> 
+            </div>
+            <div class="column">
+              <h3>Other inherited tags</h3>
+              <ul>
+                <li>Visibility</li>
+                <li>Opacity</li>
+                <li>Vertical alignment</li>
+                <li>Quotes</li>
+                <li>Cursor</li>
+                <li>text-shadow</li>
+              </ul>
+            </div>
+            <div class="column">
+              <h3>NON-Inherited tags</h3>
+              <ul>
+                <li>Display</li>
+                <li>Width</li>
+                <li>Height</li>
+                <li>Margin</li>
+                <li>Padding</li>
+                <li>Border</li>
+                <li>Position</li>
+                <li>Background</li>
+              </ul>
+            </div>
+          </div>
+            <!-- <li>border-collapse</li>
             <li>border-spacing</li>
             <li><b>caption-side</b> </li>
             <li> <b>color</b> </li>
@@ -862,8 +940,8 @@
             <li><b>widows</b> </li>
             <li> <b>word-break</b> </li>
             <li> <b>word-spacing</b> </li>
-            <li> <b>word-wrap</b> </li>
-          </ul>
+            <li> <b>word-wrap</b> </li> -->
+          <!-- </ul> -->
         </div>
       </section>
       <!-- Cascade Source Order-->
@@ -1076,23 +1154,12 @@
                 .tableDemo tbody tr:hover {
                   background: #efefef;
                 }
-
-                .tableDemo .vText {
-                  /* writing-mode: vertical-rl; */
-                  /* text-orientation: upright; */
-                  /*     text-orientation: mixed; */
-                  /*   compatibility table */
-                  /*     rotate:180deg; */
-                  /*   transform: rotate(180deg); */
-                  /*   font-size:3.5em; */
-                  /*   font-weight:bold; */
-                }
               </style>
               <table class="tableDemo">
                 <thead>
                   <tr>
                     <th colspan="3">This is the Table Heading</th>
-                    <th colspan="2">heading</hd>
+                    <th colspan="2">heading</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -1200,39 +1267,40 @@
           <div class="grid">
             <div class="colum" style="margin-right:4rem;">
               <h4>Centering Text:</h4>
-              <ul>
+              <ul class="med-text">
                 <li>use text-align:center;</li>
               </ul>
               <h4>Centering content</h4>
-              <ul>
+              <ul class="med-text">
                 <li>Place the content you want to center in a container (div, section, etc)</li>
-                <li>Add a width to the div (px, em, %)</li>
-                <li>Add <b>auto</b> margin to the left and right, and let css calculate the distance. <b>margin: 0
+                <li>Add a width to both divs (One will be smaller than the other)</li>
+                <li>Add <b>auto</b> margin to the left and right to the inside container, and let css calculate the distance.<b>margin: 0
                     auto;</b></li>
               </ul>
             </div>
-            <div class="colums">
-              <style>
-                .outer {
-                  background: #23babc;
-                  padding: 10%;
-                  width: 30vw;
-                }
+          </div>
+          <div class="colum">
+            <style>
+              .outer {
+                background: #23babc;
+                padding: 10%;
+                width: 100%;
+              }
 
-                .center-div {
-                  background-color: #efefef;
-                  width: 90%;
-                  margin: 0 auto;
-                  padding: 5%
-                }
-              </style>
-              <div class="outer">
-                <div class="center-div">
-                  <h5>This is the content</h5>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam earum recusandae eaque dignissimos
-                    id quas architecto blanditiis adipisci quo nihil doloribus saepe accusamus laboriosam laborum,
-                    labore iure voluptatum sapiente consectetur.</p>
-                </div>
+              .center-div {
+                background-color: #efefef;
+                width: 80%;
+                margin: 0 auto;
+                padding: 5%;
+                text-align:center;
+              }
+            </style>
+            <div class="outer">
+              <div class="center-div">
+                <h5>This is the content</h5>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam earum recusandae eaque dignissimos
+                  id quas architecto blanditiis adipisci quo nihil doloribus saepe accusamus laboriosam laborum,
+                  labore iure voluptatum sapiente consectetur.</p>
               </div>
             </div>
           </div>
