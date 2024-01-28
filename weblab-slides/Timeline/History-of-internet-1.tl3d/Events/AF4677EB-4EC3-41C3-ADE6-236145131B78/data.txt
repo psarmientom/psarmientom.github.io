@@ -1,0 +1,1 @@
+{"format":"D:1 0 0","color":0,"start":1641013200,"notes":"Semantic web aims to improve the web's understanding of content and context, to enable machines to understand and interpret the meaning of web content more like humans do\n\n","title":"Web 3.0?","range":"2022","v":"1.1"}

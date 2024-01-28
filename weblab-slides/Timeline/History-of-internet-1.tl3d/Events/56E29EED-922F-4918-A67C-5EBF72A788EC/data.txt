@@ -1,0 +1,1 @@
+{"format":"D:1 0 0","color":0,"start":126248400,"notes":"By 1974 the first commercial version of Arpanet is introduced. It was called Telenet and it could be considered the first Internet provider. It used packed switched communication.","title":"Commercial Arpanet","range":"1974","v":"1.1"}

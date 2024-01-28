@@ -1,0 +1,1 @@
+{"format":"D:1 0 0","color":0,"start":410245200,"notes":"The Domain Name System (DNS) was invented as a way to give a friendly name to the numerical IP addresses that computers and servers use.\n\nIt’s like the “phone book” of the internet.","title":"DNS - How to find your page","range":"1983","v":"1.1"}

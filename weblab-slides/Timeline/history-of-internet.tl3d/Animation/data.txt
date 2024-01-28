@@ -1,0 +1,1 @@
+{"speedCamera":1.75,"speedHold":4,"movieNarration":false,"speedDoor":0.75,"v":"1a","movieUseScore":false,"movieBlurQuality":0}

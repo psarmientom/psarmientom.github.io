@@ -1,0 +1,1 @@
+{"format":"D:1 0 0","end":1262322000,"start":1199163600,"color":0,"notes":"The first Android phone, was introduced on 2008. \n\nIt was a collaborative effort between Google, the developer of the Android operating system, and HTC, a Taiwanese smartphone manufacturer.","title":"First Android Phone and More connections","range":"2008 – 2010","v":"1.1"}

@@ -1,0 +1,1 @@
+{"format":"D:1 0 0","color":0,"start":189320400,"notes":"Ethernet is a way to connect to multiple computers inside a network. \n\nIt was, developed by Bob Metcalfe at Xerox PARC in 1973, as a solution to share printers between workstations.\n","title":"Ethernet","range":"1976","v":"1.1"}
