@@ -110,8 +110,8 @@
               <hr>
               <h3 class="text-serif bluegreen">HTML & CSS</h3>
               <ul>
-                <li><a href="https://codesandbox.io/dashboard/home">CodeSandbox</a></li>
                 <li><a href="https://github.com/">Github</a></li>
+                <li><a href="https://desktop.github.com/download/">Github Desktop</a></li>
                 <li><a href="https://code.visualstudio.com/">Visual studio code</a></li>
               </ul>
               <hr>
@@ -458,17 +458,43 @@
           </p>
         </div>
       </section>
+       <!-- DOAMAIN NAME  -->
+       <section class="padding-t5">
+        <div class="wrap">
+          <div class="grid">
+            <div class="column">
+              <h1 class="text-serif aligncenter bluegreen">What is a Domain?</h1>
+              <p class="med-text">A domain is a human-readable address name for a website.</p>
+              <!-- <p class="med-text"><b>DNS - Domain Name System</b> A domain name and its matching IP is called a DNS
+                Record. (think of the relationship between a name and a phone number on a phone book).</p> -->
+                <p class="med-text"><b>DNS - Domain Name System</b> is a technology that translates human-friendly domain names into numerical IP (Internet Protocol) addresses.</p>
+              <p class="med-text">When you type a web address into your browser, the browser first checks its own list (called a DNS cache) to see if it knows where to find the website. If it doesn't find it there, it asks your internet provider to look it up. If they don’t know, they ask special servers around the world that keep track of all the website addresses. </p>
+              <!-- <p class="med-text"><b>Nameserver:</b> Is a special type of server that stores DNS Records. These are
+                maintained by the domain name provider or the Hosting provider.</p> -->
+                <p class="med-text"><b>IP address</b> or Internet Protocol address, is a unique number for every device or website on the internet. It's a set of numbers that computers use to talk to each other.</p>
+                <p class="med-text">13.68.209.221 = miami.edu</br>
+                <a href="https://whatismyipaddress.com/">What is my IP address?</a></p>
+            </div>
+            <div class="column">
+              <a
+                href="https://www.wpbeginner.com/beginners-guide/beginners-guide-what-is-a-domain-name-and-how-do-domains-work/"><img
+                  src="../static/images/domains.png" alt="how domain names work graphic"></a>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- SLIDE 10 - LINKING -->
       <section class="slide-top bg-white padding-t5">
         <div class="wrap">
           <h2 class="text-serif aligncenter bluegreen">What is a URL?</h2>
-          <p class="big-text aligncenter">Universal Resource Locator.</p>
-          <div class="grid center-align">
+          <p class="big-text aligncenter">Universal Resource Locator </p>
+            <img class="aligncenter" src="../static/images/url.png" alt="browser usage stats" width="80%" />
+          <div class="grid center-align size-70">
             <div class="column">
               <ul>
-                <li>URL is your how you find your website in the internet. <br> Its a reference to its location.</li>
+                <li>URL is your how you find your website in the internet. <br> Its a reference to its location, just like a home address for websites.</li>
                 <li class="padding-t5">A. Protocol (Tells the browser how to communicate with the server).</li>
-                <li>B. Host Name - in this case its www.</li>
+                <li>B. Default subdomain - in this case its www.</li>
                 <li>C. Domain Name.</li>
                 <li>D. Top Level Domain (.com,.org, etc).</li>
                 <li>E. Folder.</li>
@@ -476,37 +502,10 @@
                 <li>G. File Extension (.html, jpg, js)</li>
               </ul>
               <hr>
-              <p class="med-text">13.68.209.221 = miami.edu</p>
             </div>
-            <div class="column aligncenter">
+            <!-- <div class="column aligncenter">
               <img src="../static/images/url.png" alt="browser usage stats" width="80%" />
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- DOAMAIN NAME  -->
-      <section class="padding-t5">
-        <div class="wrap">
-          <div class="grid">
-            <div class="column">
-              <h1 class="text-serif aligncenter bluegreen">What is a Domain?</h1>
-              <p class="med-text">A domain is a human-readable address used to identify a specific location on the internet.</p>
-              <!-- <p class="med-text"><b>DNS - Domain Name System</b> A domain name and its matching IP is called a DNS
-                Record. (think of the relationship between a name and a phone number on a phone book).</p> -->
-                <p class="med-text"><b>DNS - Domain Name System</b> is a technology that translates human-friendly domain names into numerical IP (Internet Protocol) addresses.</p>
-              <p class="med-text">When you type in a web address, the browser looks in its DNS cache for a matching
-                record. If no record is found, a message goes through the network to resolving nameservers, run by your
-                ISP. If no record is found there, then it looks for root <b>nameservers</b>, which are designated
-                servers around the world dedicated to storing DNS Data. </p>
-              <!-- <p class="med-text"><b>Nameserver:</b> Is a special type of server that stores DNS Records. These are
-                maintained by the domain name provider or the Hosting provider.</p> -->
-                <p class="med-text"><b>IP address</b> or Internet Protocol address, is a numerical label assigned to each device connected to a computer network, and every website that uses the Internet Protocol for communication.</p>
-            </div>
-            <div class="column">
-              <a
-                href="https://www.wpbeginner.com/beginners-guide/beginners-guide-what-is-a-domain-name-and-how-do-domains-work/"><img
-                  src="../static/images/domains.png" alt="how domain names work graphic"></a>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
@@ -591,7 +590,8 @@
               ensuring the network's stable and secure operation. en.wikipedia.org/wiki/ICANN</li>
             <li><a href="https://www.icann.org/resources/pages/beginners-guides-2012-03-06-en"> Beginner's Guide to
                 ICANN</a></li>
-          </ul>
+            <li><a href="https://mashable.com/article/amazon-domain-name-icann-approved">Amazon 7-year ICANN Dispute</a></li>
+              </ul>
         </div>
       </section>
       <!-- SLIDE 12 RASTER VS VECTOR -->
@@ -677,7 +677,157 @@
           </div>
         </div>
       </section>
-      <!-- SLIDE 12 RASTER VS VECTOR -->
+      <!-- SLIDE 12 WEB DEVELOPMENT -->
+        <!-- What is web development  -->
+        <section class="aligncenter size-70">
+          <h2 class="text-serif bluegreen">What is Web Development?</h2>
+          <div class="grid">
+             <div class="column textLeft">
+              <p class="med-text">Web development refers to the building, creating, and maintaining of websites.</p>
+              <p class="med-text"> Web development has evolved so much, that the role of a Web developer has split into separate areas. We have 4 distinct areas: </p>
+                <ul>
+                  <li>UX designers</li>
+                  <li>UI Designers</li>
+                  <li>The Front-End Developer</li>
+                  <li>Back-End Developer</li>
+                </ul> <br>
+              <p class="med-text"> The boundaries between the 4 sometimes overlap.</p>
+              </div>
+          <div class="column">
+            <img class="aligncenter" src="../static/images/careers.png" alt="graphic of html and css structure"
+              width="700" />
+          </div>
+            </div>
+
+          <section>
+              <h3>Front End Developer duties and responsibilities</h3>
+              <p>A Front End Developer’s main goal is to combine technology and design to create inviting, easy-to-use websites for consumers. In order to accomplish this goal, they need to be able to handle the following day-to-day duties:</p>
+              <small>Based on <a href="https://www.indeed.com/hire/job-description/front-end-developer?gclid=EAIaIQobChMIxta5jOSd9QIVlsGGCh0ttAuLEAAYASAAEgL3ffD_BwE&aceid=">Indeed's</a> Front End Developer Job Description</small>
+          </section>
+
+          <section>
+              <ul>
+                  <li>Working with clients to develop the overall look and design of a website</li>
+                  <li class="fragment">Writing website code with programming languages such as HTML, C++ and Java</li>
+                  <li class="fragment">Producing, maintaining and modifying websites and user interfaces</li>
+                  <li class="fragment">Incorporating applications, graphics, audio and video clips into client websites</li>
+                  <li class="fragment">Creating tools that enhance the user’s website experience</li>
+                  <li class="fragment">Ensuring websites are accessible across many platforms, including laptops and smartphones</li>
+                  <li class="fragment">Routinely testing websites for ease of use, speed and other quality factors</li>
+                  <li class="fragment">Fixing any website issues or bugs that arise</li>
+              </ul>
+          </section>
+
+          <section>
+              <h3>Front End Developer skills and qualifications</h3>
+              <p>A Front End Developer should have advanced technical skills and strong interpersonal skills to be effective on the job, including:</p>
+              <ul>
+                  <li>Proficiency in website programming languages such as HTML, CSS, Javascript, C#, Python, C++</li>
+                  <li class="fragment">Understanding of key website design principles and SEO optimization</li>
+                  <li class="fragment">Ability to test and debug websites</li>
+                  <li class="fragment">Analytical and detail-oriented</li>
+                  <li class="fragment">Excellent verbal and written communication skills</li>
+                  <li class="fragment">Advanced problem-solving skills</li>
+                  <li class="fragment">Observant and able to remain focused on tasks for long periods of time</li>
+              </ul>
+          </section>
+
+          <section><iframe width="768" height="432" src="https://miro.com/app/live-embed/uXjVOX7qRfk=/?moveToViewport=-612,-334,1223,666" frameBorder="0" scrolling="no" allowFullScreen></iframe></section>
+
+      </section>
+      <!-- SLIDE UX -->
+      <section class="bg-white slide-top">
+        <div class="wrap size-90">
+          <h1 class="text-serif bluegreen aligncenter">User Experience Design (UX Design)</h1>
+          <p class="med-text aligncenter">Oversees the total user experience when interacting with a product, service, or system.
+          <br>UX design should be invisible to its users.</p>
+          <div class="grid">
+            <div class="column">
+              <h3 class="bluegreen">Key aspects of UX</h3>
+              <ul>
+                <li><b>Usability:</b> Ensuring that a website is easy to use and navigate</li>
+                <li><b>Accessibility: </b>Making products accessible to as many people as possible, including those with disabilities.</li>
+                <li><b>Information Architecture: </b>Structuring and organizing information in a logical and understandable way.</li>
+                <li><b>User Research: </b>Understanding the needs, behaviors, and preferences of users. </li>
+                <li><b>User Testing: </b>Testing with real users to identify usability issues.</li>
+              </ul>
+               <!-- <img class="aligncenter" src="../static/images/ux.png" alt="graphic of ux competences" width="700" />
+              <cite><a
+                  href="https://designmodo.com/wp-content/uploads/2012/06/923.jpg">https://designmodo.com/wp-content/uploads/2012/06/923.jpg</a></cite>  -->
+            </div>
+            <div class="column">
+              <h3 class="bluegreen">UX Designer Role</h3>
+              <ul>
+                <li>Conduct research to understand user behaviors and goals.</li>
+                <li>Organize and structure content and information to create an intuitive and logical user journey.</li>
+                <li>Define how users interact with a product, including the layout of elements, navigation, and user flows.</li>
+                <li>Ensure that the product is accessible to users with disabilities and complies with accessibility standards.</li>
+                <li>Work closely with other team members, including developers, product managers, and clients, to align design decisions with project goals.</li>
+                <li>Continuously iterate on designs based on feedback and data to improve the user experience.</li>
+              </ul>
+              <!-- <img class="aligncenter" src="../static/images/ux1.png" alt="graphic of ux" width="700" />
+              <cite><a
+                  href="https://designmodo.com/wp-content/uploads/2012/06/923.jpg">https://designmodo.com/wp-content/uploads/2012/06/923.jpg</a></cite> -->
+            </div>
+          </div>
+      </section>
+       <!-- SLIDE BAD UX -->
+       <section class="bg-white slide-top">
+        <div class="wrap size-90">
+          <h1 class="text-serif bluegreen aligncenter">What is bad UX?</h1>
+          <div class="grid">
+            <div class="column">
+              <ul>
+                <li>Poor Navigation</li>
+                <li>Slow loading time (more than 3 seconds)</li>
+                <li>Non Responsive Web layout</li>
+                <li>Autoplay videos</li>
+                <li>Unreadable Fonts</li>
+                <li>Cluttered or disorganized page layout</li>
+                <li>Broken Links</li>
+                <li>Lack of Clear Call to Action</li>
+                <li>Dark UX</li>
+                <li>Discoverability (hard to find features)</li>
+                <li>Ignoring Accesibility</li>
+              </ul> <br>
+              <p class="med-text bluegreen"><a href="https://www.hostinger.com/tutorials/bad-website-examples">Some examples
+                of bad design.</a></p>
+                <p class="med-text"><a href="https://blog.hubspot.com/website/bad-vs-good-design">Bad UX Website examples</a></p>
+              <!-- <img class="aligncenter" src="../static/images/bad-ux.jpg" alt="accesible ramp with stairs" width="700" />
+              <cite><a
+                  href="https://www.smallbusinesswebdesigns.net.au/ux-web-design.html">https://www.smallbusinesswebdesigns.net.au/ux-web-design.html</a></cite> -->
+            </div>
+            <div class="column">
+              
+              
+              <p class="med-text bluegreen">Some web UX facts</p>
+              <ul>
+                <li>48% users will leave a non-mobile website.</li>
+                <li>88% of consumers will not return to a site with bad UX.</li>
+                <li>48% of users based credibility on the overall design and experience of the website.</li>
+                <li>95% of user first impresions are desgin related.</li>
+                <li>79% of people scan read.</li>
+              </ul>
+            </div>
+          </div>
+      </section>
+       <!-- SLIDE UI -->
+       <section class="bg-white slide-top aligncenter size-70">
+        <div class="wrap size-90">
+          <h1 class="text-serif bluegreen aligncenter">User Interface Design (UI Design)</h1>
+          <p class="big-text aligncenter">App Design | Web Design</p>
+          <p class="med-text aligncenter">Interface is a device or system that lets you interact with a machine or
+            object or application.</p>
+            <p class="med-text">UI designers are responsible for the visual elements of a product, such as colors, fonts, buttons, and overall layout. They design the interface that users interact with, making sure it's visually appealing and easy to use.</p>
+          <div class="grid">
+            <img class="aligncenter" src="../static/images/ui.png" alt="graphic of html and css structure"
+              width="700" />
+          </div>
+          <cite><a
+              href="https://designmodo.com/wp-content/uploads/2012/06/923.jpg">https://designmodo.com/wp-content/uploads/2012/06/923.jpg</a></cite>
+        </div>
+      </section>
+      <!-- Front End Development -->
       <section class="slide-top bg-white padding-t5">
         <div class="wrap size-60">
           <h1 class="text-serif aligncenter bluegreen">Front End Development</h1>
@@ -687,6 +837,17 @@
             <div class="aligncenter">
               <img src="../static/images/developer.png" alt="web developer illustration" width="700" />
             </div>
+          </div>
+        </div>
+      </section>
+       <!-- SLIDE development process -->
+       <section class="bg-white slide-top">
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap size-90">
+          <h1 class="text-serif bluegreen aligncenter">UX - UI - Development process</h1>
+          <div class="grid">
+            <img class="aligncenter" src="../static/images/development.png" alt="graphic of html and css structure"
+              width="980" />
           </div>
         </div>
       </section>
@@ -760,8 +921,7 @@
         </div>
       </section>
       <!-- SLIDE 15 - RESOURCES -->
-      <section class="bg-white slide-top padding-t6">
-        <!--.wrap = container (width: 90%) -->
+      <!-- <section class="bg-white slide-top padding-t6">
         <div class="wrap size-90">
           <h1 class="text-serif bluegreen aligncenter">Careers</h1>
           <div class="grid">
@@ -769,100 +929,8 @@
               width="700" />
           </div>
         </div>
-      </section>
-      <!-- SLIDE UX -->
-      <section class="bg-white slide-top padding-t5">
-        <!--.wrap = container (width: 90%) -->
-        <div class="wrap size-90">
-          <h1 class="text-serif bluegreen aligncenter">User Experience Design (UX Design)</h1>
-          <p class="med-text aligncenter">Oversees the total user experience when interacting with a product, service, or system.
-          <br>UX design should be invisible to its users.</p>
-          <div class="grid">
-            <div class="column">
-              <h3 class="bluegreen">Key aspects of UX</h3>
-              <ul>
-                <li><b>Usability:</b> Ensuring that a website is easy to use and navigate</li>
-                <li><b>Accessibility: </b>Making products accessible to as many people as possible, including those with disabilities.</li>
-                <li><b>Information Architecture: </b>Structuring and organizing information in a logical and understandable way.</li>
-                <li><b>User Research: </b>Understanding the needs, behaviors, and preferences of users. </li>
-                <li><b>User Testing: </b>Testing with real users to identify usability issues.</li>
-              </ul>
-              <!-- <img class="aligncenter" src="../static/images/ux.png" alt="graphic of ux competences" width="700" />
-              <cite><a
-                  href="https://designmodo.com/wp-content/uploads/2012/06/923.jpg">https://designmodo.com/wp-content/uploads/2012/06/923.jpg</a></cite> -->
-            </div>
-            <div class="column">
-              <h3 class="bluegreen">UX Designer Role</h3>
-              <ul>
-                <li>Conduct research to understand user behaviors and goals.</li>
-                <li>Organize and structure content and information to create an intuitive and logical user journey.</li>
-                <li>Define how users interact with a product, including the layout of elements, navigation, and user flows.</li>
-                <li>Ensure that the product is accessible to users with disabilities and complies with accessibility standards.</li>
-                <li>Work closely with other team members, including developers, product managers, and clients, to align design decisions with project goals.</li>
-                <li>Continuously iterate on designs based on feedback and data to improve the user experience.</li>
-              </ul>
-              <!-- <img class="aligncenter" src="../static/images/ux1.png" alt="graphic of ux" width="700" />
-              <cite><a
-                  href="https://designmodo.com/wp-content/uploads/2012/06/923.jpg">https://designmodo.com/wp-content/uploads/2012/06/923.jpg</a></cite> -->
-            </div>
-          </div>
-      </section>
-      <!-- SLIDE UX -->
-      <section class="bg-white slide-top padding-t5">
-        <!--.wrap = container (width: 90%) -->
-        <div class="wrap size-90">
-          <h1 class="text-serif bluegreen aligncenter">What is bad UX?</h1>
-          <div class="grid">
-            <div class="column">
-              <ul>
-                <li>Poor Navigation</li>
-                <li>Slow loading time (more than 3 seconds)</li>
-                <li>Non Responsive Web layout</li>
-                <li>Autoplay videos</li>
-                <li>Unreadable Fonts</li>
-                <li>Cluttered or disorganized page layout</li>
-                <li>Broken Links</li>
-                <li>Lack of Clear Call to Action</li>
-                <li>Dark UX</li>
-                <li>Discoverability (hard to find features)</li>
-                <li>Ignoring Accesibility</li>
-              </ul>
-              <p class="med-text bluegreen"><a href="https://www.hostinger.com/tutorials/bad-website-examples">Some examples
-                of bad design.</a></p>
-              <!-- <img class="aligncenter" src="../static/images/bad-ux.jpg" alt="accesible ramp with stairs" width="700" />
-              <cite><a
-                  href="https://www.smallbusinesswebdesigns.net.au/ux-web-design.html">https://www.smallbusinesswebdesigns.net.au/ux-web-design.html</a></cite> -->
-            </div>
-            <div class="column">
-              
-              
-              <p class="med-text bluegreen">Some web UX facts</p>
-              <ul>
-                <li>48% users will leave a non-mobile website.</li>
-                <li>88% of consumers will not return to a site with bad UX.</li>
-                <li>48% of users based credibility on the overall design and experience of the website.</li>
-                <li>95% of user first impresions are desgin related.</li>
-                <li>79% of people scan read.</li>
-              </ul>
-            </div>
-          </div>
-      </section>
-      <!-- SLIDE UI -->
-      <section class="bg-white slide-top padding-t5">
-        <!--.wrap = container (width: 90%) -->
-        <div class="wrap size-90">
-          <h1 class="text-serif bluegreen aligncenter">User Interface Design (UI Design)</h1>
-          <p class="big-text aligncenter">App Design | Web Design | Museum/Physical Design</p>
-          <p class="med-text aligncenter">Interface is a device or system that lets you interact with a machine or
-            object or application.</p>
-          <div class="grid">
-            <img class="aligncenter" src="../static/images/ui.png" alt="graphic of html and css structure"
-              width="700" />
-          </div>
-          <cite><a
-              href="https://designmodo.com/wp-content/uploads/2012/06/923.jpg">https://designmodo.com/wp-content/uploads/2012/06/923.jpg</a></cite>
-        </div>
-      </section>
+      </section> -->
+     
       <!-- SLIDE developer -->
       <!-- <section class="bg-white slide-top">
         <div class="wrap size-90">
@@ -886,17 +954,6 @@
 ">https://uxdict.io/the-differences-interaction-design-vs-visual-design-dae7b454be77 </a></cite>
         </div>
       </section> -->
-      <!-- SLIDE digital teams -->
-      <section class="bg-white slide-top">
-        <!--.wrap = container (width: 90%) -->
-        <div class="wrap size-90">
-          <h1 class="text-serif bluegreen aligncenter">UX - UI - Development process</h1>
-          <div class="grid">
-            <img class="aligncenter" src="../static/images/development.png" alt="graphic of html and css structure"
-              width="980" />
-          </div>
-        </div>
-      </section>
       <!-- SLIDE inspiration -->
       <section class="bg-white slide-center">
         <!--.wrap = container (width: 90%) -->
