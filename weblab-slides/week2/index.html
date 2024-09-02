@@ -72,10 +72,10 @@
               <ul class="big-text">
                 <li>It's a Markup Language</li>
                 <li>Not a programming Language</li>
-                <li>Used for creating webpages</li>
-                <li>Human Readable</li>
+                <li>It is the language used to create webpages</li>
+                <li>It uses "tags" to label the different parts of the text,<br> <b>think of how you format text in a Word Document</b>.</li>
+                <li>Tags or elements are enclosed in <b>angle brackets (<>)</b> to define the structure and formatting of content</li>
                 <li>Defines the structure of webpages</li>
-                <li>Markup languages use tags or elements enclosed in <b>angle brackets (<>)</b> to define the structure and formatting of content</li>
                 <li>It can be used by itself or combined with programming languages.</li>
               </ul>
             </div>
@@ -100,7 +100,7 @@
                 <li>Used to define the structure of data</li>
                 <li>Use tags or elements enclosed in angle brackets (<>) </li>
                 <li>The tags describe the content</li>
-                <li>HTML, CSS, XML</li>
+                <li>HTML, XML, Markdown, BBCode</li>
               </ul>
             </div>
             <div class="column">
@@ -110,10 +110,11 @@
               </h4>
               <ul>
                 <li>Scripting languages enable the creation of dynamic and interactive content.</li>
-                <li>Integrates and communicates with other languages</li>
-                <li>They have a more extensive and flexible syntax</li>
+                <li>They usually integrate and communicate with other languages</li>
+                <li>They are used to write smaller tasks within a larger system</li>
                 <li>They can be used to build web applications, perform calculations, manipulate data, and control the flow of program execution.</li>
-                <li>JavaScript, PHP</li>
+                <li>They are executed directly by another program (like a web browser) rather than being compiled into machine code</li>
+                <li>JavaScript, PHP, Python, Ruby</li>
               </ul>
             </div>
             <div class="column">
@@ -122,10 +123,11 @@
                 <strong>Programming Language</strong>
               </h4>
               <ul>
-                <li>used to create full-fledged software applications, perform complex calculations, implement algorithms, manage memory, and interact with external hardware.</li>
+                <li>used to create standalone software applications, perform complex calculations, implement algorithms, manage memory, and interact with external hardware.</li>
                 <li>They have rich and complex syntax.</li>
                 <li>Used for software, drivers, etc.</li>
-                <li>C, C++, Java</li>
+                <li>They often have to be compiled into machine langage to be executed directlyby the computer </li>
+                <li>C, C++, C#, Java, Swift, Rust, PHP, Python, Ruby</li>
               </ul>
             </div>
           </div>
@@ -182,10 +184,10 @@
             <ul>
               <li>Around 1999</li>
               <li>Rich User experiences. Highly interactive websites.</li>
-              <li>User participation: <ul>
-                  <li>Pinterest</li>
-                  <li>Tumblr</li>
-                  <li>Wordpress</li>
+              <li>User participation, and user generated content: <ul>
+                  <li>Blogging</li>
+                  <li>YouTube</li>
+                  <li>Wikipedia</li>
                   <li>Social Networks</li>
                 </ul>
               </li>
@@ -195,12 +197,13 @@
           <div class="column">
             <h3>Web 3.0</h3>
             <ul>
-              <li>Third generation of the internet.</li>
+              <li>Called the decentralized web, aims to make the web more intelligent, secure and user focused</li>
               <li>Semantic web.</li>
-              <li>Artificial Intelligence.</li>
+              <li>Artificial Intelligence and Machine Learning.</li>
               <li>3D Graphics for AR and VR</li>
               <li>Everything will be interconnected.</li>
-              <li>Blockchain, Cryptocurrency, NFT's.</li>
+              <li>Blockchain, Cryptocurrency.</li>
+              <li>More user controlled experience.</li>
             </ul>
           </div>
         </div>
@@ -228,19 +231,17 @@
       </section> -->
         <!-- CodeSandbox -->
         <section class="slide-medium">
-          <div class="wrap size-80 aligncenter">
+          <div class="wrap size-70 aligncenter">
             <h2 class="text-serif bluegreen">Where do I write HTML?</h2>
-            <p class="med-text">HTML can be written in a simple text editor, or using a more specialized application that gives you syntax highlighting and many other tools. The end result is the same. There are several online code editors to choose from. We will work with <a href="https://codesandbox.io">Codesandbox.</a></p>
+            <p class="med-text">HTML can be written in a simple text editor, or using a more specialized application that gives you syntax highlighting and many other tools. The end result is the same.</p>
+            <p class="med-text">There are several online and offline code editors to choose from. 
+              We will work with <a href="https://code.visualstudio.com/">Visual Studio Code</a>, which allows you to create and test HTML code in your computer.</p>
             <div class="grid">
               <div class="column">
-                <ul>
-                  <li>Codesandbox allows you to work in many common languages. Make sure you select HTML + CSS when you create your sandbox.</li>
-                  <li><b>Sandbox:</b> In Web Development, a sandbox is a self contained developing environment used for testing.  </li>
-                </ul>
-  
+                <img src="../static/images/html-text.png" alt="">
               </div>
               <div class="column">
-                <img src="../static/images/codesandbox.png" alt="codesandbox" width="400" />
+                <img src="../static/images/html-editor.png" alt="">
               </div>
   
             </div>
@@ -304,6 +305,7 @@
           <div class="grid padding-t5">
             <div class="column">
               <img class="aligncenter" src="../static/images/html.gif" alt="binary code image" width="990" />
+              <p class="med-text"><a href="simple-page.html">Simple Page Structure</a></p>
             </div>
           </div>
           <!-- .end .bg-white shadow -->
@@ -338,13 +340,13 @@
   alert('Hello World!');&lt;/script>></code>
               </div>
             </li> -->
-            <!-- <li>
+            <li>
               <div>
                 <h2 class="primary-color"> meta keywords </h2>
                 <p class="sm-text">Define keywords for search engines.</p>
                 <code>&lt;meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript"></code>
               </div>
-            </li> -->
+            </li>
             <li>
               <div>
                 <h2 class="primary-color"> meta description </h2>
@@ -398,6 +400,7 @@
                 <li><strong>body:</strong> Main content of the webpage. Contains all the other html tags and is what you
                   see on your browser.</li>
               </ul>
+              <p class="med-text"><a href="simple-page.html">Simple Page Structure</a></p>
             </div>
             <!-- .end .column -->
             <div class="column">
@@ -421,6 +424,29 @@
       <span class="bluegreen">&lt;/body&gt;</span>
   <span class="red">&lt;/html&gt;</span>
     </pre>
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+      </section>
+      <!-- Anatomy of a Website  -->
+      <section>
+        <div class="wrap">
+          <h2 class="text-serif bluegreen">Anatomy of a WEBPAGE</h2>
+          <div class="grid vertical-align">
+            <div class="column">
+              <ul>
+                <li><strong>Header:</strong> Not to be confused with the head html section. The header usually contains the Page Title, the logo, main navigation.
+                It is used as an introduction to the page.</li>
+                <li><strong>Main:</strong>Is where the main content of the page is. It can contain sections, articles and any type of content. </li>
+                <li><strong>Footer:</strong> Used as a closing for the page, usually contains, copyright information, secondary menus, contact information. </li>
+              </ul>
+             
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+             <img src="../static/images/website-parts.png" alt="diagram of a website and its parts">
             </div>
             <!-- .end .column -->
           </div>
