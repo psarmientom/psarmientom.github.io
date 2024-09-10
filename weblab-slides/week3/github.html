@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CLEAN MARKUP = GOOD KARMA.
+      Hi source code lover,
+
+      you're a curious person and a fast learner ;)
+      Let's make something beautiful together. Contribute on Github:
+      https://github.com/webslides/webslides
+
+      Thanks,
+      @jlantunez.
+    -->
+  <!-- SEO -->
+  <title>Introduction to Github</title>
+  <meta name="description" content="Introduction to HTML concepts">
+  <!-- URL CANONICAL -->
+  <!-- <link rel="canonical" href="http://your-url.com/"> -->
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/92123ffbf2.js" crossorigin="anonymous"></script>
+  <!-- CSS WebSlides -->
+  <link rel="stylesheet" type='text/css' media='all' href="../static/css/webslides.css">
+  <link rel="stylesheet" type='text/css' media='all' href="../static/css/custom.css">
+  <!-- Optional - CSS SVG Icons (Font Awesome) -->
+  <link rel="stylesheet" type='text/css' media='all' href="../static/css/svg-icons.css">
+  <!-- SOCIAL CARDS (ADD YOUR INFO) -->
+  <!-- FAVICONS -->
+  <link rel="shortcut icon" sizes="16x16" href="../static/images/favicons/favicon.png">
+  <link rel="shortcut icon" sizes="32x32" href="../static/images/favicons/favicon-32.png">
+  <link rel="apple-touch-icon icon" sizes="76x76" href="../static/images/favicons/favicon-76.png">
+  <link rel="apple-touch-icon icon" sizes="120x120" href="../static/images/favicons/favicon-120.png">
+  <link rel="apple-touch-icon icon" sizes="152x152" href="../static/images/favicons/favicon-152.png">
+  <link rel="apple-touch-icon icon" sizes="180x180" href="../static/images/favicons/favicon-180.png">
+  <link rel="apple-touch-icon icon" sizes="192x192" href="../static/images/favicons/favicon-192.png">
+  <!-- Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#333333">
+</head>
+
+<body>
+  <main role="main">
+    <article id="webslides" class="horizontal">
+      <!-- Quick Guide
+          - Each parent <section> in the <article id="webslides"> element is an individual slide.
+          - Vertical sliding = <article id="webslides" class="vertical">
+          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
+        -->
+      <!-- SLIDE 1 INTRO -->
+      <section class="aligncenter">
+        <div class="wrap size-50">
+            <img src="../static/images/github-mark.png" alt="Github Mark">
+            <img src="../static/images/GitHub_Logo.png" alt="Github Logo" width="500">
+          <h2 class="text-landing">Introduction to Github</h2>
+        </div>
+      </section>
+      <!-- Semantic Tags  -->
+      <!-- Accessibility-->
+      <section class="padding-t5">
+        <div class="wrap size-50">
+          <h2 class="text-serif bluegreen aligncenter">What is Github?</h2>
+          <div class="padding-t5">
+            <p class="med-text">GitHub is a <em>mostly free</em> platform that developers use to store and manage their code online. It is mainly used for the following purposes:  </p>
+            <div class="grid">
+                <div class="column">
+                    <ul>
+                        <li><b>Version Control: </b>GitHub uses Git, a tool that helps track changes in code, making it easy to keep different stated of the project and recover if needed.</li>
+                        <li><b>Collaboration: </b>Multiple people can work on the same project at the same time without messing up each other’s work.</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <ul>
+                        <li><b>Backup and Sharing: </b>Since Github stores your code online, you can keep a copy where you can share or keep private.</li>
+                        <li><b>Open Sorce: </b>For Open Source projects, where anyone can contribute, it's a great place to share the code.</li>
+                        <li><a href="https://github.com/">Go to Github</a></li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="wrap">
+          <h2 class="text-serif bluegreen">Basic HTML accessibility.</h2>
+          <div class="grid">
+            <div class="column">
+              <ul>
+                <li>Always provide an "alt" text in images. This will help people with screen readers to identify the
+                  content of the image. <br>
+                  <img src="../static/images/alt-tex.png" alt="image of 3 fruits" width="400">
+                </li>
+                <li>When including Videos with autoplay, make sure you allow users to stop it if they are more than 5
+                  seconds long. Videos should be muted by default, allowing users to enable audio. </li>
+                <li>Websites should be viewed in mobile devices in portrait and landscape modes.</li>
+                <li>Web pages should only scroll horizontally or verticaly. Not both.</li>
+              </ul>
+            </div>
+            <div class="column">
+              <ul>
+                <li>Use Headings appropriately. There should be only 1 <code>< h1 ></h1></code> tag per page.</li>
+                <li>HTML content should follow a logical reading order, regardles of the layout on the page.</li>
+                <li>Make sure the text is legible by allowing enough space, between letters and lines.</li>
+                <li>There should be enough contrast between text color and background.</li>
+                <li>Use descriptive text for Links. <b>Cliick Here</b> is not good enough. <b>Read more</b> needs more
+                  context. <b>Read more about our latest product.</b></li>
+              </ul>
+              <hr>
+              <p class="med-text"><a
+                  href="https://silktide.com/app/uploads/2022/03/Best-practices-for-implementing-great-web-accessibility.pdf">Guide
+                  to Web accessibility</a> by SilkTide</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Alt text  -->
+      <section class="padding-t5">
+        <div class="wrap">
+          <h2 class="text-serif bluegreen"><a href="https://www.craigabbott.co.uk/blog/how-to-write-good-alt-text-for-screen-readers/?ref=web-design-weekly.com">Why Alt text Matters</a></h2>
+          <div>
+            <p class="med-text">When you fail to provide an alt attribute, screen readers will still announce there is an image, and will read out the file name.</p>
+            <p class="med-text">Alt text has two main purposes:
+              <ul class="med-text">
+                <li><b>Accessibility:</b> alt text provides a text description so that people who cannot see the image can still understand what its about.</li>
+                <li><b>Fail state:</b> if the image fails to load for whatever reason, the text alternative will be displayed on the page, so the context of it is not lost.</li>
+              </ul>
+            </p>
+            <p class="med-text">When writing alt text, you have to strike a balance between too descriptive and too generic.</p>
+          </div>
+          <div class="grid">
+            <div class="column">
+              <img src="../static/images/cat-alt.webp" alt="A close up headshot of a ginger cat wearing mirrored sunglasses. It's in a car, and its sunglasses reflect the dark orange clouds of a sunset.">
+              <p>A cat.</p>
+            </div>
+            <div class="column">
+              <p>A close up headshot of a ginger cat wearing mirrored sunglasses. It's in a car, and its sunglasses reflect the dark orange clouds of a sunset.</p>
+            </div>
+            <div class="column">
+              <p>An artistic portrait shot of a cat. Set against a subdued background which depicts a soft bokeh effect with an interplay of light and shadow. The cat has meticulously detailed medium length fur, which displays varying shades of earthy browns and oranges against a white face mask and pink nose, reminiscent of the classic tabby pattern. What captures immediate attention are the round, reflective sunglasses it adorns. These mirrored glasses encapsulate a scene with a setting sun and thick dark orange clouds. The cat's whiskers appear prominent, adding symmetry of the image. It's sitting in a car, which offers a sense of sophistication by fusing the natural world with elements of human luxury.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Inline Tags  -->
+      <section class="slide-top">
+        <div class="wrap">
+          <h2 class="text-serif aligncenter bluegreen">Inline HTML Tags</h2>
+          <p class="med-text aligncenter">Tags that are used inside other tags to change the apperance or meaning. They can be used by themselves or inisde other elements.</p>
+          <p class="med-text aligncenter">For more information, check <a href="https://caninclude.glitch.me/">Can I
+              include?</a> </p>
+          <ul class="flexblock features">
+            <li>
+              <div>
+                <h2 class="secondary-color"> Bold or Strong? </h2>
+                <p class="sm-text">Use &lt;b&gt; when you want to give <b>&lt;b&gt;visual&lt;/b&gt;</b> contrast</p>
+                <br>
+                <p class="sm-text">Use &lt;strong&gt; when you want to give
+                  <b>&lt;strong&gt;importance&lt;/strong&gt;</b> to part of the paragraph</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="secondary-color"> Italic or Emphasis? </h2>
+                <p class="sm-text">Use &lt;i&gt; when you want to give <b>&lt;i&gt;visual&lt;/i&gt;</b> emphasis to
+                  express an alternate voice or mood.</p> <br>
+                <p class="sm-text">Use &lt;em&gt; when you want to give <b>&lt;em&gt;emphasis&lt;/em&gt;</b> to a word
+                </p>
+              </div>
+            </li>
+            <li>
+              <h2 class="secondary-color"> Span </h2>
+              <div class="headings">
+                <p>It is used to change the visual attributes of a group of words inside a paragraph</p>
+                <p><b>&lt;p&gt;This is a text <span>&lt;span&gt;that will change color&lt;/span&gt;</span> in the same
+                    line&lt;/p&gt;</b></p>
+                <p>This is a text <span>that will change color</span>in the same line</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="secondary-color"> Mark </h2>
+                <p>When you need to highlight or mark specific portions of text.</p>
+                <p>This store will be <mark>closed for 15 minutes</mark> after 6pm.</p>
+              </div>
+            </li>
+            <li>
+              <h2 class="secondary-color"> Abbreviation </h2>
+              <div class="headings">
+                <p class="sm-text">Is used for abbreviations or acronyms. It can be used to provide a tooltip or additional information about the abbreviation by adding the title tag.</p>
+                <br>
+                <p>The &lt;abbr title="World Wide Web"&gt; WWW&lt;/abbr&gt;</b><br></p>
+                <p>the <abbr title="World Wide Web">WWW</abbr> is everywhere.</p>
+              </div>
+            </li>
+            <li>
+              <h2 class="secondary-color"> Inline quote </h2>
+              <div class="headings">
+                <p class="sm-text">Used to indicate quotations inside a paragraph.</p>
+                <p>&lt;p&gt;Small quote inside a paragraph. He said:<b>&lt;q&gt;It's cold in
+                    here&lt;/q&gt;</b>&lt;/p&gt; </p> <br>
+                <p>Small quote inside a paragraph. He said: <q>It's cold in here</q> </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+       <!-- Boxes  -->
+       <section class="slide-top">
+        <div class="wrap aligncenter">
+          <h2 class="text-serif bluegreen aligncenter">Boxes with a purpose</h2>
+          <p class="med-text aligncenter">Every element in HTML creates an "invisible" box. It is important to use each one for its intended purpose.</p>
+         
+             <img class="padding-t6" src="../static/images/boxes.png" alt="display of cardboard boxes">
+          <p class="padding-t6 med-text"><b>Make sure you use the right box for your content.</b></p>
+        </div>
+      </section>
+      <!-- Box organization -->
+      <section class="slide-top ">
+        <div class="wrap aligncenter">
+          <h2 class="text-serif bluegreen aligncenter">Tidying Up the Web</h2>
+          <p class="med-text aligncenter"></p>
+         <div class="grid aligncenter">
+          <div class="colum aligncenter">
+            <p class="med-text aligncenter">When you only add HTML tags with no semantic tags</p>
+            <img src="../static/images/drawer-messy.png" alt="A messy drawer">
+          </div>
+          <div class="colum aligncenter">
+            <p class="med-text aligncenter">When you organize and group your HTML content</p>
+            <img src="../static/images/drawer-tidy.png" alt="An organized drawer">
+          </div>
+         </div>
+        </div>
+      </section>
+      <!-- SLIDE 7 - HMTL TAGS 2 -->
+      <section class="slide padding-t6">
+        <h2 class="text-serif aligncenter bluegreen">Grouping HTML Tags</h2>
+        <p class="med-text aligncenter">Tags that are used to create a grup of a specific type of content.</p>
+        <div class="wrap">
+          <ul class="flexblock features">
+            <li>
+              <div>
+                <h2 class="secondary-color"> Quotations - blockquote </h2>
+                <p class="sm-text">Used to indicate quotations.</p>
+                <p><b>&lt;blockquote&gt; <br>
+
+                   &lt;p&gt;Quam diu etiam furor iste tuus nos eludet?&lt;/p&gt;<br>
+                   &lt;img src="../static/images/beach-sm.jpg" alt="empty chair on a beach" width="500" /&gt;
+                  &lt;/blockquote&gt;</b> </p> <br>
+                <blockquote> 
+                  <img src="../static/images/beach-sm.jpg" alt="empty chair on a beach" width="500" />
+                  <p>Quam diu etiam furor iste tuus nos eludet? </p>
+                  </blockquote>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="secondary-color"> Figure and Figcaption </h2>
+                <p>Use it to group images and captions on one container.</p>
+                <p class="sm-text"><b>&lt;figure&gt;</b></p>
+                <p><b>&lt;img src="images/myImage.png" alt="add description here" width="50" height="50"/&gt;</b> </p>
+                <p class="sm-text">&lt;figcaption&gt;This is the caption&lt;figcaption&gt;</p>
+                <p class="sm-text"><b>&lt;/figure&gt;</b></p> <br>
+                <figure class="demo">
+                  <img src="../static/images/beach-sm.jpg" alt="empty chair on a beach" width="500" />
+                  <figcaption>This is the caption</figcaption>
+                </figure>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="secondary-color"> Address </h2>
+                <p class="sm-text">Use &lt;adress&gt; when you want to give contact information <br>
+                  <b>&lt;address&gt;</b> <br> Your Name <br> Your Address <br> Phone Number <br> Email <br>
+                  <b>&lt;/address&gt;</b>
+                </p> <br>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <h2 class="text-serif bluegreen">Structural HTML Tags</h2>
+          <p class="med-text">We use them to structure the content of webpages.</p>
+          <div class="grid vertical-align">
+            <div class="column">
+              <h3>The DIV Tag</h3>
+              <ul>
+                <li><b>&lt;div&gt;&lt;/div&gt;</b></li>
+                <li>This is called the Division Tag.</li>
+                <li>Is the most used tag in web development.</li>
+                <li>It is a generic container tag used to separate and structure content.</li>
+                <li>Groups various HTML tags so they can be styled as a group.</li>
+                <li>They are used with ids and classes for styling and positioning.</li>
+                <li>Divs do not give semantic meaning to the content inside.</li>
+              </ul>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <img src="../static/images/divs.jpg" alt="div structure" width="800">
+            </div>
+          </div>
+        </div>
+      </section>
+        <!-- Main Tags  here -->
+        <section class="slide-top">
+          <div class="wrap">
+            <h2 class="text-serif bluegreen aligncenter">The Main tag</h2>
+            <ul class="flexblock features">
+              <li>
+                <p class="med-text"> The "main" HTML element represents the dominant content of the "body" of a document.
+                  The main content area consists of content that is directly related to or expands upon the central topic
+                  of a document, or the central functionality of an application. </p>
+              </li>
+              <li><img style="width:500px;" src="../static/images/main-tag.gif" alt="main tag illustration"></li>
+            </ul>
+          </div>
+        </section>
+      <!-- Semantic tags  -->
+      <section class="slide-top padding-t6">
+        <div class="wrap">
+          <h2 class="text-serif bluegreen aligncenter">Semantic structural tags</h2>
+          <p class="med-text aligncenter">These tags give semantic meaning to the content inside.</p>
+          <ul class="flexblock features">
+            <li>
+              <div>
+                <h2 class="secondary-color"> Header </h2>
+                <p><b>&lt;header&gt; &lt;/header&gt;</b> </p>
+                <p>• <strong>Not to be confused with the &lt;head> tag</strong> </p>
+                <p>• Marks the introductory content of a website or a section.</p>
+                <p>• Mostly used for the website top area or masthead.</p>
+                <p>• It can also mark the header of an article or section.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="secondary-color"> Nav </h2>
+                <p><b>&lt;nav&gt; &lt;/nav&gt;</b> </p>
+                <p>• Contains the main navigation (menu) sections of your website.</p>
+                <p>• Can be located anywhere in the page, but usually inside the header.</p>
+                <p>• Not every group of links belong inside the nav element.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="secondary-color"> Footer </h2>
+                <p><b>&lt;footer&gt; &lt;/footer&gt;</b> </p>
+                <p>• Similar to headers, but at the end of a document.</p>
+                <p>• Mostly used for the website bottom area.</p>
+                <p>• Footer should contain information about the article author, copyright information and links to
+                  related content.</p>
+                <p>• It can also mark the footer of an article or section.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="secondary-color"> Aside </h2>
+                <p><b>&lt;aside&gt; &lt;/aside&gt;</b> </p>
+                <p>• Use it for extra information related to the content but not part of it.</p>
+                <p>• Mostly used for Sidebars, but sidebar does not refers to position.</p>
+                <p>• Ads related to the content can be placed here</p>
+                <p>If the content can be removed without affecting the meaning, it can be an aside.</p>
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside">The aside element</a></p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h2 class="secondary-color"> Article </h2>
+                <p><b>&lt;article&gt; &lt;/article&gt;</b> </p>
+                <ul>
+                  <li>• Represents a complete, or self-contained content on a page that can be reused and distributed independently.</li>
+                  <li>• Think of a magazine article</li>
+                  <li>• Common examples of articles are: Blog posts, News stories, Comments, Reviews.</li>
+                </ul>
+              </div>
+              <li>
+                <div>
+                  <h2 class="secondary-color"> Section </h2>
+                  <p><b>&lt;section&gt; &lt;/section&gt;</b> </p>
+                  <p>• It's a more general-purpose container like the <b>div</b>, but used to group related content.</p>
+                  <p>• Can group articles (e.g. sports section, arts section).</p>
+                  <p>• Can define parts of an article.</p>
+                  <p>• Think of chapters on a book.</p>
+                </div>
+              </li>
+            </li>
+          </ul>
+        </div>
+      </section>
+        <!-- Article or section -->
+        <!-- <section>
+          <div class="wrap">
+            <h2 class="text-serif bluegreen aligncenter">Section or Article?</h2>
+            <p class="med-text aligncenter">When to use them.</p>
+            
+            <p class="aligncenter">Sections can contain articles. <br> Articles can be shared independently as a unit.</p>
+            <img class="aligncenter" src="../static/images/articles-sections.gif" alt="div structure" width="1200">
+            
+          </div>
+        </section> -->
+      
+      <!-- SLIDE 11 - divs -->
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+            <div class="column">
+              <img src="../static/images/html-sectioning-elements-00c3fd.png" alt="semantic div structure" />
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <img src="../static/images/semantic-html-ffab7c.png" alt="div structure">
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <!-- SLIDE 12 RASTER VS VECTOR -->
+      <!-- Note on closing tags -->
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <h2 class="text-serif bluegreen aligncenter">A note on closing tags</h2>
+          <div class="grid vertical-align">
+            <div class="column">
+              <ul>
+                <li>HTML elements usually consist of a start and end tag, with the content in between.</li>
+                <li><b>&lt;p&gt;</b> content goes here <b>&lt;/p&gt;</b></li>
+                <li>Note the <b>/ before the tag name</b>, on the closing tag <b>&lt;/p&gt;</b></li>
+              </ul>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <ul>
+                <li>There are some tags that do not need closing, because they hold no content in between.</li>
+                <li>They are empty elements that either add external elements or break the flow of the page</li>
+                <li><b>&lt;img&gt;</b>, <b>&lt;br&gt;</b>, <b>&lt;hr&gt;</b>, <b>&lt;link&gt;</b>, <b>&lt;meta&gt;</b>,
+                  <b>&lt;input&gt;</b> are the most common.</li>
+              </ul>
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+    </article>
+    <!-- end article -->
+  </main>
+  <!-- end main -->
+  <!-- Required -->
+  <script src="../static/js/webslides.js"></script>
+  <script>
+    window.ws = new WebSlides();
+  </script>
+  <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+  <script defer src="../static/js/svg-icons.js"></script>
+</body>
+
+</html>
