@@ -364,25 +364,28 @@
        <section class="slide-med">
         <div class="wrap size-90">
           <h2 class="text-serif aligncenter bluegreen">What about Images?</h2>
-          <p class="med-text aligncenter">Images in HTML can behave as either block-level elements or inline-level elements depending on how they are used within the HTML structure.</p>
+          <p class="med-text aligncenter">Images in HTML behave by default as an inline-level elements. </p>
+           <p class="med-text aligncenter">Images are a special case. They are by default inline, but have many properties of a block.</p>
           <!-- <div class="grid top-align"> -->
             <div class="grid">
-              <div class="column">
+              <!-- <div class="column">
                 <img src="../static/images/atlas-moth.png" alt="An Atlas Moth" width="150"> <img src="../static/images/atlas-moth.png" alt="An Atlas Moth" width="150">
-                <p class="med-text">Inside a div.</p>
-              </div>
-             <div class="column">
-              <p><img src="../static/images/atlas-moth.png" alt="An Atlas Moth" width="150"> <img src="../static/images/atlas-moth.png" alt="An Atlas Moth" width="150"></p>
-              <p class="med-text">Inside a p tag.</p>
+              </div> -->
+             <div class="column aligncenter med-text">
+              <p><img src="../static/images/atlas-moth.png" alt="An Atlas Moth" width="150"> <img src="../static/images/atlas-moth.png" alt="An Atlas Moth" width="150"><br>
+              Inside a p tag.</p>
              </div>
               <div class="column">  
-                <ul>
+                <div class="aligncenter">
+                  <img src="../static/images/atlas-moth.png" alt="An Atlas Moth" width="150"> <img src="../static/images/atlas-moth.png" alt="An Atlas Moth" width="150"><br>
+                  <p class="med-text">Inside a div tag.</p>
+                </div>
+                <!-- <ul>
                     <li>If you place an image inside a block-level container (div, p, etc), it will behave like a block element.</li>
                   <li>If you place it inside an inline element (span, a), <img src="../static/images/atlas-moth.png" alt="An Atlas Moth" width="80"> it will be inline.
                   </li>
                     <li>If you don't include it any other tag, it will be inline. </li>
-                  <!-- <li>Images are a special case. They are by default inline, but have many properties of a block.</li> -->
-                </ul>
+                </ul> -->
               </div>
             </div>
             <p class="big-text aligncenter"><a href="https://htmlreference.io/">Element display defaults.</a></p>
