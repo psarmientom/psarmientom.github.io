@@ -1,1 +1,1 @@
-{"format":"D:1 0 0","end":915166800,"start":915166800,"color":0,"title":"The Blackberry","range":"1999","v":"1.1"}
+{"format":"D:1 0 0","end":1009861200,"start":1009861200,"color":0,"notes":"• The BlackBerry is credited with creating the first smartphone, the BlackBerry 5810.\n\n• It was the first smartphone with QWERTY keyboards and secure email services.","title":"The Blackberry","range":"2002","v":"1.1"}

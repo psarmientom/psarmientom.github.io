@@ -182,8 +182,8 @@
               </p>
               <p class="big-text">You can use some of the tools available, but <b>the use of full templates is not allowed</b></p>
             </div>
-            <div class="column"><a href="https://cim-layout-class-tt-6358ed3749e0c025f01.webflow.io/"><img
-                  src="../static/images/website-mockup.png" alt="website template" width="500"></a></div>
+            <div class="column"><a href="https://weblab-example2.webflow.io/"><img
+                  src="../static/images/website-example.png" alt="website template" width="500"></a></div>
           </div>
         </div>
       </section>
@@ -227,12 +227,30 @@
       <!-- SLIDE 4 -->
       <section class="bg-white slide-top padding-t6">
         <!--.wrap = container (width: 90%) -->
-        <div class="wrap size-90">
+        <div class="wrap size-90 padding-t4">
           <h2 class="text-serif aligncenter bluegreen">How do Networks communicate?</h2>
           <!-- <h3 class="text-serif aligncenter bluegreen">How is the information transmitted?</h3> -->
-          <img class="aligncenter" src="../static/images/packet-switched.png" alt="packet switched transmition"
-            width="80%" />
+           <div class="wrap padding-t4">
             <div><p class="aligncenter med-text">Each packet is assigned source and destination addresses, to allow identifying where the information goes and where it's coming from. Once the packets arrive at their destination, they are reassembled in the correct order to reconstruct the original data.</p></div>
+            <div class="grid">
+              <div class="column"> <img class="aligncenter" src="../static/images/packet-switched.png" alt="packet switched transmition"
+                width="" /></div>
+                <div class="column">
+                  <ul>
+                    <li>A message is divided into smaller pieces called packets</li>
+                    <li>Each packet contains a piece of the data plus information about its destination and how to reassemble the message</li>
+                    <li>Packets are sent separately across the network and may take different paths to get to the same destination.</li>
+                    <li>At the destination, packets are reassembled into the original message.</li>
+                    <li><b>Benefits:</b></li>
+                    <li>Efficient use of network resources since packets can take the fastest available route.</li>
+                    <li>Reliable, as lost packets can be re-sent without resending the entire message.</li>
+                    <li>Allows multiple users to share the same network without needing a dedicated line for each connection.</li>
+                  </ul>
+                </div>
+            </div>
+           </div>
+         
+            
 
         </div>
         
@@ -249,9 +267,9 @@
       <!-- SLIDE 4 HTML TAG STRUCTURE -->
       <section class="slide-top padding-t4">
         <div class="wrap">
-          <h2 class="text-serif aligncenter bluegreen">Internet vs. WWW</h2>
-          <p class="big-text aligncenter">The internet is is a global system of interconnected computer networks. The
-            www is a specific system or service that operates on top of the internet, providing a user-friendly way to access and interact with information in the form of web pages and resources.</p>
+          <h2 class="text-serif aligncenter bluegreen">Internet vs. Web</h2>
+          <p class="big-text aligncenter">The internet is is a global system of interconnected computer networks. </p>
+          <p class="big-text aligncenter">The Web (www - World Wide Web) is collection of websites and online content that runs on the internet.</p>
           <div class="grid center-align">
             <div class="column">
               <h3 class="orange">Accessing the Internet</h3>
@@ -266,7 +284,8 @@
               <h3 class="orange">Accessing the WWW</h3>
               <p>To view multimedia web pages on the the World Wide Web, you need need a web browser and need to be
                 connected to the internet.</p>
-              <img src="../static/images/browser-stats.png" alt="browser usage stats" width="80%" />
+                <a href="https://gs.statcounter.com/"><img src="../static/images/browser-stats.png" alt="browser usage stats" width="80%" /></a> 
+                <img src="../static/images/screen-use.png" alt="browser usage stats" width="80%" /> 
             </div>
           </div>
           <!--end .grid -->
@@ -290,7 +309,7 @@
               <p class="med-text"><b>Cable:</b> Provided by your local cable provider.</p>
               <p class="med-text"><b>Fiber-Optic:</b> The fastest connection so far.</p>
               <p class="med-text"><b>Satellite:</b> It is slow but it reaches places wher the other methods might not
-                have access.</p>
+                have access. Now with Starlink speed is improving but still does not compare to fiber-optic.</p>
             </div>
             <div class="column">
               <p><iframe title="youtube video" width="560" height="315" src="https://www.youtube.com/embed/D1UY7eDRXrs"
@@ -306,7 +325,7 @@
             <h2 class="text-serif aligncenter bluegreen">What about speed?</h2>
             <div class="grid center-align">
               <div class="column">
-                <img class="aligncenter" src="../static/images/hoses.png" alt="pipes illustration" width="80%" />
+                <img class="aligncenter" src="../static/images/bandwidth-hoses.webp" alt="pipes illustration" width="80%" />
               </div>
               <div class="column">
                 <h3>Bandwidth</h3>
@@ -360,8 +379,8 @@
           <div class="grid center-align">
             <div class="column">
               <ul>
-                <li>HTTP is the foundation of data communication for the World Wide Web, enabling web browsers to request web pages and other resources from web servers.</li>
-                <!-- <li>Hypertext documents include hyperlinks to other resources that the user can easily access.</li> -->
+                <li>HTTP is the language that web browsers use to communicate with the web servers.</li>
+                <li>Hypertext documents include hyperlinks to other resources that the user can easily access.</li>
                 <li>HTTP is a text-based protocol, meaning that the data sent between the client and server is in human-readable text format.</li>
                 <!-- <li>Hypertext is structured text that uses logical links (hyperlinks) between nodes containing text. -->
                 </li>
@@ -427,7 +446,7 @@
       </section>
       <!-- COOKIES  -->
       <section class="padding-t5">
-        <div class="wrap aligncenter">
+        <div class="wrap aligncenter size-70">
           <h2 class="text-serif aligncenter bluegreen">Cookies</h2>
           <p class="med-text">Web cookies are small blocks of data created by a web server while a user is browsing a
             website and placed on the user's computer or other device by the user’s web browser. Cookies are placed on
@@ -473,7 +492,7 @@
               <!-- <p class="med-text"><b>Nameserver:</b> Is a special type of server that stores DNS Records. These are
                 maintained by the domain name provider or the Hosting provider.</p> -->
                 <p class="med-text"><b>IP address</b> or Internet Protocol address, is a unique number for every device or website on the internet. It's a set of numbers that computers use to talk to each other.</p>
-                <p class="med-text">13.68.209.221 = miami.edu</br>
+                <p class="med-text">48.217.217.76 = miami.edu</br>
                 <a href="https://whatismyipaddress.com/">What is my IP address?</a></p>
             </div>
             <div class="column">
@@ -581,7 +600,7 @@
       </section>
       <!-- ICANN  -->
       <section>
-        <div class="wrap">
+        <div class="wrap size-70">
           <h1 class="text-serif aligncenter bluegreen">Who decides who gets a Domain?</h1>
           <h4 class="aligncenter">ICANN - (<b>I</b>nternet <b>C</b>orporation for <b>A</b>ssigned <b>N</b>ames and
             <b>N</b>umbers)</h4>
@@ -652,7 +671,7 @@
       </section>
       <!-- The Cloud  -->
       <section class="aligncenter padding-t5">
-        <div class="grid">
+        <div class="grid size-80">
           <div class="column">
             <h2 class="text-serif bluegreen">The Cloud</h2>
             <iframe class="aligncenter" width="560" height="315" src="https://www.youtube.com/embed/vqlQr7eufx8"
