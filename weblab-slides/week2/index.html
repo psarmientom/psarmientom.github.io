@@ -86,7 +86,7 @@
         </div>
       </section>
       <!--- SLIDE 3 MARKUP - PROGRAMMING----->
-      <section>
+      <section class="padding-t3">
         <div class="wrap">
           <div class="grid center-align">
             <div class="column">
@@ -250,11 +250,11 @@
           <!-- .end .wrap -->
         </section>
       <!-- SLIDE 4 HTML TAG STRUCTURE -->
-      <section class="slide-medium">
+      <section class="slide-medium padding-t4">
         <div class="wrap size-80 aligncenter">
           <h2 class="text-serif bluegreen">HTML Tags</h2>
           <p class="med-text">Every element in HTML is surrounded by tags</p>
-          <div class="grid padding-t5">
+          <div class="grid">
             <div class="column bg-primary">
               <h4>Opening Tag</h4>
               <p class="presentation">&lt;p&gt;</p>
@@ -264,12 +264,12 @@
                 <li>And a right angle bracket &gt;</li>
               </ul>
             </div>
-            <div class="column">
+            <!-- <div class="column">
               <p><strong>Content goes here</strong></p>
               <p><b>&lt;p&gt;</b>Gallia est omnis divisa in partes tres, quarum. At nos hinc posthac, sitientis piros Afros.</p>
               <p>Paullum deliquit, ponderibus modulisque suis ratio utitur. Salutantibus vitae elit libero, a pharetra
                 augue. Quae vero auctorem tractata ab fiducia dicuntur.<b>&lt;p&gt;</b></p>
-            </div>
+            </div> -->
             <div class="column bg-black">
               <h4>Closing Tag</h4>
               <p class="presentation">&lt;<span class="primary-color">/</span>p&gt;</p>
@@ -280,7 +280,11 @@
               </ul>
             </div>
           </div>
-          <!-- .end .bg-white shadow -->
+          <div class="padding-t2">
+            <h2 class="presentation-sm">&lt;h2&gt; This is a Heading  <span class="presentation-sm">&lt;<span class="primary-color">/</span>h2&gt;</span></h2>
+            <p class="presentation-sm">&lt;p&gt; This is a Paragraph  <span class="presentation-sm">&lt;<span class="primary-color">/</span>p&gt;</span> </p>
+
+          </div>
         </div>
         <!-- .end .wrap -->
       </section>
@@ -503,17 +507,17 @@
             </li>
             <li>
               <div>
-                <h2 class="primary-color"> Blockquote / Cite </h2>
+                <h2 class="primary-color"> Blockquote  </h2>
                 <div class="headings">
                   <p><b>Blockquote</b> Defines a section that is quoted from another source</p>
-                  <p><b>Cite</b> describes a reference to a cited creative work, and must include the title of that work
+                  <!-- <p><b>Cite</b> describes a reference to a cited creative work, and must include the title of that work -->
                   </p>
                 </div>
                 <blockquote>
                   <p class="padding-t4">To be, or not to be, that is the question</p>
-                  <cite><a
+                  <!-- <cite><a
                       href="https://www.poetryfoundation.org/poems/56965/speech-to-be-or-not-to-be-that-is-the-question">from
-                      Hamlet, spoken by Hamlet</a></cite>
+                      Hamlet, spoken by Hamlet</a></cite> -->
                 </blockquote>
               </div>
             </li>
@@ -584,13 +588,13 @@
           <h2 class="text-serif bluegreen aligncenter">Anatomy of a link</h2>
           <div class="grid">
             <div class="column">
-              <p class="big-text bg-primary">&lt;a href="http://www.miami.edu/about/index.html"&gt;</p>
+              <p class="big-text bg-primary">&lt;a href="https://www.miami.edu/about/index.html"&gt;</p>
               <ul>
-                <li>href: is an attribute of the a tag that specifies the link destination</li>
-                <li>http:// is the protocol used</li>
-                <li>www.miami.edu: website URL</li>
-                <li>about: one section of the website where the page is located</li>
-                <li>index.html: files being displayed</li>
+                <li><b>href:</b> is an attribute of the a tag that specifies the link destination</li>
+                <li><b>https://</b> is the protocol used</li>
+                <li><b>www.miami.edu:</b> website URL</li>
+                <li><b>/about</b>: one section of the website where the page is located</li>
+                <li><b>/index.html</b>: files being displayed</li>
               </ul>
             </div>
           </div>
@@ -706,8 +710,9 @@
                 <h2 class="primary-color"> iframe </h2>
                 <p class="sm-text">Use &lt;iframe&gt; when you want to embed external content into your
                   website&lt;/iframe&gt;</p> <br>
-                <p class="sm-text"><iframe title="external content" width="560" height="315" src="index.html"
-                    frameborder="0"></iframe></p>
+                <div class="sm-text">
+                  <iframe title="external content" src="index.html"  height="500"
+                    frameborder="0"></iframe>
               </div>
             </li>
             <li>
