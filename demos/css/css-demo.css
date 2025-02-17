@@ -55,7 +55,7 @@ hr {
 }
 .img-repeat{
   background-color:  #fffdd6 ;
-  background-image: url("../images/dot.png");
+  background-image: url("../../images/dot.png");
 }
 .img-repeat.single{
   background-repeat: no-repeat;
@@ -70,7 +70,7 @@ hr {
   background-position: right;
 }
 .bg.img{
-  background-image: url("../images/pizza-vert.png");
+  background-image: url("../../images/pizza-vert.png");
 }
 .img.contain{
   background-size: contain;
