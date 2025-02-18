@@ -146,7 +146,7 @@ hr {
   background: hsl(183, 75%, 31%);
 }
 .hex.img:hover{
-  background-image: url("../images/pizza.png")
+  background-image: url("../../images/pizza.png")
 }
 /* You can use single numbers or percentages to scale */
 .hex.size:hover{
@@ -156,12 +156,13 @@ hr {
   transform: rotate(10deg);
 }
 .hex.image{
-  background-image: url("../images/pizza.png");
+  background-image: url("../../images/pizza.png");
   color:white;
 }
 .hex.image:hover{
-  background-image: url("../images/pizza-plate.jpg");
+  background-image: none;
   background-size: contain;
+  background-color:#ffd606;
 }
 /* Flost Demo */
 /* ====================================================== */
