@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Akronim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap');
+
+.carousel-text h2, .block-box .box-text-second, .block-box .box-text-right, .quote-section-2 h3, .section-3 .box-1 h3, .section-3 .box-2 h4,
+.section-head h2, .item-text h5, .sub-block-section h3, .text-block-section a, .section-7 h2, .section-7 i span, .isotop-menu button, .team-left h2, .team-item h4, .left-block h2,
+.section-11 .block-r h3, .section-11 .block-l h3, .artical-text h4, .footer-head, .section-13 .text-block-section h5, .navbar-brand span, .nav a, .block-box .box-text-left{
+  font-family:"Akronim", sans-serif;
+  font-family: 'ZCOOL KuaiLe', cursive;
+}
+.block-box .box-text-second{
+  font-size: 1.8rem;
+}
+.block-box .box-1{
+  height:170px;
+}
+.carousel-text-button-white{
+  background:#FCF6BD;
+}
+.carousel-text h4{
+  color:#FCF6BD;
+  font-family: 'Kolker Brush', cursive;
+  font-size:2.5rem;
+}
+.carousel-text-button-red, .section-7, .section-11 input[type="submit"]:hover, .section-13, .line-red, .line-red-2 {
+  background:#FF99C8;
+}
+.block-box .box-2, .section-3, .section-11 input[type="submit"]{
+  background:#D0F4DE;
+}
+.section-3 .box-2{
+  border-color:#fff;
+}
+.section-3 .box-2 p, .section-3 .box-2 h4, .section-3 .box-2 a, .section-3 .box-1 p, .left-block p, .list-left li,
+.section-11 .block-r p, .section-11 .block-r h3{
+  color:#333;
+}
+.section-3 .box-1 h3, .box-2 .fas{
+  color:#FF99C8;
+}
+.section-3 .box-2:hover, .left-block, .artical-text{
+  background-image: none;
+  background:#FCF6BD;
+}
+.section-5{
+  background:#A9DEF9;
+}
+.section-3 .box-2 a{
+  border-color:#333;
+}
+.nav-text{
+  font-family: 'Kolker Brush', cursive;
+  font-size: 3rem;
+}
+.nav .active a, .nav-text span, .item-section-4 i {
+  color:#A9DEF9;
+}
+.block-box .box-text-left, .block-box .box-text-right, .team-item-text i span{
+  color:#999;
+}
+.block-box .box-icon-1, .block-section, .section-11{
+  background: #E4C1F9;
+}
+.text-section-2 span, .team-item-text i{
+  color:#FF99C8;
+}
+footer{
+  background:#333;
+}
