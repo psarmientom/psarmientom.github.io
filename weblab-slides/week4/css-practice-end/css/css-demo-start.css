@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+/* General Settings */
+body{
+    padding:30px;
+}
+.box{
+    width:250px;
+    height:250px;
+    margin:10px;
+    border:solid 1px #000;
+}
+.box-sm{
+    width:100px;
+    height:100px;
+    border:solid 1px #000;
+}
+.box-lg{
+    width:250px;
+    height:350px;
+    border:solid 1px #000;
+}
+.box-full{
+    border:solid 1px #000;
+    margin:10px;
+    padding: 20px;
+}
+/* Background Colors */
+
+/* Background Repeats */
+
+/* Background Images */
+
+/* Tables  */
+
+/* Hover  */
+
+/* Adjacent sibling combinator. (+)
+It combines two sequences of simple selectors having the same parent 
+and the second one must come IMMEDIATELY after the first. */
+.hoverHide:hover + .hidden{
+    
+}

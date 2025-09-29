@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/css-demo-end.css">
+</head>
+<body>
+    <h1>CSS Demo</h1>
+    <!-- Background Images  -->
+    <section>
+        <h2>Background Color</h2>
+    <div class="box hex"></div>
+    <div class="box rgb">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste architecto mollitia, eveniet labore sit dolor tenetur expedita quod veritatis aspernatur minus incidunt, ipsa quasi ab at adipisci hic, tempora sequi!</p>
+        <div class="box-sm rgba"></div>
+    </div>
+    <div class="box hsl">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, at omnis in pariatur deleniti molestias. Nesciunt libero, neque iste quam minus voluptates aliquid harum, rerum debitis alias consequuntur ea assumenda.</p>
+        <div class="box-sm hsl-sm"></div>
+    </div>
+    <div class="box named"></div>
+    </section>
+   <!-- Background Repeats -->
+    <section>
+        <h2>Background Repeat</h2>
+        <div class="box dot"></div>
+        <div class="box dot no-repeat pos-center"></div>
+        <div class="box dot repeat-x"></div>
+        <div class="box dot repeat-y"></div>
+        <div class="box dot repeat-space"></div>
+        <div class="box dot repeat-round"></div>
+        <div class="box dot no-repeat pos-center"></div>
+        <div class="box dot no-repeat pos-bottom-center"></div>
+        <div class="box dot no-repeat pos-custom"></div>
+    </section>
+    <!-- Background Images  -->
+     <section>
+        <h2>Background Images</h2>
+    <div class="box-lg bg-img"></div>
+    <div class="box-lg bg-img contain"></div>
+    <div class="box-lg bg-img cover"></div>
+    <div class="box-lg bg-img contain pos-bottom-center">
+        <h3>This is an image</h3>
+    </div>
+    <div class="box-full bg-img1 fixed">
+        <h2>This is CSS</h2>
+    </div>
+    <div class="box-full img-full">
+        <h2>This is CSS</h2>
+        <img src="images/1shazmyn-ali-sm.jpg" alt="">
+    </div>
+     </section>
+    <!-- Tables -->
+    <section class="tables">
+        <h2>Styling Tables</h2>
+        <table class="tableDemo">
+            <thead>
+              <tr>
+                <th colspan="3">This is the Table Heading</th>
+                <th colspan="2">heading</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Cell 1</td>
+                <td>Cell 2</td>
+                <td>Cell 3</td>
+                <!--         <td>Cell 3</td> -->
+                <td class="vText" rowspan="3">Cell 4</td>
+                <td>Cell 5</td>
+              </tr>
+              <tr>
+                <td>Cell 1</td>
+                <td>Cell 2</td>
+                <td>Cell 3</td>
+                <!--                 <td>Cell 4</td> -->
+                <td>Cell 5</td>
+              </tr>
+              <tr>
+                <td>Cell 1</td>
+                <td>Cell 2</td>
+                <td>Cell 3</td>
+                <td>Cell 4</td>
+                <!--         <td>Cell 5</td> -->
+              </tr>
+              <tr>
+                <td>Cell 1</td>
+                <td>Cell 2</td>
+                <td>Cell 3</td>
+                <td>Cell 4</td>
+                <td>Cell 5</td>
+              </tr>
+              <tr>
+                <td>Cell 1</td>
+                <td>Cell 2</td>
+                <td>Cell 3</td>
+                <td>Cell 4</td>
+                <td>Cell 5</td>
+              </tr>
+              <tr>
+                <td>Cell 1</td>
+                <td>Cell 2</td>
+                <td>Cell 3</td>
+                <td>Cell 4</td>
+                <td>Cell 5</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th colspan="5">This is the Table Footer</th>
+              </tr>
+            </tfoot>
+          </table>
+    </section>
+    <!-- Hover Effects -->
+     <section>
+        <h2>Hover Effects</h2>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:hover">The :hover Pseudo class</a></p>
+        <div class="box hex hoverColor"></div>
+        <div class="box rgb hoverRotate"></div>
+        <div class="box hsl hoverScale"></div>
+        <div class="box named hoverHide"></div>
+        <div class="box hidden">Hello!</div> 
+     </section>
+     <section>
+        <div class="box imageHover"><h3>Pizza</h3></div>
+        <div class="box bg-img bg-hover"></div>
+        <div class="box bg-img bg-opacity"></div>
+        <div class="box bg-img img-double">
+            <img src="images/pizza-plate.jpg" alt="">
+        </div>
+     </section>
+</body>
+</html>
