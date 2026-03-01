@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CLEAN MARKUP = GOOD KARMA.
+      Hi source code lover,
+
+      you're a curious person and a fast learner ;)
+      Let's make something beautiful together. Contribute on Github:
+      https://github.com/webslides/webslides
+
+      Thanks,
+      @jlantunez.
+    -->
+  <!-- SEO -->
+  <title>CSS</title>
+  <meta name="description" content="Introduction to HTML concepts">
+  <!-- URL CANONICAL -->
+  <!-- <link rel="canonical" href="http://your-url.com/"> -->
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/92123ffbf2.js" crossorigin="anonymous"></script>
+  <!-- CSS WebSlides -->
+  <link rel="stylesheet" type='text/css' media='all' href="../static/css/webslides.css">
+  <link rel="stylesheet" type='text/css' media='all' href="../static/css/custom.css">
+  <!-- Optional - CSS SVG Icons (Font Awesome) -->
+  <link rel="stylesheet" type='text/css' media='all' href="../static/css/svg-icons.css">
+  <!-- SOCIAL CARDS (ADD YOUR INFO) -->
+  <!-- FAVICONS -->
+  <link rel="shortcut icon" sizes="16x16" href="../static/images/favicons/favicon.png">
+  <link rel="shortcut icon" sizes="32x32" href="../static/images/favicons/favicon-32.png">
+  <link rel="apple-touch-icon icon" sizes="76x76" href="../static/images/favicons/favicon-76.png">
+  <link rel="apple-touch-icon icon" sizes="120x120" href="../static/images/favicons/favicon-120.png">
+  <link rel="apple-touch-icon icon" sizes="152x152" href="../static/images/favicons/favicon-152.png">
+  <link rel="apple-touch-icon icon" sizes="180x180" href="../static/images/favicons/favicon-180.png">
+  <link rel="apple-touch-icon icon" sizes="192x192" href="../static/images/favicons/favicon-192.png">
+  <!-- Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#333333">
+</head>
+
+<body>
+  <main role="main">
+    <article id="webslides" class="horizontal">
+      <!-- Centering Text  -->
+      <section>
+        <div class="wrap">
+          <h2 class="text-serif bluegreen aligncenter">Centering Text</h2>
+          <hr>
+          <div class="grid">
+            <div class="colum" style="margin-right:4rem;">
+              <h4>Centering Text:</h4>
+              <ul class="med-text">
+                <li>You can align individual elements, or you can align all the text inside a container. In this example we are aligning both the h5 and the p tag applying the text align to the parent div.</li>
+                <li><img src="images/center-text.png" alt=""></li>
+                <li><img src="images/center-text-1.png" alt=""></li>
+              </ul>
+            </div>
+          </div>
+          <div class="colum">
+            <style>
+              .center-txt {
+                background-color: #efefef;
+                padding: 5%;
+                text-align:center;
+              }
+            </style>
+              <div class="center-txt">
+                <h5>This is the content</h5>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam earum recusandae eaque dignissimos
+                  id quas architecto blanditiis adipisci quo nihil doloribus saepe accusamus laboriosam laborum,
+                  labore iure voluptatum sapiente consectetur.</p>
+              </div>
+          </div>
+        </div>
+      </section>
+        <!-- Centering Content  -->
+      <section>
+        <div class="wrap">
+          <h2 class="text-serif bluegreen aligncenter">Centering Content in the Page</h2>
+          <hr>
+          <div class="grid">
+            <div class="colum" style="margin-right:4rem;">
+              <h4>Centering content on the page</h4>
+              <ul class="med-text">
+                <!-- <li>Place the content you want to center in a container (div, section, etc)</li> -->
+                <li>Add a width to the container you want to center. Use % (70 to 85% is a good size) or vw (viewport width proportion)</li>
+                <li>Add <b>auto</b> margin to the left and right to the inside container, and let css calculate the distance.<b>margin: 0
+                    auto;</b></li>
+                  <li>This works for centering a container inside the <b>body</b> tag as well as centering a container inside another one like the example below.</li>
+                    <li><img src="images/center-2.png" alt=""></li>
+              </ul>
+            </div>
+          </div>
+          <div class="colum">
+            <style>
+              .outer {
+                background: #23babc;
+                padding: 10%;
+                width: 100%;
+              }
+
+              .center-div {
+                background-color: #efefef;
+                width: 80%;
+                margin: 0 auto;
+                padding: 5%;
+                text-align:center;
+              }
+            </style>
+            <div class="outer">
+              <div class="center-div">
+                <h5>This is the content</h5>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam earum recusandae eaque dignissimos
+                  id quas architecto blanditiis adipisci quo nihil doloribus saepe accusamus laboriosam laborum,
+                  labore iure voluptatum sapiente consectetur.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+       <!-- Images  -->
+      <section>
+        <div class="wrap">
+          <h2 class="text-serif bluegreen aligncenter">Aligning Images</h2>
+          <hr>
+          <div class="grid">
+            <div class="colum" style="margin-right:4rem;">
+              <!-- <h4>Centering Text:</h4> -->
+              <ul class="med-text">
+                <li>Images by default will display side by side if there is enough horizontal space available because their default display property is <b>inline</b>.</li>
+              </ul>
+              <img src="images/brownies1-sm.jpg" alt="" width="300">
+              <img src="images/brownies2-sm.jpg" alt="" width="300">
+              <img src="images/brownies3-sm.jpg" alt="" width="300">
+              <h4>What happens if you add them inside a figure tag or a div?</h4>
+              <ul class="med-text">
+                <li>When you add the image inside a figure tag, they lose their inline property, because the figure behaves as a block, so each image will take its own row.</li>
+                <li>Here you have 2 options 
+                  <ol>
+                    <li>add display:inline-block to the figure tag</li>
+                    <li>wrap the 3 images in another container and use flex</li>
+                  </ol>
+                </li>
+              </ul>
+              <figure>
+                <img src="images/brownies1-sm.jpg" alt="" width="300">
+                <figcaption>Caption 1</figcaption>
+              </figure>
+              <figure>
+                <img src="images/brownies2-sm.jpg" alt="" width="300">
+                <figcaption>Caption 2</figcaption>
+              </figure>
+              <figure>
+                <img src="images/brownies3-sm.jpg" alt="" width="300">
+                <figcaption>Caption 3</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+       <!-- Inline Block  -->
+      <section>
+        <div class="wrap">
+          <h2 class="text-serif bluegreen aligncenter">Using Inline-Block</h2>
+          <hr>
+          <div class="grid">
+            <div class="colum" style="margin-right:4rem;">
+              <ul class="med-text">
+                <li>When using <b>figure</b> you lose the inline property of the image, so each image will take it's own row, so you need to change the <b>display property</b>.</li>
+                <li>When you use <b>inline-block</b> if the elements are not of the same height you can use <b>vertical align</b> (top, middle, bottom).</li>
+              </ul>
+             <figure>
+                <img src="images/brownies1-sm.jpg" alt="" width="300">
+                <figcaption>Caption 1</figcaption>
+              </figure>
+              <figure>
+                <img src="images/brownies2-sm.jpg" alt="" width="300">
+                <figcaption>Caption 2</figcaption>
+              </figure>
+              <figure>
+                <img src="images/brownies3-sm.jpg" alt="" width="300">
+                <figcaption>Caption 3</figcaption>
+              </figure>
+              <style>
+                figure {
+                  display: inline-block;
+                  vertical-align: middle;
+                }
+              </style>
+              <hr>
+              <img src="" alt="">
+              <img src="images/inline-figure.png" alt="">
+              <img src="images/inline-block.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+        <!-- Flex  -->
+      <section>
+        <div class="wrap">
+          <h2 class="text-serif bluegreen aligncenter">Using Flex</h2>
+          <hr>
+          <div class="">
+            <div class="" style="margin-right:4rem;">
+              <ul class="med-text">
+                <li>When you use <b>Flex</b> you need to add an additional container wrapping the figure tags.</li>
+                <li>Then change the display property to <b>flex</b>.</li>
+              </ul>
+             <div class="photo-grid">
+              <figure>
+                <img src="images/brownies1-sm.jpg" alt="" width="300">
+                <figcaption>Caption 1</figcaption>
+              </figure>
+              <figure>
+                <img src="images/brownies2-sm.jpg" alt="" width="300">
+                <figcaption>Caption 2</figcaption>
+              </figure>
+              <figure>
+                <img src="images/brownies3-sm.jpg" alt="" width="300">
+                <figcaption>Caption 3</figcaption>
+              </figure>
+             </div>
+              <style>
+                .photo-grid {
+                 background-color: lightgray;
+                 display:flex;
+                 gap:30px;
+                 width:100%;
+                 justify-content:space-around;
+                 align-items: center;
+                }
+                .flex-details{
+                  display:flex;
+                  align-items: start;
+                  gap:15px
+                }
+              </style>
+              <hr>
+              <div class="flex-details">
+                <img src="images/flex.png" alt="">
+              <img src="images/flex-details.png" alt="">
+              <ul class="med-text">
+                <li>When you have display <b>flex</b> you have more options.</li>
+                <li><b>gap</b> is the separation between the elements</li>
+                <li>If you add a width to the parent container then you can position the elements in the horizontal axis.</li>
+                <li><b>justify-content:</b> will align the eements in the horizontal axis (start, center, end, space-around, space-between)</li>
+                <li>If the height of the container is bigger than the height of the images you can also align the images in the vertical axis using <b>align-items</b>
+                 (start,center,end)</li>
+              </ul>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+        <!-- Making all images the same size  -->
+      <section>
+        <div class="wrap">
+          <h2 class="text-serif bluegreen aligncenter">What if I want to make all my images the same size?</h2>
+          <hr>
+          <div class="">
+            <div class="" style="margin-right:4rem;">
+              <ul class="med-text">
+                <li>In most cases you have images that have different proportions. The easiest way to have them look the same would be to crop them with the same dimensions. But sometimes this is not possible. In that case we have an option.</li>
+                <li>We need to add the image inside a div or a figure tag. (The below example uses a figure tag).</li>
+              </ul>
+             <div class="photo-grid">
+              <figure>
+                <img src="images/brownies1-sm.jpg" alt="" width="300">
+                <figcaption>Caption 1</figcaption>
+              </figure>
+              <figure>
+                <img src="images/brownies2-sm.jpg" alt="" width="300">
+                <figcaption>Caption 2</figcaption>
+              </figure>
+              <figure>
+                <img src="images/brownies3-sm.jpg" alt="" width="300">
+                <figcaption>Caption 3</figcaption>
+              </figure>
+             </div>
+              <style>
+                figure{
+                  width:300px;
+                  height:300px;
+                }
+                figure img{
+                  width:100%;
+                  height:100%;
+                  object-fit:cover;
+                }
+                .photo-grid {
+                 background-color: lightgray;
+                 display:flex;
+                 gap:30px;
+                 width:100%;
+                 justify-content:space-around;
+                 align-items: center;
+                }
+                .flex-details{
+                  display:flex;
+                  align-items: start;
+                  gap:15px
+                }
+              </style>
+              <hr>
+              <div class="flex-details">
+                <img src="images/flex.png" alt="">
+              <img src="images/image-grid.png" alt="">
+              <ul class="med-text">
+                <li>First we add the width and height we want to the figures or divs that contain the images.</li>
+                <li>Then we target the images inside the divs and assign them a height and width of 100% so they fill the whole area.</li>
+                <li>In most cases the proportion is going to be different, so you need to add <b>object-fit</b> (contain, cover, fill)</li>
+              </ul>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+   <!-- Required -->
+  <script src="../static/js/webslides.js"></script>
+  <script>
+    window.ws = new WebSlides();
+  </script>
+  <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+  <script defer src="../static/js/svg-icons.js"></script>
+</body>
+</html>
