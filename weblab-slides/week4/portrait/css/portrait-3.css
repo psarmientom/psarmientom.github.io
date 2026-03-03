@@ -1,0 +1,120 @@
+{
+    box-sizing:border-box;
+}
+body{
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin:0;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+h1,h2,h3,h4,h5{
+    font-family: "Fjalla One", sans-serif;
+    color:#853444;
+}
+a{
+    color: black;
+}
+a:hover{
+    color:#853444;
+}
+/* Header  */
+header{
+    display:flex;
+    background-color: #d3d0c8;
+    height: 100vh;
+}
+header div{
+    width:50vw;
+}
+header div img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap:2rem;
+    top:0px;
+    left:5vw;
+    padding:0;
+
+}
+nav ul a{
+    color:black;
+    text-decoration: none;
+    padding:15px;
+    border-radius: 10px;
+}
+nav ul a:hover{
+    background-color: #000000;
+    color:#ffffff;
+}
+.hero{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    padding: 3rem;
+    
+}
+.hero h1 span{
+    display: block;
+    font-size: 8rem;
+    color:black;
+    line-height: 8rem;
+}
+.intro{
+    font-size:1.5rem;
+    font-style:italic;
+}
+/* Main  */
+main, footer p, address{
+    width:75%;
+     margin:0 auto;
+}
+.columns{
+    display:flex;
+}
+.columns section{
+    width:50%;
+}
+/* Gallery  */
+#gallery{
+    background-color: #d3d0c8;
+    padding-top:2rem;
+    padding-bottom:2rem;
+}
+#gallery h3, #gallery div{
+    width: 75%;
+    margin:0 auto;
+}
+#gallery div{
+    display:flex;
+    justify-content: space-around;
+}
+figure{
+    width:300px;
+    height:400px;
+    background-color: rgb(255, 255, 255);
+    /* display: inline-block; */
+    /* margin:1rem; */
+    padding:1rem 1rem 3rem;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .3);
+}
+figure img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Footer  */
+footer{
+    margin-top:3rem;
+    background-color: black;
+    color:#d3d0c8;
+    padding:1rem;
+}
+footer a{
+    color:#d3d0c8;
+}

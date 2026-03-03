@@ -10,14 +10,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Fjalla+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/portrait.css">
+    <link rel="stylesheet" href="css/portrait-3.css">
 </head>
 <body>
-    <div class="wrapper">
     <header>
-        <h1>The Life and Career of <span>Taylor Swift</span></h1>
-        <p class="intro">Taylor Swift is an American singer-songwriter born in 1989 hailing from West Reading, Pennsylvania.  Taylor is known for her ability to cross genres in her music and her descriptive lyric writing. </p>
-        <nav>
+        <div class="hero">
+            <nav>
             <ul>
                 <li><a href="#life">Early Life</a></li>
                 <li><a href="#career">Career</a></li>
@@ -26,7 +24,15 @@
                 <li><a href="#gallery">Gallery</a></li>
             </ul>
         </nav>
+            <h1>The Life and Career of <span>Taylor Swift</span></h1>
+        <p class="intro">Taylor Swift is an American singer-songwriter born in 1989 hailing from West Reading, Pennsylvania.  Taylor is known for her ability to cross genres in her music and her descriptive lyric writing. </p>
+        
+        </div>
+        <div>
+            <img src="images/Taylor-3.jpg" alt="">
+        </div>
     </header>
+    <div class="wrapper">
     <!-- This is the main section  --> 
     <main>
         <section id="life">
@@ -37,9 +43,38 @@
             <h2>Taylor’s Hit Career</h2>
             <p>Since her debut album “Taylor Swift” released in 2006, Taylor has released 9 studio albums. In 2021, Taylor began re-recording her first 7 studio albums after controversy regarding the sale of her music without her consent. Taylor has gone on 5 concert tours, performed at 21 music festivals and 197 miscellaneous live events.</p>
         </section>
-         <section id="gallery">
+        <div class="columns">
+            <section id="discography">
+                <h3>Discography </h3>
+                <a href="https://www.taylorswift.com/">Taylor's official site</a>
+                <ol>
+                    <li>Taylor Swift (2006)</li>
+                    <li>Fearless (2008)</li>
+                    <li>Speak Now (2010)</li>
+                    <li>Red (2012)</li>
+                    <li>1989 (2014)</li>
+                    <li>Reputation (2017)</li>
+                    <li>Lover (2019)</li>
+                    <li>Folklore (2020)</li>
+                    <li>Evermore (2020)</li>
+                    <li>Midnights (2022)</li>
+                </ol>
+            </section>
+            <section id="media">
+                <h3>Media Craze Surrounding Taylor’s Successes</h3>
+                <ul>
+                    <li>Kanye West</li>
+                    <li>Taylor’s Version</li>
+                    <li>All Too Well 10 Minute Version</li>
+                </ul>
+            </section>
+        </div>
+          
+    </main>
+    <section id="gallery">
             <h3>Gallery</h3>
-            <figure>
+            <div>
+                <figure>
                 <img src="images/Taylor-1.jpg" alt="Taylor Swift in concert">
                 <figcaption>Taylor Swift in concert</figcaption>
             </figure>
@@ -51,33 +86,8 @@
                 <img src="images/Taylor-3.jpg" alt="Taylor Swift image collage">
                 <figcaption>Taylor Swift concert poster</figcaption>
             </figure>
+            </div>
         </section>
-        <section id="discography">
-            <h3>Discography </h3>
-            <a href="https://www.taylorswift.com/">Taylor's official site</a>
-            <ol>
-                <li>Taylor Swift (2006)</li>
-                <li>Fearless (2008)</li>
-                <li>Speak Now (2010)</li>
-                <li>Red (2012)</li>
-                <li>1989 (2014)</li>
-                <li>Reputation (2017)</li>
-                <li>Lover (2019)</li>
-                <li>Folklore (2020)</li>
-                <li>Evermore (2020)</li>
-                <li>Midnights (2022)</li>
-            </ol>
-        </section>
-        <section id="media">
-            <h3>Media Craze Surrounding Taylor’s Successes</h3>
-            <ul>
-                <li>Kanye West</li>
-                <li>Taylor’s Version</li>
-                <li>All Too Well 10 Minute Version</li>
-            </ul>
-        </section>
-       
-    </main>
     <footer id="footer">
         <p>Jane Smith is a Senior Music Theory and Composition Major at the Frost School of Music.  She is from Long Island, New York and currently resides in Miami, Florida.  She is an avid Taylor Swift fan and a student in the University’s Web Lab class. </p>
         <address>

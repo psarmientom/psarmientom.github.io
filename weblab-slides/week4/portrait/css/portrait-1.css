@@ -53,14 +53,8 @@ nav ul li{
     background-color: antiquewhite;
     padding:1rem;
     border-radius: 20px;
-    margin: 0 1rem;  
-}
-nav ul li:hover{
-    background-color: #193616;
-    color:antiquewhite;
-}
-nav ul li a:hover{
-    color:antiquewhite;
+    margin: 0 1rem;
+    
 }
 nav a{
     color:black;
