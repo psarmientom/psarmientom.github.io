@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CLEAN MARKUP = GOOD KARMA.
+      Hi source code lover,
+
+      you're a curious person and a fast learner ;)
+      Let's make something beautiful together. Contribute on Github:
+      https://github.com/webslides/webslides
+
+      Thanks,
+      @jlantunez.
+    -->
+
+    <!-- SEO -->
+    <title>CSS Layout</title>
+    <meta name="description" content="Introduction to HTML concepts" />
+
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/"> -->
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/92123ffbf2.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS WebSlides -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="../static/css/webslides.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="../static/css/custom.css"
+    />
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="../static/css/svg-icons.css"
+    />
+
+    <!-- SOCIAL CARDS (ADD YOUR INFO) -->
+
+    <!-- FAVICONS -->
+    <link
+      rel="shortcut icon"
+      sizes="16x16"
+      href="../static/images/favicons/favicon.png"
+    />
+    <link
+      rel="shortcut icon"
+      sizes="32x32"
+      href="../static/images/favicons/favicon-32.png"
+    />
+    <link
+      rel="apple-touch-icon icon"
+      sizes="76x76"
+      href="../static/images/favicons/favicon-76.png"
+    />
+    <link
+      rel="apple-touch-icon icon"
+      sizes="120x120"
+      href="../static/images/favicons/favicon-120.png"
+    />
+    <link
+      rel="apple-touch-icon icon"
+      sizes="152x152"
+      href="../static/images/favicons/favicon-152.png"
+    />
+    <link
+      rel="apple-touch-icon icon"
+      sizes="180x180"
+      href="../static/images/favicons/favicon-180.png"
+    />
+    <link
+      rel="apple-touch-icon icon"
+      sizes="192x192"
+      href="../static/images/favicons/favicon-192.png"
+    />
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#333333" />
+  </head>
+
+<body>
+<main role="main">
+    <article id="webslides" class="horizontal">
+    <!-- Slide 1. - what is webflow  -->
+    <section class="aligncenter">
+        <div class="wrap">
+            <h2 class="text-landing">Webflow class 03-19-2026</h2>
+        </div>
+    </section>
+     <!-- What is webflow  -->
+    <section>
+        <div class="wrap">
+        <h2 class="text-serif bluegreen aligncenter">What is Webflow?</h2>
+        <p class="med-text size-80 aligncenter">Webflow is a visual web design and development platform that lets you design, build, and launch responsive websites without manually writing code, while still generating clean HTML, CSS, and JavaScript behind the scenes.</p>
+        <div class="grid">
+            <div class="column">
+            <h4 class="bluegreen">How does it compare with the other 2 main platforms? (Wix and Squarespace)</h4>
+            <ul>
+                <li><b>Webflow: </b>Gives you full control over layout using real CSS concepts.</li>
+                <li>You design visually, but the platform generates structured HTML/CSS/JS.</li>
+                <li>Best when you need precise spacing, breakpoints, animations, or custom layouts..</li>
+                <li><b>Wix: </b>Easy visual drag-and-drop freedom on a canvas, but the generated CSS is not as clean.</li>
+                <li>Templates are locked once chosen; changing templates requires rebuilding.</li>
+                <li><b>Squarespace: </b>Section-based editing with a strong design system.</li>
+                <li>Less freedom than Webflow, but layouts stay visually consistent.</li>
+                <li>Template customization is limited.</li>
+            </ul>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Loggin in  -->
+     <section class="slide-top padding-t2">
+        <div class="wrap">
+        <h2 class="text-serif bluegreen aligncenter">Loggin in.</h2>
+        <p class="med-text size-80 aligncenter">Once you open your free open account login, and check your email for the webflow invitation I sent on Monday March 16th.
+            Click on the invitation and you should go to the Webflow dashboard.
+        </p>
+        <div class="grid">
+            <div class="column">
+           <img src="../static/images/webflow1.webp" alt="">
+            </div>
+            <div class="column">
+                <ul>
+                    <li>check on the dropdown at the top left side. You should have your account and the CIM103 Weblab space.</li>
+                    <li>For the class, we are woing to be working exclusively on the CIM103 group. Look for the space created with your name and click on it.</li>
+                    <li><b>What is the difference between the personal account and the CIM103?</b>  </li>
+                    <li>In your personal free acount you have a limit of 2 sites of 3 pages each.</li>
+                    <li>In the CIM103 account you can create multiple sites with more than 3 pages.</li>
+                    <li>You also have access to some features not available to the free version.</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Creating the first site  -->
+      <section class="slide-top padding-t2">
+        <div class="wrap">
+        <h2 class="text-serif bluegreen aligncenter">Creating your first site</h2>
+        <p class="med-text size-80 aligncenter">
+        </p>
+        <div class="grid">
+            <div class="column">
+                <img class="aligncenter" src="../static/images/webflow2.webp" alt="" width="900">
+                <ul>
+                    <li>Once you are in your personal folder, you have the option to select a template or create a blank site. The purpose of this class is to teach you to use webflow so you can use a template in the future and modify it to your liking. 
+                        <b>Select Blank site.</b>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- adding site name  -->
+    <section class="slide-top padding-t2">
+        <div class="wrap">
+        <h2 class="text-serif bluegreen aligncenter">Naming your site</h2>
+        <!-- <p class="med-text size-80 aligncenter">
+        </p> -->
+        <div class="grid">
+            <div class="column">
+                <img class="aligncenter" src="../static/images/webflow3.webp" alt="" width="900">
+                <ul>
+                    <li>Name your sites using your first name and add a description "patricia-test-site" "patricia-first-site" etc.</b>
+                    </li>
+                    <li>In the <b>Add to folder dropdown</b> make sure your name is selected, if not, select it from the list, to add the site to your folder.</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Webflow interfaace  -->
+     <section class="slide-top padding-t2">
+        <div class="wrap">
+        <h2 class="text-serif bluegreen aligncenter">The webflow interface</h2>
+        <!-- <p class="med-text size-80 aligncenter">
+        </p> -->
+        <div class="grid">
+            <div class="column">
+                <img class="aligncenter" src="../static/images/webflow4.webp" alt="" width="1100">
+               
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- The HTML  -->
+      <section class="slide-top padding-t2">
+        <div class="wrap">
+        <h2 class="text-serif bluegreen aligncenter">The HTML side</h2>
+        <!-- <p class="med-text size-80 aligncenter">
+        </p> -->
+        <div class="grid">
+            <div class="column">
+                <img class="aligncenter" src="../static/images/webflow5.webp" alt="" width="300"> 
+            </div>
+            <div class="column">
+                <ul>
+                    <li>On the left side, if you click the (+) sign you can add HTML elements to the stage.</li>
+                    <li>You will see some familiar names like, section, div, heading, list, paragraph</li>
+                    <li>If you click on the stage (the white canvas) and then click on any element it will be added to the body.</li>
+                    <li>A new element will be added inside the previously selecte element. If you click on the body and add a section, and then a container, 
+                        the container will be directly inside the section and not the body because it was the last selected was the section.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- The Navigator  -->
+      <section class="slide-top padding-t2">
+        <div class="wrap">
+        <h2 class="text-serif bluegreen aligncenter">The Navigator</h2>
+        <!-- <p class="med-text size-80 aligncenter">
+        </p> -->
+        <div class="grid">
+            <div class="column">
+                <img class="aligncenter" src="../static/images/webflow6.webp" alt="" width="600"> 
+            </div>
+            <div class="column">
+                <ul>
+                    <li>One of the most important areas to navigate your webflow site is the Navigator. (The 3rd icon on the left side).</li>
+                    <li>There you can see the structure of your HTML and can make changes if you need to by dragging and dropping the elements.</li>
+                    <li>It's very easy to misplace elements by dropping elements to the stage, the navigator helps us make sure we keep all the elemets in the right place.</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </section>
+      <!-- The Navigator  -->
+      <section class="slide-top padding-t2">
+        <div class="wrap">
+        <h2 class="text-serif bluegreen aligncenter">The CSS Panel</h2>
+        <div class="grid">
+            <div class="column">
+                <img class="aligncenter" src="../static/images/webflow7.webp" alt="" width="400"> 
+            </div>
+            <div class="column">
+                <ul>
+                    <li>On the right side, you have the tools to add the CSS styles to the elements you have on the stage.</li>
+                    <li>Click on an element and you can select any of the familiar styles from the right.
+                        <ul>
+                            <li>color</li>
+                            <li>font</li>
+                            <li>background</li>
+                            <li>margin and padding</li>
+                            <li>width and height</li>
+                            <li>etc.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- assignment  -->
+     <!-- The Navigator  -->
+      <section class="slide-top padding-t2">
+        <div class="wrap">
+        <h2 class="text-serif bluegreen aligncenter">Class assignment</h2>
+        <div class="grid size-80">
+            <div class="column">
+                <ul>
+                    <li>For this class, create a site and experiment with the different elements.</li>
+                    <li>Add at least a section, a heading and a paragraph</li>
+                    <li>Change the font color, family and size</li>
+                    <li>Add a background</li>
+                    <li>You can use the content from your profile.</li>
+                    <li>Experiment andd add as many elements as you want.</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </section>
+    </article>
+</main>
+  <!-- Required -->
+    <script src="../static/js/webslides.js"></script>
+    <script>
+      window.ws = new WebSlides();
+    </script>
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="../static/js/svg-icons.js"></script>
+</body>
+</html>
